@@ -1,0 +1,1344 @@
+[
+  {
+    "code": "CA",
+    "name": "California",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Frontier AI transparency",
+        "bill": "SB 53 · Transparency in Frontier Artificial Intelligence Act",
+        "topic": "Frontier models",
+        "description": "Requires covered large frontier developers to publish safety frameworks and disclose assessments. Includes critical incident reporting and employee whistleblower protections.",
+        "timing": "Enacted 29 September 2025; provisions have different implementation dates.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+        "status": "Enacted"
+      },
+      {
+        "title": "Training data transparency",
+        "bill": "AB 2013 · Civil Code §§ 3110–3111",
+        "topic": "Transparency",
+        "description": "Requires developers of covered generative AI services made available to Californians to publish a high-level summary of their training datasets, with specified information about sources, licensing, and personal data.",
+        "timing": "Disclosure deadline: 1 January 2026; applies to covered releases from 1 January 2022.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013",
+        "status": "Enacted"
+      },
+      {
+        "title": "Companion chatbot safeguards",
+        "bill": "SB 243 · Business & Professions Code § 22601 et seq.",
+        "topic": "Chatbots",
+        "description": "Requires human-versus-AI disclosures in specified circumstances, safeguards for known minors, and protocols addressing suicide and self-harm content. Provides a civil remedy for qualifying injuries.",
+        "timing": "Enacted 13 October 2025; annual reporting begins 1 July 2027.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB243",
+        "status": "Enacted"
+      },
+      {
+        "title": "AI in health coverage review",
+        "bill": "SB 1120 · Chapter 879 of 2024",
+        "topic": "Health care",
+        "description": "Sets conditions for AI, algorithms, and software used in utilization review. Requires individualized clinical information and equitable application, while preserving qualified human review of medical-necessity decisions.",
+        "timing": "Enacted 28 September 2024; consult the amended code for operative requirements.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1120",
+        "status": "Enacted"
+      },
+      {
+        "title": "Online bot identity disclosures",
+        "bill": "Business and Professions Code §§17940–17943",
+        "topic": "Transparency",
+        "description": "Prohibits using a bot to mislead a person in California about its artificial identity for specified commercial or election-deception purposes.",
+        "timing": "Operative since 1 July 2019.",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=7.&title=&part=3.&chapter=6.&article=",
+        "sources": [
+          {
+            "label": "California bot-disclosure statute",
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=BPC&division=7.&title=&part=3.&chapter=6.&article="
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Persons using covered automated online accounts to communicate or interact with people in California.",
+        "obligations": [
+          "A clear, conspicuous disclosure that the account is a bot avoids liability under this section."
+        ],
+        "limits": "The specified deceptive intent and commercial or election purpose are required. The chapter does not impose a duty on online-platform service providers."
+      }
+    ],
+    "summary": "Selected laws covering frontier model safety, training data, companion chatbots, and health coverage decisions.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "CO",
+    "name": "Colorado",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Automated decision-making protections",
+        "bill": "SB 26-189 · Replaces the earlier Colorado AI Act",
+        "topic": "Automated decisions",
+        "description": "Sets documentation, consumer notice, recordkeeping, data-correction, and human-review duties for covered automated systems used in consequential decisions. Enforced by the attorney general.",
+        "timing": "Key developer and deployer duties begin 1 January 2027.",
+        "url": "https://leg.colorado.gov/bills/sb26-189",
+        "status": "Upcoming"
+      }
+    ],
+    "summary": "A revised framework for consequential automated decisions, with key duties starting in 2027.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "TX",
+    "name": "Texas",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Responsible AI Governance Act",
+        "bill": "HB 149 · TRAIGA",
+        "topic": "AI governance",
+        "description": "Prohibits specified harmful and intentionally discriminatory AI uses. Includes disclosures for government and certain health-care interactions, attorney-general enforcement, and a regulatory sandbox. Coverage and exemptions depend on the activity.",
+        "timing": "Effective 1 January 2026.",
+        "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00149F.htm",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "A statewide framework targeting specific AI harms, disclosures, and government oversight.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "UT",
+    "name": "Utah",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Generative AI consumer disclosures",
+        "bill": "SB 226 · AI Consumer Protection Amendments",
+        "topic": "Transparency",
+        "description": "Requires disclosures for certain generative AI interactions in consumer transactions and regulated services. Establishes responsibility for consumer-protection violations involving AI, with a limited disclosure safe harbor.",
+        "timing": "Enacted in 2025; consult the amended text for scope and timing.",
+        "url": "https://le.utah.gov/~2025/bills/static/SB0226.html",
+        "status": "Enacted"
+      },
+      {
+        "title": "Mental-health chatbot protections",
+        "bill": "HB 452 (2025) · Utah Code Title 13, Chapter 72a",
+        "topic": "Chatbots",
+        "description": "Mental-health chatbot suppliers face limits on sharing sensitive information, personalized advertising, and presenting their tools as human.",
+        "timing": "Effective 7 May 2025.",
+        "url": "https://le.utah.gov/~2025/bills/hbillenr/HB0452.pdf",
+        "sources": [
+          {
+            "label": "Enrolled act · HB 452",
+            "url": "https://le.utah.gov/~2025/bills/hbillenr/HB0452.pdf"
+          },
+          {
+            "label": "Legislative record",
+            "url": "https://le.utah.gov/~2025/bills/static/HB0452.html"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Suppliers of covered mental-health chatbots used by individuals located in Utah.",
+        "obligations": [
+          "Restrict sharing of identifiable health information and user input, subject to the act’s exceptions.",
+          "Disclose AI identity before access, after a gap of seven days, and when asked; clearly identify ads and relevant commercial relationships.",
+          "Do not use user input for specified advertising decisions, subject to limited exceptions."
+        ],
+        "enforcement": "The Division of Consumer Protection enforces the chapter, with fines of up to $2,500 per violation.",
+        "limits": "Scripted-only tools and tools solely connecting people to human therapists are excluded. Section 58-60-118 separately offers a conditional affirmative defense for specified licensing claims; it does not license AI therapists."
+      }
+    ],
+    "summary": "Consumer AI disclosures and specific privacy, advertising, and identity rules for mental-health chatbots.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NY",
+    "name": "New York",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "RAISE Act — amended frontier-model framework",
+        "bill": "GBL Article 44-B · S8828 / Chapter 96 of 2026",
+        "topic": "Frontier models",
+        "description": "The amended law creates tiered transparency and safety duties for frontier developers, with additional obligations for large developers. The March 2026 amendment replaced the original framework.",
+        "timing": "Duties take effect 1 January 2027. Amendment signed 27 March 2026.",
+        "url": "https://www.nysenate.gov/legislation/bills/2025/S8828",
+        "sources": [
+          {
+            "label": "Amended act & effective date",
+            "url": "https://www.nysenate.gov/legislation/bills/2025/S8828"
+          },
+          {
+            "label": "Transparency requirements · §1421",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1421"
+          },
+          {
+            "label": "Incident reporting · §1422",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1422"
+          },
+          {
+            "label": "Enforcement · §1427",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1427"
+          }
+        ],
+        "status": "Upcoming",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Developers of foundation models trained with more than 10^26 integer or floating-point operations, developed, deployed, or operating at least partly in New York. Large developers exceed $500 million in annual revenue with affiliates.",
+        "obligations": [
+          "Publish a transparency report when deploying a new or substantially modified frontier model. Large developers must also publish and follow a safety framework, reviewing it at least annually.",
+          "Report critical safety incidents within 72 hours; imminent risks of death or serious physical injury require disclosure to an appropriate authority within 24 hours.",
+          "Large developers also face internal-use risk reporting and DFS disclosure-statement requirements."
+        ],
+        "enforcement": "The attorney general can seek up to $1 million for a first covered large-developer violation and $3 million for subsequent violations. The act creates no private right of action.",
+        "limits": "Duties differ by developer size. Academic AI research by accredited New York colleges and universities, and specified Empire AI entities, are excluded. Consult the full definitions and DFS implementation rules."
+      },
+      {
+        "title": "AI companion safeguards & identity notices",
+        "bill": "General Business Law §§1700–1704",
+        "topic": "Chatbots",
+        "description": "Covered AI companions must have self-harm response protocols and tell users they are not talking to a human.",
+        "timing": "2025 enactment; current companion-model provisions reviewed 22 September 2026.",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/1700",
+        "sources": [
+          {
+            "label": "Scope & definitions · §1700",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1700"
+          },
+          {
+            "label": "Safety protocol · §1701",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1701"
+          },
+          {
+            "label": "Notices · §1702",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1702"
+          },
+          {
+            "label": "Enforcement · §1703",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1703"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Operators providing covered AI companions to users in New York; the statutory definition targets systems designed to sustain human-like relationships.",
+        "obligations": [
+          "Make reasonable efforts to detect and address suicidal ideation or self-harm, including referrals to crisis services.",
+          "Give a clear non-human identity notice at the start of an interaction (no more than once per day is required) and at least every three hours of continued interaction."
+        ],
+        "enforcement": "The attorney general may seek injunctions and civil penalties of up to $15,000 per day for violations.",
+        "limits": "The definition contains exclusions, including specified business, customer-service, and productivity uses. A chatbot is not automatically an AI companion."
+      },
+      {
+        "title": "Automated hiring tools in New York City",
+        "bill": "NYC Local Law 144 of 2021 · DCWP rules",
+        "topic": "Employment",
+        "description": "Covered hiring and promotion tools require an independent bias audit, published results, and advance notices. The law is specific to New York City.",
+        "timing": "DCWP enforcement began 5 July 2023; notices are due 10 business days before use.",
+        "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+        "sources": [
+          {
+            "label": "DCWP law & rules",
+            "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+          },
+          {
+            "label": "DCWP scope & audit FAQ",
+            "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf"
+          }
+        ],
+        "status": "Enacted",
+        "type": "Local law & rules",
+        "reviewed": "2026-09-22",
+        "local": true,
+        "appliesTo": "Employers and employment agencies using a covered AEDT for NYC hiring or promotion. The rules define when a tool substantially assists or replaces discretionary decisions.",
+        "obligations": [
+          "Ensure an independent bias audit was conducted within one year before use, and make the required summary publicly available.",
+          "Provide required candidate or employee notices, including the use of the tool and the qualifications or characteristics assessed."
+        ],
+        "enforcement": "NYC Department of Consumer and Worker Protection (DCWP) receives complaints and enforces the law.",
+        "limits": "An audit does not establish compliance with every discrimination law. The technical definition and geographic scope matter; not every recruitment tool qualifies."
+      },
+      {
+        "title": "Synthetic performers in advertising",
+        "bill": "General Business Law §396-b · S8420A",
+        "topic": "Advertising",
+        "description": "Commercial advertisers with actual knowledge of a synthetic performer in their advertisement must conspicuously disclose its use.",
+        "timing": "Enacted 11 December 2025; operative 180 days after enactment.",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B",
+        "sources": [
+          {
+            "label": "Current advertisement statute",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+          },
+          {
+            "label": "Enactment & timing",
+            "url": "https://www.nysenate.gov/legislation/bills/2025/S8420/amendment/A"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Businesses producing or creating commercial advertisements for property or services. A synthetic performer is a human-like digital asset not recognizable as an identifiable natural performer.",
+        "obligations": [
+          "Include a conspicuous disclosure in the covered advertisement when the advertiser actually knows it uses a synthetic performer."
+        ],
+        "enforcement": "The statute specifies $1,000 for a first violation and $5,000 for subsequent violations.",
+        "limits": "Exclusions cover audio ads, AI used solely for language translation, qualifying promotion of expressive works, and advertising media that merely publish or distribute the ad."
+      },
+      {
+        "title": "Fashion Workers Act — digital replica consent",
+        "bill": "Labor Law Article 36",
+        "topic": "Digital replicas",
+        "description": "Model management businesses and clients have specific consent duties before creating or using models’ digital replicas.",
+        "timing": "Core duties began 19 June 2025. Registration requirements began 21 December 2025.",
+        "url": "https://dol.ny.gov/fashion",
+        "sources": [
+          {
+            "label": "Department of Labor overview",
+            "url": "https://dol.ny.gov/fashion"
+          },
+          {
+            "label": "Management & client duties",
+            "url": "https://dol.ny.gov/responsibilities-fashion-management-and-clients"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Covered model management companies, model management groups, and clients working with models in New York.",
+        "obligations": [
+          "Model management businesses must obtain clear written consent separately from the representation agreement, describing scope, purpose, compensation, and duration.",
+          "Clients must obtain prior written approval for creating or using a digital replica, detailing scope, purpose, compensation, and duration."
+        ],
+        "enforcement": "The New York Department of Labor administers the law and accepts fashion-worker complaints.",
+        "limits": "This entry focuses on digital replicas. The act also regulates compensation, commissions, representation, safety, and registration."
+      },
+      {
+        "title": "Deceased performers’ digital replicas",
+        "bill": "Civil Rights Law §50-f",
+        "topic": "Digital replicas",
+        "description": "New York’s post-mortem publicity law includes remedies for specified unauthorized uses of deceased performers’ digital replicas.",
+        "timing": "Current codified text includes December 2025 amendments. Rights are time-limited and subject to statutory conditions.",
+        "url": "https://www.nysenate.gov/legislation/laws/CVR/50-F",
+        "sources": [
+          {
+            "label": "Right of publicity · §50-f",
+            "url": "https://www.nysenate.gov/legislation/laws/CVR/50-F"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Covered deceased personalities and performers domiciled in New York at death, and holders of their statutory rights.",
+        "obligations": [
+          "Obtain the relevant right holder’s consent for covered replica uses in audiovisual works, sound recordings, or live musical performances."
+        ],
+        "enforcement": "Civil claims can recover statutory or compensatory damages, attributable profits, and potentially punitive damages.",
+        "limits": "Knowledge, authorization, domicile, duration, and other conditions matter. Exceptions protect specified parody, criticism, news, biographical, and other expressive uses. This is not a blanket ban on synthetic media."
+      },
+      {
+        "title": "Nonconsensual sexually explicit synthetic media",
+        "bill": "Civil Rights Law §52-c",
+        "topic": "Synthetic media",
+        "description": "A depicted person can bring a civil claim over the unauthorized disclosure or publication of covered sexually explicit, digitally manipulated material.",
+        "timing": "Current statutory text reviewed 22 September 2026; filing periods depend on publication and discovery.",
+        "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C",
+        "sources": [
+          {
+            "label": "Civil cause of action · §52-c",
+            "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Publishers or distributors who know or reasonably should know that the depicted individual did not consent to the relevant creation or dissemination.",
+        "obligations": [
+          "Obtain knowing, voluntary consent in a signed plain-language agreement meeting the statute’s requirements.",
+          "A disclaimer that the individual did not participate does not by itself provide a defense."
+        ],
+        "enforcement": "Available civil remedies include injunctions, compensatory and punitive damages, and reasonable costs and attorney fees.",
+        "limits": "The law includes protected-expression, public-interest, and legal-proceeding exceptions. This entry concerns the synthetic-media provision; New York has two sections numbered 52-c."
+      },
+      {
+        "title": "Personalized algorithmic pricing disclosures",
+        "bill": "General Business Law §349-a",
+        "topic": "Consumer pricing",
+        "description": "Covered offers of prices determined by algorithms using a consumer’s personal data must carry a clear disclosure alongside the price.",
+        "timing": "Disclosure law took effect 10 November 2025, according to the attorney general’s implementation notice.",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/349-A",
+        "sources": [
+          {
+            "label": "Pricing requirements & exceptions",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/349-A"
+          },
+          {
+            "label": "Attorney general’s effective-date notice",
+            "url": "https://ag.ny.gov/press-release/2025/attorney-general-james-warns-new-yorkers-about-algorithmic-pricing-new-law-takes"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Entities doing business in New York that advertise or offer covered personalized algorithmic prices to New York consumers.",
+        "obligations": [
+          "Display the statutory notice that the price was set by an algorithm using the consumer’s personal data, clearly and contemporaneously with the price."
+        ],
+        "enforcement": "The attorney general must first send a cease-and-desist notice with a cure timeline. Continued violations can lead to injunctions and penalties of up to $1,000 per violation.",
+        "limits": "Not all dynamic pricing qualifies. Exceptions include specified insurance and financial entities and some existing-subscriber discounts; a narrow transport-fare exclusion also applies."
+      },
+      {
+        "title": "Manipulated media in political communications",
+        "bill": "Election Law §14-106(5)",
+        "topic": "Elections",
+        "description": "Political communications using materially deceptive media require disclosure when the distributor or publisher actually knows the material is deceptive.",
+        "timing": "2024 measure, with subsequent amendments reflected in the current statute.",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/14-106",
+        "sources": [
+          {
+            "label": "Political communications · §14-106",
+            "url": "https://www.nysenate.gov/legislation/laws/ELN/14-106"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Persons and organizations distributing covered political communications with realistic, materially altered or fabricated media.",
+        "obligations": [
+          "Use the prescribed manipulation disclosure in a legible visual format or in audible notices.",
+          "Audio notices appear at the beginning and end, and at intervals of no more than two minutes for longer audio."
+        ],
+        "enforcement": "An affected candidate can seek expedited injunctive relief and reasonable court costs and attorney fees under the statutory conditions.",
+        "limits": "Exceptions include satire or parody, qualifying news reporting, and specified broadcasters or initial third-party dissemination. Other campaign disclosure obligations still apply."
+      },
+      {
+        "title": "Insurance AI — underwriting & pricing guidance",
+        "bill": "NYDFS Insurance Circular Letter No. 7 (2024)",
+        "topic": "Insurance",
+        "description": "DFS explains its expectations for insurers using AI and external consumer data in underwriting and pricing under existing insurance law.",
+        "timing": "Issued 11 July 2024. Agency guidance, not a newly enacted AI statute.",
+        "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07",
+        "sources": [
+          {
+            "label": "DFS Circular Letter 7 (2024)",
+            "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07"
+          }
+        ],
+        "status": "Guidance",
+        "type": "Agency guidance",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Insurers authorized in New York, Article 43 corporations, HMOs, licensed fraternal benefit societies, and the State Insurance Fund.",
+        "obligations": [
+          "Assess actuarial validity and unfair discrimination before use and after material changes; document testing and explanations.",
+          "Maintain governance, management oversight, model documentation, and vendor controls. Responsibility remains with the insurer.",
+          "Provide applicable adverse-decision explanations and relevant disclosures."
+        ],
+        "enforcement": "DFS may examine AI use and request reports under its existing insurance supervisory powers.",
+        "limits": "The circular addresses underwriting and pricing, not every stage of the insurance lifecycle. Its expectations should be read alongside binding insurance statutes and regulations."
+      },
+      {
+        "title": "Public inventory of state-agency AI",
+        "bill": "State Technology Law §103-e",
+        "topic": "Government",
+        "description": "The Office of Information Technology Services maintains an inventory of state-agency AI systems that may directly affect the public.",
+        "timing": "2025 framework; inventory publication is annual, on 30 December.",
+        "url": "https://www.nysenate.gov/legislation/laws/STT/103-E",
+        "sources": [
+          {
+            "label": "AI inventory · §103-e",
+            "url": "https://www.nysenate.gov/legislation/laws/STT/103-E"
+          },
+          {
+            "label": "2025 chapter amendment",
+            "url": "https://www.nysenate.gov/legislation/bills/2025/S822"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "State agencies using covered AI systems that materially influence public safety, welfare, or rights.",
+        "obligations": [
+          "Submit required information at least 60 days before annual publication, including the systems’ purposes and uses.",
+          "ITS publishes the inventory on the state open-data website and submits it to specified state leaders."
+        ],
+        "enforcement": "Statutory agency reporting duties administered by ITS.",
+        "limits": "Security-sensitive or legally exempt information can be withheld. Basic calculations and specified rule-based automation are excluded. This is not a general private-business AI audit mandate."
+      },
+      {
+        "title": "Government automated-employment tool disclosures",
+        "bill": "State Technology Law §§401, 402 & 402-a",
+        "topic": "Government",
+        "description": "State agencies publish annual lists of covered automated employment tools. A separate provision addresses local public bodies and education entities to the extent feasible.",
+        "timing": "Annual 30 December disclosure cycle. Temporary §402-a is scheduled to be repealed 1 July 2028.",
+        "url": "https://www.nysenate.gov/legislation/laws/STT/401",
+        "sources": [
+          {
+            "label": "Definitions · §401",
+            "url": "https://www.nysenate.gov/legislation/laws/STT/401"
+          },
+          {
+            "label": "State-agency disclosure · §402",
+            "url": "https://www.nysenate.gov/legislation/laws/STT/402"
+          },
+          {
+            "label": "Other public entities · §402-a",
+            "url": "https://www.nysenate.gov/legislation/laws/STT/402-A"
+          }
+        ],
+        "status": "Enacted",
+        "type": "State statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "State agencies; separately, counties, cities, towns, villages, school districts, and other listed public or educational bodies. Definitions exclude the legislature and judiciary from state agencies.",
+        "obligations": [
+          "List the tools, describe them, identify when use began, and summarize their purposes and uses.",
+          "The separate covered-entity disclosure duty operates to the extent feasible under §402-a."
+        ],
+        "enforcement": "Statutory public-body reporting obligations; this is separate from NYC’s private-employer bias-audit regime.",
+        "limits": "Covered employment uses extend beyond hiring to matters such as wages, discipline, promotion, and termination. Check the different definitions and scheduled 2028 changes."
+      },
+      {
+        "title": "SHIELD Act — security of private information",
+        "bill": "General Business Law §899-bb",
+        "topic": "Privacy & security",
+        "description": "General data-security duties are relevant when AI systems handle covered private information about New York residents.",
+        "timing": "Existing security requirements; current codified provisions reviewed 22 September 2026.",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB",
+        "sources": [
+          {
+            "label": "Data security protections · §899-bb",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB"
+          },
+          {
+            "label": "Definitions & breach notification · §899-aa",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+          }
+        ],
+        "status": "Enacted",
+        "type": "Related statute",
+        "reviewed": "2026-09-22",
+        "appliesTo": "Persons or businesses owning or licensing computerized data containing a New York resident’s statutory private information.",
+        "obligations": [
+          "Maintain reasonable administrative, technical, and physical safeguards, including service-provider safeguards and appropriate data disposal."
+        ],
+        "enforcement": "The attorney general can seek injunctions and civil penalties. Section 899-bb creates no private right of action.",
+        "limits": "This is a general security law, not an AI-specific consent or impact-assessment law. Compliant regulated entities and qualifying small businesses have tailored provisions."
+      }
+    ],
+    "summary": "A layered landscape: frontier models, chatbots, hiring, insurance, synthetic media, pricing, and public-sector AI. NYC has its own hiring rule.",
+    "reviewed": "2026-09-22"
+  },
+  {
+    "code": "IL",
+    "name": "Illinois",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI in employment decisions",
+        "bill": "HB 3773 · Public Act 103-0804",
+        "topic": "Employment",
+        "description": "Prohibits employment-related AI use that results in unlawful discrimination and using ZIP codes as a proxy for protected classes. Adds employee notice requirements, with implementation rules assigned to the Department of Human Rights.",
+        "timing": "Effective 1 January 2026.",
+        "url": "https://www.ilga.gov/ftp/legislation/103/BillStatus/HTML/10300HB3773.html",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "AI notice and anti-discrimination duties for employers.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "AL",
+    "name": "Alabama",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Deceptive election media",
+        "bill": "HB 172 · 2024 regular session",
+        "topic": "Elections",
+        "description": "Addresses distribution of materially deceptive media intended to influence an election. Provides criminal consequences and injunctive relief, subject to the statutory conditions and exceptions.",
+        "timing": "Enacted in 2024; consult the act for operative provisions.",
+        "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2024RS/HB172-enr.pdf",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "AK",
+    "name": "Alaska",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Unfair trade practices",
+        "bill": "Alaska Statutes § 45.50.471",
+        "topic": "Consumer protection",
+        "description": "Technology-neutral prohibitions on unfair or deceptive trade practices can be relevant to misleading AI products and services. This entry is a related general law, not an AI-specific statute.",
+        "timing": "Existing statute; application depends on the conduct.",
+        "url": "https://www.law.alaska.gov/department/civil/consumer/cpindex.html",
+        "status": "Enacted",
+        "source": "Attorney general guidance"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "AZ",
+    "name": "Arizona",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Human review of coverage denials",
+        "bill": "Arizona Revised Statutes § 20-3103 · HB 2175 (2025)",
+        "topic": "Health care",
+        "description": "Requires a medical director to individually review certain medical-necessity claim denials and exercise independent medical judgment rather than relying solely on recommendations from another source.",
+        "timing": "Enacted in 2025; see the act for scope and commencement.",
+        "url": "https://www.azleg.gov/ars/20/03103.htm",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related health care rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "AR",
+    "name": "Arkansas",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI policies for public entities",
+        "bill": "HB 1958 · Act 848 of 2025",
+        "topic": "Government use",
+        "description": "Requires public entities to create policies governing authorized use of artificial intelligence. This concerns government operations rather than a general private-sector AI compliance regime.",
+        "timing": "Enacted 17 April 2025.",
+        "url": "https://www.arkleg.state.ar.us/Bills/Detail?id=HB1958&ddBienniumSession=2025%2F2025R",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on government use.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "CT",
+    "name": "Connecticut",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Connecticut Data Privacy Act",
+        "bill": "Public Act 22-15, as amended",
+        "topic": "Privacy & profiling",
+        "description": "Gives covered consumers rights over personal data, including an opt-out for specified profiling that produces legal or similarly significant effects. Relevant to AI decision systems processing covered personal data.",
+        "timing": "Core law effective 1 July 2023; later amendments have separate dates.",
+        "url": "https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "DE",
+    "name": "Delaware",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Personal Data Privacy Act",
+        "bill": "6 Del. C. Chapter 12D",
+        "topic": "Privacy & profiling",
+        "description": "Creates personal-data rights and duties for covered businesses, including opt-outs for specified consequential profiling and assessments for certain higher-risk processing.",
+        "timing": "Effective 1 January 2025; some duties have separate implementation dates.",
+        "url": "https://delcode.delaware.gov/title6/c012d/index.html",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "FL",
+    "name": "Florida",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI in political advertising",
+        "bill": "HB 919 · 2024 regular session",
+        "topic": "Elections",
+        "description": "Requires a disclosure in covered political advertisements using generative AI to create specified depictions of a real person. The rule is subject to defined intent and content requirements.",
+        "timing": "Effective 1 July 2024.",
+        "url": "https://www.flsenate.gov/Session/Bill/2024/919",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "GA",
+    "name": "Georgia",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Fair Business Practices Act",
+        "bill": "O.C.G.A. § 10-1-390 et seq.",
+        "topic": "Consumer protection",
+        "description": "Bans unfair or deceptive acts in covered consumer transactions. AI-related advertising and product representations may engage these general protections; this is not an AI-specific framework.",
+        "timing": "Existing consumer-protection law.",
+        "url": "https://consumer.georgia.gov/business-compliance/responsibilities-under-fair-business-practices-act-and-lemon-law",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "HI",
+    "name": "Hawaii",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Deceptive election media",
+        "bill": "SB 2687 (2024) · HRS §§ 11-303–304",
+        "topic": "Elections",
+        "description": "The enacted election deepfake disclosure law has been permanently enjoined. It should not be treated as an enforceable obligation. The linked NCSL review reports the ruling in The Babylon Bee v. Lopez.",
+        "timing": "Court restriction reported in NCSL’s 23 June 2026 review.",
+        "url": "https://www.ncsl.org/elections-and-campaigns/artificial-intelligence-ai-in-elections-and-campaigns",
+        "status": "Enjoined",
+        "source": "NCSL court-status summary"
+      }
+    ],
+    "summary": "The election deepfake measure included here is enjoined. Other laws may still apply to AI uses.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "ID",
+    "name": "Idaho",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Synthetic media in elections",
+        "bill": "HB 664 · 2024 regular session",
+        "topic": "Elections",
+        "description": "Addresses electioneering communications that use synthetic media to depict a candidate, including disclosure and civil-remedy provisions subject to statutory exceptions.",
+        "timing": "Effective 25 March 2024.",
+        "url": "https://legislature.idaho.gov/sessioninfo/2024/legislation/h0664/",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "IN",
+    "name": "Indiana",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer Data Protection Act",
+        "bill": "SB 5 · Public Law 94-2023",
+        "topic": "Privacy & profiling",
+        "description": "Provides covered consumers rights over personal data, including an opt-out for specified consequential profiling, and requires data-protection assessments for certain processing.",
+        "timing": "Effective 1 January 2026.",
+        "url": "https://iga.in.gov/legislative/2023/bills/senate/5/details",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "IA",
+    "name": "Iowa",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer data protection",
+        "bill": "Iowa Code · Chapter 715D",
+        "topic": "Privacy",
+        "description": "Regulates covered personal-data processing through consumer rights, disclosures, security obligations, and rules for sensitive data. Relevant to AI systems using personal information; its rights differ from other states.",
+        "timing": "Effective 1 January 2025.",
+        "url": "https://www.legis.iowa.gov/docs/code/715D.pdf",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "KS",
+    "name": "Kansas",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI platforms on state systems",
+        "bill": "HB 2313 · 2025 session",
+        "topic": "Government use",
+        "description": "Restricts AI platforms of concern on state-issued devices and networks. The law targets specified foreign-adversary technology and government use rather than every AI service.",
+        "timing": "Enacted in 2025; see the final law for implementation.",
+        "url": "https://www.kslegislature.gov/li/b2025_26/measures/hb2313/",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on government use.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "KY",
+    "name": "Kentucky",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Public-sector AI transparency",
+        "bill": "SB 4 · 2025 regular session",
+        "topic": "Government use",
+        "description": "Requires specified public bodies to disclose certain AI uses, including uses affecting decisions about people or businesses. Includes rules governing public-sector AI and information security.",
+        "timing": "Signed 24 March 2025; emergency provisions and other dates vary.",
+        "url": "https://apps.legislature.ky.gov/record/25rs/sb4.html",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on government use.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "LA",
+    "name": "Louisiana",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Artificially generated court evidence",
+        "bill": "HB 178 · 2025 regular session",
+        "topic": "Legal proceedings",
+        "description": "Prohibits attorneys from knowingly presenting false evidence, including evidence artificially generated or altered. Relevant to lawyers using generative AI in legal proceedings.",
+        "timing": "Effective 1 August 2025.",
+        "url": "https://www.legis.la.gov/legis/BillInfo.aspx?s=25RS&b=HB178&sbi=y",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on legal proceedings.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "ME",
+    "name": "Maine",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI disclosures in consumer transactions",
+        "bill": "LD 1727 · Public Law 294 of 2025",
+        "topic": "Transparency",
+        "description": "Prohibits using an AI chatbot or other computer technology to mislead a reasonable consumer into believing they are dealing with a human, unless a clear and conspicuous disclosure is made.",
+        "timing": "Signed 12 June 2025; see the chaptered text for exceptions.",
+        "url": "https://legislature.maine.gov/legis/bills/display_ps.asp?LD=1727&snum=132",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on transparency.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MA",
+    "name": "Massachusetts",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Nonconsensual explicit images",
+        "bill": "Chapter 118 of the Acts of 2024",
+        "topic": "Synthetic media",
+        "description": "Extends protections against nonconsensual distribution of intimate images, including qualifying digitally created or altered depictions. Statutory intent and consent conditions apply.",
+        "timing": "Enacted in 2024; consult the act for operative provisions.",
+        "url": "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter118",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on synthetic media.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MI",
+    "name": "Michigan",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI disclosure in campaign advertising",
+        "bill": "Public Act 182 of 2023 · MCL 169.247",
+        "topic": "Elections",
+        "description": "Adds disclosure requirements for qualified political advertisements generated wholly or substantially using artificial intelligence. Read alongside related campaign and deceptive-media provisions.",
+        "timing": "Enacted in 2023; consult the current statutory text.",
+        "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-169-247",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MN",
+    "name": "Minnesota",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Election deepfake restrictions",
+        "bill": "Minnesota Statutes § 609.771",
+        "topic": "Elections",
+        "description": "Restricts dissemination of election-related deepfakes in defined circumstances, including specified election periods and intent requirements. Contains criminal and injunctive remedies.",
+        "timing": "Current statute; check amendments and any applicable court orders.",
+        "url": "https://www.revisor.mn.gov/statutes/cite/609.771",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MS",
+    "name": "Mississippi",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Artificial Intelligence Regulation Task Force",
+        "bill": "SB 2426 · 2025 session",
+        "topic": "Government oversight",
+        "description": "Establishes a state task force to study AI applications, risks, and policy recommendations. This is an oversight and study measure, not a general set of private-sector AI obligations.",
+        "timing": "Enacted in 2025; reporting duties are specified in the act.",
+        "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation",
+        "status": "Enacted",
+        "source": "NCSL enacted-law summary"
+      }
+    ],
+    "summary": "Selected rules on government oversight.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MO",
+    "name": "Missouri",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Merchandising Practices Act",
+        "bill": "Missouri Revised Statutes § 407.020",
+        "topic": "Consumer protection",
+        "description": "Prohibits deception, fraud, misrepresentation, and unfair practices in covered commerce. This technology-neutral law may apply to deceptive AI services; it is not an AI-specific act.",
+        "timing": "Existing statute; application is fact-specific.",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=407.020",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MT",
+    "name": "Montana",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Right to Compute Act",
+        "bill": "SB 212 · 2025 session",
+        "topic": "AI governance",
+        "description": "Protects lawful use of computational resources and includes risk-management duties for critical AI systems controlling critical infrastructure. The duties apply within the act’s defined scope.",
+        "timing": "Enacted in 2025; verify the operative text before relying on it.",
+        "url": "https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation",
+        "status": "Enacted",
+        "source": "NCSL enacted-law summary"
+      }
+    ],
+    "summary": "Selected rules on ai governance.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NE",
+    "name": "Nebraska",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Data Privacy Act",
+        "bill": "Nebraska Revised Statutes §§ 87-1101–87-1130",
+        "topic": "Privacy & profiling",
+        "description": "Regulates covered personal-data processing, including rights to opt out of specified consequential profiling and assessments for certain higher-risk uses. Relevant to covered AI decision systems.",
+        "timing": "Effective 1 January 2025.",
+        "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=87-1107",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NV",
+    "name": "Nevada",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI in emergency decisions",
+        "bill": "AB 325 · 2025 session",
+        "topic": "Government use",
+        "description": "Requires emergency plans to preserve human control over final emergency-response and resource-allocation decisions. Also restricts certain AI decisions by public utilities.",
+        "timing": "Enacted in 2025; see the act for operative dates.",
+        "url": "https://www.leg.state.nv.us/Session/83rd2025/Bills/AB/AB325_EN.pdf",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on government use.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NH",
+    "name": "New Hampshire",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Personal data privacy",
+        "bill": "RSA Chapter 507-H · SB 255",
+        "topic": "Privacy & profiling",
+        "description": "Gives covered consumers personal-data rights, including an opt-out for specified consequential profiling. Requires covered controllers to assess certain processing risks.",
+        "timing": "Effective 1 January 2025.",
+        "url": "https://gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NJ",
+    "name": "New Jersey",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer data privacy",
+        "bill": "P.L. 2023, c.266 · S332",
+        "topic": "Privacy & profiling",
+        "description": "Creates consumer rights over covered personal-data processing and opt-outs for specified profiling. Includes risk-assessment duties relevant to some AI decision-making uses.",
+        "timing": "Core law effective 15 January 2025.",
+        "url": "https://www.njleg.state.nj.us/bill-search/2022/S332",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NM",
+    "name": "New Mexico",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI campaign advertisement disclosures",
+        "bill": "HB 182 · 2024 regular session",
+        "topic": "Elections",
+        "description": "Requires disclosures for certain political advertisements containing materially deceptive media created with AI. Applies under the law’s election, intent, and content conditions.",
+        "timing": "Enacted in 2024; consult the final text for commencement.",
+        "url": "https://www.nmlegis.gov/Legislation/Legislation?chamber=H&legtype=B&legno=182&year=24",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "NC",
+    "name": "North Carolina",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Unfair and deceptive trade practices",
+        "bill": "N.C. General Statutes § 75-1.1",
+        "topic": "Consumer protection",
+        "description": "Prohibits unfair or deceptive acts or practices in commerce, subject to statutory limits. Potentially relevant to misleading AI marketing and services; this entry is a general law, not an AI-specific rule.",
+        "timing": "Existing statute; application depends on the activity.",
+        "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "ND",
+    "name": "North Dakota",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI political-content disclosures",
+        "bill": "HB 1167 · 2025 session",
+        "topic": "Elections",
+        "description": "Requires disclosures for specified political content created using artificial intelligence. Covers certain candidate, party, and ballot-measure communications under the act’s conditions.",
+        "timing": "Enacted in 2025; consult the final law for implementation.",
+        "url": "https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo1167.html",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "OH",
+    "name": "Ohio",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer Sales Practices Act",
+        "bill": "Ohio Revised Code § 1345.02",
+        "topic": "Consumer protection",
+        "description": "Bans unfair or deceptive acts in covered consumer transactions. AI product claims and services can raise issues under this general rule; it is not an AI-specific statute.",
+        "timing": "Existing statute; application is fact-specific.",
+        "url": "https://codes.ohio.gov/ohio-revised-code/section-1345.02",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "OK",
+    "name": "Oklahoma",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Computer-generated child abuse material",
+        "bill": "HB 1364 · 2025 session",
+        "topic": "Synthetic media",
+        "description": "Updates the state’s child sexual abuse material rules to address specified computer-generated depictions. Criminal liability depends on the statutory definitions and prohibited conduct.",
+        "timing": "Enacted in 2025; see the act for commencement.",
+        "url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=hb1364&Session=2500",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on synthetic media.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "OR",
+    "name": "Oregon",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Synthetic media in campaigns",
+        "bill": "SB 1571 · 2024 regular session",
+        "topic": "Elections",
+        "description": "Requires disclosures in covered campaign communications containing synthetic media. Establishes remedies subject to the law’s definitions and exemptions.",
+        "timing": "Enacted in 2024; see the enrolled act for timing.",
+        "url": "https://olis.oregonlegislature.gov/liz/2024R1/Measures/Overview/SB1571",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "PA",
+    "name": "Pennsylvania",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Intimate deepfakes and child protections",
+        "bill": "Act 125 of 2024",
+        "topic": "Synthetic media",
+        "description": "Amends criminal laws on intimate images and child sexual abuse material to cover specified artificially generated or altered images. The act contains distinct requirements for different offenses.",
+        "timing": "Enacted 29 October 2024; effective 60 days later.",
+        "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2024/0/0125..HTM",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on synthetic media.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "RI",
+    "name": "Rhode Island",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Synthetic election communications",
+        "bill": "H 5872 / S 816 · 2025 session",
+        "topic": "Elections",
+        "description": "Regulates deceptive and fraudulent synthetic media in certain election communications. Includes disclosure rules and remedies subject to the act’s election-period limits and exceptions.",
+        "timing": "Enacted in 2025; see the final act for timing.",
+        "url": "https://webserver.rilegislature.gov/BillText/BillText25/HouseText25/H5872A.pdf",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "SC",
+    "name": "South Carolina",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Nonconsensual intimate images",
+        "bill": "H 3058 · 2025–2026 session",
+        "topic": "Synthetic media",
+        "description": "Creates an offense for unauthorized disclosure of intimate images, including covered digitally altered or created depictions. Includes statutory consent, intent, and exception provisions.",
+        "timing": "Effective 12 May 2025.",
+        "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3058.htm",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on synthetic media.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "SD",
+    "name": "South Dakota",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Election deepfake restrictions",
+        "bill": "SB 164 (2025) · SDCL § 12-26-32 et seq.",
+        "topic": "Elections",
+        "description": "Restricts dissemination of deepfakes intended to injure a candidate during a defined election period, with disclosure exceptions and penalties specified by the law.",
+        "timing": "Enacted in 2025; see the final law for commencement.",
+        "url": "https://sdlegislature.gov/Statutes/12-26-32",
+        "status": "Enacted",
+        "url2": "https://www.ncsl.org/elections-and-campaigns/artificial-intelligence-ai-in-elections-and-campaigns",
+        "source2": "NCSL election-law summary"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "TN",
+    "name": "Tennessee",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "ELVIS Act",
+        "bill": "HB 2091 / SB 2096 · Public Chapter 588",
+        "topic": "Voice & likeness",
+        "description": "Extends state personal-rights protections to voice and addresses unauthorized AI replication of an individual’s voice or likeness. Includes civil remedies and statutory exceptions.",
+        "timing": "Effective 1 July 2024.",
+        "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=HB2091&ga=113",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on voice & likeness.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "VT",
+    "name": "Vermont",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "State AI governance",
+        "bill": "H.410 · Act 132 of 2022",
+        "topic": "Government use",
+        "description": "Establishes governance and oversight for AI in state government, including an AI director and advisory council. Focuses on public-sector evaluation and use.",
+        "timing": "Enacted in 2022; consult the act for implementation provisions.",
+        "url": "https://legislature.vermont.gov/bill/status/2022/H.410",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on government use.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "VA",
+    "name": "Virginia",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer Data Protection Act",
+        "bill": "Virginia Code §§ 59.1-575–584",
+        "topic": "Privacy & profiling",
+        "description": "Gives covered consumers an opt-out for specified profiling producing legal or similarly significant effects. Requires data-protection assessments for certain high-risk processing relevant to AI uses.",
+        "timing": "Core law effective 1 January 2023.",
+        "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related privacy & profiling rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "WA",
+    "name": "Washington",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Government facial recognition",
+        "bill": "RCW Chapter 43.386",
+        "topic": "Biometrics",
+        "description": "Regulates state and local government use of facial recognition, including accountability reports, testing, meaningful human review for specified decisions, and limits on surveillance uses.",
+        "timing": "Current statute; provisions and exceptions are set out by section.",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=43.386",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on biometrics.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "WV",
+    "name": "West Virginia",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "Fabricated intimate images",
+        "bill": "SB 198 · 2025 regular session",
+        "topic": "Synthetic media",
+        "description": "Extends criminal protections against nonconsensual disclosure of intimate images to qualifying fabricated images and addresses related synthetic depictions involving minors.",
+        "timing": "Effective 9 July 2025.",
+        "url": "https://www.wvlegislature.gov/Bill_Status/bills_history.cfm?INPUT=198&year=2025&sessiontype=RS&btype=bill",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on synthetic media.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "WI",
+    "name": "Wisconsin",
+    "kind": "ai",
+    "laws": [
+      {
+        "title": "AI political-advertising disclosures",
+        "bill": "2023 Wisconsin Act 123 · AB 664",
+        "topic": "Elections",
+        "description": "Requires a disclosure on covered political advertising containing synthetic audio or video generated using AI. Includes enforcement provisions and statutory exceptions.",
+        "timing": "Published 22 March 2024; effective the following day.",
+        "url": "https://docs.legis.wisconsin.gov/2023/related/acts/123",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Selected rules on elections.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "WY",
+    "name": "Wyoming",
+    "kind": "related",
+    "laws": [
+      {
+        "title": "Consumer Protection Act",
+        "bill": "Wyoming Statutes · Title 40, Chapter 12",
+        "topic": "Consumer protection",
+        "description": "Prohibits specified deceptive trade practices in consumer transactions. May apply to misleading AI-related representations; this is a technology-neutral consumer law rather than an AI-specific regime.",
+        "timing": "Existing statute; application depends on the facts.",
+        "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+        "status": "Enacted"
+      }
+    ],
+    "summary": "Related consumer protection rules that may affect AI uses. AI-specific legislation is not comprehensively catalogued here.",
+    "reviewed": "2026-09-18"
+  },
+  {
+    "code": "MD",
+    "name": "Maryland",
+    "kind": "related",
+    "summary": "Personal-data protections relevant to automated decisions and AI systems.",
+    "laws": [
+      {
+        "title": "Maryland Online Data Privacy Act",
+        "bill": "SB 541 · Chapter 455 of 2024",
+        "topic": "Privacy & profiling",
+        "description": "Regulates covered personal-data processing, including consumer rights, sensitive-data protections, and assessments for certain processing. Relevant to AI systems using covered personal information.",
+        "timing": "Effective 1 October 2025; does not apply to processing before 1 April 2026.",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0541?ys=2024RS",
+        "status": "Enacted"
+      }
+    ],
+    "reviewed": "2026-09-18"
+  }
+]
