@@ -246,15 +246,136 @@
         ],
         "status": "Enacted",
         "type": "Local law & rules",
-        "reviewed": "2026-09-22",
+        "reviewed": "2026-09-26",
         "local": true,
-        "appliesTo": "Employers and employment agencies using a covered AEDT for NYC hiring or promotion. The rules define when a tool substantially assists or replaces discretionary decisions.",
+        "appliesTo": "Employers and employment agencies using a covered AEDT for hiring or promotion in NYC. DCWP includes part-time NYC roles, remote roles associated with an NYC office, and use by NYC employment agencies.",
         "obligations": [
-          "Ensure an independent bias audit was conducted within one year before use, and make the required summary publicly available.",
-          "Provide required candidate or employee notices, including the use of the tool and the qualifications or characteristics assessed."
+          "Ensure an independent bias audit within the previous year and publish its required summary and the tool’s distribution date.",
+          "Give NYC-resident candidates and employees the required notice at least 10 business days before use, describing the assessed qualifications or characteristics and accommodation-request instructions."
         ],
         "enforcement": "NYC Department of Consumer and Worker Protection (DCWP) receives complaints and enforces the law.",
-        "limits": "An audit does not establish compliance with every discrimination law. The technical definition and geographic scope matter; not every recruitment tool qualifies."
+        "limits": "Not every recruitment tool qualifies. Screening for a specific application or promotion differs from outreach or scanning a resume bank. An audit does not establish compliance with discrimination law; geographic and technical definitions matter."
+      },
+      {
+        "title": "Customer biometric information in NYC",
+        "bill": "NYC Local Law 3 of 2021 · Administrative Code §§22-1201–1205",
+        "topic": "Biometrics",
+        "local": true,
+        "type": "Related local law",
+        "status": "Enacted",
+        "description": "Covered establishments must disclose customer biometric collection and handling. The law also restricts selling or otherwise profiting from biometric-information transactions.",
+        "timing": "Operative 9 July 2021; separate signage rules prescribe the notice format.",
+        "appliesTo": "NYC retail stores, food and drink establishments, and entertainment venues handling customer biometric identifiers, such as face geometry or voiceprints.",
+        "obligations": [
+          "Post the prescribed, conspicuous notice at customer entrances when collecting, retaining, converting, storing, or sharing covered information.",
+          "Do not sell, lease, trade, share for value, or otherwise profit from transactions in biometric identifier information."
+        ],
+        "enforcement": "Private civil claims: $500 for notice violations or negligent monetization violations; $5,000 for intentional or reckless monetization violations. Notice claims generally require a 30-day cure opportunity; monetization claims do not.",
+        "limits": "Government collection is excluded. Financial institutions and qualifying non-identification photos or video have notice exceptions. This is not a blanket facial-recognition ban.",
+        "sources": [
+          {
+            "label": "Council enactment & law text",
+            "url": "https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=070402C0-43F0-47AE-AA6E-DEF06CDF702A&ID=3704369"
+          },
+          {
+            "label": "DCWP signage rule · §8-01",
+            "url": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCrules/0-0-0-20714"
+          },
+          {
+            "label": "Official disclosure sign",
+            "url": "https://www.nyc.gov/assets/dca/downloads/pdf/businesses/Biometric-Identifier-Information-Disclosure-Sign.pdf"
+          }
+        ],
+        "reviewed": "2026-09-26",
+        "url": "https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=070402C0-43F0-47AE-AA6E-DEF06CDF702A&ID=3704369"
+      },
+      {
+        "title": "Tenant data privacy & smart access in NYC",
+        "bill": "NYC Local Law 63 of 2021 · Administrative Code §§26-3001–3007",
+        "topic": "Housing & privacy",
+        "local": true,
+        "type": "Related local law",
+        "status": "Enacted",
+        "description": "Residential smart-access systems, including biometric entry, face consent, data-minimization, retention, privacy-policy, and security requirements.",
+        "timing": "2021 enactment; the transition for existing smart-access buildings ended 1 January 2023.",
+        "appliesTo": "Owners of NYC class A multiple dwellings using smart-access systems and covered service providers. HPD identifies biometric entry, key fobs, apps, and other digital access systems.",
+        "obligations": [
+          "Obtain express user consent for reference-data collection and collect only permitted, necessary data.",
+          "Provide tenants with a written retention and privacy policy; implement required security safeguards.",
+          "Observe 90-day authentication-data destruction or anonymization rules and the separate reference-data deadlines, subject to exceptions.",
+          "Do not use access data to harass or evict tenants, or require smart access to enter their own dwelling unit."
+        ],
+        "enforcement": "Section 26-3006 allows occupant claims for unlawful data sales, with compensatory/potential punitive damages or elected damages of $200–$1,000 per sale, plus fees and costs.",
+        "limits": "This is an access-data law, not a general ban on AI in housing. The specified private action concerns unlawful sales; statutory retention and disclosure exceptions apply.",
+        "sources": [
+          {
+            "label": "HPD tenant data privacy overview",
+            "url": "https://www.nyc.gov/site/hpd/services-and-information/tenant-data-privacy-law.page"
+          },
+          {
+            "label": "Enacted Local Law 63 · full text",
+            "url": "https://legistar.council.nyc.gov/View.ashx?GUID=290CD5EC-2EB9-4A13-A3CA-1FED0278F072&ID=9619780&M=F"
+          }
+        ],
+        "reviewed": "2026-09-26",
+        "url": "https://www.nyc.gov/site/hpd/services-and-information/tenant-data-privacy-law.page"
+      },
+      {
+        "title": "NYC Human Rights Law — discrimination safeguards",
+        "bill": "NYC Administrative Code §8-107 · §8-502",
+        "topic": "Civil rights",
+        "local": true,
+        "type": "Related local law",
+        "status": "Enacted",
+        "description": "A separate city discrimination framework relevant to automated decisions in employment, housing, and public accommodations. Completing a hiring-tool audit does not resolve all discrimination duties.",
+        "timing": "Existing law; separate from the 2023 start of Local Law 144 enforcement.",
+        "appliesTo": "Covered employers, employment agencies, housing providers, and public accommodations within the City Human Rights Law’s jurisdiction.",
+        "obligations": [
+          "Avoid prohibited discrimination, including covered disparate-impact practices under §8-107(17).",
+          "Meet applicable reasonable-accommodation duties. Protected characteristics and coverage extend beyond the hiring audit’s minimum categories."
+        ],
+        "enforcement": "NYC Commission on Human Rights enforcement and civil actions under §8-502, subject to procedural and election-of-remedies rules.",
+        "limits": "A general civil-rights law, not an AI-specific audit mandate. Coverage, protected grounds, defenses, and exceptions depend on the activity. AI relevance is an application of these general duties.",
+        "sources": [
+          {
+            "label": "City Human Rights Law · Chapter 1",
+            "url": "https://www.nyc.gov/site/cchr/law/chapter-1.page"
+          },
+          {
+            "label": "Civil remedies · §8-502",
+            "url": "https://www.nyc.gov/site/cchr/law/chapter-5.page"
+          }
+        ],
+        "reviewed": "2026-09-26",
+        "url": "https://www.nyc.gov/site/cchr/law/chapter-1.page"
+      },
+      {
+        "title": "State Human Rights Law — discrimination safeguards",
+        "bill": "Executive Law §296",
+        "topic": "Civil rights",
+        "type": "Related statute",
+        "status": "Enacted",
+        "description": "Statewide discrimination protections remain relevant to AI-assisted hiring, housing, and other covered decisions, including decisions affecting people in NYC.",
+        "timing": "Existing statewide law; a separate framework from NYC Local Law 144.",
+        "appliesTo": "Covered employers, employment agencies, housing providers, and other regulated actors under the State Human Rights Law.",
+        "obligations": [
+          "Avoid prohibited discrimination and comply with applicable accommodation duties.",
+          "Assess discriminatory effects in employment under §296(5-b), including job-relatedness, business necessity, and less discriminatory alternatives."
+        ],
+        "enforcement": "The New York State Division of Human Rights administers the law. Follow its guidance on complaints and available remedies.",
+        "limits": "This is a general civil-rights law, not a statewide version of NYC’s AEDT audit rule. AI relevance is an application of technology-neutral duties; coverage and exceptions require separate analysis.",
+        "sources": [
+          {
+            "label": "Unlawful discriminatory practices · §296",
+            "url": "https://www.nysenate.gov/legislation/laws/EXC/296"
+          },
+          {
+            "label": "NYS Division of Human Rights",
+            "url": "https://dhr.ny.gov/new-york-state-human-rights-law"
+          }
+        ],
+        "reviewed": "2026-09-26",
+        "url": "https://www.nysenate.gov/legislation/laws/EXC/296"
       },
       {
         "title": "Synthetic performers in advertising",
@@ -522,7 +643,7 @@
         "limits": "This is a general security law, not an AI-specific consent or impact-assessment law. Compliant regulated entities and qualifying small businesses have tailored provisions."
       }
     ],
-    "summary": "A layered landscape: frontier models, chatbots, hiring, insurance, synthetic media, pricing, and public-sector AI. NYC has its own hiring rule.",
+    "summary": "State law applies across New York, including NYC. The city adds rules for hiring tools, customer biometrics, and smart building access, alongside its own Human Rights Law.",
     "reviewed": "2026-09-22"
   },
   {

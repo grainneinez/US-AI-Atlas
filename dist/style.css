@@ -7,3 +7,24 @@
 @media(max-width:820px){.research{margin-top:35px}.research-heading{flex-direction:column;gap:16px}.research-actions{flex-direction:row}.feature-strip{padding:14px;font-size:13px}.feature-strip>span:last-child{font-size:12px}.filters{grid-template-columns:1fr 1fr}.search-field{grid-column:1/-1}.overview-stats{max-width:400px}.detail-pane{max-height:none}.law-preview{display:none}.detail-pane .law-count{display:none}.overview-notice{margin-bottom:0}.state-summary{margin-bottom:18px}.law-grid{gap:14px}.law-grid .law-card{padding:21px}.law-grid .law-card h3{font-size:18px}}
 @media(max-width:640px){.law-grid{grid-template-columns:1fr}.feature-strip{align-items:flex-start;gap:10px}.feature-strip>span:last-child{display:none}.feature-label{margin-top:2px}.research-heading h2{font-size:24px}.filters{padding:16px;gap:14px 10px}.results-toolbar{gap:9px;padding-top:17px}.jurisdiction-filters{width:100%;flex-wrap:wrap;gap:2px}.jurisdiction-filters button{padding:8px 11px;font-size:12px}#result-count{margin-left:0}.status-key{gap:7px 16px;padding-top:1px}.law-grid .law-card{padding:22px}.empty-results{padding:30px 20px}.research{scroll-margin-top:15px}}
 @media(prefers-reduced-motion:reduce){.provisions summary span{transition:none}}
+
+.ny-guide{border:1px solid #c5d8ed;border-radius:10px;background:#fff;margin:0 0 26px;overflow:hidden}
+.ny-guide-heading{padding:24px 26px;background:#eef5fd}
+.ny-guide-heading h3{font:700 24px/1.35 Manrope,sans-serif;margin:10px 0;letter-spacing:-.5px}
+.ny-guide-heading p{font-size:16px;line-height:1.65;max-width:940px;margin:0;color:#425c7b}
+.ny-comparison{overflow-x:auto;padding:0 26px}
+.ny-comparison:focus-visible{outline:3px solid #3381d7;outline-offset:-3px}
+.ny-comparison table{width:100%;border-collapse:collapse;text-align:left;table-layout:fixed}
+.ny-comparison caption{text-align:left;padding:20px 0 12px;font-size:14px;color:var(--muted)}
+.ny-comparison th,.ny-comparison td{padding:17px 18px 17px 0;vertical-align:top;border-bottom:1px solid var(--line);font-size:15px;line-height:1.65;overflow-wrap:anywhere}
+.ny-comparison thead th{font-size:14px;color:#264b77}
+.ny-comparison th:first-child{width:21%}
+.ny-comparison th:last-child,.ny-comparison td:last-child{padding-right:0}
+.ny-guide a{color:#215bab;text-underline-offset:3px}
+.ny-scope{margin:6px 26px 0}
+.ny-scope summary{cursor:pointer;font-size:16px;font-weight:650;line-height:1.5;padding:20px 0;color:#264b77}
+.ny-scope>div{padding:0 0 18px;max-width:1000px;font-size:15px;line-height:1.7;color:#425c7b}
+.ny-scope p{margin:0 0 12px}
+.ny-guide-date{font-size:13px;line-height:1.6;color:var(--muted);padding:15px 26px;margin:0;border-top:1px solid var(--line)}
+.scope-note{border-left:3px solid #779cc9;padding:8px 14px;margin:0 0 20px;color:#425c7b;font-size:14px;line-height:1.65;background:#edf4fc}
+@media(max-width:640px){.ny-guide-heading{padding:20px}.ny-guide-heading h3{font-size:21px}.ny-comparison{padding:0 20px}.ny-comparison table{min-width:590px}.ny-scope{margin:6px 20px 0}.ny-guide-date{padding:15px 20px}.ny-guide .section-label{font-size:12px}}

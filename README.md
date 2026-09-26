@@ -1,6 +1,6 @@
 # US AI Atlas
 
-An interactive US map and searchable regulation library covering all 50 states, with 67 selected measures. New York has 13 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
+An interactive US map and searchable regulation library covering all 50 states, with 71 selected measures. New York has 17 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
 
 ## Run locally
 
@@ -29,6 +29,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 ## Interactions
 
 - Accurate SVG state outlines, keyboard selection, and a native state selector.
+- New York State vs NYC comparison, a hiring-scope explainer, and jurisdiction filters that make overlapping obligations clear.
 - State deep links, such as `?state=NY#regulations`. New York opens by default.
 - Search and combined topic, status, and statewide/local filters within a state.
 - Expandable scope, duties, enforcement, and limitation sections where researched.
@@ -37,7 +38,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Content and research dates
 
-The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. Per-entry dates override the state's original date.
+The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. Per-entry dates override the state's original date.
 
 This is a curated starting point, not a complete legal inventory or legal advice. Depth varies by state. The collection does not automatically refresh or comprehensively track litigation. Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties; guidance is separate from enacted legislation. Local measures are labeled explicitly. Proposals are not included.
 
@@ -63,7 +64,7 @@ Every law includes `title`, `bill`, `topic`, `description`, `timing`, `status`, 
 }
 ```
 
-Set `local: true` for the current NYC entry. If adding another locality, extend the jurisdiction labels in `dist/app.js` first. Existing `url2`, `source`, and `source2` fields remain supported. Keep source-check dates truthful; do not update every state's date when reviewing only one entry. Validate amendments and operative dates against the current primary text before changing a legal status.
+Set `local: true` for NYC entries. If adding another locality, extend the jurisdiction labels in `dist/app.js` first. Existing `url2`, `source`, and `source2` fields remain supported. Keep source-check dates truthful; do not update every state's date when reviewing only one entry. Validate amendments and operative dates against the current primary text before changing a legal status.
 
 ## Files and geography
 
