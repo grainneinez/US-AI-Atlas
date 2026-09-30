@@ -1,6 +1,6 @@
 # US AI Atlas
 
-An interactive US map and searchable regulation library covering all 50 states, with 71 selected measures. New York has 17 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
+An interactive US map and searchable regulation library covering all 50 states, with 77 selected measures. New York has 23 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
 
 ## Run locally
 
@@ -28,6 +28,8 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Interactions
 
+- New York startup launch guide: 12 practical topics, product-feature filters, current versus upcoming duties, official sources, and regulation cross-links.
+
 - Court decisions with affected-jurisdiction, court-location, stage, and text filters; optional federal relevance; dated histories and shareable case links.
 - Cross-links between related cases and the affected statute cards.
 - Accurate SVG state outlines, keyboard selection, and a native state selector.
@@ -40,7 +42,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Content and research dates
 
-The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. Per-entry dates override the state's original date.
+The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. The startup guide and six added state measures were researched on **30 September 2026**, with targeted refreshes to RAISE scope, companion notices, and SHIELD. Per-entry dates override the state's original date.
 
 This is a curated starting point, not a complete legal inventory or legal advice. Depth varies by state. The court collection was added on **30 September 2026**. Collections do not automatically refresh; court coverage is selected, not a comprehensive litigation tracker. Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties; guidance is separate from enacted legislation. Local measures are labeled explicitly. Proposals are not included.
 
@@ -74,7 +76,7 @@ Set `local: true` for NYC entries. If adding another locality, extend the jurisd
 
 ## Verification
 
-All 50 map selections and source rendering, keyboard and selector navigation, deep links, combined filters, empty/reset states, CSV export, and structured-tool input handling are exercised in a DOM harness. GitHub Pages workflow configuration follows GitHub's documented static-site actions. A compatible full-browser preview is unavailable in the current plain-static execution environment; responsive layout is implemented but has not received a fresh browser rendering check. The GitHub workflow must run in the destination account to verify its hosting configuration.
+All 50 map selections and source rendering, keyboard and selector navigation, deep links, combined filters, empty/reset states, CSV export, and structured-tool input handling are exercised in a DOM harness. Startup-guide checks also cover feature combinations, preserved starting topics, regulation cross-links, both data-load orders, and independent loading failure/retry. GitHub Pages workflow configuration follows GitHub's documented static-site actions. A compatible full-browser preview is unavailable in the current plain-static execution environment; responsive layout is implemented but has not received a fresh browser rendering check. The GitHub workflow must run in the destination account to verify its hosting configuration.
 
 ## Add or update a court decision
 
@@ -96,3 +98,11 @@ Each record uses:
 Update the record and timeline when a later decision changes the result; keep the stable ID. Update `decisionDate` only for a new substantive ruling, not merely a source recheck. Append linked records for distinct proceedings, as with the two Anthropic procurement cases. A federal district court’s location does not make its holding state law or nationally binding precedent.
 
 The initial entries are the D.C. Circuit’s September 25 Anthropic merits decision, the Northern District of California’s August 27 Anthropic merits ruling, and the Central District of California’s March 4 denial of preliminary relief in X.AI v. Bonta. Their later-review limitations are stated on the cards. No inference of absence of relevant litigation is made for states with no catalogued state-specific decision.
+
+## New York startup guide
+
+`dist/ny-startups.json` stores 12 launch topics and three upcoming implementation dates. `ny-startups.js` filters by product features while retaining the two starting topics (claims and security). No selections means all topics; multiple selections combine with OR. Selections are temporary page state and do not determine applicability. The guide distinguishes duties, recommended implementation steps, and evidence a founder may choose to keep.
+
+Use `?state=NY#ny-startup-guide` for a direct link. Each `related.reference` and deadline reference must uniquely match a New York law's `bill`; append new law records to preserve existing law-card links. Update guide and law records together when a source changes. Do not infer that every chatbot is a companion, every vendor is DFS-regulated, every startup trains a frontier model, or every recommendation is an addictive feed.
+
+New records cover business practices, consumer subscriptions, child data, Safe by Design, SAFE for Kids, and living-person likeness consent. SAFE for Kids and Safe by Design have different scope and effective dates. Current-law summaries and guidance are manually checked, not automatically updated. No startup inputs leave the browser.

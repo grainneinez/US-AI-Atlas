@@ -167,6 +167,10 @@
             "url": "https://www.nysenate.gov/legislation/bills/2025/S8828"
           },
           {
+            "label": "Developer, model & revenue definitions · §1420",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1420"
+          },
+          {
             "label": "Transparency requirements · §1421",
             "url": "https://www.nysenate.gov/legislation/laws/GBS/1421"
           },
@@ -181,22 +185,22 @@
         ],
         "status": "Upcoming",
         "type": "State statute",
-        "reviewed": "2026-09-22",
-        "appliesTo": "Developers of foundation models trained with more than 10^26 integer or floating-point operations, developed, deployed, or operating at least partly in New York. Large developers exceed $500 million in annual revenue with affiliates.",
+        "reviewed": "2026-09-30",
+        "appliesTo": "Persons training or initiating training of covered foundation models using more than 10^26 operations, including relevant subsequent modifications, with the act’s New York nexus. Large-developer status uses annual gross revenue above $500 million, including affiliates, in the preceding calendar year.",
         "obligations": [
           "Publish a transparency report when deploying a new or substantially modified frontier model. Large developers must also publish and follow a safety framework, reviewing it at least annually.",
           "Report critical safety incidents within 72 hours; imminent risks of death or serious physical injury require disclosure to an appropriate authority within 24 hours.",
           "Large developers also face internal-use risk reporting and DFS disclosure-statement requirements."
         ],
         "enforcement": "The attorney general can seek up to $1 million for a first covered large-developer violation and $3 million for subsequent violations. The act creates no private right of action.",
-        "limits": "Duties differ by developer size. Academic AI research by accredited New York colleges and universities, and specified Empire AI entities, are excluded. Consult the full definitions and DFS implementation rules."
+        "limits": "Using a third-party model API does not automatically make an app developer a frontier developer. Duties differ by tier; smaller frontier developers can still be covered. Academic research and specified Empire AI exclusions apply. Consult the definitions and DFS implementation rules."
       },
       {
         "title": "AI companion safeguards & identity notices",
         "bill": "General Business Law §§1700–1704",
         "topic": "Chatbots",
         "description": "Covered AI companions must have self-harm response protocols and tell users they are not talking to a human.",
-        "timing": "2025 enactment; current companion-model provisions reviewed 22 September 2026.",
+        "timing": "Current companion safeguards in force; scope and notice requirements checked 30 September 2026.",
         "url": "https://www.nysenate.gov/legislation/laws/GBS/1700",
         "sources": [
           {
@@ -218,7 +222,7 @@
         ],
         "status": "Enacted",
         "type": "State statute",
-        "reviewed": "2026-09-22",
+        "reviewed": "2026-09-30",
         "appliesTo": "Operators providing covered AI companions to users in New York; the statutory definition targets systems designed to sustain human-like relationships.",
         "obligations": [
           "Make reasonable efforts to detect and address suicidal ideation or self-harm, including referrals to crisis services.",
@@ -620,7 +624,7 @@
         "bill": "General Business Law §899-bb",
         "topic": "Privacy & security",
         "description": "General data-security duties are relevant when AI systems handle covered private information about New York residents.",
-        "timing": "Existing security requirements; current codified provisions reviewed 22 September 2026.",
+        "timing": "Existing security and breach duties; current codified provisions checked 30 September 2026.",
         "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB",
         "sources": [
           {
@@ -634,16 +638,192 @@
         ],
         "status": "Enacted",
         "type": "Related statute",
-        "reviewed": "2026-09-22",
+        "reviewed": "2026-09-30",
         "appliesTo": "Persons or businesses owning or licensing computerized data containing a New York resident’s statutory private information.",
         "obligations": [
-          "Maintain reasonable administrative, technical, and physical safeguards, including service-provider safeguards and appropriate data disposal."
+          "Maintain reasonable administrative, technical, and physical safeguards, including service-provider safeguards and appropriate data disposal.",
+          "Related §899-aa generally requires affected-resident breach notice within 30 days of discovery, subject to statutory exceptions; regulator-notice duties also apply."
         ],
         "enforcement": "The attorney general can seek injunctions and civil penalties. Section 899-bb creates no private right of action.",
-        "limits": "This is a general security law, not an AI-specific consent or impact-assessment law. Compliant regulated entities and qualifying small businesses have tailored provisions."
+        "limits": "Qualifying small businesses must use safeguards appropriate to their size, complexity, activities, and information sensitivity; they are not exempt. This is a general security law, not an AI-specific consent mandate. Regulated entities have tailored provisions."
+      },
+      {
+        "title": "Fair business practices & AI product claims",
+        "bill": "General Business Law §349 · FAIR Business Practices Act",
+        "topic": "Consumer protection",
+        "status": "Enacted",
+        "description": "New York’s current business-practices law prohibits unfair, deceptive, and abusive conduct. AI marketing and sales promises should be assessed under this general framework.",
+        "timing": "Current amended §349 checked 30 September 2026, including the 2026 chapter amendment.",
+        "appliesTo": "Covered commercial conduct with New York connections; the statute expressly addresses certain out-of-state businesses and New York businesses serving people elsewhere.",
+        "obligations": [
+          "Avoid misleading AI claims and material omissions. Assess unfairness and abuse under the statutory standards."
+        ],
+        "enforcement": "Attorney general enforcement can include injunctive relief and restitution. Section 349(h) provides a private remedy for deceptive acts, with its own requirements.",
+        "limits": "This is not an AI-specific evaluation mandate. Keeping evidence for performance and safety claims is a practical application of the general law.",
+        "sources": [
+          {
+            "label": "Current statute · §349",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/349"
+          },
+          {
+            "label": "2026 chapter amendment · S8811",
+            "url": "https://www.nysenate.gov/legislation/bills/2025/S8811"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "type": "Related statute",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/349"
+      },
+      {
+        "title": "Consumer subscriptions, trials & cancellation",
+        "bill": "General Business Law §527-a · Article 29-BB",
+        "topic": "Consumer protection",
+        "status": "Enacted",
+        "description": "Automatic-renewal and continuous-service offers require clear terms, affirmative consent, acknowledgment, and accessible cancellation.",
+        "timing": "Current requirements in force; codified text checked 30 September 2026.",
+        "appliesTo": "Businesses making covered offers to New York consumers buying for personal, family, or household purposes.",
+        "obligations": [
+          "Disclose price, billing frequency, renewal, and cancellation terms before consent; provide a retainable acknowledgment.",
+          "Offer simple cancellation through the same medium as signup, without obstruction.",
+          "Apply the required notices for qualifying trials, renewals, and material changes; price increases have additional conditions."
+        ],
+        "limits": "Consumer definitions, offer duration, sector exceptions, and transaction details matter. Do not apply this summary automatically to every B2B contract.",
+        "sources": [
+          {
+            "label": "Offer and cancellation duties · §527-a",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A"
+          },
+          {
+            "label": "Definitions · §527",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/527"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "type": "Related statute",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A"
+      },
+      {
+        "title": "New York Child Data Protection Act",
+        "bill": "GBL Article 39-FF · §§899-ee–899-mm",
+        "topic": "Children & teens",
+        "status": "Enacted",
+        "type": "State statute",
+        "description": "Restricts processing and sale of covered minors’ personal data, with age-specific consent and necessary-processing rules.",
+        "timing": "Effective 20 June 2025. This law is already operative; it is separate from the upcoming SAFE for Kids Act.",
+        "appliesTo": "Covered online operators with actual knowledge a New York user is under 18, or services primarily directed to minors; processor obligations also matter.",
+        "obligations": [
+          "For ages 13–17, obtain informed consent for processing outside statutory necessary purposes. Under-13 processing follows the act’s COPPA standard.",
+          "Separate consent from the transaction and allow withdrawal; do not sell covered minors’ personal data.",
+          "Assess processor contracts and each necessary-processing exception."
+        ],
+        "limits": "An ordinary acceptance of terms is not equivalent to the required informed consent. Advertising and research/development do not fall within the internal-operations exception simply because the business finds them useful.",
+        "sources": [
+          {
+            "label": "Processing duties · §899-ff",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+          },
+          {
+            "label": "Attorney general implementation guidance",
+            "url": "https://ag.ny.gov/child-data-protection-act-guidance"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+      },
+      {
+        "title": "Safe by Design Act — platform safeguards for minors",
+        "bill": "GBL Article 45-B · §§1539–1547",
+        "topic": "Children & teens",
+        "status": "Upcoming",
+        "type": "State statute",
+        "description": "Adds age assurance, protective defaults, and parental controls for covered platforms, including integrated AI companions.",
+        "timing": "Effective 1 January 2027.",
+        "appliesTo": "Platforms used by covered New York minors with public/semi-public profiles, private messaging, and specified social-media or gaming/transaction features; see the full definition.",
+        "obligations": [
+          "Conduct age assurance before specified features; a self-declared age alone does not satisfy the fallback standard.",
+          "Apply required minor privacy defaults and parental controls. Disable integrated AI companions for minors by default, with a separate parental override.",
+          "Assess additional connection, spending-control, and transaction-history duties where relevant."
+        ],
+        "enforcement": "Attorney general enforcement under §1547 includes injunctive and monetary remedies.",
+        "limits": "Not every site, game, or standalone chatbot is a covered platform. Fiction-only game characters can fall outside the companion definition. This act is distinct from SAFE for Kids.",
+        "sources": [
+          {
+            "label": "Platform and companion definitions · §1539",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1539"
+          },
+          {
+            "label": "Age assurance and safeguards · §1540",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1540"
+          },
+          {
+            "label": "Enforcement · §1547",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1547"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/1539"
+      },
+      {
+        "title": "SAFE for Kids Act — feeds & overnight notifications",
+        "bill": "GBL Article 45 · §§1500–1508",
+        "topic": "Children & teens",
+        "status": "Upcoming",
+        "type": "State statute & implementing rules",
+        "description": "Restricts covered addictive social feeds and overnight feed notifications for minors without the required parental consent.",
+        "timing": "Effective 25 January 2027; final implementing rules are published at 13 NYCRR Part 700.",
+        "appliesTo": "Covered operators of addictive social media platforms serving covered users in New York. The law and rules define the feed, platform, and age-assurance tests.",
+        "obligations": [
+          "Before supplying a covered addictive feed, determine the user is not a covered minor or obtain required verifiable parental consent.",
+          "Do not send covered feed notifications to minors between midnight and 6 a.m. Eastern without required parental consent.",
+          "Follow age-assurance, consent, and data-protection implementation rules."
+        ],
+        "limits": "Not a restriction on every recommendation engine. User-requested content and other statutory exclusions matter; distinguish this act from the Child Data Protection Act and Safe by Design.",
+        "sources": [
+          {
+            "label": "Feed and platform definitions · §1500",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1500"
+          },
+          {
+            "label": "Feed restrictions · §1501",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1501"
+          },
+          {
+            "label": "Overnight notifications and effective date · §1502",
+            "url": "https://www.nysenate.gov/legislation/laws/GBS/1502"
+          },
+          {
+            "label": "Attorney general final implementing rules",
+            "url": "https://ag.ny.gov/safe-for-kids-act-final-rule"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/1500"
+      },
+      {
+        "title": "Living-person likeness & voice consent",
+        "bill": "Civil Rights Law §§50–51",
+        "topic": "Digital replicas",
+        "status": "Enacted",
+        "description": "Separate from AI disclosure rules, New York protects a living person’s identity against specified unauthorized advertising or trade uses.",
+        "timing": "Existing statutory protection; current §51 checked 30 September 2026.",
+        "appliesTo": "Covered uses in New York of a person’s name, portrait, picture, likeness, or voice for advertising or trade.",
+        "obligations": [
+          "Obtain the required prior written consent for covered uses; assess exceptions and the permitted scope of each release."
+        ],
+        "enforcement": "Section 51 authorizes injunctions and damages, including potential exemplary damages for knowing violations.",
+        "limits": "This is not a ban on every reference or expressive use. A synthetic-performer disclosure does not replace permission to use a real person’s identity.",
+        "sources": [
+          {
+            "label": "Consent and civil remedies · §51",
+            "url": "https://www.nysenate.gov/legislation/laws/CVR/51"
+          }
+        ],
+        "reviewed": "2026-09-30",
+        "type": "Related statute",
+        "url": "https://www.nysenate.gov/legislation/laws/CVR/51"
       }
     ],
-    "summary": "State law applies across New York, including NYC. The city adds rules for hiring tools, customer biometrics, and smart building access, alongside its own Human Rights Law.",
+    "summary": "Launching in New York? Explore a practical startup guide to product claims, data, subscriptions, hiring, and minors, plus the separate NYC layer and upcoming 2027 duties.",
     "reviewed": "2026-09-22"
   },
   {
