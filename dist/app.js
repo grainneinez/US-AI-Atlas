@@ -17,7 +17,7 @@ function choose(code,scroll=false){
  const url=new URL(location.href);url.searchParams.set('state',code);history.replaceState(null,'',url);
  document.title=`${s.name} AI laws — US AI Atlas`;
  const local=s.laws.filter(l=>l.local).length;
- detail.innerHTML=`<div class="state-topline"><span class="state-code">${esc(s.code)}</span><span>${s.code==='NY'?'EXPANDED COVERAGE':'STATE OVERVIEW'}</span></div><h2 class="state-name">${esc(s.name)}</h2><p class="state-summary">${esc(s.summary)}</p><div class="overview-stats"><div><strong>${s.laws.length}</strong><span>selected measures</span></div><div><strong>${new Set(s.laws.map(l=>l.topic)).size}</strong><span>topics covered</span></div></div><a class="primary-link" href="#regulations">Explore ${s.laws.length===1?'the measure':`all ${s.laws.length} measures`} <span aria-hidden="true">↓</span></a><div class="overview-notice">${local?'Statewide and NYC measures are labeled separately.':'Selected laws and related rules; coverage varies by state.'}</div><div class="law-count"><span>START EXPLORING</span></div>${s.laws.slice(0,3).map((l,i)=>`<a class="law-preview" href="#law-${s.code}-${i}"><span class="preview-topic">${esc(l.topic)} · ${esc(l.status)}</span><strong>${esc(l.title)}</strong><span class="preview-arrow" aria-hidden="true">↗</span></a>`).join('')}`;
+ detail.innerHTML=`<div class="state-topline"><span class="state-code">${esc(s.code)}</span><span>${s.code==='NY'?'EXPANDED COVERAGE':'STATE OVERVIEW'}</span></div><h2 class="state-name">${esc(s.name)}</h2><p class="state-summary">${esc(s.summary)}</p><div class="overview-stats"><div><strong>${s.laws.length}</strong><span>selected measures</span></div><div><strong>${new Set(s.laws.map(l=>l.topic)).size}</strong><span>topics covered</span></div></div><a class="primary-link" href="#regulations">Explore ${s.laws.length===1?'the measure':`all ${s.laws.length} measures`} <span aria-hidden="true">↓</span></a><a class="state-case-link" href="#court-cases" data-state-cases="${esc(s.code)}">Court decisions relevant to ${esc(s.name)}</a><div class="overview-notice">${local?'Statewide and NYC measures are labeled separately.':'Selected laws and related rules; coverage varies by state.'}</div><div class="law-count"><span>START EXPLORING</span></div>${s.laws.slice(0,3).map((l,i)=>`<a class="law-preview" href="#law-${s.code}-${i}"><span class="preview-topic">${esc(l.topic)} · ${esc(l.status)}</span><strong>${esc(l.title)}</strong><span class="preview-arrow" aria-hidden="true">↗</span></a>`).join('')}`;
  document.querySelector('#research-title').textContent=`${s.name} / regulation library`;
  document.querySelector('#research-subtitle').textContent=s.code==='NY'?`${s.laws.length-local} statewide measures + ${local} NYC measures. Compare the two layers, then open a card for scope, duties, and enforcement.`:'Browse the selected measures and follow the sources for their full scope and requirements.';
  document.querySelector('#ny-guide').hidden=s.code!=='NY';
@@ -32,6 +32,7 @@ function choose(code,scroll=false){
  const pane=document.querySelector('.detail-pane');if(innerWidth>820)pane.scrollTop=0;
  if(scroll&&innerWidth<=820)document.querySelector('.select-wrap').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
  tip.hidden=true;
+ document.dispatchEvent(new CustomEvent('atlas:statechange',{detail:{code:s.code,name:s.name}}));
 }
 function filteredLaws(){
  const s=states.find(s=>s.code===selected);if(!s)return [];
@@ -53,6 +54,7 @@ function renderLaws(){
  document.querySelector('#reset-filters').hidden=jurisdiction==='all'&&!document.querySelector('#law-search').value&&document.querySelector('#topic-filter').value==='all'&&document.querySelector('#status-filter').value==='all';
  results.innerHTML=matches.length?matches.map(({law:l,index})=>`<article class="law-card" id="law-${s.code}-${index}"><div class="law-meta">${metadata(l)}</div><h3>${esc(l.title)}</h3><div class="bill">${esc(l.bill)}</div><p>${esc(l.description)}</p><div class="timing"><span aria-hidden="true">◷</span><span>${esc(l.timing)}</span></div>${l.appliesTo||l.obligations||l.enforcement?`<details class="provisions"><summary>Scope & key provisions <span aria-hidden="true">+</span></summary><div class="provision-body">${l.appliesTo?`<h4>Who it covers</h4><p>${esc(l.appliesTo)}</p>`:''}${l.obligations?`<h4>Key duties</h4><ul>${l.obligations.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>`:''}${l.enforcement?`<h4>Enforcement</h4><p>${esc(l.enforcement)}</p>`:''}${l.limits?`<h4>Scope & limitations</h4><p>${esc(l.limits)}</p>`:''}</div></details>`:''}<div class="card-sources"><span class="source-caption">${esc(l.type||'Legal source')} · ${jurisdictionName(l)}</span>${sourceList(l).map(a=>`<a class="source-link" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.label)} <span aria-hidden="true">↗</span></a>`).join('')}<span class="review-date">Sources checked ${formatDate(l.reviewed||s.reviewed)}</span></div></article>`).join(''):'<div class="empty-results"><strong>No measures match these filters.</strong><p>Try a broader term or reset the filters. This collection is not exhaustive.</p><button class="quiet-button" type="button" id="empty-reset">Reset filters</button></div>';
  document.querySelector('#empty-reset')?.addEventListener('click',resetFilters);
+ document.dispatchEvent(new CustomEvent('atlas:lawsrender',{detail:{code:s.code}}));
 }
 detail.addEventListener('click',e=>{if(e.target.closest('a[href^="#law-"]'))resetFilters()});
 function resetFilters(){
@@ -87,6 +89,13 @@ async function init(){try{
  small.forEach((code,i)=>{const s=states.find(x=>x.code===code);const g=geography.find(x=>x.name===s.name);const x=937,y=130+i*29;const line=el('path',{d:`M${g.center[0]},${g.center[1]}L${x-8},${y+12}`,class:'callout-line','aria-hidden':'true'});calloutGroup.append(line);const group=el('g',{class:'callout','data-code':code,role:'button',tabindex:'-1','aria-label':s.name,'aria-pressed':'false'});group.append(el('rect',{x,y,width:36,height:24}));const t=el('text',{x:x+18,y:y+16,'text-anchor':'middle'});t.textContent=code;group.append(t);calloutGroup.append(group);bind(group,s)});
  const initial=new URL(location.href).searchParams.get('state');choose(states.some(s=>s.code===initial)?initial:'NY');
  }catch(e){console.error(e);document.querySelector('#map-error').hidden=false;detail.innerHTML='<p class="error">The law collection could not load. Please reload to try again.</p>';select.innerHTML='<option>Unable to load states</option>';select.disabled=true;results.innerHTML='<p class="error">The regulation library could not load. Please reload the page.</p>';document.querySelector('#export-csv').disabled=true}}
+document.addEventListener('atlas:showlaw',e=>{
+ const s=states.find(s=>s.code===e.detail.code);if(!s)return;
+ const index=s.laws.findIndex(l=>l.bill.includes(e.detail.reference));choose(s.code);resetFilters();
+ const id=index>=0?`law-${s.code}-${index}`:'regulations';
+ const url=new URL(location.href);url.searchParams.delete('case');url.hash=id;history.replaceState(null,'',url);
+ document.getElementById(id)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+});
 init();
 
 function registerAtlasTool(){

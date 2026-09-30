@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-09-30",
+  "cases": [
+    {
+      "id": "anthropic-dc-procurement",
+      "name": "Anthropic PBC v. U.S. Department of War",
+      "headline": "Defense supply-chain exclusion upheld",
+      "court": "U.S. Court of Appeals for the D.C. Circuit",
+      "courtLocation": "DC",
+      "docket": "26-1049, consolidated with 26-1162",
+      "decisionDate": "2026-09-25",
+      "stage": "Merits decision",
+      "outcome": "Restriction upheld",
+      "scope": "federal",
+      "affectedJurisdictions": [],
+      "reach": "Federal procurement · multistate relevance",
+      "topic": "Government procurement",
+      "law": "41 U.S.C. § 4713; First Amendment",
+      "holding": "A divided panel denied Anthropic’s petitions challenging its exclusion from the Department’s supply chain under § 4713. The majority rejected the First Amendment retaliation claim, attributing the exclusion to disputed contract terms rather than protected advocacy.",
+      "effect": "Leaves the challenged exclusion in place for Department procurement and contractors’ work for the Department. It does not impose a blanket ban on contractors’ unrelated commercial dealings with Anthropic.",
+      "limits": "Federal appellate decision, not a D.C. local law or a ruling on California’s statutes. This is separate from the California § 3252 case; it is not an appeal reversing that judgment. Multistate relevance does not mean every state’s law changed.",
+      "reviewStatus": "September 25 merits opinion reviewed. Subsequent rehearing, mandate, or Supreme Court developments have not been verified.",
+      "reviewed": "2026-09-30",
+      "timeline": [
+        {"date": "2026-04-08", "text": "Stay denied; merits review expedited."},
+        {"date": "2026-09-25", "text": "Petitions for review denied, 2–1."}
+      ],
+      "relatedCases": ["anthropic-california-restrictions"],
+      "relatedLaws": [],
+      "sources": [
+        {"label": "Court opinion · September 25 (PDF)", "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/09/26-1049-2194984.pdf"},
+        {"label": "Opinion text · Justia mirror", "url": "https://law.justia.com/cases/federal/appellate-courts/cadc/26-1049/26-1049-2026-09-25.html"}
+      ]
+    },
+    {
+      "id": "anthropic-california-restrictions",
+      "name": "Anthropic PBC v. U.S. Department of War et al.",
+      "headline": "Broader Anthropic restrictions held unlawful",
+      "court": "U.S. District Court, Northern District of California",
+      "courtLocation": "CA",
+      "docket": "3:26-cv-01996-RFL · Document 250",
+      "decisionDate": "2026-08-27",
+      "stage": "Merits decision",
+      "outcome": "Restrictions blocked",
+      "scope": "federal",
+      "affectedJurisdictions": [],
+      "reach": "Federal government actions · multistate relevance",
+      "topic": "Government procurement",
+      "law": "10 U.S.C. § 3252; First Amendment; Administrative Procedure Act",
+      "holding": "The court ruled largely for Anthropic on summary judgment, finding unlawful retaliation and defects in the § 3252 designation and related directives. It found permanent injunctive relief and vacatur appropriate.",
+      "effect": "Blocks challenged government actions, including the sweeping contractor boycott, subject to the relief’s limits. The government can still lawfully choose other suppliers. The separate § 4713 exclusion must also be considered.",
+      "limits": "A federal district-court ruling concerning specified government actions, not a change to California state law or a general right to military contracts. Relief excludes some defendants; the decision is not binding precedent for every court.",
+      "reviewStatus": "August 27 merits ruling reviewed. Any later appeal or stay of the final relief has not been verified; read together with the September 25 D.C. decision.",
+      "reviewed": "2026-09-30",
+      "timeline": [
+        {"date": "2026-03-26", "text": "Preliminary relief granted."},
+        {"date": "2026-08-27", "text": "Summary judgment ruling and final relief entered."}
+      ],
+      "relatedCases": ["anthropic-dc-procurement"],
+      "relatedLaws": [],
+      "sources": [
+        {"label": "Merits order · Document 250 (Justia mirror)", "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2026cv01996/465515/250"},
+        {"label": "Court docket · Justia mirror", "url": "https://dockets.justia.com/docket/california/candce/3%3A2026cv01996/465515"}
+      ]
+    },
+    {
+      "id": "xai-ab2013",
+      "name": "X.AI LLC v. Rob Bonta",
+      "headline": "California training-data law survives initial injunction bid",
+      "court": "U.S. District Court, Central District of California",
+      "courtLocation": "CA",
+      "docket": "2:25-cv-12295-JGB-SSC · Appeal 26-1591",
+      "decisionDate": "2026-03-04",
+      "stage": "Preliminary ruling",
+      "outcome": "Law left in place",
+      "scope": "state",
+      "affectedJurisdictions": ["CA"],
+      "reach": "California law · covered developers serving Californians",
+      "topic": "Training-data transparency",
+      "law": "California AB 2013 · Civil Code §§ 3110–3111",
+      "holding": "The court denied xAI’s request for a preliminary injunction against AB 2013. On the early record, xAI had not established likely success on its constitutional claims, including compelled speech and trade-secret arguments.",
+      "effect": "This order did not halt the disclosure law. It is an early procedural outcome, not a final judgment that resolves every constitutional challenge.",
+      "limits": "Concerns a California statute, including covered developers outside California that make systems available to Californians. It does not extend AB 2013 to every state or create nationwide binding precedent.",
+      "reviewStatus": "Appeal docketed in the Ninth Circuit as 26-1591. The reviewed public docket records a September 4 reply brief; no later appellate merits ruling was verified.",
+      "reviewed": "2026-09-30",
+      "timeline": [
+        {"date": "2026-03-04", "text": "Preliminary injunction denied."},
+        {"date": "2026-03-17", "text": "Ninth Circuit appeal docketed."},
+        {"date": "2026-09-04", "text": "Reply brief filed in the appeal."}
+      ],
+      "relatedCases": [],
+      "relatedLaws": [{"state": "CA", "reference": "AB 2013", "label": "California’s training-data disclosure law"}],
+      "sources": [
+        {"label": "Court order · March 4 (PDF mirror)", "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/xAI-v-Bonta-Order-Denying-Preliminary-Injunction-3-4-26.pdf"},
+        {"label": "Appeal docket · Justia mirror", "url": "https://dockets.justia.com/docket/circuit-courts/ca9/26-1591"},
+        {"label": "California AB 2013 · official statute", "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013"}
+      ]
+    }
+  ]
+}

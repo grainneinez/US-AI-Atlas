@@ -28,6 +28,8 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Interactions
 
+- Court decisions with affected-jurisdiction, court-location, stage, and text filters; optional federal relevance; dated histories and shareable case links.
+- Cross-links between related cases and the affected statute cards.
 - Accurate SVG state outlines, keyboard selection, and a native state selector.
 - New York State vs NYC comparison, a hiring-scope explainer, and jurisdiction filters that make overlapping obligations clear.
 - State deep links, such as `?state=NY#regulations`. New York opens by default.
@@ -40,7 +42,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. Per-entry dates override the state's original date.
 
-This is a curated starting point, not a complete legal inventory or legal advice. Depth varies by state. The collection does not automatically refresh or comprehensively track litigation. Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties; guidance is separate from enacted legislation. Local measures are labeled explicitly. Proposals are not included.
+This is a curated starting point, not a complete legal inventory or legal advice. Depth varies by state. The court collection was added on **30 September 2026**. Collections do not automatically refresh; court coverage is selected, not a comprehensive litigation tracker. Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties; guidance is separate from enacted legislation. Local measures are labeled explicitly. Proposals are not included.
 
 New York's RAISE entry uses the March 2026 chapter amendment (S8828 / Chapter 96) and current codified sections, with duties effective **1 January 2027**. It supersedes the earlier summary of the original 2025 enactment.
 
@@ -73,3 +75,24 @@ Set `local: true` for NYC entries. If adding another locality, extend the jurisd
 ## Verification
 
 All 50 map selections and source rendering, keyboard and selector navigation, deep links, combined filters, empty/reset states, CSV export, and structured-tool input handling are exercised in a DOM harness. GitHub Pages workflow configuration follows GitHub's documented static-site actions. A compatible full-browser preview is unavailable in the current plain-static execution environment; responsive layout is implemented but has not received a fresh browser rendering check. The GitHub workflow must run in the destination account to verify its hosting configuration.
+
+## Add or update a court decision
+
+Edit `dist/cases.json`, the separate source of truth for court developments. The interface sorts by `decisionDate`, links related decisions, annotates linked law cards, and shows federal relevance separately from state-specific law. New entries appear after the usual GitHub push/Pages deployment. This is a manually reviewed collection, not an automated news or docket feed.
+
+Choose decisions that materially affect AI-related duties, enforcement, interpretation, or procurement. Read the operative order; distinguish allegations, preliminary relief, merits holdings, and appeals. Check later orders and stays before describing present enforceability. Leave an explicit gap in `reviewStatus` if follow-up cannot be confirmed. Do not change a statute’s status simply because someone sued.
+
+Each record uses:
+
+- `id`: unique, stable lowercase letters/numbers/hyphens; preserves links such as `?state=CA&case=xai-ab2013#case-xai-ab2013`.
+- `name`, `headline`, `court`, `courtLocation` (two-letter state code or `DC`), and `docket`.
+- `decisionDate`, `stage`, `outcome`, `topic`, and `law`.
+- `scope`: `state` for a state/local law issue or `federal` for a federal government/law issue. `affectedJurisdictions` lists the laws affected, not the courthouse location. Federal matters use an empty array and can be included across state filters. Use `reach` and `limits` to state the actual geographic, party, and precedential boundaries; a filter tag alone is not a legal conclusion.
+- `holding`, `effect`, `limits`, `reviewStatus`, and `reviewed` (truthful ISO source-check date).
+- `timeline`: dated developments as `{ "date": "YYYY-MM-DD", "text": "What happened" }`.
+- `sources`: primary opinions/orders and labeled docket mirrors as `{ "label": "Source description", "url": "https://..." }`.
+- `relatedCases`: other case IDs. `relatedLaws`: `{ "state": "CA", "reference": "AB 2013", "label": "Training-data law" }`; reference must uniquely match a bill in that state’s regulation collection.
+
+Update the record and timeline when a later decision changes the result; keep the stable ID. Update `decisionDate` only for a new substantive ruling, not merely a source recheck. Append linked records for distinct proceedings, as with the two Anthropic procurement cases. A federal district court’s location does not make its holding state law or nationally binding precedent.
+
+The initial entries are the D.C. Circuit’s September 25 Anthropic merits decision, the Northern District of California’s August 27 Anthropic merits ruling, and the Central District of California’s March 4 denial of preliminary relief in X.AI v. Bonta. Their later-review limitations are stated on the cards. No inference of absence of relevant litigation is made for states with no catalogued state-specific decision.
