@@ -1,6 +1,6 @@
 # US AI Atlas
 
-An interactive US map and searchable regulation library covering all 50 states, with 78 selected measures. New York has 23 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
+An interactive US map and searchable regulation library covering all 50 states, with 81 selected measures. New York has 26 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
 
 ## Run locally
 
@@ -28,7 +28,8 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Interactions
 
-- New York startup launch guide: 12 practical topics, product-feature filters, current versus upcoming duties, official sources, and regulation cross-links.
+- New York practical AI-use guide: 17 topics for individuals, lawyers, other professionals, employers, and businesses. Everyday use is the default; activity choices, per-card review dates, sources, and law cross-links help visitors find the relevant scope. Binding rules, nonbinding ethics guidance, and suggestions are distinguished.
+- Activity navigation in every state library, with shareable `?state=NY&activity=work#regulations` links. The activity persists when changing states; zero results do not imply no applicable law. Topic groupings are editorial suggestions, not an applicability engine.
 
 - Court decisions with affected-jurisdiction, court-location, stage, and text filters; optional federal relevance; dated histories and shareable case links.
 - Cross-links between related cases and the affected statute cards.
@@ -76,7 +77,7 @@ Set `local: true` for NYC entries. If adding another locality, extend the jurisd
 
 ## Verification
 
-All 50 map selections and source rendering, keyboard and selector navigation, deep links, combined filters, empty/reset states, CSV export, and structured-tool input handling are exercised in a DOM harness. Startup-guide checks also cover feature combinations, preserved starting topics, regulation cross-links, both data-load orders, and independent loading failure/retry. GitHub Pages workflow configuration follows GitHub's documented static-site actions. A compatible full-browser preview is unavailable in the current plain-static execution environment; responsive layout is implemented but has not received a fresh browser rendering check. The GitHub workflow must run in the destination account to verify its hosting configuration.
+All 50 map selections and source rendering, keyboard and selector navigation, deep links, combined filters, empty/reset states, CSV export, and structured-tool input handling are exercised in a DOM harness. Practical-guide checks also cover activity combinations, the starting checklist, regulation cross-links, both data-load orders, and independent loading failure/retry. GitHub Pages workflow configuration follows GitHub's documented static-site actions. A compatible full-browser preview is unavailable in the current plain-static execution environment; responsive layout is implemented but has not received a fresh browser rendering check. The GitHub workflow must run in the destination account to verify its hosting configuration.
 
 ## Add or update a court decision
 
@@ -99,18 +100,26 @@ Update the record and timeline when a later decision changes the result; keep th
 
 The initial entries are the D.C. Circuit’s September 25 Anthropic merits decision, the Northern District of California’s August 27 Anthropic merits ruling, and the Central District of California’s March 4 denial of preliminary relief in X.AI v. Bonta. Their later-review limitations are stated on the cards. No inference of absence of relevant litigation is made for states with no catalogued state-specific decision.
 
-## New York startup guide
+## New York practical guide
 
-`dist/ny-startups.json` stores 12 launch topics and three upcoming implementation dates. `ny-startups.js` filters by product features while retaining the two starting topics (claims and security). No selections means all topics; multiple selections combine with OR. Selections are temporary page state and do not determine applicability. The guide distinguishes duties, recommended implementation steps, and evidence a founder may choose to keep.
+`dist/ny-startups.json` stores 17 practical topics and three upcoming implementation dates. `ny-startups.js` filters by activity while retaining one starting checklist. Everyday use is selected initially; no selections means all topics, and multiple selections combine with OR. Selections do not determine applicability. Each card distinguishes its legal basis, practical suggestions, scope, and source-review date.
 
-Use `?state=NY#ny-startup-guide` for a direct link. Each `related.reference` and deadline reference must uniquely match a New York law's `bill`; append new law records to preserve existing law-card links. Update guide and law records together when a source changes. Do not infer that every chatbot is a companion, every vendor is DFS-regulated, every startup trains a frontier model, or every recommendation is an addictive feed.
+Use `?state=NY#ny-ai-guide` for a direct link. Each `related.reference` and deadline reference must uniquely match a New York law's `bill`; append new law records to preserve existing law-card links. Update guide and law records together when a source changes. Do not infer that every chatbot is a companion, every vendor is DFS-regulated, every startup trains a frontier model, or every recommendation is an addictive feed.
 
-New records cover business practices, consumer subscriptions, child data, Safe by Design, SAFE for Kids, and living-person likeness consent. SAFE for Kids and Safe by Design have different scope and effective dates. Current-law summaries and guidance are manually checked, not automatically updated. No startup inputs leave the browser.
+New records cover business practices, consumer subscriptions, child data, Safe by Design, SAFE for Kids, and living-person likeness consent. SAFE for Kids and Safe by Design have different scope and effective dates. Current-law summaries and guidance are manually checked, not automatically updated. Activity selections stay in the browser.
 
 ## State updates and reading order
 
 `dist/updates.json` holds the three sourced developments added on **5 October 2026**. Each has an event date, status, timing, business impact, context, official sources, and a unique `reference` matching its state's law entry. `updates.js` shows all updates initially, switches to the selected state when the map/selector changes, and offers an all-state view. Empty and loading-error states leave the law library available.
 
-The reading order is map, state updates, regulation library (including the New York startup guide), then court updates. Within the court collection, state-specific decisions precede federal matters; each group is newest first. The Anthropic federal explanation follows the court cards. Existing case links, filters, and cross-links remain supported.
+The reading order is map, state updates, regulation library (including the New York practical guide), then court updates. Within the court collection, state-specific decisions precede federal matters; each group is newest first. The Anthropic federal explanation follows the court cards. Existing case links, filters, and cross-links remain supported.
 
 The California update records SB 53’s 2025 signing and 2026 general effective date. Colorado uses the verified 2026 replacement and current rulemaking rather than the unsupported description of a Q3 2025 first-year sunset review. Utah uses the official September/October 2026 pilot agreements and their limits rather than claiming a blanket 2025 sandbox expansion. The original ACM page could not be retrieved; its supplied assertions were checked against primary government sources. Event dates must not be replaced with review dates to make old milestones appear new.
+
+## Practical AI use expansion — 5 October 2026
+
+The former founder-first presentation now starts with everyday AI use. New York adds primary-source entries for lawyer professional conduct, covered Title VIII professional conduct, and recording law. City Bar Opinions 2024-5, 2025-6, and 2026-2 are explicitly nonbinding professional guidance, not NYC legislation. State and city layers remain separate. The guide includes user rights and retains specialized product-builder topics.
+
+The guide retains its `ny-startups.json` / `ny-startups.js` filenames for compatibility, but uses `#ny-ai-guide` as its new public anchor. Existing `#ny-startup-guide` deep links still scroll to the guide. Existing business-use cards keep their 30 September source-review dates. This update does not claim a fresh legal review of all 50 states or complete coverage of every profession.
+
+Activity groups in `app.js` map existing topics to user activities. When adding a topic, update these editorial groups if relevant. CSV exports respect the activity filter alongside the existing filters.

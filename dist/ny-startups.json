@@ -1,141 +1,748 @@
 {
-  "reviewed": "2026-09-30",
+  "reviewed": "2026-10-05",
   "features": [
-    {"id":"subscriptions","label":"Subscriptions & trials"},
-    {"id":"pricing","label":"Personalized prices"},
-    {"id":"companions","label":"Chatbots & companions"},
-    {"id":"minors","label":"Children & teenagers"},
-    {"id":"hiring","label":"Hiring & HR"},
-    {"id":"media","label":"Ads, voices & avatars"},
-    {"id":"finance","label":"Finance & insurance customers"},
-    {"id":"models","label":"Training foundation models"},
-    {"id":"biometrics","label":"Biometrics & building access"}
+    {
+      "id": "everyday",
+      "label": "Everyday work & personal use"
+    },
+    {
+      "id": "legal",
+      "label": "Legal practice"
+    },
+    {
+      "id": "professional",
+      "label": "Other professional services"
+    },
+    {
+      "id": "meetings",
+      "label": "Meetings & transcription"
+    },
+    {
+      "id": "data",
+      "label": "Personal & client data"
+    },
+    {
+      "id": "rights",
+      "label": "My rights as a user"
+    },
+    {
+      "id": "subscriptions",
+      "label": "Selling subscriptions"
+    },
+    {
+      "id": "pricing",
+      "label": "Personalized prices"
+    },
+    {
+      "id": "companions",
+      "label": "Chatbots & companions"
+    },
+    {
+      "id": "minors",
+      "label": "Children & teenagers"
+    },
+    {
+      "id": "hiring",
+      "label": "Hiring & HR"
+    },
+    {
+      "id": "media",
+      "label": "Publishing, ads & likenesses"
+    },
+    {
+      "id": "finance",
+      "label": "Finance & insurance"
+    },
+    {
+      "id": "models",
+      "label": "Training foundation models"
+    },
+    {
+      "id": "biometrics",
+      "label": "Biometrics & building access"
+    }
   ],
   "deadlines": [
-    {"date":"2027-01-01","title":"RAISE Act","scope":"Covered frontier-model developers; duties vary by developer size.","reference":"GBL Article 44-B"},
-    {"date":"2027-01-01","title":"Safe by Design Act","scope":"Covered social and gaming platforms used by minors, including integrated AI companions.","reference":"GBL Article 45-B"},
-    {"date":"2027-01-25","title":"SAFE for Kids Act","scope":"Covered addictive social media feeds and nighttime notifications to minors.","reference":"GBL Article 45 ·"}
+    {
+      "date": "2027-01-01",
+      "title": "RAISE Act",
+      "scope": "Covered frontier-model developers; duties vary by developer size.",
+      "reference": "GBL Article 44-B"
+    },
+    {
+      "date": "2027-01-01",
+      "title": "Safe by Design Act",
+      "scope": "Covered social and gaming platforms used by minors, including integrated AI companions.",
+      "reference": "GBL Article 45-B"
+    },
+    {
+      "date": "2027-01-25",
+      "title": "SAFE for Kids Act",
+      "scope": "Covered addictive social media feeds and nighttime notifications to minors.",
+      "reference": "GBL Article 45 ·"
+    }
   ],
   "cards": [
     {
-      "id":"claims","title":"Make promises your product can keep","features":[],"baseline":true,"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"Start here if you market, demonstrate, or sell an AI product in New York.",
-      "rule":"GBL §349 now prohibits unfair, deceptive, and abusive business practices. AI accuracy, safety, and performance claims sit within this general business-practices framework.",
-      "actions":["Check landing pages, demos, sales decks, and onboarding against evidence from the actual version you ship.","Qualify claims such as ‘bias-free,’ ‘100% accurate,’ or ‘replaces a professional’; explain material limitations where the promise is made."],
-      "evidence":"A dated claims register: the claim, supporting evaluation, limitations, approver, and product version.",
-      "boundary":"These launch steps apply the general law to AI marketing; New York does not prescribe this particular testing document. The statute’s private remedy for deceptive acts is narrower than the attorney general’s enforcement authority.",
-      "sources":[{"label":"Current business-practices law · §349","url":"https://www.nysenate.gov/legislation/laws/GBS/349"}],
-      "related":[{"reference":"General Business Law §349 ·","label":"Business-practices law"}]
+      "id": "everyday",
+      "title": "I use AI. Where should I start?",
+      "features": [
+        "everyday"
+      ],
+      "baseline": true,
+      "jurisdiction": "New York State + NYC",
+      "status": "Practical checklist",
+      "trigger": "You use AI to write, research, summarize, code, or organize daily work.",
+      "rule": "Start with the information you share, the decisions you make, and who relies on the result. The cards below connect those activities to selected legal duties. A checklist selection is not a finding that a law applies.",
+      "actions": [
+        "Check your employer’s or client’s approved tools and data-sharing terms before entering work information.",
+        "Verify material facts and sources before relying on an output. For professional work, follow the duties attached to your license.",
+        "Choose the relevant activity: recording a call, hiring someone, or publishing a likeness each raises different questions."
+      ],
+      "evidence": "A short note of the tool, permitted data, intended use, and person reviewing important outputs. Keep this proportionate to the task.",
+      "boundary": "These are practical suggestions, not a universal New York AI registration, audit, or disclosure requirement. NYC’s hiring law and the frontier-model law have specific triggers.",
+      "sources": [
+        {
+          "label": "NYC hiring-tool scope",
+          "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+        },
+        {
+          "label": "RAISE developer definitions",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1420"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYC Local Law 144",
+          "label": "Hiring-tool scope"
+        },
+        {
+          "reference": "GBL Article 44-B",
+          "label": "Frontier developer scope"
+        }
+      ],
+      "reviewed": "2026-10-05"
     },
     {
-      "id":"data","title":"Know where customer data goes","features":[],"baseline":true,"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"Start here if accounts, prompts, uploads, or logs contain New Yorkers’ covered private information.",
-      "rule":"SHIELD requires reasonable administrative, technical, and physical safeguards. Small businesses receive a proportionate standard, not an exemption. Covered breaches generally require resident notice within 30 days of discovery, subject to statutory exceptions.",
-      "actions":["Map data sent to model providers and other vendors; document training use, retention, deletion, access, and contractual safeguards.","Assign a security and incident owner. Test access controls, deletion, and the process for assessing a breach and required notices."],
-      "evidence":"A data-flow inventory, vendor/security terms, retention schedule, and incident-response contacts.",
-      "boundary":"SHIELD uses a defined category of private information; it is not a universal consent law for all personal data. Other privacy, sector, and children’s-data rules may also apply.",
-      "sources":[{"label":"SHIELD safeguards · §899-bb","url":"https://www.nysenate.gov/legislation/laws/GBS/899-BB"},{"label":"Breach notification · §899-aa","url":"https://www.nysenate.gov/legislation/laws/GBS/899-AA"}],
-      "related":[{"reference":"General Business Law §899-bb","label":"SHIELD Act"}]
+      "id": "legal",
+      "title": "I am a lawyer using AI for client work",
+      "features": [
+        "legal"
+      ],
+      "jurisdiction": "New York professional rules · including NYC",
+      "status": "Rules + ethics guidance",
+      "trigger": "You use AI for research, drafting, client intake, or other legal services.",
+      "rule": "The binding New York professional rules continue to apply. City Bar Opinion 2024-5 gives nonbinding guidance on applying them to AI; it is not a city law.",
+      "actions": [
+        "Verify authorities, facts, and analysis; retain your own legal judgment. Check the relevant court’s orders before filing.",
+        "Review tool terms and confidentiality safeguards before uploading client material. Assess required client communication and consent in the circumstances.",
+        "Supervise staff use. For hourly work, bill actual time spent, not hypothetical time saved; explain tool charges as required."
+      ],
+      "evidence": "Your review of the work, approved tool settings, applicable client instructions, and accurate time and cost records.",
+      "boundary": "AI use does not automatically require the same disclosure in every matter. Court orders, client terms, and the use of confidential information can change the answer.",
+      "sources": [
+        {
+          "label": "Binding New York Rules of Professional Conduct",
+          "url": "https://www.nycourts.gov/LegacyPDFS/rules/jointappellate/NY-Rules-Prof-Conduct-1200.pdf"
+        },
+        {
+          "label": "City Bar Opinion 2024-5 · nonbinding guidance",
+          "url": "https://www.nycbar.org/reports/formal-opinion-2024-5-generative-ai-in-the-practice-of-law/"
+        }
+      ],
+      "related": [
+        {
+          "reference": "22 NYCRR Part 1200",
+          "label": "Lawyer professional duties"
+        }
+      ],
+      "reviewed": "2026-10-05"
     },
     {
-      "id":"subscriptions","title":"Build cancellation before billing","features":["subscriptions"],"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"You sell consumer subscriptions, automatic renewals, or trials that turn into paid plans.",
-      "rule":"GBL §527-a requires clear renewal terms, affirmative consent, a retainable acknowledgment, and simple cancellation through the same medium used to subscribe. Specific trial, renewal, and change notices also apply.",
-      "actions":["Show price, billing interval, renewal, and cancellation terms before consent. Let users keep their acknowledgment.","Test signup-to-cancellation on mobile and desktop. Add the reminders required for your trial length, renewal period, or planned price change."],
-      "evidence":"Screenshots of checkout and cancellation, consent records, and scheduled-notice templates.",
-      "boundary":"This provision concerns consumer purchases for personal, family, or household purposes. Do not assume every enterprise SaaS contract has the same rules.",
-      "sources":[{"label":"Automatic-renewal requirements · §527-a","url":"https://www.nysenate.gov/legislation/laws/GBS/527-A"},{"label":"Consumer and offer definitions · §527","url":"https://www.nysenate.gov/legislation/laws/GBS/527"}],
-      "related":[{"reference":"General Business Law §527-a","label":"Consumer subscription rules"}]
+      "id": "professional",
+      "title": "I provide accounting, design, or other professional services",
+      "features": [
+        "professional"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "You use AI in a profession covered by New York’s Regents rules.",
+      "rule": "Existing confidentiality, competence, and practice-scope duties still matter.",
+      "actions": [
+        "Before uploading client material, check your license’s confidentiality rules and any required permission. Review outputs within your competence."
+      ],
+      "evidence": "Keep proportionate records of permission and review.",
+      "boundary": "The applicable profession matters. These provisions do not govern every consultant; lawyers and medicine have separate frameworks.",
+      "sources": [
+        {
+          "label": "NYSED · Part 29",
+          "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29"
+        }
+      ],
+      "related": [
+        {
+          "reference": "8 NYCRR §29.1",
+          "label": "Licensed-professional duties"
+        }
+      ],
+      "reviewed": "2026-10-05"
     },
     {
-      "id":"pricing","title":"Disclose personal-data pricing at the price","features":["pricing"],"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"An algorithm uses an individual consumer’s personal data to set their price.",
-      "rule":"GBL §349-a requires the conspicuous disclosure: ‘THIS PRICE WAS SET BY AN ALGORITHM USING YOUR PERSONAL DATA.’ A general privacy-policy statement is not a substitute for the required pricing disclosure.",
-      "actions":["Identify which inputs actually set prices, including behavioral profiles and inferred willingness to pay.","Place and test the required notice with affected prices across checkout, experiments, and mobile views."],
-      "evidence":"Pricing-input documentation and screenshots of the notice beside each affected price.",
-      "boundary":"Personalized pricing and ordinary price changes are different scope questions. Assess statutory definitions and exemptions; this entry does not address separate rent-setting rules.",
-      "sources":[{"label":"Algorithmic-pricing disclosure · §349-a","url":"https://www.nysenate.gov/legislation/laws/GBS/349-A"},{"label":"Attorney general’s business warning","url":"https://ag.ny.gov/press-release/2025/attorney-general-james-warns-new-yorkers-about-algorithmic-pricing-new-law-takes"}],
-      "related":[{"reference":"General Business Law §349-a","label":"Pricing disclosure law"}]
+      "id": "meetings",
+      "title": "Can I use an AI meeting recorder?",
+      "features": [
+        "meetings",
+        "legal",
+        "professional"
+      ],
+      "jurisdiction": "New York law + lawyer ethics guidance",
+      "status": "Law + ethics guidance",
+      "trigger": "You or another participant wants a bot to record, transcribe, or summarize a conversation.",
+      "rule": "New York generally allows a participant to record their own conversation. For lawyers, City Bar Opinions 2025-6 and 2026-2 advise advance notice and participant consent, alongside confidentiality and accuracy checks.",
+      "actions": [
+        "Check where participants are located and which recording laws apply; tell them what the tool records and shares.",
+        "For legal calls, follow the opinions’ consent guidance and assess privilege, storage, access, and whether recording is useful.",
+        "Know how to disable automatic recording. Review any transcript or summary you rely on."
+      ],
+      "evidence": "The relevant permissions, tool settings, access arrangements, and any corrected summary.",
+      "boundary": "Bar opinions are nonbinding professional guidance, not an all-party-consent statute for everyone in New York. Other states, client obligations, and sensitive subject matter can change the analysis.",
+      "sources": [
+        {
+          "label": "New York recording definitions",
+          "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
+        },
+        {
+          "label": "Opinion 2025-6 · client conversations",
+          "url": "https://www.nycbar.org/reports/formal-opinion-2025-6-ethical-issues-affecting-use-of-ai-to-record-transcribe-and-summarize-conversations-with-clients/"
+        },
+        {
+          "label": "Opinion 2026-2 · non-client conversations",
+          "url": "https://www.nycbar.org/reports/formal-opinion-2026-2-ethical-use-of-ai-for-recording-transcribing-and-summarizing-non-client-conversations/"
+        }
+      ],
+      "related": [
+        {
+          "reference": "Penal Law §§250.00",
+          "label": "Recording law"
+        },
+        {
+          "reference": "22 NYCRR Part 1200",
+          "label": "Lawyer professional duties"
+        }
+      ],
+      "reviewed": "2026-10-05"
     },
     {
-      "id":"companions","title":"Classify the relationship your chatbot creates","features":["companions"],"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"Your AI is designed to sustain a human-like relationship, remembers interactions, and engages personally with users.",
-      "rule":"Covered companions need reasonable-efforts self-harm response protocols and crisis referrals, plus non-human identity notices at the start of an interaction and every three hours of continued use. The initial notice need not repeat more than once daily.",
-      "actions":["Document whether memory, emotional prompts, and ongoing conversations put the product within the companion definition.","Test crisis-response paths and recurring notices across long sessions, reconnects, and mobile use; assign a human owner for incidents."],
-      "evidence":"A scope assessment, notice schedule, crisis-response test cases, and incident process.",
-      "boundary":"Specified customer-service, technical-assistance, research, and internal-productivity uses are excluded. A chatbot is not automatically a companion. For minors on covered platforms, also plan for Safe by Design.",
-      "sources":[{"label":"Companion definition and exclusions · §1700","url":"https://www.nysenate.gov/legislation/laws/GBS/1700"},{"label":"Self-harm safeguards · §1701","url":"https://www.nysenate.gov/legislation/laws/GBS/1701"},{"label":"Non-human notices · §1702","url":"https://www.nysenate.gov/legislation/laws/GBS/1702"}],
-      "related":[{"reference":"General Business Law §§1700","label":"AI companion safeguards"},{"reference":"GBL Article 45-B","label":"Upcoming platform safeguards for minors"}]
+      "id": "rights",
+      "title": "What if AI is used on me?",
+      "features": [
+        "everyday",
+        "rights"
+      ],
+      "jurisdiction": "New York State + NYC",
+      "status": "Rights depend on context",
+      "trigger": "You are an applicant, consumer, tenant, or someone whose image or voice is used.",
+      "rule": "You do not need to build an AI product to have a stake in these rules. This library includes covered hiring notices, consumer subscription protections, personalized-pricing disclosures, and protections for likenesses and tenant data.",
+      "actions": [
+        "Start with what happened: a hiring decision, a price, a subscription, a recording, or use of your identity. Open the matching law’s scope and enforcement section.",
+        "Keep the notice, screenshot, agreement, or other record that explains the issue."
+      ],
+      "evidence": "Dates and copies of the relevant notice, transaction, or communication.",
+      "boundary": "The collection does not establish a universal right to opt out of AI or receive a human decision. Individual laws have different coverage, remedies, and exceptions.",
+      "sources": [
+        {
+          "label": "NYC hiring-tool information",
+          "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+        },
+        {
+          "label": "Consumer subscription law",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYC Local Law 144",
+          "label": "Hiring notices"
+        },
+        {
+          "reference": "General Business Law §527-a",
+          "label": "Subscription protections"
+        },
+        {
+          "reference": "General Business Law §349-a",
+          "label": "Personalized prices"
+        },
+        {
+          "reference": "Civil Rights Law §§50–51",
+          "label": "Use of your likeness"
+        },
+        {
+          "reference": "NYC Local Law 63",
+          "label": "Tenant smart-access data"
+        }
+      ],
+      "reviewed": "2026-10-05"
     },
     {
-      "id":"minors-data","title":"Treat teenagers’ data as a launch requirement","features":["minors"],"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"You know a New York user is under 18, or your online service is primarily directed to minors.",
-      "rule":"The Child Data Protection Act has applied since 20 June 2025. Nonessential processing of 13–17-year-olds’ data needs informed consent; under-13 processing follows the law’s COPPA standard. Consent must be separate from the transaction. Covered minors’ data cannot be sold.",
-      "actions":["Separate processing necessary to provide the requested service from advertising, optional analytics, and model-training uses; assess each purpose.","Build age-aware choices and withdrawal flows. Check processor agreements and honor applicable age signals."],
-      "evidence":"A purpose-by-purpose data map, age-signal handling, consent screens, and processor terms.",
-      "boundary":"An adult cookie banner or a consent sentence buried in general terms is not a reliable substitute. The statutory necessary-processing exceptions must be assessed individually.",
-      "sources":[{"label":"Attorney general’s implementation guidance","url":"https://ag.ny.gov/child-data-protection-act-guidance"},{"label":"Processing and consent duties · §899-ff","url":"https://www.nysenate.gov/legislation/laws/GBS/899-FF"}],
-      "related":[{"reference":"GBL Article 39-FF","label":"Child Data Protection Act"}]
+      "id": "claims",
+      "title": "Check the claims you make with AI",
+      "features": [
+        "media",
+        "professional",
+        "models",
+        "finance"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "You use AI to promote a business or service, or make claims about an AI tool.",
+      "rule": "GBL §349 now prohibits unfair, deceptive, and abusive business practices. AI accuracy, safety, and performance claims sit within this general business-practices framework.",
+      "actions": [
+        "Check AI-written advertisements, proposals, and service descriptions against evidence you can support.",
+        "Qualify performance claims and explain material limitations where the promise is made."
+      ],
+      "evidence": "A dated claims register: the claim, supporting evaluation, limitations, approver, and product version.",
+      "boundary": "These suggested checks apply the general law to AI marketing; New York does not prescribe this particular testing document. The statute’s private remedy for deceptive acts is narrower than the attorney general’s enforcement authority.",
+      "sources": [
+        {
+          "label": "Current business-practices law · §349",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/349"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §349 ·",
+          "label": "Business-practices law"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"minors-design","title":"Put the January 2027 youth rules on your roadmap","features":["minors","companions"],"jurisdiction":"New York State","status":"Upcoming duties",
-      "trigger":"You run a covered social or gaming platform, integrate an AI companion, or offer a covered personalized social feed to minors.",
-      "rule":"Safe by Design takes effect 1 January 2027: covered platforms face age-assurance and minor-default protections, including integrated companions disabled by default for minors unless a parent overrides. SAFE for Kids follows on 25 January 2027 for covered addictive feeds and nighttime notifications.",
-      "actions":["Assess each law separately against the platform’s actual features and audience; plan age assurance, parent controls, and restricted defaults before release.","For covered social feeds, design the required parental-consent path and nighttime-notification controls. Test behavior when consent is absent or withdrawn."],
-      "evidence":"Separate scope decisions for each act, a dated engineering plan, and default/consent-flow test results.",
-      "boundary":"These are two different laws. Safe by Design has a specific platform definition; SAFE for Kids does not cover every AI recommendation. A standalone chatbot is not automatically a covered social or gaming platform.",
-      "sources":[{"label":"Safe by Design scope · §1539","url":"https://www.nysenate.gov/legislation/laws/GBS/1539"},{"label":"Safe by Design duties · §1540","url":"https://www.nysenate.gov/legislation/laws/GBS/1540"},{"label":"Attorney general’s implementation dates","url":"https://ag.ny.gov/resources/individuals/consumer-issues/technology/protecting-children-online"},{"label":"SAFE for Kids final implementing rules","url":"https://ag.ny.gov/safe-for-kids-act-final-rule"}],
-      "related":[{"reference":"GBL Article 45-B","label":"Safe by Design Act"},{"reference":"GBL Article 45 ·","label":"SAFE for Kids Act"}]
+      "id": "data",
+      "title": "Check before uploading personal or client data",
+      "features": [
+        "data",
+        "legal",
+        "professional",
+        "finance",
+        "meetings"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "Your business or practice handles covered private information about New Yorkers in prompts, files, accounts, or recordings.",
+      "rule": "SHIELD requires reasonable administrative, technical, and physical safeguards. Small businesses receive a proportionate standard, not an exemption. Covered breaches generally require resident notice within 30 days of discovery, subject to statutory exceptions.",
+      "actions": [
+        "Map data sent to model providers and other vendors; document training use, retention, deletion, access, and contractual safeguards.",
+        "Assign a security and incident owner. Test access controls, deletion, and the process for assessing a breach and required notices."
+      ],
+      "evidence": "A data-flow inventory, vendor/security terms, retention schedule, and incident-response contacts.",
+      "boundary": "SHIELD uses a defined category of private information; it is not a universal consent law for all personal data. Other privacy, sector, and children’s-data rules may also apply.",
+      "sources": [
+        {
+          "label": "SHIELD safeguards · §899-bb",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB"
+        },
+        {
+          "label": "Breach notification · §899-aa",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §899-bb",
+          "label": "SHIELD Act"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"hiring","title":"Agree who owns the hiring-tool audit","features":["hiring"],"jurisdiction":"NYC + New York State","status":"Current duty",
-      "trigger":"You use or sell AI that substantially assists or replaces decisions in hiring or promotion connected to NYC.",
-      "rule":"For covered AEDTs, NYC Local Law 144 requires an independent bias audit within the preceding year, a public summary, and applicable 10-business-day notices. Employers and employment agencies carry these duties. State and city discrimination protections remain relevant.",
-      "actions":["Check the tool definition and job location, including remote roles associated with an NYC office.","If you supply the tool, prepare audit-support data and documentation; agree responsibilities with the customer. If you hire, verify the audit, publication, and notices before use."],
-      "evidence":"A scope assessment, auditor relationship, dated audit/publication record, notices, and customer responsibility matrix.",
-      "boundary":"Buying a vendor’s ‘compliant AI’ label does not transfer the employer’s duties. Passing the prescribed audit is not a discrimination safe harbor.",
-      "sources":[{"label":"DCWP’s employer and vendor FAQ","url":"https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf"},{"label":"State discrimination protections · §296","url":"https://www.nysenate.gov/legislation/laws/EXC/296"},{"label":"NYC Human Rights Law","url":"https://www.nyc.gov/site/cchr/law/chapter-1.page"}],
-      "related":[{"reference":"NYC Local Law 144","label":"NYC hiring-tool law"},{"reference":"Executive Law §296","label":"State discrimination safeguards"}]
+      "id": "subscriptions",
+      "title": "Build cancellation before billing",
+      "features": [
+        "subscriptions"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "You sell consumer subscriptions, automatic renewals, or trials that turn into paid plans.",
+      "rule": "GBL §527-a requires clear renewal terms, affirmative consent, a retainable acknowledgment, and simple cancellation through the same medium used to subscribe. Specific trial, renewal, and change notices also apply.",
+      "actions": [
+        "Show price, billing interval, renewal, and cancellation terms before consent. Let users keep their acknowledgment.",
+        "Test signup-to-cancellation on mobile and desktop. Add the reminders required for your trial length, renewal period, or planned price change."
+      ],
+      "evidence": "Screenshots of checkout and cancellation, consent records, and scheduled-notice templates.",
+      "boundary": "This provision concerns consumer purchases for personal, family, or household purposes. Do not assume every enterprise SaaS contract has the same rules.",
+      "sources": [
+        {
+          "label": "Automatic-renewal requirements · §527-a",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A"
+        },
+        {
+          "label": "Consumer and offer definitions · §527",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/527"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §527-a",
+          "label": "Consumer subscription rules"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"media","title":"Separate AI labels from likeness permissions","features":["media"],"jurisdiction":"New York State","status":"Current duty",
-      "trigger":"Your ads use a synthetic person, or your product uses someone’s face, likeness, or voice for advertising or trade.",
-      "rule":"GBL §396-b requires disclosure for covered synthetic performers in ads. Civil Rights Law §51 separately permits claims over unauthorized use of a real person’s protected identity in advertising or trade. Covered fashion work adds specific digital-replica consent duties.",
-      "actions":["Decide whether an asset depicts an invented performer, an identifiable real person, or both; assess the relevant rule for each use.","Secure required written permissions and keep them tied to the asset, purpose, and version. Add the synthetic-performer disclosure where required."],
-      "evidence":"An asset and release register, approved usage terms, and final ad screenshots.",
-      "boundary":"The synthetic-performer definition has exclusions, including certain audio and expressive-work uses. Adding an AI label does not itself provide permission to clone a real person.",
-      "sources":[{"label":"Synthetic performers in ads · §396-b","url":"https://www.nysenate.gov/legislation/laws/GBS/396-B"},{"label":"Likeness and voice claims · §51","url":"https://www.nysenate.gov/legislation/laws/CVR/51"},{"label":"Fashion clients’ responsibilities","url":"https://dol.ny.gov/responsibilities-fashion-management-and-clients"}],
-      "related":[{"reference":"General Business Law §396-b","label":"Synthetic-performer disclosure"},{"reference":"Civil Rights Law §§50–51","label":"Living-person likeness consent"},{"reference":"Labor Law Article 36","label":"Fashion digital replicas"}]
+      "id": "pricing",
+      "title": "Disclose personal-data pricing at the price",
+      "features": [
+        "pricing"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "An algorithm uses an individual consumer’s personal data to set their price.",
+      "rule": "GBL §349-a requires the conspicuous disclosure: ‘THIS PRICE WAS SET BY AN ALGORITHM USING YOUR PERSONAL DATA.’ A general privacy-policy statement is not a substitute for the required pricing disclosure.",
+      "actions": [
+        "Identify which inputs actually set prices, including behavioral profiles and inferred willingness to pay.",
+        "Place and test the required notice with affected prices across checkout, experiments, and mobile views."
+      ],
+      "evidence": "Pricing-input documentation and screenshots of the notice beside each affected price.",
+      "boundary": "Personalized pricing and ordinary price changes are different scope questions. Assess statutory definitions and exemptions; this entry does not address separate rent-setting rules.",
+      "sources": [
+        {
+          "label": "Algorithmic-pricing disclosure · §349-a",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/349-A"
+        },
+        {
+          "label": "Attorney general’s business warning",
+          "url": "https://ag.ny.gov/press-release/2025/attorney-general-james-warns-new-yorkers-about-algorithmic-pricing-new-law-takes"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §349-a",
+          "label": "Pricing disclosure law"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"finance","title":"Prepare for a regulated buyer’s due diligence","features":["finance"],"jurisdiction":"New York State · agency guidance","status":"Buyer requirements",
-      "trigger":"You sell AI software to a DFS-regulated financial institution or insurer.",
-      "rule":"DFS guidance directs regulated firms to assess third-party cyber risks, including AI use and customer-data training. Insurance guidance addresses AI underwriting/pricing governance and discrimination. Buyers may need contractual access to supplier information and controls.",
-      "actions":["Prepare answers on data provenance, model limitations, security, subcontractors, retention, and whether customer data trains models.","Discuss testing evidence, change notification, incident support, audit/regulator cooperation, and data return or deletion before the procurement review."],
-      "evidence":"A reusable buyer packet: model documentation, evaluation results, security summary, data-processing terms, and change/incident contacts.",
-      "boundary":"These sources address regulated firms. Selling software to a bank does not automatically make the startup a Part 500 covered entity; buyer contracts can still impose obligations. Direct financial services need a separate scope review.",
-      "sources":[{"label":"DFS third-party risk guidance · October 2025","url":"https://www.dfs.ny.gov/industry-guidance/industry-letters/il20251021-guidance-managing-risks-third-party"},{"label":"DFS insurance AI guidance · Circular 7","url":"https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07"}],
-      "related":[{"reference":"NYDFS Insurance Circular Letter No. 7","label":"Insurance AI guidance"}]
+      "id": "companions",
+      "title": "Classify the relationship your chatbot creates",
+      "features": [
+        "companions"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "Your AI is designed to sustain a human-like relationship, remembers interactions, and engages personally with users.",
+      "rule": "Covered companions need reasonable-efforts self-harm response protocols and crisis referrals, plus non-human identity notices at the start of an interaction and every three hours of continued use. The initial notice need not repeat more than once daily.",
+      "actions": [
+        "Document whether memory, emotional prompts, and ongoing conversations put the product within the companion definition.",
+        "Test crisis-response paths and recurring notices across long sessions, reconnects, and mobile use; assign a human owner for incidents."
+      ],
+      "evidence": "A scope assessment, notice schedule, crisis-response test cases, and incident process.",
+      "boundary": "Specified customer-service, technical-assistance, research, and internal-productivity uses are excluded. A chatbot is not automatically a companion. For minors on covered platforms, also plan for Safe by Design.",
+      "sources": [
+        {
+          "label": "Companion definition and exclusions · §1700",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1700"
+        },
+        {
+          "label": "Self-harm safeguards · §1701",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1701"
+        },
+        {
+          "label": "Non-human notices · §1702",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1702"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §§1700",
+          "label": "AI companion safeguards"
+        },
+        {
+          "reference": "GBL Article 45-B",
+          "label": "Upcoming platform safeguards for minors"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"frontier","title":"Check your developer role before applying RAISE","features":["models"],"jurisdiction":"New York State","status":"Upcoming duties",
-      "trigger":"You train or initiate training of a foundation model at the statutory frontier-compute threshold.",
-      "rule":"From 1 January 2027, RAISE imposes tiered duties on covered frontier developers. The definition uses more than 10²⁶ training operations; the large-developer tier uses annual gross revenue above $500 million, including affiliates.",
-      "actions":["Record who trains the model and the relevant compute, including material modifications, then assess New York scope and developer tier.","If covered, map transparency and incident reporting before deployment; large developers must also plan their safety framework and additional duties."],
-      "evidence":"A role/compute assessment, release documentation, and reporting ownership where the act applies.",
-      "boundary":"An app built on someone else’s API is not automatically a frontier developer. Being below the large-developer revenue threshold does not remove all duties if you meet the frontier-developer definition.",
-      "sources":[{"label":"RAISE definitions · §1420","url":"https://www.nysenate.gov/legislation/laws/GBS/1420"},{"label":"Transparency duties · §1421","url":"https://www.nysenate.gov/legislation/laws/GBS/1421"},{"label":"March 2026 amendment and timing","url":"https://www.nysenate.gov/legislation/bills/2025/S8828"}],
-      "related":[{"reference":"GBL Article 44-B","label":"RAISE Act"}]
+      "id": "minors-data",
+      "title": "Check how children’s and teenagers’ data is used",
+      "features": [
+        "minors"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "You know a New York user is under 18, or your online service is primarily directed to minors.",
+      "rule": "The Child Data Protection Act has applied since 20 June 2025. Nonessential processing of 13–17-year-olds’ data needs informed consent; under-13 processing follows the law’s COPPA standard. Consent must be separate from the transaction. Covered minors’ data cannot be sold.",
+      "actions": [
+        "Separate processing necessary to provide the requested service from advertising, optional analytics, and model-training uses; assess each purpose.",
+        "Build age-aware choices and withdrawal flows. Check processor agreements and honor applicable age signals."
+      ],
+      "evidence": "A purpose-by-purpose data map, age-signal handling, consent screens, and processor terms.",
+      "boundary": "An adult cookie banner or a consent sentence buried in general terms is not a reliable substitute. The statutory necessary-processing exceptions must be assessed individually.",
+      "sources": [
+        {
+          "label": "Attorney general’s implementation guidance",
+          "url": "https://ag.ny.gov/child-data-protection-act-guidance"
+        },
+        {
+          "label": "Processing and consent duties · §899-ff",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+        }
+      ],
+      "related": [
+        {
+          "reference": "GBL Article 39-FF",
+          "label": "Child Data Protection Act"
+        }
+      ],
+      "reviewed": "2026-09-30"
     },
     {
-      "id":"biometrics","title":"Design for the NYC customer’s physical setting","features":["biometrics"],"jurisdiction":"NYC + New York State","status":"Current duty",
-      "trigger":"Your product identifies customers with biometrics or controls access to NYC residential buildings.",
-      "rule":"NYC’s customer-biometric law adds notice and monetization restrictions for covered establishments. Its tenant-data law separately regulates covered smart-access systems. State security duties can apply alongside these local requirements.",
-      "actions":["Ask where the system will be installed and whose data it captures: retail customers and residential tenants trigger different reviews.","Build configurable collection, retention, deletion, and access controls; agree with the customer who handles required notices and tenant processes."],
-      "evidence":"An installation-specific data map, retention settings, notice plan, and customer/vendor responsibility record.",
-      "boundary":"These are activity-specific NYC additions, not a statewide blanket ban on facial recognition. Assess the operator, building or establishment, and statutory exceptions.",
-      "sources":[{"label":"NYC customer-biometric enactment","url":"https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=070402C0-43F0-47AE-AA6E-DEF06CDF702A&ID=3704369"},{"label":"HPD tenant-data privacy guidance","url":"https://www.nyc.gov/site/hpd/services-and-information/tenant-data-privacy-law.page"}],
-      "related":[{"reference":"NYC Local Law 3 of 2021","label":"Customer biometrics"},{"reference":"NYC Local Law 63","label":"Tenant data and smart access"}]
+      "id": "minors-design",
+      "title": "Put the January 2027 youth rules on your roadmap",
+      "features": [
+        "minors",
+        "companions"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Upcoming duties",
+      "trigger": "You run a covered social or gaming platform, integrate an AI companion, or offer a covered personalized social feed to minors.",
+      "rule": "Safe by Design takes effect 1 January 2027: covered platforms face age-assurance and minor-default protections, including integrated companions disabled by default for minors unless a parent overrides. SAFE for Kids follows on 25 January 2027 for covered addictive feeds and nighttime notifications.",
+      "actions": [
+        "Assess each law separately against the platform’s actual features and audience; plan age assurance, parent controls, and restricted defaults before release.",
+        "For covered social feeds, design the required parental-consent path and nighttime-notification controls. Test behavior when consent is absent or withdrawn."
+      ],
+      "evidence": "Separate scope decisions for each act, a dated engineering plan, and default/consent-flow test results.",
+      "boundary": "These are two different laws. Safe by Design has a specific platform definition; SAFE for Kids does not cover every AI recommendation. A standalone chatbot is not automatically a covered social or gaming platform.",
+      "sources": [
+        {
+          "label": "Safe by Design scope · §1539",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1539"
+        },
+        {
+          "label": "Safe by Design duties · §1540",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1540"
+        },
+        {
+          "label": "Attorney general’s implementation dates",
+          "url": "https://ag.ny.gov/resources/individuals/consumer-issues/technology/protecting-children-online"
+        },
+        {
+          "label": "SAFE for Kids final implementing rules",
+          "url": "https://ag.ny.gov/safe-for-kids-act-final-rule"
+        }
+      ],
+      "related": [
+        {
+          "reference": "GBL Article 45-B",
+          "label": "Safe by Design Act"
+        },
+        {
+          "reference": "GBL Article 45 ·",
+          "label": "SAFE for Kids Act"
+        }
+      ],
+      "reviewed": "2026-09-30"
+    },
+    {
+      "id": "hiring",
+      "title": "Using AI to hire or promote someone?",
+      "features": [
+        "hiring"
+      ],
+      "jurisdiction": "NYC + New York State",
+      "status": "Current duty",
+      "trigger": "You are an employer or employment agency using a covered AI hiring tool, or a supplier supporting that use in NYC.",
+      "rule": "For covered AEDTs, NYC Local Law 144 requires an independent bias audit within the preceding year, a public summary, and applicable 10-business-day notices. Employers and employment agencies carry these duties. State and city discrimination protections remain relevant.",
+      "actions": [
+        "Check the tool definition and job location, including remote roles associated with an NYC office.",
+        "If you supply the tool, prepare audit-support data and documentation; agree responsibilities with the customer. If you hire, verify the audit, publication, and notices before use."
+      ],
+      "evidence": "A scope assessment, auditor relationship, dated audit/publication record, notices, and customer responsibility matrix.",
+      "boundary": "Buying a vendor’s ‘compliant AI’ label does not transfer the employer’s duties. Passing the prescribed audit is not a discrimination safe harbor.",
+      "sources": [
+        {
+          "label": "DCWP’s employer and vendor FAQ",
+          "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf"
+        },
+        {
+          "label": "State discrimination protections · §296",
+          "url": "https://www.nysenate.gov/legislation/laws/EXC/296"
+        },
+        {
+          "label": "NYC Human Rights Law",
+          "url": "https://www.nyc.gov/site/cchr/law/chapter-1.page"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYC Local Law 144",
+          "label": "NYC hiring-tool law"
+        },
+        {
+          "reference": "Executive Law §296",
+          "label": "State discrimination safeguards"
+        }
+      ],
+      "reviewed": "2026-09-30"
+    },
+    {
+      "id": "media",
+      "title": "Separate AI labels from likeness permissions",
+      "features": [
+        "media"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "Your ads use a synthetic person, or your product uses someone’s face, likeness, or voice for advertising or trade.",
+      "rule": "GBL §396-b requires disclosure for covered synthetic performers in ads. Civil Rights Law §51 separately permits claims over unauthorized use of a real person’s protected identity in advertising or trade. Covered fashion work adds specific digital-replica consent duties.",
+      "actions": [
+        "Decide whether an asset depicts an invented performer, an identifiable real person, or both; assess the relevant rule for each use.",
+        "Secure required written permissions and keep them tied to the asset, purpose, and version. Add the synthetic-performer disclosure where required."
+      ],
+      "evidence": "An asset and release register, approved usage terms, and final ad screenshots.",
+      "boundary": "The synthetic-performer definition has exclusions, including certain audio and expressive-work uses. Adding an AI label does not itself provide permission to clone a real person.",
+      "sources": [
+        {
+          "label": "Synthetic performers in ads · §396-b",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+        },
+        {
+          "label": "Likeness and voice claims · §51",
+          "url": "https://www.nysenate.gov/legislation/laws/CVR/51"
+        },
+        {
+          "label": "Fashion clients’ responsibilities",
+          "url": "https://dol.ny.gov/responsibilities-fashion-management-and-clients"
+        }
+      ],
+      "related": [
+        {
+          "reference": "General Business Law §396-b",
+          "label": "Synthetic-performer disclosure"
+        },
+        {
+          "reference": "Civil Rights Law §§50–51",
+          "label": "Living-person likeness consent"
+        },
+        {
+          "reference": "Labor Law Article 36",
+          "label": "Fashion digital replicas"
+        }
+      ],
+      "reviewed": "2026-09-30"
+    },
+    {
+      "id": "finance",
+      "title": "Using AI in finance or insurance?",
+      "features": [
+        "finance"
+      ],
+      "jurisdiction": "New York State · agency guidance",
+      "status": "Agency guidance",
+      "trigger": "You work at a DFS-regulated institution or insurer, or supply AI services to one.",
+      "rule": "DFS guidance directs regulated firms to assess third-party cyber risks, including AI use and customer-data training. Insurance guidance addresses AI underwriting/pricing governance and discrimination. Buyers may need contractual access to supplier information and controls.",
+      "actions": [
+        "If you work at a regulated firm, assess vendor data practices, cyber controls, and AI governance. Suppliers should be ready to provide supporting information.",
+        "Discuss testing evidence, change notification, incident support, audit/regulator cooperation, and data return or deletion before the procurement review."
+      ],
+      "evidence": "Relevant governance records, supplier documentation, testing results, and agreed responsibilities.",
+      "boundary": "These sources address regulated firms. Selling software to a bank does not automatically make the supplier a Part 500 covered entity; buyer contracts can still impose obligations. Direct financial services need a separate scope review.",
+      "sources": [
+        {
+          "label": "DFS third-party risk guidance · October 2025",
+          "url": "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20251021-guidance-managing-risks-third-party"
+        },
+        {
+          "label": "DFS insurance AI guidance · Circular 7",
+          "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYDFS Insurance Circular Letter No. 7",
+          "label": "Insurance AI guidance"
+        }
+      ],
+      "reviewed": "2026-09-30"
+    },
+    {
+      "id": "frontier",
+      "title": "Check your developer role before applying RAISE",
+      "features": [
+        "models"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Upcoming duties",
+      "trigger": "You train or initiate training of a foundation model at the statutory frontier-compute threshold.",
+      "rule": "From 1 January 2027, RAISE imposes tiered duties on covered frontier developers. The definition uses more than 10²⁶ training operations; the large-developer tier uses annual gross revenue above $500 million, including affiliates.",
+      "actions": [
+        "Record who trains the model and the relevant compute, including material modifications, then assess New York scope and developer tier.",
+        "If covered, map transparency and incident reporting before deployment; large developers must also plan their safety framework and additional duties."
+      ],
+      "evidence": "A role/compute assessment, release documentation, and reporting ownership where the act applies.",
+      "boundary": "An app built on someone else’s API is not automatically a frontier developer. Being below the large-developer revenue threshold does not remove all duties if you meet the frontier-developer definition.",
+      "sources": [
+        {
+          "label": "RAISE definitions · §1420",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1420"
+        },
+        {
+          "label": "Transparency duties · §1421",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1421"
+        },
+        {
+          "label": "March 2026 amendment and timing",
+          "url": "https://www.nysenate.gov/legislation/bills/2025/S8828"
+        }
+      ],
+      "related": [
+        {
+          "reference": "GBL Article 44-B",
+          "label": "RAISE Act"
+        }
+      ],
+      "reviewed": "2026-09-30"
+    },
+    {
+      "id": "biometrics",
+      "title": "Using biometrics in a shop or building?",
+      "features": [
+        "biometrics"
+      ],
+      "jurisdiction": "NYC + New York State",
+      "status": "Current duty",
+      "trigger": "Your product identifies customers with biometrics or controls access to NYC residential buildings.",
+      "rule": "NYC’s customer-biometric law adds notice and monetization restrictions for covered establishments. Its tenant-data law separately regulates covered smart-access systems. State security duties can apply alongside these local requirements.",
+      "actions": [
+        "Ask where the system will be installed and whose data it captures: retail customers and residential tenants trigger different reviews.",
+        "Build configurable collection, retention, deletion, and access controls; agree with the customer who handles required notices and tenant processes."
+      ],
+      "evidence": "An installation-specific data map, retention settings, notice plan, and customer/vendor responsibility record.",
+      "boundary": "These are activity-specific NYC additions, not a statewide blanket ban on facial recognition. Assess the operator, building or establishment, and statutory exceptions.",
+      "sources": [
+        {
+          "label": "NYC customer-biometric enactment",
+          "url": "https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=070402C0-43F0-47AE-AA6E-DEF06CDF702A&ID=3704369"
+        },
+        {
+          "label": "HPD tenant-data privacy guidance",
+          "url": "https://www.nyc.gov/site/hpd/services-and-information/tenant-data-privacy-law.page"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYC Local Law 3 of 2021",
+          "label": "Customer biometrics"
+        },
+        {
+          "reference": "NYC Local Law 63",
+          "label": "Tenant data and smart access"
+        }
+      ],
+      "reviewed": "2026-09-30"
     }
-  ]
+  ],
+  "reviewNote": "New everyday-use and professional-practice topics checked 5 October 2026. Existing business-use topics and January 2027 dates checked 30 September 2026. Each law card shows its own source-check date."
 }

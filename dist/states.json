@@ -877,9 +877,92 @@
         "reviewed": "2026-09-30",
         "type": "Related statute",
         "url": "https://www.nysenate.gov/legislation/laws/CVR/51"
+      },
+      {
+        "title": "Lawyers: professional duties when using AI",
+        "bill": "22 NYCRR Part 1200 · Rules of Professional Conduct",
+        "topic": "Professional services",
+        "status": "Enacted",
+        "type": "Binding professional rules",
+        "description": "Existing lawyer duties apply to AI-assisted work. Competence, confidentiality, client communication, fees, candor, and supervision remain the lawyer’s responsibility.",
+        "timing": "Existing rules; AI guidance issued August 2024. Sources checked 5 October 2026.",
+        "appliesTo": "Lawyers and law firms subject to the New York Rules of Professional Conduct, including practice in NYC.",
+        "obligations": [
+          "Protect confidential client information under Rule 1.6; assess authorization and safeguards before sharing it with a tool.",
+          "Provide competent representation, communicate appropriately, charge permissible fees, and comply with duties of candor and supervision."
+        ],
+        "enforcement": "Violations of the binding rules can lead to attorney discipline.",
+        "limits": "The City Bar opinion interprets these state professional rules; it is nonbinding guidance, not NYC legislation. Client terms and court-specific orders need separate review.",
+        "sources": [
+          {
+            "label": "New York courts · binding Rules of Professional Conduct",
+            "url": "https://www.nycourts.gov/LegacyPDFS/rules/jointappellate/NY-Rules-Prof-Conduct-1200.pdf"
+          },
+          {
+            "label": "NYC Bar Opinion 2024-5 · nonbinding AI guidance",
+            "url": "https://www.nycbar.org/reports/formal-opinion-2024-5-generative-ai-in-the-practice-of-law/"
+          }
+        ],
+        "reviewed": "2026-10-05",
+        "url": "https://www.nycourts.gov/LegacyPDFS/rules/jointappellate/NY-Rules-Prof-Conduct-1200.pdf"
+      },
+      {
+        "title": "Licensed professionals: confidentiality and scope of practice",
+        "bill": "8 NYCRR §29.1(b)(8)–(10) · Regents professional conduct rules",
+        "topic": "Professional services",
+        "status": "Enacted",
+        "type": "Related professional regulation",
+        "description": "Covered licensed professionals must protect client information and stay within their authorized and competent practice. These existing rules matter when AI is used for professional work.",
+        "timing": "Existing regulation; source checked 5 October 2026.",
+        "appliesTo": "Covered Title VIII professions, including accountancy, engineering, architecture, psychology, and social work; profession-specific exceptions and additional rules apply.",
+        "obligations": [
+          "Do not disclose personally identifiable information obtained professionally without prior client or patient consent, unless authorized or required by law.",
+          "Observe limits on competence, authorized practice, and delegation."
+        ],
+        "enforcement": "The regulation defines conduct that can support professional disciplinary proceedings.",
+        "limits": "This is not an AI-specific rule or a rule for every consultant. Lawyers have separate court rules; medicine has a separate disciplinary framework. Review the provisions for the actual license.",
+        "sources": [
+          {
+            "label": "NYSED · Part 29 professional conduct rules",
+            "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29"
+          }
+        ],
+        "reviewed": "2026-10-05",
+        "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29"
+      },
+      {
+        "title": "Recording conversations and AI meeting notes",
+        "bill": "Penal Law §§250.00–250.05 · eavesdropping",
+        "topic": "Recording & transcription",
+        "status": "Enacted",
+        "type": "Related statute",
+        "description": "AI recording tools operate within existing eavesdropping law. New York generally permits a participant to record their own conversation, but this does not resolve other states’ laws or professional confidentiality duties.",
+        "timing": "Existing statute; sources checked 5 October 2026.",
+        "appliesTo": "People using tools to record or intercept covered communications; the participants’ locations and method of recording matter.",
+        "obligations": [
+          "Do not engage in unlawful wiretapping or mechanical overhearing as defined in the statute."
+        ],
+        "enforcement": "Unlawful eavesdropping under §250.05 is a class E felony.",
+        "limits": "Not a blanket permission for a meeting bot. Lawyer ethics guidance advises advance disclosure and consent from participants; that guidance is distinct from the general statute.",
+        "sources": [
+          {
+            "label": "Eavesdropping definitions · §250.00",
+            "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
+          },
+          {
+            "label": "Eavesdropping offense · §250.05",
+            "url": "https://www.nysenate.gov/legislation/laws/PEN/250.05"
+          },
+          {
+            "label": "NYC Bar Opinion 2026-2 · nonbinding recording guidance",
+            "url": "https://www.nycbar.org/reports/formal-opinion-2026-2-ethical-use-of-ai-for-recording-transcribing-and-summarizing-non-client-conversations/"
+          }
+        ],
+        "reviewed": "2026-10-05",
+        "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
       }
     ],
-    "summary": "Launching in New York? Explore a practical startup guide to product claims, data, subscriptions, hiring, and minors, plus the separate NYC layer and upcoming 2027 duties.",
+    "summary": "Using AI for work, client services, hiring, or daily life? Explore practical guidance alongside New York State duties and additional NYC rules.",
     "reviewed": "2026-09-22"
   },
   {

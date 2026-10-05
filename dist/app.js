@@ -6,6 +6,22 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const el=(tag,attrs)=>{const n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);return n};
 const results=document.querySelector('#law-results');
 let jurisdiction='all';
+// Editorial navigation groups, not legal applicability determinations.
+const activityTopics={
+ work:['Professional services','Legal proceedings','Privacy','Privacy & security','Consumer protection','Recording & transcription'],
+ data:['Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Children & teens','Recording & transcription','Professional services'],
+ people:['Employment','Automated decisions','Civil rights','Privacy & profiling','Housing & privacy','Insurance'],
+ content:['Advertising','Digital replicas','Synthetic media','Voice & likeness','Elections','Consumer protection'],
+ chatbots:['Chatbots','Children & teens','Consumer protection','Consumer pricing','Transparency','Privacy'],
+ regulated:['Health care','Insurance','Professional services','Privacy & security','Automated decisions'],
+ building:['AI governance','Frontier models','Transparency','Regulatory sandbox','Consumer protection','Chatbots','Automated decisions','Children & teens'],
+ rights:['Employment','Civil rights','Consumer protection','Consumer pricing','Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Digital replicas','Voice & likeness','Synthetic media','Recording & transcription','Children & teens']
+};
+const activitySelect=document.getElementById('activity-filter');
+const initialActivity=new URL(location.href).searchParams.get('activity');
+if(Object.hasOwn(activityTopics,initialActivity))activitySelect.value=initialActivity;
+function syncActivityLink(){const url=new URL(location.href);if(activitySelect.value==='all')url.searchParams.delete('activity');else url.searchParams.set('activity',activitySelect.value);history.replaceState(null,'',url);}
+
 const formatDate=value=>new Date(value+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
 const statusClass=value=>({Upcoming:'future',Enjoined:'enjoined',Guidance:'guidance'}[value]||'status');
 const jurisdictionName=l=>l.local?'New York City':'Statewide';
@@ -19,9 +35,9 @@ function choose(code,scroll=false){
  const local=s.laws.filter(l=>l.local).length;
  detail.innerHTML=`<div class="state-topline"><span class="state-code">${esc(s.code)}</span><span>${s.code==='NY'?'EXPANDED COVERAGE':'STATE OVERVIEW'}</span></div><h2 class="state-name">${esc(s.name)}</h2><p class="state-summary">${esc(s.summary)}</p><div class="overview-stats"><div><strong>${s.laws.length}</strong><span>selected measures</span></div><div><strong>${new Set(s.laws.map(l=>l.topic)).size}</strong><span>topics covered</span></div></div><a class="primary-link" href="#regulations">Explore ${s.laws.length===1?'the measure':`all ${s.laws.length} measures`} <span aria-hidden="true">↓</span></a><a class="state-case-link" href="#court-cases" data-state-cases="${esc(s.code)}">Court decisions relevant to ${esc(s.name)}</a><div class="overview-notice">${local?'Statewide and NYC measures are labeled separately.':'Selected laws and related rules; coverage varies by state.'}</div><div class="law-count"><span>START EXPLORING</span></div>${s.laws.slice(0,3).map((l,i)=>`<a class="law-preview" href="#law-${s.code}-${i}"><span class="preview-topic">${esc(l.topic)} · ${esc(l.status)}</span><strong>${esc(l.title)}</strong><span class="preview-arrow" aria-hidden="true">↗</span></a>`).join('')}`;
  document.querySelector('#research-title').textContent=`${s.name} / regulation library`;
- document.querySelector('#research-subtitle').textContent=s.code==='NY'?`${s.laws.length-local} statewide measures + ${local} NYC measures. Use the startup guide, compare the state and city layers, then open a law card for scope and duties.`:'Browse the selected measures and follow the sources for their full scope and requirements.';
+ document.querySelector('#research-subtitle').textContent=s.code==='NY'?`${s.laws.length-local} statewide measures + ${local} NYC measures. Start with your AI use, compare state and city requirements, then open a law card for scope and duties.`:'Choose what you use AI for, then explore the selected measures and their sources. This collection is a starting point; state coverage varies.';
  document.querySelector('#ny-guide').hidden=s.code!=='NY';
- document.querySelector('#ny-startup-guide').hidden=s.code!=='NY';
+ document.querySelector('#ny-ai-guide').hidden=s.code!=='NY';
  document.querySelector('[data-jurisdiction="all"]').textContent=s.code==='NY'?'State + city':'All jurisdictions';
  document.querySelector('[data-jurisdiction="state"]').textContent=s.code==='NY'?'Statewide · includes NYC':'Statewide';
  document.querySelector('#law-search').value='';jurisdiction='all';
@@ -41,33 +57,39 @@ function filteredLaws(){
  const topic=document.querySelector('#topic-filter').value,status=document.querySelector('#status-filter').value;
  return s.laws.map((law,index)=>({law,index})).filter(({law:l})=>
   (jurisdiction==='all'||(jurisdiction==='local'?l.local:!l.local))&&
+  (activitySelect.value==='all'||activityTopics[activitySelect.value]?.includes(l.topic))&&
   (topic==='all'||l.topic===topic)&&(status==='all'||(l.status||'Enacted')===status)&&
   (!query||[l.title,l.bill,l.description,l.topic,l.appliesTo,l.enforcement,l.limits,...(l.obligations||[])].filter(Boolean).join(' ').toLowerCase().includes(query)));
 }
 function renderLaws(){
  const s=states.find(s=>s.code===selected);if(!s)return;const matches=filteredLaws();
+ syncActivityLink();
+ const activity=activitySelect.value;
+ document.getElementById('activity-context').textContent=activity==='all'?`Explore the selected ${s.name} measures by activity, topic, or keyword.`:`${activitySelect.selectedOptions[0].textContent}: showing topic-related entries for ${s.name}. These are navigation suggestions, not an applicability decision.${['work','regulated'].includes(activity)&&s.code!=='NY'?' Professional conduct and court-specific rules have not been comprehensively catalogued for this state.':''}`;
  document.querySelectorAll('[data-jurisdiction]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.jurisdiction===jurisdiction)));
  document.querySelector('#result-count').textContent=`${matches.length} of ${s.laws.length} measures`;
  const scopeNote=document.querySelector('#scope-note');
  scopeNote.hidden=s.code!=='NY';
  scopeNote.textContent=jurisdiction==='local'?'Showing NYC additions only. Relevant New York State and federal requirements still apply.':jurisdiction==='state'?'Showing state-level measures, including those relevant within NYC. City-specific obligations are additional.':'Showing both layers. Being in NYC does not make every measure applicable: check the activity, entity, and geographic scope.';
  document.querySelector('#export-csv').disabled=matches.length===0;
- document.querySelector('#reset-filters').hidden=jurisdiction==='all'&&!document.querySelector('#law-search').value&&document.querySelector('#topic-filter').value==='all'&&document.querySelector('#status-filter').value==='all';
- results.innerHTML=matches.length?matches.map(({law:l,index})=>`<article class="law-card" id="law-${s.code}-${index}"><div class="law-meta">${metadata(l)}</div><h3>${esc(l.title)}</h3><div class="bill">${esc(l.bill)}</div><p>${esc(l.description)}</p><div class="timing"><span aria-hidden="true">◷</span><span>${esc(l.timing)}</span></div>${l.appliesTo||l.obligations||l.enforcement?`<details class="provisions"><summary>Scope & key provisions <span aria-hidden="true">+</span></summary><div class="provision-body">${l.appliesTo?`<h4>Who it covers</h4><p>${esc(l.appliesTo)}</p>`:''}${l.obligations?`<h4>Key duties</h4><ul>${l.obligations.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>`:''}${l.enforcement?`<h4>Enforcement</h4><p>${esc(l.enforcement)}</p>`:''}${l.limits?`<h4>Scope & limitations</h4><p>${esc(l.limits)}</p>`:''}</div></details>`:''}<div class="card-sources"><span class="source-caption">${esc(l.type||'Legal source')} · ${jurisdictionName(l)}</span>${sourceList(l).map(a=>`<a class="source-link" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.label)} <span aria-hidden="true">↗</span></a>`).join('')}<span class="review-date">Sources checked ${formatDate(l.reviewed||s.reviewed)}</span></div></article>`).join(''):'<div class="empty-results"><strong>No measures match these filters.</strong><p>Try a broader term or reset the filters. This collection is not exhaustive.</p><button class="quiet-button" type="button" id="empty-reset">Reset filters</button></div>';
+ document.querySelector('#reset-filters').hidden=activitySelect.value==='all'&&jurisdiction==='all'&&!document.querySelector('#law-search').value&&document.querySelector('#topic-filter').value==='all'&&document.querySelector('#status-filter').value==='all';
+ results.innerHTML=matches.length?matches.map(({law:l,index})=>`<article class="law-card" id="law-${s.code}-${index}"><div class="law-meta">${metadata(l)}</div><h3>${esc(l.title)}</h3><div class="bill">${esc(l.bill)}</div><p>${esc(l.description)}</p><div class="timing"><span aria-hidden="true">◷</span><span>${esc(l.timing)}</span></div>${l.appliesTo||l.obligations||l.enforcement?`<details class="provisions"><summary>Scope & key provisions <span aria-hidden="true">+</span></summary><div class="provision-body">${l.appliesTo?`<h4>Who it covers</h4><p>${esc(l.appliesTo)}</p>`:''}${l.obligations?`<h4>Key duties</h4><ul>${l.obligations.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>`:''}${l.enforcement?`<h4>Enforcement</h4><p>${esc(l.enforcement)}</p>`:''}${l.limits?`<h4>Scope & limitations</h4><p>${esc(l.limits)}</p>`:''}</div></details>`:''}<div class="card-sources"><span class="source-caption">${esc(l.type||'Legal source')} · ${jurisdictionName(l)}</span>${sourceList(l).map(a=>`<a class="source-link" href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.label)} <span aria-hidden="true">↗</span></a>`).join('')}<span class="review-date">Sources checked ${formatDate(l.reviewed||s.reviewed)}</span></div></article>`).join(''):'<div class="empty-results"><strong>No measures match these filters.</strong><p>No matching entry in this collection does not mean no law applies. Try another activity or reset the filters; general, professional, local, and federal duties may still matter.</p><button class="quiet-button" type="button" id="empty-reset">Reset filters</button></div>';
  document.querySelector('#empty-reset')?.addEventListener('click',resetFilters);
  document.dispatchEvent(new CustomEvent('atlas:lawsrender',{detail:{code:s.code}}));
 }
 detail.addEventListener('click',e=>{if(e.target.closest('a[href^="#law-"]'))resetFilters()});
 function resetFilters(){
+ activitySelect.value='all';
  document.querySelector('#law-search').value='';document.querySelector('#topic-filter').value='all';document.querySelector('#status-filter').value='all';jurisdiction='all';renderLaws();
 }
+activitySelect.addEventListener('change',renderLaws);
 document.querySelector('#law-search').addEventListener('input',renderLaws);
 ['topic-filter','status-filter'].forEach(id=>document.getElementById(id).addEventListener('change',renderLaws));
 document.querySelectorAll('[data-jurisdiction]').forEach(b=>b.addEventListener('click',()=>{jurisdiction=b.dataset.jurisdiction;renderLaws()}));
 document.querySelector('#reset-filters').addEventListener('click',resetFilters);
-document.querySelector('#ny-feature').addEventListener('click',e=>{if(!states.length||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();choose('NY');const url=new URL(location.href);url.searchParams.delete('case');url.hash='ny-startup-guide';history.replaceState(null,'',url);document.querySelector('#ny-startup-guide').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+document.querySelector('#ny-feature').addEventListener('click',e=>{if(!states.length||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();choose('NY');const url=new URL(location.href);url.searchParams.delete('case');url.hash='ny-ai-guide';history.replaceState(null,'',url);document.querySelector('#ny-ai-guide').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
 document.querySelector('#copy-link').addEventListener('click',async()=>{
- const url=new URL(location.href);url.search='';url.searchParams.set('state',selected);url.hash='regulations';const message=document.querySelector('#action-message');
+ const url=new URL(location.href);url.search='';url.searchParams.set('state',selected);if(activitySelect.value!=='all')url.searchParams.set('activity',activitySelect.value);url.hash='regulations';const message=document.querySelector('#action-message');
  try{await navigator.clipboard.writeText(url.href);message.textContent='State link copied.';}catch{message.textContent=`State link: ${url.href}`;}
 });
 document.querySelector('#export-csv').addEventListener('click',()=>{
