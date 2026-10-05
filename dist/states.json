@@ -5,13 +5,30 @@
     "kind": "ai",
     "laws": [
       {
-        "title": "Frontier AI transparency",
+        "title": "Transparency in Frontier Artificial Intelligence Act (TFAIA)",
         "bill": "SB 53 · Transparency in Frontier Artificial Intelligence Act",
         "topic": "Frontier models",
         "description": "Requires covered large frontier developers to publish safety frameworks and disclose assessments. Includes critical incident reporting and employee whistleblower protections.",
-        "timing": "Enacted 29 September 2025; provisions have different implementation dates.",
+        "timing": "Signed 29 September 2025; general effective date 1 January 2026. Some provisions have separate timing or funding conditions.",
         "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
-        "status": "Enacted"
+        "status": "Enacted",
+        "reviewed": "2026-10-05",
+        "type": "State statute",
+        "sources": [
+          {
+            "label": "Chaptered SB 53",
+            "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53"
+          },
+          {
+            "label": "Cal OES · effective-date report",
+            "url": "https://www.caloes.ca.gov/wp-content/uploads/Legislative-Affiars/Documents/2025-Cal-OES-End-of-Year-Legislative-Report-Public.pdf"
+          },
+          {
+            "label": "Department of Technology · implementation review",
+            "url": "https://www.cdt.ca.gov/initiatives/transparency-in-frontier-ai-act/"
+          }
+        ],
+        "limits": "Frontier-developer and large-developer definitions determine scope; this is not a general obligation on every AI startup. CalCompute provisions depend on an appropriation. The Department of Technology’s first definition-review recommendations are due by 1 January 2027."
       },
       {
         "title": "Training data transparency",
@@ -76,9 +93,22 @@
         "bill": "SB 26-189 · Replaces the earlier Colorado AI Act",
         "topic": "Automated decisions",
         "description": "Sets documentation, consumer notice, recordkeeping, data-correction, and human-review duties for covered automated systems used in consequential decisions. Enforced by the attorney general.",
-        "timing": "Key developer and deployer duties begin 1 January 2027.",
+        "timing": "Signed 14 May 2026; key duties start 1 January 2027. Draft implementing rules were filed 11 August 2026.",
         "url": "https://leg.colorado.gov/bills/sb26-189",
-        "status": "Upcoming"
+        "status": "Upcoming",
+        "reviewed": "2026-10-05",
+        "type": "State statute",
+        "sources": [
+          {
+            "label": "Enacted SB 26-189",
+            "url": "https://leg.colorado.gov/bills/SB26-189"
+          },
+          {
+            "label": "Attorney general · implementation and rulemaking",
+            "url": "https://coag.gov/ai/"
+          }
+        ],
+        "limits": "This is the replacement framework, not the original SB 24-205 obligations. Proposed implementing rules are still in rulemaking as of this review. Follow the attorney general’s current notices for changes."
       }
     ],
     "summary": "A revised framework for consequential automated decisions, with key duties starting in 2027.",
@@ -144,9 +174,35 @@
         ],
         "enforcement": "The Division of Consumer Protection enforces the chapter, with fines of up to $2,500 per violation.",
         "limits": "Scripted-only tools and tools solely connecting people to human therapists are excluded. Section 58-60-118 separately offers a conditional affirmative defense for specified licensing claims; it does not license AI therapists."
+      },
+      {
+        "title": "AI Learning Laboratory & regulatory mitigation",
+        "bill": "Utah Code Title 13, Chapter 72 · AI Learning Laboratory",
+        "topic": "Regulatory sandbox",
+        "description": "A supervised programme permits approved businesses to test specified AI uses under agreements with the AI office and relevant regulator. The agreement identifies the particular regulatory relief and conditions.",
+        "timing": "Existing programme; current scope and authorised pilot register checked 5 October 2026. Pilot dates and status vary.",
+        "appliesTo": "Businesses accepted into the AI Learning Laboratory with a written regulatory mitigation agreement.",
+        "obligations": [
+          "Follow the agreement’s scope, safeguards, disclosures, reporting, and time limits. Other applicable requirements continue to apply."
+        ],
+        "limits": "Admission is not state endorsement or general product approval. Master agreements alone do not authorise individual pilots. Check the signed agreement and current status for each project.",
+        "status": "Enacted",
+        "type": "State programme & statutory framework",
+        "reviewed": "2026-10-05",
+        "url": "https://commerce.utah.gov/ai/regulatory-relief/",
+        "sources": [
+          {
+            "label": "Office of AI Policy · sandbox requirements and statutory links",
+            "url": "https://commerce.utah.gov/ai/regulatory-relief/"
+          },
+          {
+            "label": "Official register · agreements and pilot status",
+            "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/"
+          }
+        ]
       }
     ],
-    "summary": "Consumer AI disclosures and specific privacy, advertising, and identity rules for mental-health chatbots.",
+    "summary": "Consumer AI disclosures, mental-health chatbot protections, and a supervised AI sandbox with project-specific regulatory relief.",
     "reviewed": "2026-09-18"
   },
   {

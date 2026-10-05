@@ -50,11 +50,14 @@
   const scope = $('case-jurisdiction').value, code = scope==='selected'?current.code:scope;
   const matches = filtered(), federal = matches.filter(c=>c.scope==='federal').length;
   $('case-federal').disabled = scope==='all'||scope==='federal';
-  $('case-count').textContent = `${matches.length} of ${records.length} decisions · newest ruling first`;
+  $('case-count').textContent = `${matches.length} of ${records.length} decisions · state matters first, newest within each group`;
   $('case-reset').hidden = scope==='selected' && $('case-federal').checked && !$('case-search').value && $('case-stage').value==='all' && $('case-court').value==='all';
   const local = records.filter(c=>c.scope==='state'&&c.affectedJurisdictions.includes(code));
   $('case-scope').textContent = scope==='all' ? 'All catalogued decisions. Court location is shown separately from the law affected; federal matters may be relevant across state lines.' : scope==='federal' ? 'Federal matters only. Their relevance can cross state lines, but these cards do not imply that every state’s law changed or that every court is bound.' : `${local.length?`${local.length} state-specific decision${local.length===1?' is':'s are'} catalogued for ${names[code]||code}.`:`No state-specific decision is catalogued for ${names[code]||code}; this is a coverage gap, not a finding that no case law exists.`} ${federal?`Also showing ${federal} federal matter${federal===1?'':'s'} with multistate relevance.`:$('case-federal').checked?'Federal matters are included when they match the other filters.':'Federal matters are excluded.'}`;
-  result.innerHTML = matches.length ? matches.map(card).join('') : '<div class="empty-results"><strong>No decisions match these filters.</strong><p>Coverage is selective. Try all jurisdictions or broaden your search.</p><button class="quiet-button" type="button" data-all-cases>Show all decisions</button></div>';
+  const stateMatches=matches.filter(c=>c.scope==='state'),federalMatches=matches.filter(c=>c.scope==='federal');
+  const group=(id,title,items)=>items.length?`<div class="case-group" id="${id}" role="region" aria-labelledby="${id}-title"><h3 class="case-group-title" id="${id}-title">${title}</h3><div class="case-grid">${items.map(card).join('')}</div></div>`:'';
+  result.innerHTML = matches.length ? group('state-court-updates','State-specific court updates',stateMatches)+group('federal-court-updates','Federal updates',federalMatches) : '<div class="empty-results"><strong>No decisions match these filters.</strong><p>Coverage is selective. Try all jurisdictions or broaden your search.</p><button class="quiet-button" type="button" data-all-cases>Show all decisions</button></div>';
+  document.querySelector('.case-context').hidden=!federal;
  }
  function reset(scope='selected') {
   $('case-search').value='';$('case-jurisdiction').value=scope;$('case-stage').value='all';$('case-court').value='all';$('case-federal').checked=true;

@@ -1,0 +1,89 @@
+{
+  "reviewed": "2026-10-05",
+  "updates": [
+    {
+      "id": "utah-ai-sandbox-pilots",
+      "state": "UT",
+      "stateName": "Utah",
+      "date": "2026-10-02",
+      "dateLabel": "Latest agreements signed",
+      "status": "Pilot expansion",
+      "title": "Utah expands supervised AI pilots",
+      "summary": "Utah’s AI office lists new agreements for Expect Fitness and August AI signed on 2 October 2026, following Nolla Health on 22 September. The pilots cover specified physical-therapy, prescription-refill, and acne-treatment uses.",
+      "timing": "As checked on 5 October, these three entries are marked approved, with their demonstration periods not yet started.",
+      "meaning": "A business must obtain its own written agreement with the AI office and relevant regulator. Relief is limited to the named rules, activities, safeguards, and test period; other requirements continue to apply.",
+      "context": "This is a verified expansion through administrative pilot agreements. It should not be described as a blanket 2025 legislative expansion or permission for any AI company to operate without regulation.",
+      "reference": "AI Learning Laboratory",
+      "sources": [
+        {
+          "label": "Office of AI Policy · signed pilot register",
+          "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/"
+        },
+        {
+          "label": "Official sandbox scope and conditions",
+          "url": "https://commerce.utah.gov/ai/regulatory-relief/"
+        }
+      ]
+    },
+    {
+      "id": "colorado-admt-rulemaking",
+      "state": "CO",
+      "stateName": "Colorado",
+      "date": "2026-08-11",
+      "dateLabel": "Draft rules filed",
+      "status": "Rulemaking · duties upcoming",
+      "title": "Colorado replaces its AI framework; rulemaking underway",
+      "summary": "SB 26-189, signed on 14 May 2026, repeals and reenacts the earlier SB 24-205 framework. The attorney general filed proposed implementing rules on 11 August 2026, covering automated decisions alongside separate chatbot-safety legislation.",
+      "timing": "Key ADMT duties start 1 January 2027. The published formal-comment period runs through 26 October 2026, subject to any continuation of the hearing.",
+      "meaning": "Covered developers and deployers should assess documentation, notices, record retention, correction, and human-review duties against the replacement law and follow the rulemaking before implementation.",
+      "context": "The description of a Q3 2025 ‘first-year performance’ sunset review is not supported by the sources checked. SB 24-205’s original main duties were scheduled for 2026, and the current framework is the 2026 replacement. Draft rules are not final rules.",
+      "reference": "SB 26-189",
+      "sources": [
+        {
+          "label": "Colorado legislature · enacted SB 26-189",
+          "url": "https://leg.colorado.gov/bills/SB26-189"
+        },
+        {
+          "label": "Attorney general · current rulemaking and dates",
+          "url": "https://coag.gov/ai/"
+        },
+        {
+          "label": "Original SB 24-205 · historical timing",
+          "url": "https://leg.colorado.gov/bills/SB24-205"
+        }
+      ]
+    },
+    {
+      "id": "california-tfaia-effective",
+      "state": "CA",
+      "stateName": "California",
+      "date": "2026-01-01",
+      "dateLabel": "General effective date",
+      "status": "Enacted · effective",
+      "title": "California’s TFAIA follows its September 2025 signing",
+      "summary": "Governor Newsom signed SB 53, the Transparency in Frontier Artificial Intelligence Act, on 29 September 2025. Its general effective date is 1 January 2026; individual implementation provisions have their own timing.",
+      "timing": "California’s Department of Technology must make its first statutory recommendations on updating the frontier-model and developer definitions by 1 January 2027.",
+      "meaning": "Covered frontier developers should assess incident-reporting and whistleblower protections; large frontier developers also face published safety-framework and transparency duties. Scope depends on statutory model and developer definitions.",
+      "context": "The September 2025 signing is a historical milestone, not a new October 2026 enactment. CalCompute’s separate provisions depend on an appropriation; the general effective date does not make every programme operational at once.",
+      "reference": "SB 53",
+      "sources": [
+        {
+          "label": "Governor’s signing announcement · 29 September 2025",
+          "url": "https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/"
+        },
+        {
+          "label": "Chaptered SB 53 · duties and scope",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53"
+        },
+        {
+          "label": "Cal OES legislative report · effective date",
+          "url": "https://www.caloes.ca.gov/wp-content/uploads/Legislative-Affiars/Documents/2025-Cal-OES-End-of-Year-Legislative-Report-Public.pdf"
+        },
+        {
+          "label": "Department of Technology · implementation review",
+          "url": "https://www.cdt.ca.gov/initiatives/transparency-in-frontier-ai-act/"
+        }
+      ]
+    }
+  ]
+}

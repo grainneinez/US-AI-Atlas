@@ -1,6 +1,6 @@
 # US AI Atlas
 
-An interactive US map and searchable regulation library covering all 50 states, with 77 selected measures. New York has 23 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
+An interactive US map and searchable regulation library covering all 50 states, with 78 selected measures. New York has 23 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
 
 ## Run locally
 
@@ -42,7 +42,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Content and research dates
 
-The source of truth is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. The startup guide and six added state measures were researched on **30 September 2026**, with targeted refreshes to RAISE scope, companion notices, and SHIELD. Per-entry dates override the state's original date.
+The source of truth for the law library is `dist/states.json`. The original 50-state survey was checked on **18 September 2026**. The New York expansion and added California bot-disclosure and Utah mental-health chatbot entries were checked on **22 September 2026**. The State/NYC comparison, hiring-scope clarification, customer biometrics, tenant data privacy, and state/city human-rights entries were checked on **26 September 2026**. The startup guide and six added state measures were researched on **30 September 2026**, with targeted refreshes to RAISE scope, companion notices, and SHIELD. Per-entry dates override the state's original date.
 
 This is a curated starting point, not a complete legal inventory or legal advice. Depth varies by state. The court collection was added on **30 September 2026**. Collections do not automatically refresh; court coverage is selected, not a comprehensive litigation tracker. Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties; guidance is separate from enacted legislation. Local measures are labeled explicitly. Proposals are not included.
 
@@ -80,7 +80,7 @@ All 50 map selections and source rendering, keyboard and selector navigation, de
 
 ## Add or update a court decision
 
-Edit `dist/cases.json`, the separate source of truth for court developments. The interface sorts by `decisionDate`, links related decisions, annotates linked law cards, and shows federal relevance separately from state-specific law. New entries appear after the usual GitHub push/Pages deployment. This is a manually reviewed collection, not an automated news or docket feed.
+Edit `dist/cases.json`, the separate source of truth for court developments. The interface groups state-specific decisions before federal matters, sorting each group by `decisionDate`, links related decisions, annotates linked law cards, and shows federal relevance separately from state-specific law. New entries appear after the usual GitHub push/Pages deployment. This is a manually reviewed collection, not an automated news or docket feed.
 
 Choose decisions that materially affect AI-related duties, enforcement, interpretation, or procurement. Read the operative order; distinguish allegations, preliminary relief, merits holdings, and appeals. Check later orders and stays before describing present enforceability. Leave an explicit gap in `reviewStatus` if follow-up cannot be confirmed. Do not change a statute’s status simply because someone sued.
 
@@ -106,3 +106,11 @@ The initial entries are the D.C. Circuit’s September 25 Anthropic merits decis
 Use `?state=NY#ny-startup-guide` for a direct link. Each `related.reference` and deadline reference must uniquely match a New York law's `bill`; append new law records to preserve existing law-card links. Update guide and law records together when a source changes. Do not infer that every chatbot is a companion, every vendor is DFS-regulated, every startup trains a frontier model, or every recommendation is an addictive feed.
 
 New records cover business practices, consumer subscriptions, child data, Safe by Design, SAFE for Kids, and living-person likeness consent. SAFE for Kids and Safe by Design have different scope and effective dates. Current-law summaries and guidance are manually checked, not automatically updated. No startup inputs leave the browser.
+
+## State updates and reading order
+
+`dist/updates.json` holds the three sourced developments added on **5 October 2026**. Each has an event date, status, timing, business impact, context, official sources, and a unique `reference` matching its state's law entry. `updates.js` shows all updates initially, switches to the selected state when the map/selector changes, and offers an all-state view. Empty and loading-error states leave the law library available.
+
+The reading order is map, state updates, regulation library (including the New York startup guide), then court updates. Within the court collection, state-specific decisions precede federal matters; each group is newest first. The Anthropic federal explanation follows the court cards. Existing case links, filters, and cross-links remain supported.
+
+The California update records SB 53’s 2025 signing and 2026 general effective date. Colorado uses the verified 2026 replacement and current rulemaking rather than the unsupported description of a Q3 2025 first-year sunset review. Utah uses the official September/October 2026 pilot agreements and their limits rather than claiming a blanket 2025 sandbox expansion. The original ACM page could not be retrieved; its supplied assertions were checked against primary government sources. Event dates must not be replaced with review dates to make old milestones appear new.
