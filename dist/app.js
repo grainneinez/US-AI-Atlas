@@ -9,13 +9,14 @@ let jurisdiction='all';
 // Editorial navigation groups, not legal applicability determinations.
 const activityTopics={
  work:['Professional services','Legal proceedings','Privacy','Privacy & security','Consumer protection','Recording & transcription'],
- data:['Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Children & teens','Recording & transcription','Professional services'],
+ data:['Education','Cybersecurity','Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Children & teens','Recording & transcription','Professional services'],
  people:['Employment','Automated decisions','Civil rights','Privacy & profiling','Housing & privacy','Insurance'],
  content:['Advertising','Digital replicas','Synthetic media','Voice & likeness','Elections','Consumer protection'],
  chatbots:['Chatbots','Children & teens','Consumer protection','Consumer pricing','Transparency','Privacy'],
- regulated:['Health care','Insurance','Professional services','Privacy & security','Automated decisions'],
+ education:['Education','Children & teens','Privacy'],
+ regulated:['Cybersecurity','Health care','Insurance','Professional services','Privacy & security','Automated decisions'],
  building:['AI governance','Frontier models','Transparency','Regulatory sandbox','Consumer protection','Chatbots','Automated decisions','Children & teens'],
- rights:['Employment','Civil rights','Consumer protection','Consumer pricing','Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Digital replicas','Voice & likeness','Synthetic media','Recording & transcription','Children & teens']
+ rights:['Education','Employment','Civil rights','Consumer protection','Consumer pricing','Privacy','Privacy & profiling','Privacy & security','Housing & privacy','Biometrics','Digital replicas','Voice & likeness','Synthetic media','Recording & transcription','Children & teens']
 };
 const activitySelect=document.getElementById('activity-filter');
 const initialActivity=new URL(location.href).searchParams.get('activity');
@@ -23,7 +24,7 @@ if(Object.hasOwn(activityTopics,initialActivity))activitySelect.value=initialAct
 function syncActivityLink(){const url=new URL(location.href);if(activitySelect.value==='all')url.searchParams.delete('activity');else url.searchParams.set('activity',activitySelect.value);history.replaceState(null,'',url);}
 
 const formatDate=value=>new Date(value+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
-const statusClass=value=>({Upcoming:'future',Enjoined:'enjoined',Guidance:'guidance'}[value]||'status');
+const statusClass=value=>({Upcoming:'future',Enjoined:'enjoined',Guidance:'guidance',Policy:'guidance'}[value]||'status');
 const jurisdictionName=l=>l.local?'New York City':'Statewide';
 const sourceList=l=>l.sources||[{label:l.source||'Official source',url:l.url},...(l.url2?[{label:l.source2||'Related official source',url:l.url2}]:[])];
 function metadata(l){return `<span class="tag ${statusClass(l.status)}">${esc(l.status||'Enacted')}</span><span class="tag">${esc(l.topic)}</span>${l.local?'<span class="tag local">Local · NYC</span>':''}`;}

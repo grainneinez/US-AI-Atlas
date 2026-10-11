@@ -1,6 +1,6 @@
 # US AI Atlas
 
-An interactive US map and searchable regulation library covering all 50 states, with 81 selected measures. New York has 26 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
+An interactive US map and searchable regulation library covering all 50 states, with 85 selected measures. New York has 30 detailed entries explaining scope, duties, enforcement, limitations, timing, and primary sources.
 
 ## Run locally
 
@@ -28,7 +28,7 @@ Reference: [GitHub's custom Pages workflow documentation](https://docs.github.co
 
 ## Interactions
 
-- New York practical AI-use guide: 17 topics for individuals, lawyers, other professionals, employers, and businesses. Everyday use is the default; activity choices, per-card review dates, sources, and law cross-links help visitors find the relevant scope. Binding rules, nonbinding ethics guidance, and suggestions are distinguished.
+- New York practical AI-use guide: 21 topics for individuals, lawyers, other professionals, employers, and businesses. Everyday use is the default; activity choices, per-card review dates, sources, and law cross-links help visitors find the relevant scope. Binding rules, nonbinding ethics guidance, and suggestions are distinguished.
 - Activity navigation in every state library, with shareable `?state=NY&activity=work#regulations` links. The activity persists when changing states; zero results do not imply no applicable law. Topic groupings are editorial suggestions, not an applicability engine.
 
 - Court decisions with affected-jurisdiction, court-location, stage, and text filters; optional federal relevance; dated histories and shareable case links.
@@ -102,7 +102,7 @@ The initial entries are the D.C. Circuit’s September 25 Anthropic merits decis
 
 ## New York practical guide
 
-`dist/ny-startups.json` stores 17 practical topics and three upcoming implementation dates. `ny-startups.js` filters by activity while retaining one starting checklist. Everyday use is selected initially; no selections means all topics, and multiple selections combine with OR. Selections do not determine applicability. Each card distinguishes its legal basis, practical suggestions, scope, and source-review date.
+`dist/ny-startups.json` stores 21 practical topics and three upcoming implementation dates. `ny-startups.js` filters by activity while retaining one starting checklist. Everyday use is selected initially; no selections means all topics, and multiple selections combine with OR. Selections do not determine applicability. Each card distinguishes its legal basis, practical suggestions, scope, and source-review date.
 
 Use `?state=NY#ny-ai-guide` for a direct link. Each `related.reference` and deadline reference must uniquely match a New York law's `bill`; append new law records to preserve existing law-card links. Update guide and law records together when a source changes. Do not infer that every chatbot is a companion, every vendor is DFS-regulated, every startup trains a frontier model, or every recommendation is an addictive feed.
 
@@ -123,3 +123,13 @@ The former founder-first presentation now starts with everyday AI use. New York 
 The guide retains its `ny-startups.json` / `ny-startups.js` filenames for compatibility, but uses `#ny-ai-guide` as its new public anchor. Existing `#ny-startup-guide` deep links still scroll to the guide. Existing business-use cards keep their 30 September source-review dates. This update does not claim a fresh legal review of all 50 states or complete coverage of every profession.
 
 Activity groups in `app.js` map existing topics to user activities. When adding a topic, update these editorial groups if relevant. CSV exports respect the activity filter alongside the existing filters.
+
+## New York guided routes — 10 October 2026
+
+Eight audience routes help visitors select relevant activities: everyday users, lawyers, professional services, employers, schools/families, health/care, financial services, and product teams. The routes do not determine applicability. Location context explains overlapping state/city reach without filtering away potentially relevant city rules. Text and information-type filters narrow the practical topics.
+
+Each displayed topic contributes one suggested first step to a review checklist. Checkmarks remain in memory for the open page and indicate review, not compliance. Users can copy the checklist with source links and review dates, print it, or share activity/location selections using `nyuse` and `nywhere` URL parameters. Search/type filters and checkmarks are not included in the shared route. Clipboard denial displays a manual-copy field.
+
+Four added library entries cover Education Law §2-d, NYCPS’s 2026–27 school policy, 23 NYCRR Part 500, and NYC’s Click to Cancel rule. School policy is labeled `Policy`, not enacted legislation. Three dated New York updates link to those entries. Older feed entries retain their original source-check dates. Sources for new content were reviewed on 10 October 2026; no whole-site legal refresh is implied.
+
+The New York guide also includes six practical FAQs, official information/complaint links, and an expanded state/city comparison. Health/care is expressly a starting route, not a full HIPAA or clinical-practice review.

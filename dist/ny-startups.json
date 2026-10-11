@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-05",
+  "reviewed": "2026-10-10",
   "features": [
     {
       "id": "everyday",
@@ -60,6 +60,10 @@
     {
       "id": "biometrics",
       "label": "Biometrics & building access"
+    },
+    {
+      "id": "education",
+      "label": "Schools & student information"
     }
   ],
   "deadlines": [
@@ -282,6 +286,149 @@
         }
       ],
       "reviewed": "2026-10-05"
+    },
+    {
+      "id": "school-data",
+      "title": "Can I put school records into an AI tool?",
+      "features": [
+        "education"
+      ],
+      "jurisdiction": "New York State",
+      "status": "Current duty",
+      "trigger": "You handle records for a covered school or educational agency.",
+      "rule": "Education Law §2-d limits how covered records are used and shared, including through contractors.",
+      "actions": [
+        "Check school approval, the contract’s permitted purpose, and data protections before uploading identifiable records."
+      ],
+      "evidence": "Approved purpose, contract, safeguards, and responsible school contact.",
+      "boundary": "A school’s AI permission is not a substitute for compliance with the record-protection rules.",
+      "sources": [
+        {
+          "label": "Education Law §2-d",
+          "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+        }
+      ],
+      "related": [
+        {
+          "reference": "Education Law §2-d",
+          "label": "School data privacy"
+        }
+      ],
+      "reviewed": "2026-10-10"
+    },
+    {
+      "id": "nyc-schools",
+      "title": "What changes inside NYC public schools?",
+      "features": [
+        "education",
+        "minors"
+      ],
+      "jurisdiction": "NYC Public Schools",
+      "status": "School policy",
+      "trigger": "You teach, study, supply tools, or support a family in NYCPS.",
+      "rule": "The 2026–27 policy differentiates younger pupils, high-school programs, staff tasks, and accessibility needs.",
+      "actions": [
+        "Check the grade, intended use, approval route, and applicable exception before enabling a tool."
+      ],
+      "evidence": "School approval and the policy provision relied on.",
+      "boundary": "Companion chatbots are prohibited across grades. Permitted staff planning is not permission for students to use the same tool.",
+      "sources": [
+        {
+          "label": "NYCPS · current guidance",
+          "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+        },
+        {
+          "label": "City announcement · companions and staff use",
+          "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"
+        }
+      ],
+      "related": [
+        {
+          "reference": "NYCPS AI and Screen Time Policy",
+          "label": "School-system policy"
+        },
+        {
+          "reference": "Education Law §2-d",
+          "label": "State data protections"
+        }
+      ],
+      "reviewed": "2026-10-10"
+    },
+    {
+      "id": "dfs-cyber",
+      "title": "Bring AI into your existing security review",
+      "features": [
+        "finance"
+      ],
+      "jurisdiction": "New York State · DFS",
+      "status": "Rules + agency guidance",
+      "trigger": "Your organization is covered by Part 500, or supplies a tool to a covered customer.",
+      "rule": "DFS’s AI guidance connects tool use, vendor dependencies, data exposure, and deepfake threats to the existing cybersecurity framework.",
+      "actions": [
+        "Map AI-related risks to the relevant controls and owners, including data access and supplier dependencies.",
+        "Revisit the assessment when technology materially changes cyber risk; keep evidence of decisions and follow-up."
+      ],
+      "evidence": "Risk-to-control records and named responsibility for unresolved issues.",
+      "boundary": "Use the entity’s actual Part 500 scope and exemptions. A completed checklist is not regulatory certification.",
+      "sources": [
+        {
+          "label": "DFS AI guidance · October 2024",
+          "url": "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks"
+        },
+        {
+          "label": "DFS assessment guidance · September 2026",
+          "url": "https://www.dfs.ny.gov/industry_guidance/industry_letters/il20260910-cyber-risk-assessment"
+        }
+      ],
+      "related": [
+        {
+          "reference": "23 NYCRR Part 500",
+          "label": "Binding cybersecurity framework"
+        },
+        {
+          "reference": "NYDFS Insurance Circular Letter No. 7",
+          "label": "Separate insurance AI guidance"
+        }
+      ],
+      "reviewed": "2026-10-10"
+    },
+    {
+      "id": "nyc-cancel",
+      "title": "Cancelling an AI subscription in NYC",
+      "features": [
+        "subscriptions",
+        "rights"
+      ],
+      "jurisdiction": "NYC + New York State",
+      "status": "Current duty",
+      "trigger": "You buy or sell a covered consumer subscription with recurring charges.",
+      "rule": "NYC’s Click to Cancel rule took effect on 1 October 2026. The city provides a complaint route for obstructive cancellation.",
+      "actions": [
+        "As a user, keep the terms, cancellation attempt, and later charges. As a provider, test every signup and cancellation channel."
+      ],
+      "evidence": "Dated screenshots, confirmations, and billing records.",
+      "boundary": "Covered offers and exemptions matter. A difficult cancellation is not an automatic entitlement to a particular refund.",
+      "sources": [
+        {
+          "label": "NYC rights and complaint information",
+          "url": "https://www.nyc.gov/main/click-to-cancel"
+        },
+        {
+          "label": "Adopted rule and exemptions",
+          "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf"
+        }
+      ],
+      "related": [
+        {
+          "reference": "6 RCNY §§5-110",
+          "label": "NYC cancellation rule"
+        },
+        {
+          "reference": "General Business Law §527-a",
+          "label": "State subscription requirements"
+        }
+      ],
+      "reviewed": "2026-10-10"
     },
     {
       "id": "claims",
@@ -744,5 +891,170 @@
       "reviewed": "2026-09-30"
     }
   ],
-  "reviewNote": "New everyday-use and professional-practice topics checked 5 October 2026. Existing business-use topics and January 2027 dates checked 30 September 2026. Each law card shows its own source-check date."
+  "reviewNote": "Schools, DFS cybersecurity, NYC subscriptions, and new practical questions checked 10 October 2026. Earlier topics retain their own review dates. This is a manually researched, selective guide.",
+  "roles": [
+    {
+      "id": "personal",
+      "label": "Everyday use & my rights",
+      "description": "Writing, subscriptions, and decisions affecting you.",
+      "features": [
+        "everyday",
+        "rights"
+      ],
+      "note": "Start with your activity and the information involved. The guide identifies selected protections and duties, not a universal AI permission."
+    },
+    {
+      "id": "lawyer",
+      "label": "Lawyers & legal teams",
+      "description": "Research, drafting, client files, and meeting notes.",
+      "features": [
+        "legal",
+        "data",
+        "meetings"
+      ],
+      "note": "The professional rules are binding. Bar opinions explain possible applications; court orders and client instructions require a separate check."
+    },
+    {
+      "id": "services",
+      "label": "Professional services",
+      "description": "Consulting, accounting, design, and licensed work.",
+      "features": [
+        "professional",
+        "data",
+        "media"
+      ],
+      "note": "Check the rules for your actual profession. A consultant and a licensed accountant or engineer may have different obligations."
+    },
+    {
+      "id": "employer",
+      "label": "Employers & HR",
+      "description": "Recruitment, promotions, and employee information.",
+      "features": [
+        "hiring",
+        "data"
+      ],
+      "note": "A tool’s role in a decision and the job’s NYC connection matter. Employer duties are not transferred to the vendor."
+    },
+    {
+      "id": "schools",
+      "label": "Schools & families",
+      "description": "Classroom tools, student records, and youth services.",
+      "features": [
+        "education"
+      ],
+      "note": "Distinguish school-system policy from state privacy law. General online services for children may also need the Children & teenagers topic."
+    },
+    {
+      "id": "care",
+      "label": "Health & care professionals",
+      "description": "Patient or client records and professional review.",
+      "features": [
+        "professional",
+        "data",
+        "meetings"
+      ],
+      "note": "This route covers selected New York issues. It is not a complete health-care review: assess your profession’s rules, HIPAA where applicable, and clinical requirements separately."
+    },
+    {
+      "id": "finance",
+      "label": "Finance & insurance",
+      "description": "Security, suppliers, and regulated decisions.",
+      "features": [
+        "finance",
+        "data"
+      ],
+      "note": "Identify whether your organization is regulated, a supplier, or both. Cybersecurity and insurance decision-making are distinct issues."
+    },
+    {
+      "id": "builder",
+      "label": "Product & business teams",
+      "description": "Customer-facing tools, claims, billing, and models.",
+      "features": [
+        "companions",
+        "subscriptions",
+        "media",
+        "models"
+      ],
+      "note": "Use the activity choices to match the product’s actual features. Selling an AI application does not automatically make you a frontier-model developer."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I use AI to draft ordinary work emails?",
+      "answer": "Start with employer or client permissions, the information entered, and how the result will be used. For legal work, the City Bar explains that routine functions such as grammar tools do not automatically require disclosure; confidentiality and other duties still apply.",
+      "sources": [
+        {
+          "label": "City Bar Opinion 2024-5 · nonbinding guidance",
+          "url": "https://www.nycbar.org/reports/formal-opinion-2024-5-generative-ai-in-the-practice-of-law/"
+        }
+      ]
+    },
+    {
+      "question": "Can a lawyer upload a client document?",
+      "answer": "Check the tool’s access, storage, sharing, and training terms, then assess the authority to disclose the information and any needed informed consent. A paid subscription or a “private” label is not, by itself, a confidentiality assessment.",
+      "sources": [
+        {
+          "label": "City Bar · confidentiality guidance",
+          "url": "https://www.nycbar.org/reports/formal-opinion-2024-5-generative-ai-in-the-practice-of-law/"
+        }
+      ]
+    },
+    {
+      "question": "Does buying an audited hiring tool make us compliant?",
+      "answer": "No. First determine whether the tool and job fall within Local Law 144. Where covered, the employer or employment agency must check the audit, public information, and applicable notices. Discrimination duties remain separate.",
+      "sources": [
+        {
+          "label": "DCWP · official AEDT FAQ",
+          "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf"
+        }
+      ]
+    },
+    {
+      "question": "Can I record a meeting with an AI assistant?",
+      "answer": "Check the recording law for the participants’ locations and any professional or confidentiality obligations. For lawyers, the guide’s recording topic separates the general New York statute from bar guidance on disclosure and consent.",
+      "related": [
+        {
+          "reference": "Penal Law §§250.00",
+          "label": "Recording law and related guidance"
+        }
+      ]
+    },
+    {
+      "question": "Are NYC rules relevant if I work elsewhere?",
+      "answer": "They can be. For example, DCWP’s hiring guidance covers specified remote jobs associated with an NYC office. An address alone does not determine every rule’s reach.",
+      "sources": [
+        {
+          "label": "DCWP · geographic scope",
+          "url": "https://www.nyc.gov/assets/dca/downloads/pdf/about/DCWP-AEDT-FAQ.pdf"
+        }
+      ]
+    },
+    {
+      "question": "Is this a complete compliance decision?",
+      "answer": "No. Use it to identify questions, sources, and next actions. A source-check date records a review, not continuous monitoring. Your activity, role, contracts, license, and other jurisdictions may add requirements.",
+      "sources": []
+    }
+  ],
+  "help": [
+    {
+      "title": "Subscription cancellation",
+      "text": "NYC’s rule, complaint information, and what happens after submission.",
+      "url": "https://www.nyc.gov/main/click-to-cancel"
+    },
+    {
+      "title": "Consumer or privacy concern",
+      "text": "Choose the relevant complaint category through the New York Attorney General.",
+      "url": "https://ag.ny.gov/file-complaint"
+    },
+    {
+      "title": "Discrimination in NYC",
+      "text": "Read the NYC Commission on Human Rights complaint process and eligibility.",
+      "url": "https://www.nyc.gov/site/cchr/enforcement/complaint-process.page"
+    },
+    {
+      "title": "School AI use",
+      "text": "Check NYCPS’s grade-specific guidance and ask the school about the actual tool.",
+      "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+    }
+  ]
 }

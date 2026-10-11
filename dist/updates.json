@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-05",
+  "reviewed": "2026-10-10",
   "updates": [
     {
       "id": "utah-ai-sandbox-pilots",
@@ -23,7 +23,8 @@
           "label": "Official sandbox scope and conditions",
           "url": "https://commerce.utah.gov/ai/regulatory-relief/"
         }
-      ]
+      ],
+      "reviewed": "2026-10-05"
     },
     {
       "id": "colorado-admt-rulemaking",
@@ -51,7 +52,8 @@
           "label": "Original SB 24-205 · historical timing",
           "url": "https://leg.colorado.gov/bills/SB24-205"
         }
-      ]
+      ],
+      "reviewed": "2026-10-05"
     },
     {
       "id": "california-tfaia-effective",
@@ -83,7 +85,79 @@
           "label": "Department of Technology · implementation review",
           "url": "https://www.cdt.ca.gov/initiatives/transparency-in-frontier-ai-act/"
         }
-      ]
+      ],
+      "reviewed": "2026-10-05"
+    },
+    {
+      "id": "nyc-click-to-cancel",
+      "state": "NY",
+      "stateName": "New York · NYC",
+      "date": "2026-10-01",
+      "dateLabel": "Effective date",
+      "status": "Current city rule",
+      "title": "NYC adds subscription cancellation protections",
+      "summary": "The city’s Click to Cancel rule is now in effect for covered consumer subscriptions, including relevant AI-service plans.",
+      "timing": "Effective 1 October 2026; related New York State requirements remain relevant.",
+      "meaning": "Consumers have an official complaint route. Providers should review cancellation access and required disclosures.",
+      "context": "This is a general consumer rule, not an AI-specific statute. Check the rule’s exemptions.",
+      "reference": "6 RCNY §§5-110",
+      "sources": [
+        {
+          "label": "NYC · guidance and complaints",
+          "url": "https://www.nyc.gov/main/click-to-cancel"
+        },
+        {
+          "label": "Adopted rule",
+          "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf"
+        }
+      ],
+      "reviewed": "2026-10-10"
+    },
+    {
+      "id": "ny-dfs-risk-assessment",
+      "state": "NY",
+      "stateName": "New York",
+      "date": "2026-09-10",
+      "dateLabel": "Guidance issued",
+      "status": "Agency guidance",
+      "title": "DFS clarifies cybersecurity risk assessments",
+      "summary": "DFS explains how covered entities should connect risk assessments to their controls and decisions, including emerging AI risks.",
+      "timing": "Guidance clarifies existing Part 500 obligations; it does not create a new law.",
+      "meaning": "Review whether the assessment reflects actual systems, suppliers, and material technology changes.",
+      "context": "Entity scope and exemptions matter. The guidance is broader than AI.",
+      "reference": "23 NYCRR Part 500",
+      "sources": [
+        {
+          "label": "DFS · September 2026 guidance",
+          "url": "https://www.dfs.ny.gov/industry_guidance/industry_letters/il20260910-cyber-risk-assessment"
+        }
+      ],
+      "reviewed": "2026-10-10"
+    },
+    {
+      "id": "nyc-school-ai-policy",
+      "state": "NY",
+      "stateName": "New York · NYC",
+      "date": "2026-09-02",
+      "dateLabel": "Policy announced",
+      "status": "School policy",
+      "title": "NYCPS sets grade-specific AI boundaries",
+      "summary": "NYC public schools announced a student-facing generative AI moratorium through grade 8 and limited high-school uses for 2026–27.",
+      "timing": "Applies for the 2026–27 school year; consult the current NYCPS implementation guidance.",
+      "meaning": "Families, educators, and suppliers should distinguish student use, staff tasks, and accessibility exceptions.",
+      "context": "This is a school-system policy, not a general NYC ban on AI.",
+      "reference": "NYCPS AI and Screen Time Policy",
+      "sources": [
+        {
+          "label": "City announcement",
+          "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"
+        },
+        {
+          "label": "Current NYCPS guidance",
+          "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+        }
+      ],
+      "reviewed": "2026-10-10"
     }
   ]
 }

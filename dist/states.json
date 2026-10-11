@@ -960,6 +960,120 @@
         ],
         "reviewed": "2026-10-05",
         "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
+      },
+      {
+        "title": "School records: student data privacy",
+        "bill": "Education Law §2-d",
+        "topic": "Education",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "description": "School use of AI must fit existing protections for covered student and staff records. Tool approval and permitted data use are separate questions.",
+        "timing": "Existing requirements; source checked 10 October 2026.",
+        "appliesTo": "Covered educational agencies and contractors receiving student records or specified teacher/principal evaluation data.",
+        "obligations": [
+          "Use appropriate safeguards and contract terms; contractors must limit use to expressly authorized purposes.",
+          "Protect access, confidentiality, and encryption; comply with applicable breach-reporting duties."
+        ],
+        "enforcement": "NYSED’s chief privacy officer oversees the statutory process; sanctions and remedies depend on the violation.",
+        "limits": "Definitions cover particular schools and records, not every education business. AI use does not waive privacy duties.",
+        "sources": [
+          {
+            "label": "Education Law §2-d · scope and duties",
+            "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+          }
+        ],
+        "reviewed": "2026-10-10",
+        "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+      },
+      {
+        "title": "NYC public schools: 2026–27 AI-use policy",
+        "bill": "NYCPS AI and Screen Time Policy · 2026–27",
+        "topic": "Education",
+        "status": "Policy",
+        "type": "School-system policy",
+        "local": true,
+        "description": "Student-facing generative AI is restricted by grade. This is a NYC public-school policy, not a citywide prohibition on AI.",
+        "timing": "2026–27 school year; announced 2 September 2026.",
+        "appliesTo": "NYC Public Schools settings covered by the policy.",
+        "obligations": [
+          "Grades 2K–8: student-facing generative AI moratorium. Grades 9–12: limited approved, supervised uses.",
+          "Preserve required accessibility and language-support tools; check the policy’s exceptions."
+        ],
+        "enforcement": "Implemented through NYCPS school and tool-approval processes.",
+        "limits": "Staff planning and student-facing use are different. Do not generalize this policy to every school or private workplace.",
+        "sources": [
+          {
+            "label": "NYCPS · current policy, grade bands and exceptions",
+            "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+          },
+          {
+            "label": "Mayor’s office · announcement and staff-use context",
+            "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"
+          }
+        ],
+        "reviewed": "2026-10-10",
+        "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+      },
+      {
+        "title": "Financial services: cybersecurity and AI risks",
+        "bill": "23 NYCRR Part 500 · DFS cybersecurity regulation",
+        "topic": "Cybersecurity",
+        "status": "Enacted",
+        "type": "Binding state regulation",
+        "description": "Covered financial-services entities must operate risk-based cybersecurity programs. DFS explains how existing requirements address AI use and AI-enabled threats.",
+        "timing": "Existing Part 500 duties; AI guidance October 2024 and risk-assessment guidance September 2026.",
+        "appliesTo": "DFS-covered entities; full or limited exemptions must be assessed separately.",
+        "obligations": [
+          "Maintain required risk assessments, security controls, vendor oversight, and incident-response arrangements.",
+          "Review risk assessments at least annually and when business or technology changes materially alter cyber risk."
+        ],
+        "enforcement": "DFS examination and enforcement under applicable law.",
+        "limits": "Guidance does not itself create new obligations. Providing software to a regulated firm does not automatically make a supplier a covered entity.",
+        "sources": [
+          {
+            "label": "Binding Part 500 regulation",
+            "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+          },
+          {
+            "label": "DFS · AI cyber-risk guidance",
+            "url": "https://www.dfs.ny.gov/industry-guidance/industry-letters/il20241016-cyber-risks-ai-and-strategies-combat-related-risks"
+          },
+          {
+            "label": "DFS · September 2026 risk-assessment guidance",
+            "url": "https://www.dfs.ny.gov/industry_guidance/industry_letters/il20260910-cyber-risk-assessment"
+          }
+        ],
+        "reviewed": "2026-10-10",
+        "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+      },
+      {
+        "title": "NYC subscription cancellation: Click to Cancel",
+        "bill": "6 RCNY §§5-110–5-110.3 · Click to Cancel",
+        "topic": "Consumer protection",
+        "status": "Enacted",
+        "type": "Related city regulation",
+        "local": true,
+        "description": "Covered consumer subscriptions need clear terms and accessible cancellation. This can matter when selling or subscribing to an AI service.",
+        "timing": "Effective 1 October 2026.",
+        "appliesTo": "Covered automatic-renewal and continuous-service offers to consumers within NYC’s jurisdiction.",
+        "obligations": [
+          "Provide cancellation through all offered consent channels; in-person signups also need an online option.",
+          "Do not obstruct or unreasonably delay cancellation. Follow applicable disclosure and notice rules."
+        ],
+        "enforcement": "DCWP civil penalties and restitution provisions.",
+        "limits": "Section 5-110.3 exempts specified financial entities, franchise services, alarm operators, and service-contract businesses. State law also needs review.",
+        "sources": [
+          {
+            "label": "Adopted city rule · text and exemptions",
+            "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf"
+          },
+          {
+            "label": "NYC · consumer guidance and complaint route",
+            "url": "https://www.nyc.gov/main/click-to-cancel"
+          }
+        ],
+        "reviewed": "2026-10-10",
+        "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf"
       }
     ],
     "summary": "Using AI for work, client services, hiring, or daily life? Explore practical guidance alongside New York State duties and additional NYC rules.",
