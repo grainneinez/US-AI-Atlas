@@ -1,0 +1,64 @@
+[
+  {
+    "state": "NY",
+    "entry": {
+      "title": "Insurance AI — underwriting & pricing guidance",
+      "bill": "NYDFS Insurance Circular Letter No. 7 (2024)",
+      "topic": "Insurance",
+      "description": "DFS explains its expectations for insurers using AI and external consumer data in underwriting and pricing under existing insurance law.",
+      "timing": "Issued 11 July 2024. Agency guidance, not a newly enacted AI statute.",
+      "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07",
+      "sources": [
+        {
+          "label": "DFS Circular Letter 7 (2024)",
+          "url": "https://www.dfs.ny.gov/industry-guidance/circular-letters/cl2024-07"
+        }
+      ],
+      "status": "Guidance",
+      "type": "Agency guidance",
+      "reviewed": "2026-09-22",
+      "appliesTo": "Insurers authorized in New York, Article 43 corporations, HMOs, licensed fraternal benefit societies, and the State Insurance Fund.",
+      "obligations": [
+        "Assess actuarial validity and unfair discrimination before use and after material changes; document testing and explanations.",
+        "Maintain governance, management oversight, model documentation, and vendor controls. Responsibility remains with the insurer.",
+        "Provide applicable adverse-decision explanations and relevant disclosures."
+      ],
+      "enforcement": "DFS may examine AI use and request reports under its existing insurance supervisory powers.",
+      "limits": "The circular addresses underwriting and pricing, not every stage of the insurance lifecycle. Its expectations should be read alongside binding insurance statutes and regulations.",
+      "id": "law-NY-13"
+    }
+  },
+  {
+    "state": "NY",
+    "entry": {
+      "title": "NYC public schools: 2026–27 AI-use policy",
+      "bill": "NYCPS AI and Screen Time Policy · 2026–27",
+      "topic": "Education",
+      "status": "Policy",
+      "type": "School-system policy",
+      "local": true,
+      "description": "Student-facing generative AI is restricted by grade. This is a NYC public-school policy, not a citywide prohibition on AI.",
+      "timing": "2026–27 school year; announced 2 September 2026.",
+      "appliesTo": "NYC Public Schools settings covered by the policy.",
+      "obligations": [
+        "Grades 2K–8: student-facing generative AI moratorium. Grades 9–12: limited approved, supervised uses.",
+        "Preserve required accessibility and language-support tools; check the policy’s exceptions."
+      ],
+      "enforcement": "Implemented through NYCPS school and tool-approval processes.",
+      "limits": "Staff planning and student-facing use are different. Do not generalize this policy to every school or private workplace.",
+      "sources": [
+        {
+          "label": "NYCPS · current policy, grade bands and exceptions",
+          "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence"
+        },
+        {
+          "label": "Mayor’s office · announcement and staff-use context",
+          "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"
+        }
+      ],
+      "reviewed": "2026-10-10",
+      "url": "https://www.schools.nyc.gov/about-us/policies/guidance-on-artificial-intelligence",
+      "id": "law-NY-27"
+    }
+  }
+]
