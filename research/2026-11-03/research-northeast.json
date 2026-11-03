@@ -1,0 +1,973 @@
+{
+  "states": [
+    {
+      "code": "ME",
+      "summary": "Selected binding rules on chatbot transparency, consumer claims and personal-data incidents, with statutory scope and practical implementation notes.",
+      "laws": [
+        {
+          "id": "law-ME-0",
+          "title": "AI disclosures in consumer transactions",
+          "bill": "10 M.R.S. § 1500-DD · P.L. 2025, ch. 294",
+          "topic": "Transparency",
+          "description": "An AI-specific consumer rule addresses misleading human impersonation by chatbots and other computer technology in trade or commerce.",
+          "timing": "Signed 12 June 2025; requirement appears in the current codified statute. Originally numbered § 1500-Y, now reallocated to § 1500-DD.",
+          "status": "Enacted",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "People or businesses using an AI chatbot or other computer technology with a consumer in trade or commerce.",
+          "obligations": [
+            "Give clear and conspicuous notice that the consumer is not engaging with a human when the interaction would otherwise be likely to mislead a reasonable consumer."
+          ],
+          "enforcement": "A violation is a violation of the Maine Unfair Trade Practices Act; its enforcement and remedy conditions apply.",
+          "limits": "The trigger is a likely misleading consumer interaction. This is not a general requirement to label every internal AI tool or every AI-assisted document.",
+          "sources": [
+            {
+              "label": "Current chatbot statute",
+              "url": "https://web.legis.maine.gov/legis/statutes/10/title10sec1500-DD-1.html"
+            },
+            {
+              "label": "Enacted bill history",
+              "url": "https://legislature.maine.gov/bills/display_ps.asp?LD=1727&snum=132"
+            }
+          ],
+          "url": "https://web.legis.maine.gov/legis/statutes/10/title10sec1500-DD-1.html",
+          "codeSections": [
+            {
+              "section": "§ 1500-DD(1)–(2)",
+              "detail": "Defines chatbot and establishes the consumer disclosure trigger.",
+              "url": "https://web.legis.maine.gov/legis/statutes/10/title10sec1500-DD-1.html"
+            },
+            {
+              "section": "§ 1500-DD(3)",
+              "detail": "Connects violations to the Unfair Trade Practices Act.",
+              "url": "https://web.legis.maine.gov/legis/statutes/10/title10sec1500-DD-1.html"
+            }
+          ],
+          "practicalSteps": [
+            "Review chatbot greetings and interfaces for misleading human cues.",
+            "Place the automation disclosure where a consumer will encounter it before a misleading conversation develops."
+          ]
+        },
+        {
+          "id": "law-ME-consumer-protection",
+          "title": "Truthful AI marketing and consumer claims",
+          "bill": "5 M.R.S. §§ 207, 209, 213",
+          "topic": "Consumer protection",
+          "description": "Maine’s general prohibition on unfair or deceptive commerce can be relevant to unsupported claims about an AI service, its accuracy, or its human oversight.",
+          "timing": "Existing consumer-protection law; not a newly enacted AI-specific rule.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Trade or commerce in Maine, subject to the Act’s scope and exceptions; the private consumer remedy has additional purchase and loss conditions.",
+          "obligations": [
+            "Avoid unfair or deceptive commercial practices, including misleading representations about what an AI product or service does."
+          ],
+          "enforcement": "The Attorney General may seek injunctions and other statutory relief. Section 213 permits qualifying consumers with monetary or property loss to seek relief; a damages demand ordinarily precedes suit by 30 days.",
+          "limits": "Applying the general deception standard to AI claims is an editorial application of the statute. A disappointing AI result does not automatically establish an unfair practice or a private claim.",
+          "sources": [
+            {
+              "label": "Unfair practices prohibition",
+              "url": "https://legislature.maine.gov/statutes/5/title5sec207.html"
+            },
+            {
+              "label": "Attorney General enforcement",
+              "url": "https://www.mainelegislature.org/LEGIS/STATUTES/5/title5sec209.html"
+            },
+            {
+              "label": "Consumer remedies",
+              "url": "https://legislature.maine.gov/statutes/5/title5sec213.html"
+            }
+          ],
+          "url": "https://legislature.maine.gov/statutes/5/title5sec207.html",
+          "codeSections": [
+            {
+              "section": "§ 207",
+              "detail": "Prohibits unfair methods of competition and unfair or deceptive practices.",
+              "url": "https://legislature.maine.gov/statutes/5/title5sec207.html"
+            },
+            {
+              "section": "§ 209",
+              "detail": "Provides Attorney General enforcement powers.",
+              "url": "https://www.mainelegislature.org/LEGIS/STATUTES/5/title5sec209.html"
+            },
+            {
+              "section": "§ 213(1), (1-A)",
+              "detail": "Addresses qualifying consumer loss and pre-suit demand.",
+              "url": "https://legislature.maine.gov/statutes/5/title5sec213.html"
+            }
+          ],
+          "practicalSteps": [
+            "Retain evidence supporting accuracy, capability, and human-review claims.",
+            "Compare marketing, chatbot statements, and contract terms for inconsistent promises."
+          ]
+        },
+        {
+          "id": "law-ME-data-breach",
+          "title": "Personal-data breach notification",
+          "bill": "10 M.R.S. §§ 1347–1349",
+          "topic": "Data security",
+          "description": "An AI vendor incident can trigger Maine’s existing breach-notification law when protected computerized personal information is acquired or misused within the statutory conditions.",
+          "timing": "Existing law in force; reviewed against the current codified provisions.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Information brokers and other persons maintaining covered computerized personal information. Section 1347 defines the protected identifiers and breach.",
+          "obligations": [
+            "Investigate a discovered breach promptly and reasonably to assess the likelihood of misuse.",
+            "Give required resident notice promptly and without unreasonable delay, generally within 30 days after becoming aware of the breach and identifying its scope; lawful investigative delays can apply.",
+            "A maintainer that does not own the information must immediately notify the owner when unauthorized acquisition is known or reasonably believed. Give required regulator notice and, for more than 1,000 notified persons, consumer-reporting-agency notice."
+          ],
+          "enforcement": "The Department of Professional and Financial Regulation enforces for persons it regulates; the Attorney General enforces for others. Statutory civil penalties and equitable relief are available.",
+          "limits": "The notice trigger differs for information brokers and other persons: for non-brokers, misuse must have occurred or be reasonably possible. Not every prompt, log, or security incident contains the defined personal information.",
+          "sources": [
+            {
+              "label": "Definitions",
+              "url": "https://www.mainelegislature.org/legis/statutes/10/title10sec1347.html"
+            },
+            {
+              "label": "Investigation and notification",
+              "url": "https://web.legislature.maine.gov/legis/statutes/10/title10sec1348.html"
+            },
+            {
+              "label": "Enforcement and equivalent procedures",
+              "url": "https://www.legislature.maine.gov/legis/statutes/10/title10sec1349.html"
+            }
+          ],
+          "url": "https://www.mainelegislature.org/legis/statutes/10/title10sec1347.html",
+          "codeSections": [
+            {
+              "section": "§ 1347(1), (6)",
+              "detail": "Defines breach and covered personal information.",
+              "url": "https://www.mainelegislature.org/legis/statutes/10/title10sec1347.html"
+            },
+            {
+              "section": "§ 1348(1)–(3)",
+              "detail": "Sets investigation, owner notice, resident notice and timing.",
+              "url": "https://web.legislature.maine.gov/legis/statutes/10/title10sec1348.html"
+            },
+            {
+              "section": "§ 1348(4)–(5)",
+              "detail": "Addresses reporting agencies and regulator notice.",
+              "url": "https://web.legislature.maine.gov/legis/statutes/10/title10sec1348.html"
+            },
+            {
+              "section": "§ 1349",
+              "detail": "Provides enforcement and qualifying equivalent-procedure provisions.",
+              "url": "https://www.legislature.maine.gov/legis/statutes/10/title10sec1349.html"
+            }
+          ],
+          "practicalSteps": [
+            "Map which AI vendors receive covered identifiers.",
+            "Set a vendor incident escalation route that leaves time to investigate and meet notification deadlines."
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NH",
+      "summary": "Selected privacy, automated-profiling, recording-consent and consumer-protection rules relevant to AI services and everyday use.",
+      "laws": [
+        {
+          "id": "law-NH-0",
+          "title": "Personal data, profiling and automated decisions",
+          "bill": "RSA Chapter 507-H · SB 255",
+          "topic": "Privacy & profiling",
+          "description": "Covered consumers can opt out of certain consequential automated profiling. Controllers must also address privacy requests, security, sensitive-data consent and high-risk processing assessments.",
+          "timing": "Effective 1 January 2025. The mandatory enforcement cure period ended 31 December 2025; a cure opportunity is now discretionary.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses in or targeting New Hampshire that process at least 35,000 unique consumers in a year, excluding payment-only data, or at least 10,000 and derive more than 25% of gross revenue from personal-data sales.",
+          "obligations": [
+            "Provide access, correction, deletion and portability rights, and opt-outs from targeted advertising, sale and solely automated profiling with legal or similarly significant effects.",
+            "Answer authenticated requests within 45 days, subject to the statutory extension; provide an appeal process.",
+            "Minimize data, maintain reasonable security, obtain required sensitive-data consent, contract with processors and assess heightened-risk processing."
+          ],
+          "enforcement": "Exclusive Attorney General enforcement; no private right of action. Since 1 January 2026, the Attorney General may offer a 60-day opportunity to cure.",
+          "limits": "Consumer excludes employment and commercial contexts. Government, nonprofits, higher education, specified financial and health entities, and listed data categories have exemptions. The profiling opt-out is narrower than a right to reject all AI.",
+          "sources": [
+            {
+              "label": "RSA 507-H, current chapter",
+              "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm"
+            }
+          ],
+          "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm",
+          "codeSections": [
+            {
+              "section": "507-H:2–3",
+              "detail": "Coverage thresholds and entity/data exemptions.",
+              "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm"
+            },
+            {
+              "section": "507-H:4",
+              "detail": "Consumer rights and request/appeal procedures.",
+              "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm"
+            },
+            {
+              "section": "507-H:6–8",
+              "detail": "Controller duties, processor contracts and risk assessments.",
+              "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm"
+            },
+            {
+              "section": "507-H:11",
+              "detail": "Attorney General enforcement and cure provisions.",
+              "url": "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Check both consumer counts and the data-sale revenue test before deciding the law is inapplicable.",
+            "Identify decision systems whose outputs are solely automated and significantly affect individuals."
+          ]
+        },
+        {
+          "id": "law-NH-recording",
+          "title": "Consent before AI meeting recording",
+          "bill": "RSA 570-A:1, :2 and :11",
+          "topic": "Recording & communications",
+          "description": "New Hampshire’s existing interception law matters when an AI assistant records or transcribes protected calls or conversations.",
+          "timing": "Existing statute in force; not an AI-specific enactment.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "People intercepting covered wire or oral communications. Protection for an oral communication depends on a justified expectation against interception.",
+          "obligations": [
+            "Obtain all parties’ consent before intentionally recording a protected conversation unless a specific statutory exception applies.",
+            "Do not intentionally use or disclose the contents of an unlawful interception where the statute prohibits doing so."
+          ],
+          "enforcement": "Criminal consequences depend on the conduct and applicable subsection. Section 570-A:11 also provides civil damages and potentially punitive damages and legal fees.",
+          "limits": "The law includes investigative and other exceptions. Whether a particular conversation is protected is fact-dependent; consent to recording does not resolve separate confidentiality or data-use restrictions.",
+          "sources": [
+            {
+              "label": "Interception law",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm"
+            },
+            {
+              "label": "Civil remedies",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-11.htm"
+            }
+          ],
+          "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm",
+          "codeSections": [
+            {
+              "section": "570-A:1",
+              "detail": "Defines protected communications and interception.",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm"
+            },
+            {
+              "section": "570-A:2, I and I-a",
+              "detail": "Prohibitions and treatment of a participant recording without all-party consent.",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm"
+            },
+            {
+              "section": "570-A:2, II",
+              "detail": "Enumerated exceptions.",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm"
+            },
+            {
+              "section": "570-A:11",
+              "detail": "Civil action for unlawful interception, use or disclosure.",
+              "url": "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-11.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Explain the recording or transcription function and obtain participant consent before activating an AI meeting bot.",
+            "Include dial-in and external participants in the consent process."
+          ]
+        },
+        {
+          "id": "law-NH-consumer-protection",
+          "title": "AI advertising and service representations",
+          "bill": "RSA 358-A:2 and :10",
+          "topic": "Consumer protection",
+          "description": "General consumer-protection rules can apply to deceptive AI marketing, including false claims about a service’s benefits, sponsorship or qualities.",
+          "timing": "Existing statute in force; not an AI-specific disclosure or audit mandate.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Trade or commerce within New Hampshire, subject to Chapter 358-A’s statutory scope and exemptions.",
+          "obligations": [
+            "Avoid unfair or deceptive commercial acts, including misleading statements about characteristics, benefits, sponsorship, approval or quality."
+          ],
+          "enforcement": "Section 358-A:10 authorizes an action by a person injured by a violation, with statutory remedies and enhanced damages for a knowing or willful violation.",
+          "limits": "AI examples are practical applications of a general statute. Liability requires the statutory elements; an inaccurate AI output alone does not establish a claim.",
+          "sources": [
+            {
+              "label": "Prohibited commercial practices",
+              "url": "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-2.htm"
+            },
+            {
+              "label": "Private remedies",
+              "url": "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-10.htm"
+            }
+          ],
+          "url": "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-2.htm",
+          "codeSections": [
+            {
+              "section": "358-A:2, introductory paragraph and II, V, VII",
+              "detail": "General prohibition and examples of misleading commercial representations.",
+              "url": "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-2.htm"
+            },
+            {
+              "section": "358-A:10, I",
+              "detail": "Private action, damages and fees.",
+              "url": "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-10.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Substantiate performance and reliability claims before publishing them.",
+            "Check that descriptions of human review and data handling match the actual service."
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "summary": "Selected rules on synthetic intimate imagery, information security and AI-assisted employment decisions.",
+      "laws": [
+        {
+          "id": "law-MA-0",
+          "title": "Nonconsensual intimate images, including digital fabrications",
+          "bill": "M.G.L. c. 265, § 43A(b) · Acts 2024, ch. 118",
+          "topic": "Synthetic media",
+          "description": "Massachusetts criminalizes qualifying harmful distribution of intimate visual material, including digitally created or altered depictions that appear authentic.",
+          "timing": "Relevant 2024 amendments took effect 18 September 2024.",
+          "status": "Enacted",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "A person knowingly distributing covered visual material of an identifiable person, where the harm, intent or recklessness, consent and privacy conditions are met.",
+          "obligations": [
+            "Do not distribute qualifying intimate material where the statutory harm and mental-state conditions are satisfied.",
+            "Consent to create an intimate depiction does not itself establish consent to distribute it."
+          ],
+          "enforcement": "Criminal penalties apply; the statute preserves other available remedies, including equitable relief.",
+          "limits": "This is not a ban on all synthetic images. Exceptions include specified public-interest or lawful purposes, qualifying public or commercial depictions, and an intermediary’s responsibility solely for third-party content.",
+          "sources": [
+            {
+              "label": "Current criminal provision",
+              "url": "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a"
+            },
+            {
+              "label": "Enacted 2024 amendments",
+              "url": "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter118"
+            },
+            {
+              "label": "Official AI-law overview",
+              "url": "https://www.mass.gov/info-details/massachusetts-law-about-artificial-intelligence"
+            }
+          ],
+          "url": "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a",
+          "codeSections": [
+            {
+              "section": "§ 43A(b)(1)",
+              "detail": "Defines visual material to include qualifying digital creation and alteration.",
+              "url": "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a"
+            },
+            {
+              "section": "§ 43A(b)(2)–(3)",
+              "detail": "Sets distribution, harm, mental-state and consent conditions.",
+              "url": "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a"
+            },
+            {
+              "section": "§ 43A(b)(4), (6)",
+              "detail": "Preserves other remedies and specifies exceptions.",
+              "url": "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a"
+            }
+          ],
+          "practicalSteps": [
+            "Keep separate records of permission to create and permission to distribute intimate content.",
+            "Provide an escalation route for reports of harmful synthetic intimate imagery."
+          ]
+        },
+        {
+          "id": "law-MA-security",
+          "title": "Written security programs and AI service providers",
+          "bill": "201 CMR 17.00 · M.G.L. c. 93H",
+          "topic": "Data security",
+          "description": "Binding Massachusetts security regulations can apply when an AI tool receives protected identifiers belonging to Massachusetts residents.",
+          "timing": "Compliance required since 1 March 2010; current regulation reviewed.",
+          "status": "Enacted",
+          "type": "State regulation",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Persons owning or licensing covered personal information, including receiving, storing, processing or accessing it through services or employment. The definition is narrower than all information about a person.",
+          "obligations": [
+            "Maintain a written, risk-based information security program with accountable personnel, training, safeguards and review.",
+            "Take reasonable steps to select capable service providers and require appropriate security safeguards by contract.",
+            "Apply the required computer controls, including access security and specified encryption measures to the extent technically feasible."
+          ],
+          "enforcement": "Binding security standards issued under M.G.L. c. 93H. Separate breach-notification obligations under that chapter may also apply to an incident.",
+          "limits": "Covered personal information generally combines a resident’s name with a Social Security number, state identification or licence number, or qualifying financial-account credentials. This is not a blanket prohibition on uploading all personal data to AI.",
+          "sources": [
+            {
+              "label": "201 CMR 17.00 official text",
+              "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+            }
+          ],
+          "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents",
+          "codeSections": [
+            {
+              "section": "201 CMR 17.02",
+              "detail": "Defines personal information and owning or licensing it.",
+              "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+            },
+            {
+              "section": "201 CMR 17.03(1), (2)",
+              "detail": "Written security program and ongoing safeguards.",
+              "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+            },
+            {
+              "section": "201 CMR 17.03(2)(f)",
+              "detail": "Service-provider selection and contractual safeguards.",
+              "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+            },
+            {
+              "section": "201 CMR 17.04",
+              "detail": "Computer-system security requirements.",
+              "url": "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents"
+            }
+          ],
+          "practicalSteps": [
+            "Inventory prompts, uploaded files and transcripts containing the covered identifiers.",
+            "Check AI vendor contracts, access controls, retention and security practices against the security program."
+          ]
+        },
+        {
+          "id": "law-MA-employment-discrimination",
+          "title": "Employment discrimination when AI assists hiring",
+          "bill": "M.G.L. c. 151B, §§ 1 and 4",
+          "topic": "Employment",
+          "description": "Massachusetts employment discrimination law continues to apply when a covered employer uses AI in recruiting, screening or employment decisions.",
+          "timing": "Existing civil-rights law; no universal AI audit requirement is created by this entry.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered employers, ordinarily those with six or more employees; statutory definitions also address public employers, domestic workers and exceptions.",
+          "obligations": [
+            "Do not make hiring or other covered employment decisions that unlawfully discriminate on protected grounds.",
+            "Apply the statute’s disability and accommodation protections when employment tools or processes affect covered workers or applicants."
+          ],
+          "enforcement": "The Massachusetts Commission Against Discrimination receives employment discrimination complaints. Its usual filing deadline is 300 days from the discriminatory act, subject to exceptions.",
+          "limits": "The statute’s coverage, protected grounds, exceptions and procedural requirements matter. Using AI does not by itself establish discrimination; outsourcing a decision is not a substitute for checking lawful criteria.",
+          "sources": [
+            {
+              "label": "Unlawful employment practices",
+              "url": "https://malegislature.gov/Laws/GeneralLaws/Parti/Titlexxi/Chapter151b/Section4"
+            },
+            {
+              "label": "Employer definition",
+              "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section1"
+            },
+            {
+              "label": "MCAD filing deadline",
+              "url": "https://www.mass.gov/info-details/deadline-for-filing-a-complaint-of-discrimination-at-the-mcad"
+            }
+          ],
+          "url": "https://malegislature.gov/Laws/GeneralLaws/Parti/Titlexxi/Chapter151b/Section4",
+          "codeSections": [
+            {
+              "section": "c. 151B, § 1(5)",
+              "detail": "Employer coverage and exceptions.",
+              "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section1"
+            },
+            {
+              "section": "c. 151B, § 4",
+              "detail": "Employment discrimination and related protections.",
+              "url": "https://malegislature.gov/Laws/GeneralLaws/Parti/Titlexxi/Chapter151b/Section4"
+            }
+          ],
+          "practicalSteps": [
+            "Review AI screening criteria and rejection reasons for discriminatory effects.",
+            "Provide an accessible route to request accommodations or raise a concern about a screening tool."
+          ]
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "summary": "Selected binding rules on synthetic election media, consumer privacy, automated profiling, security and data breaches.",
+      "laws": [
+        {
+          "id": "law-RI-0",
+          "title": "Synthetic media in election communications",
+          "bill": "R.I. Gen. Laws ch. 17-30 · P.L. 2025, chs. 409–410",
+          "topic": "Elections",
+          "description": "Rhode Island restricts qualifying deceptive synthetic media in election communications and provides a disclosure route and specified exceptions.",
+          "timing": "Effective 2 July 2025; the restriction applies within 90 days of the relevant election.",
+          "status": "Enacted",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Candidates, campaign and political committees, political parties, and persons or entities making independent expenditures, where the depicted candidate will appear on the ballot.",
+          "obligations": [
+            "Do not distribute covered deceptive or fraudulent synthetic media when the statutory knowledge and election-period conditions apply, unless an exception is satisfied.",
+            "For the disclosure exception, identify AI generation or manipulation clearly; visual and audio formats have specific placement, size, duration and repetition requirements."
+          ],
+          "enforcement": "A depicted candidate may seek injunctive relief against distribution and statutory damages remedies in the circumstances described in § 17-30-2. The court may award fees to a prevailing party.",
+          "limits": "Exceptions include satire or parody and qualifying news coverage that clearly identifies inauthentic content. Broadcaster, cable and intermediary protections are conditional. The law does not cover every AI-created political statement.",
+          "sources": [
+            {
+              "label": "Election restriction and disclosure rules",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-1.htm"
+            },
+            {
+              "label": "Remedies in enacted law",
+              "url": "https://webserver.rilegislature.gov/PublicLaws/law25/law25409.htm"
+            },
+            {
+              "label": "Exceptions",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-3.htm"
+            }
+          ],
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-1.htm",
+          "codeSections": [
+            {
+              "section": "§ 17-30-1(a)–(c)",
+              "detail": "Covered communications, 90-day period and disclosure formats.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-1.htm"
+            },
+            {
+              "section": "§ 17-30-2",
+              "detail": "Candidate remedies.",
+              "url": "https://webserver.rilegislature.gov/PublicLaws/law25/law25409.htm"
+            },
+            {
+              "section": "§ 17-30-3",
+              "detail": "Exceptions and intermediary provisions.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-3.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Check election dates, the depicted candidate and the distributor’s role before publishing synthetic campaign material.",
+            "Review the final audio or video itself to confirm required disclosures remain legible or audible."
+          ]
+        },
+        {
+          "id": "law-RI-privacy",
+          "title": "Consumer privacy, website notices and automated profiling",
+          "bill": "R.I. Gen. Laws ch. 6-48.1",
+          "topic": "Privacy & profiling",
+          "description": "The Data Transparency and Privacy Protection Act provides data rights and controls for covered profiling, alongside a separate website transparency provision.",
+          "timing": "Effective 1 January 2026. The assessment duty applies to processing activities created after that date, as specified in § 6-48.1-7.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Core controller duties apply to qualifying for-profit businesses targeting or operating in Rhode Island: at least 35,000 customers, excluding payment-only data, or at least 10,000 plus more than 20% of gross revenue from personal-data sales in the prior year.",
+          "obligations": [
+            "Provide access, correction, deletion, portability and opt-outs for targeted advertising, sale, and solely automated profiling with legal or similarly significant effects.",
+            "Maintain reasonable security, obtain required sensitive-data consent, and document covered high-risk processing assessments and processor contracts.",
+            "Check § 6-48.1-3 separately for commercial website and online-service disclosure duties; do not assume the numerical thresholds answer that question."
+          ],
+          "enforcement": "Attorney General enforcement; the Act expressly creates no private right of action.",
+          "limits": "Entity and data exemptions, including specified employment-related data, must be checked. The right to opt out of consequential profiling does not cover every automated recommendation.",
+          "sources": [
+            {
+              "label": "Information-practice notices and exemptions",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-3.htm"
+            },
+            {
+              "label": "Core coverage and duties",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-4.htm"
+            },
+            {
+              "label": "Consumer rights",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-5.htm"
+            },
+            {
+              "label": "Processor contracts and assessments",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-7.htm"
+            },
+            {
+              "label": "Enforcement",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-8.htm"
+            }
+          ],
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-3.htm",
+          "codeSections": [
+            {
+              "section": "§ 6-48.1-3",
+              "detail": "Website disclosures and exemptions.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-3.htm"
+            },
+            {
+              "section": "§ 6-48.1-4(a)–(b)",
+              "detail": "Controller thresholds and duties.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-4.htm"
+            },
+            {
+              "section": "§ 6-48.1-5",
+              "detail": "Consumer rights, including specified profiling opt-outs.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-5.htm"
+            },
+            {
+              "section": "§ 6-48.1-7",
+              "detail": "Processor contracts and data-protection assessments.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-7.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Evaluate website transparency and core controller coverage separately.",
+            "Document which AI decisions significantly affect consumers and how a valid opt-out will be implemented."
+          ]
+        },
+        {
+          "id": "law-RI-security-breach",
+          "title": "Security safeguards, vendors and breach notices",
+          "bill": "R.I. Gen. Laws §§ 11-49.3-2 to 11-49.3-5",
+          "topic": "Data security",
+          "description": "Existing Rhode Island security and breach rules can apply to personal information held in AI systems, prompts, transcripts or vendor records.",
+          "timing": "Existing Identity Theft Protection Act requirements; current code includes separate public-agency notification timing.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered persons and state or municipal agencies collecting, using, maintaining or otherwise handling the statute’s defined personal information of Rhode Island residents.",
+          "obligations": [
+            "Maintain a risk-based security program and reasonable retention and secure-destruction practices.",
+            "Require appropriate safeguards in written agreements with nonaffiliated third parties handling the information.",
+            "For a qualifying breach presenting significant identity-theft risk, notify promptly: generally no later than 45 days for private persons or 30 days for public agencies after confirmation and ascertainment of the required notice information."
+          ],
+          "enforcement": "Attorney General enforcement under § 11-49.3-5; reckless and knowing or willful violations carry statutory civil penalties. Additional Attorney General and credit-reporting notices apply when more than 500 residents are notified.",
+          "limits": "The statutory personal-information definition and identity-theft-risk trigger control. Law-enforcement delay and qualifying alternative procedures may apply; this entry is not a complete incident-response checklist for public agencies.",
+          "sources": [
+            {
+              "label": "Security and vendor safeguards",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-2.HTM"
+            },
+            {
+              "label": "Breach notification",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-4.HTM"
+            },
+            {
+              "label": "Enforcement",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-5.htm"
+            }
+          ],
+          "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-2.HTM",
+          "codeSections": [
+            {
+              "section": "§ 11-49.3-2",
+              "detail": "Risk-based security, retention, destruction and vendor contracts.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-2.HTM"
+            },
+            {
+              "section": "§ 11-49.3-4(a)–(b)",
+              "detail": "Breach trigger, timing and lawful delay.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-4.HTM"
+            },
+            {
+              "section": "§ 11-49.3-4(d)",
+              "detail": "Required notice contents.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-4.HTM"
+            },
+            {
+              "section": "§ 11-49.3-5",
+              "detail": "Civil penalties and Attorney General enforcement.",
+              "url": "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-5.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Check whether AI vendors can meet the organization’s security and incident-notification arrangements.",
+            "Maintain a breach triage process that distinguishes private and public-agency deadlines."
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CT",
+      "summary": "Current data-privacy and workplace-monitoring rules, plus separately dated upcoming AI employment and companion requirements.",
+      "laws": [
+        {
+          "id": "law-CT-0",
+          "title": "Connecticut Data Privacy Act: data and consequential AI decisions",
+          "bill": "Conn. Gen. Stat. §§ 42-515–42-525 · P.A. 25-113 and 26-64",
+          "topic": "Privacy & profiling",
+          "description": "The amended privacy law broadens coverage and gives consumers rights concerning personal data and automated decisions with legal or similarly significant effects.",
+          "timing": "Core law effective 1 July 2023; major coverage and rights changes took effect 1 July 2026, with further P.A. 26-64 changes effective 1 October 2026.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Since July 2026, coverage includes businesses in or targeting Connecticut processing at least 35,000 consumers in the prior year, persons processing consumers’ sensitive data, or persons offering their data for sale. Payment-only exclusions and statutory exemptions apply.",
+          "obligations": [
+            "Honor applicable access, correction, deletion, portability, sale and advertising opt-outs, and opt-outs from qualifying consequential automated profiling.",
+            "Provide the applicable information and avenues to question consequential profiling; the current text contains additional rights concerning reasons, data used and specified housing decisions.",
+            "Maintain data minimization and security, obtain required sensitive-data consent, and perform assessments for covered heightened-risk processing."
+          ],
+          "enforcement": "Exclusive Attorney General enforcement; no private right of action under the CTDPA. Ordinarily respond to consumer requests within 45 days, with a permitted extension in qualifying circumstances.",
+          "limits": "The consumer definition excludes employment and commercial contexts. Section 42-517 contains entity and data exemptions. Sensitive-data and sale coverage mean a small consumer count does not by itself establish exemption.",
+          "sources": [
+            {
+              "label": "Current code and July 2026 amendments",
+              "url": "https://www.cga.ct.gov/2026/sup/chap_743jj.htm"
+            },
+            {
+              "label": "2026 enacted amendments",
+              "url": "https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf"
+            },
+            {
+              "label": "Attorney General CTDPA information",
+              "url": "https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act"
+            }
+          ],
+          "url": "https://www.cga.ct.gov/2026/sup/chap_743jj.htm",
+          "codeSections": [
+            {
+              "section": "§ 42-516",
+              "detail": "Revised coverage from 1 July 2026.",
+              "url": "https://www.cga.ct.gov/2026/sup/chap_743jj.htm"
+            },
+            {
+              "section": "§ 42-518; P.A. 26-64, § 13",
+              "detail": "Consumer rights and consequential profiling.",
+              "url": "https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf"
+            },
+            {
+              "section": "§ 42-520; P.A. 26-64, § 14",
+              "detail": "Controller duties.",
+              "url": "https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf"
+            },
+            {
+              "section": "§ 42-522",
+              "detail": "Data-protection assessments.",
+              "url": "https://www.cga.ct.gov/2026/sup/chap_743jj.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Check sensitive-data and sale activity as well as consumer volume.",
+            "Map consequential decision tools to notices, request handling, opt-outs and assessment records."
+          ]
+        },
+        {
+          "id": "law-CT-ai-employment-notices",
+          "title": "AI employment decision disclosures",
+          "bill": "P.A. 26-15, §§ 7–12 (CART Act)",
+          "topic": "Employment",
+          "description": "Enacted prospective rules require specified vendors and employers to explain covered AI technology used as a substantial factor in employment decisions.",
+          "timing": "Sections took effect 1 October 2026, but the duties address covered technology deployed on or after 1 October 2027. They are upcoming operational requirements as of this review.",
+          "status": "Upcoming",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Deployers using AI that materially influences covered hiring, promotion, discipline, discharge, training or employment terms, and specified vendors of technology marketed or configured for those decisions.",
+          "obligations": [
+            "For covered deployments from 1 October 2027, give the required plain-language interaction disclosure unless AI interaction is obvious.",
+            "Before a covered employment decision, provide written information on the AI’s use, purpose, trade name, data categories and sources, and deployer contact details.",
+            "Covered vendors must supply information needed for deployer compliance; contractual allocation and trade-secret provisions have statutory conditions."
+          ],
+          "enforcement": "Attorney General enforcement; these sections do not create a private cause of action. A discretionary 60-day cure process is available for violations occurring on or before 31 December 2027.",
+          "limits": "General-purpose tools used incidentally and without material influence are excluded. The definition also excludes specified scheduling, planning, productivity-monitoring and workplace-safety uses. Existing discrimination and privacy rules may apply independently before 2027.",
+          "sources": [
+            {
+              "label": "CART Act, enacted text",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            }
+          ],
+          "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1",
+          "codeSections": [
+            {
+              "section": "P.A. 26-15, § 7",
+              "detail": "Defines covered employment decisions and substantial-factor technology.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            },
+            {
+              "section": "§§ 8–10",
+              "detail": "Vendor information and deployer interaction/decision notices, tied to 2027 deployments.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            },
+            {
+              "section": "§§ 11–12",
+              "detail": "Trade-secret conditions and enforcement.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            }
+          ],
+          "practicalSteps": [
+            "Identify which decision tools could materially influence employment outcomes.",
+            "Request the vendor information needed to prepare notices before the operational start date."
+          ]
+        },
+        {
+          "id": "law-CT-ai-companions",
+          "title": "AI companion disclosures and safeguards",
+          "bill": "P.A. 26-15, §§ 4–6 (CART Act)",
+          "topic": "Chatbots & consumer safety",
+          "description": "Enacted prospective rules address AI companions designed to sustain humanlike relationships, including disclosures, crisis safeguards and additional protections for minors.",
+          "timing": "Effective 1 January 2027; upcoming as of this review.",
+          "status": "Upcoming",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Operators offering covered AI companions for personal use by individuals physically in Connecticut. Defined exclusions cover specified narrow business, educational, game, assistant and clinical uses.",
+          "obligations": [
+            "From January 2027, implement and publish the required self-harm and violence-risk protocol, including appropriate resource or referral responses.",
+            "Prevent claims that a companion is human. Where a reasonable person could mistake it for a person, provide the prescribed continuing or periodic AI notice.",
+            "Where the operator knows or has reason to believe a user is under 18, apply the statute’s additional safety, interaction and parental-control requirements."
+          ],
+          "enforcement": "Attorney General enforcement under the enacted provisions; the companion sections do not create a general private action.",
+          "limits": "Not every chatbot is an AI companion. Narrow customer-service tools and other listed exclusions must meet their definitions; an upstream model supplier is not automatically the operator. The minor-specific rules are more detailed than this summary.",
+          "sources": [
+            {
+              "label": "CART Act, enacted text",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            }
+          ],
+          "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1",
+          "codeSections": [
+            {
+              "section": "P.A. 26-15, § 4",
+              "detail": "Defines AI companion, operator and excluded tools.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            },
+            {
+              "section": "§ 5",
+              "detail": "Crisis protocols, human-impersonation controls and AI notices.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            },
+            {
+              "section": "§ 6",
+              "detail": "Additional duties for known or reasonably known minors.",
+              "url": "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1"
+            }
+          ],
+          "practicalSteps": [
+            "Assess whether relationship-building features bring a product within the companion definition.",
+            "Prepare notice timing, crisis-response protocols and youth controls before January 2027."
+          ]
+        },
+        {
+          "id": "law-CT-electronic-monitoring",
+          "title": "Notice of electronic workplace monitoring",
+          "bill": "Conn. Gen. Stat. § 31-48d · P.A. 26-73",
+          "topic": "Employment & monitoring",
+          "description": "Connecticut’s existing electronic-monitoring law can matter when AI analyzes workplace communications or activity through covered monitoring equipment.",
+          "timing": "Existing law amended effective 1 October 2026; the additional new-hire statement applies to employees hired on or after that date.",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Employers collecting covered information about employee activities or communications on the employer’s premises through electronic equipment, subject to the statutory definition and exceptions.",
+          "obligations": [
+            "Before covered monitoring, give notice of its types and specific workplace locations; conspicuous posting, including at the monitored locations, constitutes the required notice.",
+            "Before work starts, give employees hired from 1 October 2026 a plain-language written statement identifying prohibited activities that may be monitored without prior notice."
+          ],
+          "enforcement": "The Labor Commissioner may levy civil penalties: up to $500 for a first violation, $1,000 for a second and $3,000 for a third or subsequent violation.",
+          "limits": "Public-common-area security monitoring is excluded. Misconduct and criminal investigations have exceptions. Location disclosure has airport and reasonable security/employee-safety exceptions. The premises-based definition does not resolve every remote-work scenario.",
+          "sources": [
+            {
+              "label": "October 2026 enacted amendments",
+              "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+            },
+            {
+              "label": "Electronic-monitoring statute",
+              "url": "https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-48d"
+            }
+          ],
+          "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF",
+          "codeSections": [
+            {
+              "section": "§ 31-48d(a)",
+              "detail": "Defines electronic monitoring and its limits.",
+              "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+            },
+            {
+              "section": "§ 31-48d(b)(1)",
+              "detail": "Monitoring types, locations, posted notices and new-hire statements.",
+              "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+            },
+            {
+              "section": "§ 31-48d(b)(2)–(3)",
+              "detail": "Investigation and location-disclosure exceptions.",
+              "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+            },
+            {
+              "section": "§ 31-48d(c)–(d)",
+              "detail": "Civil penalties and criminal-investigation exclusion.",
+              "url": "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+            }
+          ],
+          "practicalSteps": [
+            "Match notices and monitored locations to the actual AI-assisted monitoring.",
+            "Add the required plain-language statement to onboarding before an employee starts work."
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "state": "ME",
+      "proof": "Current official codification is 10 M.R.S. §1500-DD, reallocated from §1500-Y; the correct HTML URL ends title10sec1500-DD-1.html. It expressly incorporates the UTPA. No exact effective date beyond signed date was asserted without verification. Breach §1348 distinguishes information brokers from other persons and uses awareness plus scope identification for its 30-day limit.",
+      "urls": [
+        "https://web.legis.maine.gov/legis/statutes/10/title10sec1500-DD-1.html",
+        "https://legislature.maine.gov/statutes/5/title5sec207.html",
+        "https://www.mainelegislature.org/LEGIS/STATUTES/5/title5sec209.html",
+        "https://legislature.maine.gov/statutes/5/title5sec213.html",
+        "https://www.mainelegislature.org/legis/statutes/10/title10sec1347.html",
+        "https://web.legislature.maine.gov/legis/statutes/10/title10sec1348.html",
+        "https://www.legislature.maine.gov/legis/statutes/10/title10sec1349.html"
+      ]
+    },
+    {
+      "state": "NH",
+      "proof": "Current RSA507-H includes 35,000 and 10,000/>25% thresholds, employment/commercial exclusion, exemptions, solely automated consequential-profiling opt-out and discretionary cure from 2026. Recording law distinguishes participant interception and contains exceptions; civil remedy separately verified in RSA570-A:11.",
+      "urls": [
+        "https://www.gc.nh.gov/rsa/html/LII/507-H/507-H-mrg.htm",
+        "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-mrg.htm",
+        "https://gc.nh.gov/rsa/html/LVIII/570-A/570-A-11.htm",
+        "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-2.htm",
+        "https://gc.nh.gov/rsa/html/xxxi/358-a/358-a-10.htm"
+      ]
+    },
+    {
+      "state": "MA",
+      "proof": "Official §43A(b) text includes digitized intimate material, injury/distress and intent/recklessness conditions, consent distinction and exceptions. Official AI-law overview gives Sept18,2024 operative date for relevant amendments. 201CMR17.00 contains narrow personal-information definition, written-program/vendor-contract rules, technically feasible computer safeguards and March1,2010 compliance date. MCAD confirms ordinary 300-day filing deadline.",
+      "urls": [
+        "https://www.mass.gov/info-details/mass-general-laws-c265-ss-43a",
+        "https://malegislature.gov/Laws/SessionLaws/Acts/2024/Chapter118",
+        "https://www.mass.gov/info-details/massachusetts-law-about-artificial-intelligence",
+        "https://www.mass.gov/regulations/201-CMR-1700-standards-for-the-protection-of-personal-information-of-ma-residents",
+        "https://malegislature.gov/Laws/GeneralLaws/Parti/Titlexxi/Chapter151b/Section4",
+        "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section1",
+        "https://www.mass.gov/info-details/deadline-for-filing-a-complaint-of-discrimination-at-the-mcad"
+      ]
+    },
+    {
+      "state": "RI",
+      "proof": "Official chapter17-30 confirms July2,2025 effective date, 90-day election period and role-specific coverage. Ch6-48.1 has distinct website-notice and core-controller scopes, with 35,000 or 10,000/>20% thresholds and Jan1,2026 effective date. Security code differentiates private45-day and public30-day breach notification after confirmation and ascertainment. S2638/2026 introduced amendments appeared in search but were not treated as enacted; current codified text used.",
+      "urls": [
+        "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-1.htm",
+        "https://webserver.rilegislature.gov/PublicLaws/law25/law25409.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE17/17-30/17-30-3.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-3.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-4.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-5.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-7.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE6/6-48.1/6-48.1-8.htm",
+        "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-2.HTM",
+        "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-4.HTM",
+        "https://webserver.rilegislature.gov/Statutes/TITLE11/11-49.3/11-49.3-5.htm"
+      ]
+    },
+    {
+      "state": "CT",
+      "proof": "Current 2026 supplement explicitly sets revised §42-516 coverage from July1,2026 at35,000 consumers OR sensitive-data processing OR offering personal data for sale, with specified payment-only exclusions. P.A.26-64 §§12–15 supplies Oct1,2026 privacy amendments. P.A.26-15 §§4–6 are effective Jan1,2027. §§7–12 legally take effect Oct1,2026 but their operative duties apply to technology deployed from Oct1,2027; the patch intentionally marks these operational duties Upcoming. Official AG press summaries are less precise than the enacted text about this distinction.",
+      "urls": [
+        "https://www.cga.ct.gov/2026/sup/chap_743jj.htm",
+        "https://prdext2.cga.ct.gov/2026/act/pa/pdf/2026PA-00064-R00SB-00004-PA.pdf",
+        "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00015-R00SB-00005-PA.PDF#page=1",
+        "https://portal.ct.gov/ag/sections/privacy/the-connecticut-data-privacy-act",
+        "https://www.cga.ct.gov/current/pub/chap_557.htm#sec_31-48d"
+      ]
+    },
+    {
+      "state": "CT",
+      "proof": "Intentionally excluded pricing, facial-recognition and subscription additions from this patch. Research found P.A.26-100 §66 repealed P.A.26-64 §§11 and16 and §67 repealed P.A.26-15 §§1 and33; later P.A.26-130 changed pricing again. Do not add those provisions from an early press release without completing the amendment chain. Existing entries not reviewed here must retain their own review date.",
+      "urls": [
+        "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00100-R00HB-05222-PA.PDF#page=1",
+        "https://prdext3.cga.ct.gov/asp/CGABillStatus/cgabillstatus.asp?bill_num=HB05563&selBillType=Bill&which_year=2026"
+      ]
+    },
+    {
+      "scope": "This is a curated expansion of binding law and regulation, not an exhaustive inventory or an assertion that other AI-related requirements do not exist. Practical steps are editorial implementation suggestions, distinct from statutory duties. No court cases, proposed bills or standalone guidance entries were added."
+    },
+    {
+      "state": "CT",
+      "proof": "Final verification identified P.A.26-73, effective Oct1,2026, amending electronic monitoring: locations in notices and posting, new-hire plain-language statement, specific location exceptions. Record updated to final act rather than older code text. Penalties are subsection(c), criminal-investigation exception(d).",
+      "urls": [
+        "https://prdext3.cga.ct.gov/2026/act/Pa/pdf/2026PA-00073-R00SB-00472-PA.PDF"
+      ]
+    }
+  ]
+}

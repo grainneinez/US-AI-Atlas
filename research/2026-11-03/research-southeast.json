@@ -1,0 +1,689 @@
+{
+  "states": [
+    {
+      "code": "NC",
+      "kind": "ai",
+      "summary": "AI-generated intimate-image rules, plus consumer-protection and breach-notification duties relevant to AI products and data use. Each has its own scope and exceptions.",
+      "laws": [
+        {
+          "id": "law-NC-0",
+          "title": "Unfair and deceptive trade practices",
+          "bill": "N.C. Gen. Stat. §§75-1.1, 75-16",
+          "topic": "Consumer protection",
+          "description": "General unfair-trade rules can apply to misleading AI product claims, sales practices and services. They are not an AI-specific approval or certification regime.",
+          "timing": "Existing law.",
+          "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Business activities in or affecting commerce; the statute expressly excludes professional services rendered by members of a learned profession.",
+          "obligations": [
+            "Do not use unfair or deceptive practices in covered commerce."
+          ],
+          "enforcement": "An injured person may sue under §75-16; assessed damages are trebled.",
+          "limits": "The professional-services exclusion is activity-specific; do not assume every business associated with a professional is exempt. The advertising-media exception also has conditions.",
+          "codeSections": [
+            {
+              "section": "§75-1.1(a)–(d)",
+              "detail": "Prohibition, commerce definition and exclusions",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html"
+            },
+            {
+              "section": "§75-16",
+              "detail": "Private action and treble damages",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-16.html"
+            }
+          ],
+          "practicalSteps": [
+            "Keep evidence supporting claims about AI accuracy, safety and capabilities.",
+            "Review sales copy and chatbot statements before publication."
+          ],
+          "sources": [
+            {
+              "label": "Prohibition and scope · §75-1.1",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html"
+            },
+            {
+              "label": "Civil remedies · §75-16",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-16.html"
+            }
+          ]
+        },
+        {
+          "id": "law-NC-breach-notice",
+          "title": "Personal information: breach notification",
+          "bill": "N.C. Gen. Stat. §§75-61, 75-65",
+          "topic": "Privacy & security",
+          "description": "AI-related data exposure can trigger existing breach-notification duties when the statutory personal-information and breach definitions are met.",
+          "timing": "Existing law; notification deadlines run from discovery or notification.",
+          "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-65.html",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered businesses owning/licensing personal information, and custodians maintaining others’ data.",
+          "obligations": [
+            "Notify affected people without unreasonable delay, subject to permitted investigative and law-enforcement delays.",
+            "A custodian must notify the owner/licensee immediately after discovery.",
+            "Notify the Attorney General when consumer notice is given; more than 1,000 notices also trigger nationwide credit-reporting-agency notice."
+          ],
+          "enforcement": "Violation is treated as a §75-1.1 violation; an individual must suffer resulting injury to bring a private claim.",
+          "limits": "Not every prompt leak meets the definitions. Apply §75-61 and the special exclusions in §75-65(a); notice timing is not a fixed 30-day rule.",
+          "codeSections": [
+            {
+              "section": "§75-61",
+              "detail": "Definitions of protected information and security breach",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-61.html"
+            },
+            {
+              "section": "§75-65(a), (b), (e1), (f), (i)",
+              "detail": "Notice, regulator reporting and remedies",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-65.html"
+            }
+          ],
+          "practicalSteps": [
+            "Identify data owners and escalation contacts before using an external AI vendor.",
+            "Keep an incident plan that separates owner, custodian and regulator notices."
+          ],
+          "sources": [
+            {
+              "label": "Legislature · statutory text",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-65.html"
+            }
+          ]
+        },
+        {
+          "id": "law-NC-synthetic-intimate-images",
+          "title": "AI-generated intimate images: disclosure restrictions",
+          "bill": "N.C. Gen. Stat. §14-190.5A",
+          "topic": "Synthetic media",
+          "description": "The private-image law expressly includes realistic depictions generated or modified using algorithms or AI.",
+          "timing": "Existing statute; AI-image language appears in the 2024 amendment.",
+          "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-190.5A.html",
+          "status": "Enacted",
+          "type": "AI-relevant state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Knowingly disclosing identifiable intimate imagery with specified harmful intent, without affirmative consent, and with the required creation/privacy circumstances.",
+          "obligations": [
+            "Do not disclose covered imagery where all §14-190.5A(b) elements are met."
+          ],
+          "enforcement": "Criminal penalties apply; affected people also have a civil action, including statutory damages and possible image-destruction relief.",
+          "limits": "Not a ban on all synthetic images. Statutory exceptions include specified public-interest uses and service providers hosting another person’s images. The civil filing period is limited.",
+          "codeSections": [
+            {
+              "section": "§14-190.5A(a)–(b)",
+              "detail": "AI-image definition and offense elements",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-190.5A.html"
+            },
+            {
+              "section": "§14-190.5A(c)–(g)",
+              "detail": "Penalties, exceptions and civil remedy",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-190.5A.html"
+            }
+          ],
+          "practicalSteps": [
+            "Do not treat an AI label as permission to publish intimate depictions.",
+            "Create a reporting and escalation route for suspected nonconsensual imagery."
+          ],
+          "sources": [
+            {
+              "label": "Legislature · statutory text",
+              "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-190.5A.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "SC",
+      "summary": "Synthetic intimate-image restrictions, breach-notification requirements and consumer-protection rules relevant to AI publishing, products and data handling.",
+      "laws": [
+        {
+          "id": "law-SC-0",
+          "title": "Nonconsensual intimate images, including digital forgeries",
+          "bill": "S.C. Code §§16-15-330, 16-15-332 · Act 37 of 2025",
+          "topic": "Synthetic media",
+          "description": "The law covers realistic digitally forged intimate images, including machine-generated depictions. A label saying an image is artificial does not remove it from the definition.",
+          "timing": "Effective 12 May 2025.",
+          "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3058.htm",
+          "status": "Enacted",
+          "type": "AI-relevant state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Intentional dissemination without effective consent, with the statutory knowledge/privacy conditions.",
+          "obligations": [
+            "Do not disseminate covered intimate imagery without effective consent. Consent to creation or private sharing is not automatically consent to further dissemination."
+          ],
+          "enforcement": "Graduated criminal penalties apply; harmful intent or financial gain can trigger felony treatment.",
+          "limits": "Read the knowledge and reasonable-expectation-of-privacy elements and law-enforcement exception. The statute is specific to intimate imagery, not every AI replica.",
+          "codeSections": [
+            {
+              "section": "§16-15-330",
+              "detail": "Digital forgery, identity and effective-consent definitions",
+              "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3058.htm"
+            },
+            {
+              "section": "§16-15-332",
+              "detail": "Offense, mental elements and penalties",
+              "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3058.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Check permission for dissemination separately from permission to create an image.",
+            "Escalate suspected intimate-image abuse promptly."
+          ],
+          "sources": [
+            {
+              "label": "Enacted Act 37 · text and effective date",
+              "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3058.htm"
+            }
+          ]
+        },
+        {
+          "id": "law-SC-breach-notice",
+          "title": "Personal identifying information: breach notification",
+          "bill": "S.C. Code §39-1-90",
+          "topic": "Privacy & security",
+          "description": "Existing notification rules can apply when AI systems or vendors expose covered identifying data.",
+          "timing": "Existing law; notices are due without unreasonable delay.",
+          "url": "https://www.scstatehouse.gov/code/t39c001.php",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses operating in South Carolina that own/license covered data; separate duties apply to custodians.",
+          "obligations": [
+            "Notify affected residents when the breach meets the illegal-use/material-risk-of-harm test.",
+            "Custodians must notify the owner/licensee immediately after discovery.",
+            "If notifying more than 1,000 people at once, notify Consumer Affairs and nationwide consumer reporting agencies."
+          ],
+          "enforcement": "Injured residents have specified civil remedies. Knowing and wilful violations can attract Consumer Affairs fines.",
+          "limits": "Encryption/redaction, data definitions, law-enforcement delays and qualifying financial-institution exceptions matter.",
+          "codeSections": [
+            {
+              "section": "§39-1-90(A)–(D)",
+              "detail": "Notice triggers and definitions",
+              "url": "https://www.scstatehouse.gov/code/t39c001.php"
+            },
+            {
+              "section": "§39-1-90(G)–(K)",
+              "detail": "Remedies, exceptions and bulk-notice reporting",
+              "url": "https://www.scstatehouse.gov/code/t39c001.php"
+            }
+          ],
+          "practicalSteps": [
+            "Map whether your organization owns or only processes the exposed data.",
+            "Record the harm assessment and notice decision."
+          ],
+          "sources": [
+            {
+              "label": "Legislature · statutory text",
+              "url": "https://www.scstatehouse.gov/code/t39c001.php"
+            }
+          ]
+        },
+        {
+          "id": "law-SC-consumer-protection",
+          "title": "Unfair Trade Practices Act and AI marketing",
+          "bill": "S.C. Code §§39-5-20, 39-5-40, 39-5-110, 39-5-140",
+          "topic": "Consumer protection",
+          "description": "Unfair or deceptive AI sales claims and commercial practices can engage the state’s general trade-practices law.",
+          "timing": "Existing law.",
+          "url": "https://www.scstatehouse.gov/code/t39c005.php",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Trade and commerce affecting South Carolina, subject to statutory exclusions and applicable legal standards.",
+          "obligations": [
+            "Do not use unfair or deceptive methods in covered trade or commerce."
+          ],
+          "enforcement": "The Attorney General can seek relief and civil penalties. Section 39-5-140 permits qualifying individual damages claims; wilful/knowing violations can yield treble damages.",
+          "limits": "Section 39-5-40 exempts specified permitted transactions and certain advertising intermediaries. A dispute or inaccurate output alone does not establish every element of a claim.",
+          "codeSections": [
+            {
+              "section": "§39-5-20",
+              "detail": "General prohibition",
+              "url": "https://www.scstatehouse.gov/code/t39c005.php"
+            },
+            {
+              "section": "§39-5-40",
+              "detail": "Exemptions",
+              "url": "https://www.scstatehouse.gov/code/t39c005.php"
+            },
+            {
+              "section": "§39-5-110 and §39-5-140",
+              "detail": "Public penalties and individual remedies",
+              "url": "https://www.scstatehouse.gov/code/t39c005.php"
+            }
+          ],
+          "practicalSteps": [
+            "Check evidence behind model-performance and professional-service claims.",
+            "Retain advertised promises and relevant customer communications."
+          ],
+          "sources": [
+            {
+              "label": "Legislature · statutory text",
+              "url": "https://www.scstatehouse.gov/code/t39c005.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "GA",
+      "summary": "Consumer claims, SSN handling and customer-record disposal: general statutory duties that can matter when using or selling AI. These entries are not a comprehensive survey of Georgia AI legislation.",
+      "laws": [
+        {
+          "id": "law-GA-0",
+          "title": "Fair Business Practices Act and AI representations",
+          "bill": "O.C.G.A. §§10-1-392, 10-1-393, 10-1-399",
+          "topic": "Consumer protection",
+          "description": "General consumer-protection rules apply to unfair or deceptive commercial representations, including claims made about an AI service.",
+          "timing": "Existing law. Current Attorney General explanation checked; linked code compilation is labeled 2021.",
+          "url": "https://consumer.georgia.gov/organization/about-us/statutes-we-enforce",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Consumer transactions principally for personal, family or household purposes, with separate statutory scope and exceptions.",
+          "obligations": [
+            "Avoid unfair or deceptive consumer acts and practices."
+          ],
+          "enforcement": "The Attorney General enforces the Act in the public interest. Qualifying private claims under §10-1-399 generally require a written demand at least 30 days before filing.",
+          "limits": "Not a general regulation of every business-to-business AI transaction. Check the current code before relying on remedies or filing deadlines.",
+          "codeSections": [
+            {
+              "section": "§10-1-392(10)",
+              "detail": "Consumer-transaction definition",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            },
+            {
+              "section": "§10-1-393(a)",
+              "detail": "Unfair/deceptive consumer practices",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            },
+            {
+              "section": "§10-1-399",
+              "detail": "Private remedies and demand procedure",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            }
+          ],
+          "practicalSteps": [
+            "Substantiate AI capability claims and make limitations clear.",
+            "Keep screenshots, contracts and sales communications if challenging a misleading service."
+          ],
+          "sources": [
+            {
+              "label": "Attorney General · Act scope and enforcement",
+              "url": "https://consumer.georgia.gov/organization/about-us/statutes-we-enforce"
+            },
+            {
+              "label": "AG-hosted code compilation · labeled 2021",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            }
+          ]
+        },
+        {
+          "id": "law-GA-social-security",
+          "title": "Social Security numbers in AI workflows",
+          "bill": "O.C.G.A. §10-1-393.8",
+          "topic": "Privacy & security",
+          "description": "Specific SSN safeguards matter when AI tools handle intake forms, identifiers or generated reports.",
+          "timing": "Existing statute. Official explanatory material checked; linked AG compilation is labeled 2021.",
+          "url": "https://www.usg.edu/cybersecurity/cyberlaw-and-legislation/",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Persons, firms and corporations handling SSNs, subject to enumerated exceptions.",
+          "obligations": [
+            "Do not publicly display SSNs.",
+            "Do not require online transmission without a secure connection or encryption, or use an SSN alone as website authentication."
+          ],
+          "enforcement": "The provision sits within the Fair Business Practices Act; applicable remedies depend on the facts and statutory requirements.",
+          "limits": "Exceptions include legally required uses and specified internal administrative uses. These rules do not authorize otherwise unlawful data sharing.",
+          "codeSections": [
+            {
+              "section": "§10-1-393.8(a)",
+              "detail": "Public display, transmission and authentication rules",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            },
+            {
+              "section": "§10-1-393.8(b)–(d)",
+              "detail": "Exceptions and intermediary provisions",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            }
+          ],
+          "practicalSteps": [
+            "Redact SSNs from prompts, demos and generated public documents.",
+            "Check intake security and access controls."
+          ],
+          "sources": [
+            {
+              "label": "University System of Georgia · statutory overview",
+              "url": "https://www.usg.edu/cybersecurity/cyberlaw-and-legislation/"
+            },
+            {
+              "label": "AG-hosted §10-1-393.8 · compilation labeled 2021",
+              "url": "https://consumer.georgia.gov/document/document/ga-fbpa-2021/download"
+            }
+          ]
+        },
+        {
+          "id": "law-GA-record-disposal",
+          "title": "Safe disposal of customer records",
+          "bill": "O.C.G.A. §§10-15-1–10-15-2",
+          "topic": "Privacy & security",
+          "description": "Existing disposal rules are relevant to customer records used in AI workflows, including records containing identifiers, medical information or account details.",
+          "timing": "Existing statutory requirement; Attorney General explanation checked.",
+          "url": "https://consumer.georgia.gov/business-services/disposal-customers-business-records",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses discarding customer records containing protected personal information.",
+          "obligations": [
+            "Use shredding, erasure, unreadable modification or another qualifying safeguard against unauthorized access when disposing of protected records."
+          ],
+          "enforcement": "The Attorney General’s Consumer Protection Division provides the linked compliance information and complaint route.",
+          "limits": "The disposal requirement does not itself set a universal retention period. Names, addresses and telephone numbers alone receive different treatment; preservation duties may require retaining records.",
+          "codeSections": [
+            {
+              "section": "§10-15-1",
+              "detail": "Relevant record and personal-information definitions",
+              "url": "https://consumer.georgia.gov/business-services/disposal-customers-business-records"
+            },
+            {
+              "section": "§10-15-2",
+              "detail": "Disposal safeguards explained by the Attorney General",
+              "url": "https://consumer.georgia.gov/business-services/disposal-customers-business-records"
+            }
+          ],
+          "practicalSteps": [
+            "Include AI input files, exported transcripts and vendor copies in the records-disposal process.",
+            "Confirm what the vendor actually deletes when an account or file is removed."
+          ],
+          "sources": [
+            {
+              "label": "Attorney General · customer-record disposal requirements",
+              "url": "https://consumer.georgia.gov/business-services/disposal-customers-business-records"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "FL",
+      "summary": "Political AI disclosures, consumer profiling rights, sensitive-data sales, data security and recording consent. Scope differs sharply across these statutes; the main privacy-law revenue threshold is not a general exemption from Florida law.",
+      "laws": [
+        {
+          "id": "law-FL-0",
+          "title": "Generative AI in political advertising",
+          "bill": "Fla. Stat. §106.145 · HB 919 / Chapter 2024-126",
+          "topic": "Elections",
+          "description": "Specified political communications using generative AI to depict a real person doing something that did not occur require an AI disclaimer.",
+          "timing": "Effective 1 July 2024.",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.145",
+          "status": "Enacted",
+          "type": "AI-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered political advertisements and electioneering communications with intent to injure a candidate or deceive about a ballot issue.",
+          "obligations": [
+            "Include the statutory AI disclaimer in addition to other election disclaimers.",
+            "Meet format rules: print minimum 12-point bold; video visible throughout at least 4% of picture height; audio at least 3 seconds. Internet/graphic requirements also apply."
+          ],
+          "enforcement": "The Florida Elections Commission accepts complaints; failure to disclose can carry civil and criminal penalties.",
+          "limits": "Not a labeling mandate for every use of AI in political work; the depiction and intent conditions must be met.",
+          "codeSections": [
+            {
+              "section": "§106.145(2)",
+              "detail": "Covered content and required disclaimer",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.145"
+            },
+            {
+              "section": "§106.145(3)–(4)",
+              "detail": "Display specifications and enforcement",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.145"
+            }
+          ],
+          "practicalSteps": [
+            "Review the exact disclaimer text in the statute before releasing creative.",
+            "Check every format and channel, including audio and mobile graphics."
+          ],
+          "sources": [
+            {
+              "label": "Current code · §106.145",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/106.145"
+            },
+            {
+              "label": "HB 919 · enactment record",
+              "url": "https://www.flsenate.gov/Session/Bill/2024/919"
+            }
+          ]
+        },
+        {
+          "id": "law-FL-digital-bill-rights",
+          "title": "Digital Bill of Rights: profiling, sensitive data and consumer requests",
+          "bill": "Fla. Stat. §§501.701–501.722",
+          "topic": "Privacy & automated decisions",
+          "description": "The main privacy framework is narrowly scoped, but includes profiling opt-outs relevant to AI. A separate sensitive-data-sale rule has broader business coverage.",
+          "timing": "Core framework effective 1 July 2024.",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.702",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Main controllers generally need more than $1 billion in global annual gross revenue plus a qualifying online-advertising, smart-speaker/virtual-assistant or large app-store business model; controlled/controlling entities also matter. Section 501.715 separately reaches qualifying for-profit Florida businesses collecting consumer data without the billion-dollar threshold.",
+          "obligations": [
+            "Covered controllers must honor statutory access, correction, deletion, portability and opt-out rights, including significant-decision profiling.",
+            "Provide accessible request channels under §501.709.",
+            "Check §501.715 before selling sensitive data: prior consent and a prescribed website notice may be required even outside the main controller threshold."
+          ],
+          "enforcement": "Department of Legal Affairs enforcement; up to $50,000 per violation, with specified enhancements. The law creates no private action.",
+          "limits": "Consumers exclude employment and commercial contexts. Section 501.703 contains significant entity/data exemptions. Small size alone does not resolve §501.715.",
+          "codeSections": [
+            {
+              "section": "§501.702(8)–(9)",
+              "detail": "Consumer and controller definitions",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.702"
+            },
+            {
+              "section": "§501.703",
+              "detail": "Applicability and exclusions",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.703"
+            },
+            {
+              "section": "§501.705",
+              "detail": "Consumer rights and profiling opt-out",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.705"
+            },
+            {
+              "section": "§501.709",
+              "detail": "Consumer request methods",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.709"
+            },
+            {
+              "section": "§501.715",
+              "detail": "Broader sensitive-data-sale restrictions",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.715"
+            },
+            {
+              "section": "§501.72",
+              "detail": "Enforcement and no private action",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.72"
+            }
+          ],
+          "practicalSteps": [
+            "Document the threshold and exemption analysis before assuming the law does not apply.",
+            "Trace profiling, biometric and sensitive-data uses separately."
+          ],
+          "sources": [
+            {
+              "label": "Controller threshold · §501.702",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.702"
+            },
+            {
+              "label": "Exemptions · §501.703",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.703"
+            },
+            {
+              "label": "Rights · §501.705",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.705"
+            },
+            {
+              "label": "Sensitive-data sale rule · §501.715",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.715"
+            },
+            {
+              "label": "Enforcement · §501.72",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.72"
+            },
+            {
+              "label": "SB 262 · enactment record",
+              "url": "https://www.flsenate.gov/Session/Bill/2023/262"
+            }
+          ]
+        },
+        {
+          "id": "law-FL-security-breach",
+          "title": "Data security and breach reporting",
+          "bill": "Fla. Stat. §501.171",
+          "topic": "Privacy & security",
+          "description": "AI vendors and users handling covered personal information can face security and breach duties without the Digital Bill of Rights’ revenue threshold.",
+          "timing": "Existing law; the current 2026 code includes security, notification and disposal duties.",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.171",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Commercial covered entities and contracted processors; governmental entities have specified duties.",
+          "obligations": [
+            "Use reasonable security measures and secure disposal.",
+            "Affected-person notice is generally due within 30 days after determining or having reason to believe a breach occurred.",
+            "Notify Legal Affairs within 30 days for 500 or more affected Florida individuals; processors generally notify their customer within 10 days."
+          ],
+          "enforcement": "Department of Legal Affairs enforcement; no private cause of action under this section.",
+          "limits": "Protected data includes specified identifiers, medical information, biometric data, geolocation and account credentials. Statutory exceptions, documented no-harm determinations and permitted delays require separate assessment.",
+          "codeSections": [
+            {
+              "section": "§501.171(1)–(2)",
+              "detail": "Definitions and reasonable security",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.171"
+            },
+            {
+              "section": "§501.171(3)–(6)",
+              "detail": "Notice thresholds and deadlines",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.171"
+            },
+            {
+              "section": "§501.171(8)–(10)",
+              "detail": "Disposal and enforcement",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.171"
+            }
+          ],
+          "practicalSteps": [
+            "Assign incident ownership before sending personal information to an AI provider.",
+            "Require rapid vendor incident escalation and track the applicable notice clocks."
+          ],
+          "sources": [
+            {
+              "label": "Legislature · statutory text",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.171"
+            }
+          ]
+        },
+        {
+          "id": "law-FL-recording",
+          "title": "AI meeting assistants and recording consent",
+          "bill": "Fla. Stat. §§934.02, 934.03",
+          "topic": "Recording & transcription",
+          "description": "AI recording and transcription must fit Florida’s existing interception law. For ordinary consensual recording of covered communications, the statute requires prior consent from all parties.",
+          "timing": "Existing law.",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.03",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "People intercepting covered wire, oral or electronic communications. Oral-communication coverage depends on a justified expectation against interception.",
+          "obligations": [
+            "Obtain all-party prior consent when relying on §934.03(2)(d).",
+            "Do not unlawfully intercept, use or disclose covered communications."
+          ],
+          "enforcement": "Section 934.03 provides criminal penalties; additional remedies may apply under Chapter 934.",
+          "limits": "There are specific statutory exceptions. This is not a universal rule that every public conversation is protected, nor does Florida consent settle other jurisdictions or confidentiality duties.",
+          "codeSections": [
+            {
+              "section": "§934.02(2)–(3)",
+              "detail": "Protected oral communication and interception",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.02"
+            },
+            {
+              "section": "§934.03(1), (2)(d)",
+              "detail": "Prohibition and all-party-consent route",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.03"
+            }
+          ],
+          "practicalSteps": [
+            "Confirm participant locations and consent before enabling an AI notetaker.",
+            "Offer a meeting option without recording and review transcript access and retention."
+          ],
+          "sources": [
+            {
+              "label": "Interception and consent · §934.03",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.03"
+            },
+            {
+              "label": "Communication definitions · §934.02",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.02"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "scope": "Research method",
+      "detail": "Official legislative sources and current agency explanations checked on 2026-11-03. These are selected expansions, not a certification of complete 2026 legislative coverage. Practical steps are editorial implementation suggestions. Existing IDs retained. No court cases or standalone guidance entries added."
+    },
+    {
+      "scope": "NC",
+      "detail": "NC legislature directly confirms learned-profession exclusion in §75-1.1(b); consumer/remedy §75-16; breach §75-65 immediate custodian notice and AG notice where individuals are notified; §14-190.5A expressly covers algorithms/AI and includes intent, lack of consent, and privacy/creation elements. Set state kind ai because an AI-specific-definition statute is now included.",
+      "sourceRefs": [
+        "turn85search1",
+        "turn85search0",
+        "turn89view0",
+        "turn96view4",
+        "turn127view1"
+      ]
+    },
+    {
+      "scope": "SC",
+      "detail": "Act 37/H3058 signed and effective May 12, 2025; §§16-15-330/332 cover realistic forged intimate images even if labeled false. SC §39-1-90 harm trigger and >1000 reporting verified; §§39-5-20/40/110/140 provide trade-practice scope/remedies. No claim that these exhaust new AI law.",
+      "sourceRefs": [
+        "turn89view1",
+        "turn101view3",
+        "turn106view5",
+        "turn115view1"
+      ]
+    },
+    {
+      "scope": "GA limitations",
+      "detail": "Current Georgia AG/USG explanations support the selected obligations. The AG code PDF is explicitly a 2021 compilation and is labeled as such in cards and sources. 2025 code reproductions corroborated core text, including §10-15-2 and §10-1-393.8 (2024 amendment modernized wording). Do not relabel the compilation as a 2026 official code. Disposal entry uses AG explanation, not a claimed full current-code audit. Omitted breach and recording entries rather than overstate current official text coverage.",
+      "sourceRefs": [
+        "turn92search2",
+        "turn127view0",
+        "turn106view0",
+        "turn115search5",
+        "turn115search0",
+        "turn115search3"
+      ]
+    },
+    {
+      "scope": "FL",
+      "detail": "Official 2026 code directly confirms main >$1bn/controller business-model scope, §501.703 exclusions, §501.705 profiling rights, broader sensitive-data sale rule §501.715, AG-only enforcement §501.72. FIPA §501.171 includes biometrics and geolocation with 30-day notices and 10-day processor notice; recording consent and definitions verified in §§934.02/934.03. Did not include HB1395: official 2026 bill page says died in committee.",
+      "sourceRefs": [
+        "turn96view0",
+        "turn92view6",
+        "turn85search8",
+        "turn99view6",
+        "turn106view1",
+        "turn120view2",
+        "turn92search4",
+        "turn106view3",
+        "turn85search9"
+      ]
+    }
+  ]
+}

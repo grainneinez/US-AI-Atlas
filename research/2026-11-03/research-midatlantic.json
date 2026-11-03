@@ -1,0 +1,955 @@
+{
+  "states": [
+    {
+      "code": "NJ",
+      "summary": "Consumer privacy, data brokerage, incident notification and existing discrimination law can all apply to AI. Coverage and thresholds differ between these statutes.",
+      "laws": [
+        {
+          "id": "law-NJ-0",
+          "title": "Consumer data privacy and consequential profiling",
+          "bill": "N.J.S.A. §§56:8-166.4–166.19; P.L.2023 c.266, amended by P.L.2026 c.25",
+          "topic": "Privacy & profiling",
+          "description": "Covered AI processing is subject to consumer rights, purpose limits, sensitive-data protections and risk assessments. The general law does not cover residents acting in an employment or commercial context.",
+          "timing": "Core law effective 15 January 2025; universal sale/targeted-advertising opt-outs required from 15 July 2025. The sensitive-data sale amendment took effect 30 June 2026.",
+          "url": "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Controllers doing business in NJ or targeting its residents that process at least 100,000 consumers in a calendar year (excluding payment-only data), or at least 25,000 and derive revenue or a discount from personal-data sales. Specified entities/data are exempt. The 2026 sensitive-data sale restriction expressly reaches below these volume thresholds.",
+          "obligations": [
+            "Provide privacy notices and access, correction, deletion, portability and opt-out mechanisms; covered consequential profiling has an opt-out right (§166.10).",
+            "Respond to verified requests within 45 days, subject to the statutory extension; provide an appeal route (§166.7).",
+            "Obtain required sensitive-data consent, minimize collection and document heightened-risk assessments; do not sell sensitive data under the 2026 amendment (§166.12)."
+          ],
+          "enforcement": "Attorney General has exclusive enforcement; this privacy law creates no private action. The initial mandatory cure period has expired (§§166.17, 166.19).",
+          "limits": "A profiling opt-out is not a ban on every recommendation. Check the definition of significant decisions, data exemptions and separate discrimination duties.",
+          "codeSections": [
+            {
+              "section": "§56:8-166.5",
+              "detail": "Coverage thresholds",
+              "url": "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM"
+            },
+            {
+              "section": "§§56:8-166.7, 166.10–166.12",
+              "detail": "Requests, opt-outs and controller duties",
+              "url": "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM"
+            },
+            {
+              "section": "§56:8-166.12(a)(6)",
+              "detail": "2026 sensitive-data sale restriction",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            }
+          ],
+          "practicalSteps": [
+            "Map model inputs, inferred profiles and vendor disclosures to the notice and permitted purposes.",
+            "Test that an opt-out prevents the covered processing throughout the AI workflow."
+          ],
+          "sources": [
+            {
+              "label": "2023 enacted privacy law",
+              "url": "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM"
+            },
+            {
+              "label": "2026 amendment to controller duties",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            }
+          ]
+        },
+        {
+          "id": "law-NJ-data-brokers",
+          "title": "Data brokers, data collectors and sensitive-data sales",
+          "bill": "N.J.S.A. §§56:8-166.20–166.24; P.L.2026 c.25",
+          "topic": "Data brokerage",
+          "description": "New duties can affect AI training-data businesses and services selling or licensing consumer datasets. The statute distinguishes brokers without a direct consumer relationship from collectors selling to brokers.",
+          "timing": "Approved and generally effective 30 June 2026. The Division’s public-registry provision is inoperative for 270 days after enactment; that delay is limited to §2(b).",
+          "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Defined brokers and collectors selling or licensing New Jersey consumers’ personal data, subject to detailed statutory exclusions. A consumer must act in an individual or household context.",
+          "obligations": [
+            "Annually register, pay the applicable fee and submit required business/data-practice information under §166.20(c)–(d).",
+            "Do not sell or license sensitive data unless a specified statutory exclusion applies (§166.22)."
+          ],
+          "enforcement": "The Division may pursue registration/information penalties; §166.23 sets a $50,000-per-record civil penalty for specified sensitive-data sales or licensing violations.",
+          "limits": "Registry implementation and registration procedure require checking Division instructions. The 270-day delay does not postpone the entire act. Processor disclosures and listed sector/data exclusions require separate analysis.",
+          "codeSections": [
+            {
+              "section": "§56:8-166.20",
+              "detail": "Definitions, registration and disclosures",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            },
+            {
+              "section": "§§56:8-166.22–166.23",
+              "detail": "Sensitive-data prohibition and penalty",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            },
+            {
+              "section": "P.L.2026 c.25 §8",
+              "detail": "Immediate effect and narrow registry delay",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            }
+          ],
+          "practicalSteps": [
+            "Check how a dataset was acquired and whether customers have a direct relationship with each data supplier.",
+            "Separate sensitive data from datasets offered for sale or licensing; confirm exclusions before release."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+            }
+          ]
+        },
+        {
+          "id": "law-NJ-breach",
+          "title": "Customer information breaches, including AI-vendor exposure",
+          "bill": "N.J.S.A. §§56:8-161, 56:8-163, 56:8-166",
+          "topic": "Privacy & security",
+          "description": "Unauthorized access to covered customer information can trigger notice even when it occurs through an AI tool or its supplier. The incident law has a different scope from the consumer privacy act.",
+          "timing": "Existing breach-notification law; 2019 amendment includes qualifying online-account credentials.",
+          "url": "https://pub.njleg.gov/bills/2018/PL19/95_.HTM",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses operating in NJ and public entities maintaining covered computerized customer records. The personal-information and breach definitions in §161 control.",
+          "obligations": [
+            "Notify affected NJ customers as expediently as possible and without unreasonable delay, subject to investigation/restoration and authorized law-enforcement delay.",
+            "Report to the Division of State Police before customer disclosure. A data custodian must immediately alert the owner after discovery.",
+            "If concluding misuse is not reasonably possible, document that determination and retain it for five years."
+          ],
+          "enforcement": "Willful, knowing or reckless violations of the specified provisions are unlawful practices under the Consumer Fraud Act (§56:8-166).",
+          "limits": "Not every accidental AI upload satisfies the breach definition. Encryption, permitted access, misuse risk, credentials-only notices and statutory exceptions matter.",
+          "codeSections": [
+            {
+              "section": "§56:8-161",
+              "detail": "Personal information and breach definitions",
+              "url": "https://pub.njleg.gov/bills/2018/PL19/95_.HTM"
+            },
+            {
+              "section": "§56:8-163(a)–(c)",
+              "detail": "Notice sequence and timing",
+              "url": "https://pub.njleg.gov/bills/2018/PL19/95_.HTM"
+            },
+            {
+              "section": "§56:8-166",
+              "detail": "Enforcement classification",
+              "url": "https://pub.njleg.gov/bills/2004/pl05/226_.htm"
+            }
+          ],
+          "practicalSteps": [
+            "Include AI suppliers in the incident-response contact list.",
+            "Record discovery, affected data categories and the basis for the notification decision."
+          ],
+          "sources": [
+            {
+              "label": "2019 enacted text: definitions and notice",
+              "url": "https://pub.njleg.gov/bills/2018/PL19/95_.HTM"
+            },
+            {
+              "label": "Enforcement provision",
+              "url": "https://pub.njleg.gov/bills/2004/pl05/226_.htm"
+            }
+          ]
+        },
+        {
+          "id": "law-NJ-algorithmic-discrimination",
+          "title": "Law Against Discrimination and automated decisions",
+          "bill": "N.J.S.A. §10:5-12; Law Against Discrimination",
+          "topic": "Civil rights",
+          "description": "The existing discrimination statute applies when automated tools affect employment, housing, public accommodations, credit or contracting. Buying a third-party tool does not by itself remove the user’s responsibility.",
+          "timing": "Existing statutory duties. The Attorney General and Division on Civil Rights explained their application to algorithms in January 2025.",
+          "url": "https://www.nj.gov/oag/newsreleases25/2025-0108_DCR-Guidance-on-Algorithmic-Discrimination.pdf",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Entities and activities covered by the Law Against Discrimination, including employers, housing providers and public accommodations; coverage depends on the statutory category.",
+          "obligations": [
+            "Do not discriminate on a protected basis in covered decisions, including decisions made or assisted by AI.",
+            "Address required disability accommodations; evaluate discriminatory outcomes as well as intentional treatment."
+          ],
+          "enforcement": "The Division on Civil Rights enforces the LAD; statutory claims and remedies depend on the facts and available forum.",
+          "limits": "The cited agency document explains existing law and creates no new obligations. It does not establish a universal AI audit or automatically decide that any particular model is unlawful.",
+          "codeSections": [
+            {
+              "section": "§10:5-12",
+              "detail": "Covered discriminatory practices; discussed in the official agency interpretation",
+              "url": "https://www.nj.gov/oag/newsreleases25/2025-0108_DCR-Guidance-on-Algorithmic-Discrimination.pdf"
+            }
+          ],
+          "practicalSteps": [
+            "Ask a vendor for evidence about the tool’s relevant performance and limitations.",
+            "Review rejected applicants or customers for potentially discriminatory patterns and provide an accommodation route."
+          ],
+          "sources": [
+            {
+              "label": "DCR explanation of the binding LAD — nonbinding guidance",
+              "url": "https://www.nj.gov/oag/newsreleases25/2025-0108_DCR-Guidance-on-Algorithmic-Discrimination.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "summary": "AI-related privacy, workplace monitoring and security duties, with the enacted 2027 privacy changes shown separately from current requirements.",
+      "laws": [
+        {
+          "id": "law-DE-0",
+          "title": "Personal Data Privacy Act — duties through 2026",
+          "bill": "6 Del. C. §§12D-102–12D-111",
+          "topic": "Privacy & profiling",
+          "description": "Consumer privacy duties can apply to AI inputs and profiles. Until 2027, the profiling opt-out is specifically for solely automated decisions with legal or similarly significant effects.",
+          "timing": "Core law effective 1 January 2025; sale/targeted-advertising preference signals from 1 January 2026. Separate enacted amendments take effect 1 January 2027.",
+          "url": "https://www.delcode.delaware.gov/title6/c012d/index.html",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses operating in or targeting Delaware that processed at least 35,000 consumers in the prior year, excluding payment-only data, or 10,000 plus over 20% of revenue from data sales. Commercial/employment contexts and specified entities/data are excluded.",
+          "obligations": [
+            "Provide consumer rights, notices and qualifying profiling opt-outs; support required preference signals.",
+            "Obtain required sensitive-data consent and use appropriate security.",
+            "The current assessment duty has its own 100,000-consumer threshold and covers heightened-risk activities created/generated from 1 July 2025."
+          ],
+          "enforcement": "Delaware DOJ enforces; no private action under this chapter. Cure opportunities have been discretionary since 1 January 2026.",
+          "limits": "Do not confuse the main coverage threshold with the assessment threshold. A separate entry explains the 2027 amendments.",
+          "codeSections": [
+            {
+              "section": "§12D-103 — version effective until 2027",
+              "detail": "Coverage",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            },
+            {
+              "section": "§§12D-104, 12D-106",
+              "detail": "Consumer rights and duties",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            },
+            {
+              "section": "§12D-108 — version effective until 2027",
+              "detail": "Current assessment threshold",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            }
+          ],
+          "practicalSteps": [
+            "Count Delaware consumers separately from payment-only records.",
+            "Identify which AI decisions are solely automated and significant."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            }
+          ]
+        },
+        {
+          "id": "law-DE-privacy-2027",
+          "title": "2027 privacy amendments: wider coverage and AI impact assessments",
+          "bill": "6 Del. C. §§12D-103, 12D-104, 12D-107A, 12D-108; 85 Del. Laws c.463",
+          "topic": "Privacy & profiling",
+          "description": "Enacted amendments lower coverage thresholds and add more explicit requirements for consequential profiling and data recipients. These provisions are future duties, not the current 2026 rules.",
+          "timing": "Effective 1 January 2027.",
+          "url": "https://www.delcode.delaware.gov/title6/c012d/index.html",
+          "status": "Upcoming",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Coverage expands to 10,000 consumers (excluding payment-only data), or 5,000 plus over 20% revenue from data sales, and specified third parties. The assessment provision uses a separate 50,000-consumer threshold.",
+          "obligations": [
+            "At the assessment threshold, document regular impact assessments for profiling supporting automated decisions with significant effects, including inputs, outputs, metrics, limitations and safeguards.",
+            "Covered third-party recipients must follow required contracts and provide information supporting assessments.",
+            "Expanded access rights include inferences and whether data is processed for consequential profiling."
+          ],
+          "enforcement": "Delaware DOJ enforcement under §12D-111; the chapter does not create a private action.",
+          "limits": "Use the versions marked effective 1 January 2027. Exemptions remain relevant and this entry summarizes selected amendments, not every change.",
+          "codeSections": [
+            {
+              "section": "§12D-103 — effective 2027",
+              "detail": "Lower coverage thresholds",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            },
+            {
+              "section": "§12D-107A — effective 2027",
+              "detail": "Third-party duties",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            },
+            {
+              "section": "§12D-108 — effective 2027",
+              "detail": "Assessment scope and contents",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            }
+          ],
+          "practicalSteps": [
+            "Recalculate coverage before January 2027.",
+            "Ask profiling vendors for data categories, evaluation metrics and post-deployment safeguards."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://www.delcode.delaware.gov/title6/c012d/index.html"
+            }
+          ]
+        },
+        {
+          "id": "law-DE-monitoring",
+          "title": "Employee monitoring notices for AI-assisted workplace tools",
+          "bill": "19 Del. C. §705",
+          "topic": "Employment",
+          "description": "AI analysis of employee email, calls or Internet activity can fall within existing monitoring-notice requirements.",
+          "timing": "Existing statute; current code checked 3 November 2026.",
+          "url": "https://delcode.delaware.gov/title19/c007/sc001/index.html",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Employers with a Delaware place of business, including public employers, monitoring covered activity of Delaware employees.",
+          "obligations": [
+            "Before covered monitoring, provide either an acknowledged one-time written/electronic notice or an electronic notice at least once each day the employee accesses employer-provided email/Internet services."
+          ],
+          "enforcement": "A violation carries a $100 civil penalty; a claim may be filed in a court with jurisdiction. Other available remedies are preserved.",
+          "limits": "A narrow exception applies to untargeted processes performed solely for system maintenance/protection. Notice does not override other privacy or discrimination duties.",
+          "codeSections": [
+            {
+              "section": "§705(b)",
+              "detail": "Notice options",
+              "url": "https://delcode.delaware.gov/title19/c007/sc001/index.html"
+            },
+            {
+              "section": "§705(c)–(e)",
+              "detail": "Penalty, other remedies and maintenance exception",
+              "url": "https://delcode.delaware.gov/title19/c007/sc001/index.html"
+            }
+          ],
+          "practicalSteps": [
+            "Identify whether an AI productivity or security tool monitors individual communications or Internet activity.",
+            "Keep the acknowledgement with the policy version it covered."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://delcode.delaware.gov/title19/c007/sc001/index.html"
+            }
+          ]
+        },
+        {
+          "id": "law-DE-security-breach",
+          "title": "Data security and breach notification",
+          "bill": "6 Del. C. §§12B-100–12B-104",
+          "topic": "Privacy & security",
+          "description": "Reasonable security and breach-notice duties can cover personal information used by AI systems, including qualifying biometric authentication data.",
+          "timing": "Existing law; current code checked 3 November 2026.",
+          "url": "https://delcode.delaware.gov/title6/c012b/",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Persons conducting Delaware business and owning, licensing or maintaining defined personal information; notification duties differ for owners and custodians.",
+          "obligations": [
+            "Maintain reasonable protection against unauthorized acquisition, use or disclosure.",
+            "Notify affected residents without unreasonable delay and generally within 60 days after determining a qualifying breach, subject to statutory exceptions.",
+            "Notify the AG when more than 500 residents require notice; qualifying Social Security number breaches require one year of free credit monitoring."
+          ],
+          "enforcement": "The Attorney General may seek relief and direct economic damages under §12B-104; other rights are preserved.",
+          "limits": "An appropriate investigation may establish that harm is unlikely. Encryption, compromised keys and regulator-specific provisions matter.",
+          "codeSections": [
+            {
+              "section": "§12B-100",
+              "detail": "Security duties",
+              "url": "https://delcode.delaware.gov/title6/c012b/"
+            },
+            {
+              "section": "§12B-102",
+              "detail": "Notice timing and recipients",
+              "url": "https://delcode.delaware.gov/title6/c012b/"
+            }
+          ],
+          "practicalSteps": [
+            "Inventory biometric templates, credentials and identifiers held by AI suppliers.",
+            "Agree how the vendor will immediately report an incident to the data owner."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://delcode.delaware.gov/title6/c012b/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "summary": "Selected AI-specific synthetic-media provisions, recording restrictions and data-incident duties relevant to AI use in Pennsylvania.",
+      "laws": [
+        {
+          "id": "law-PA-0",
+          "title": "Intimate deepfakes and child protections",
+          "bill": "18 Pa.C.S. §§3131, 6312, 6321; Act 125 of 2024",
+          "topic": "Synthetic media",
+          "description": "Pennsylvania criminal provisions expressly reach specified AI-generated sexual depictions. Adult intimate-image and child-protection offenses have different elements.",
+          "timing": "Act 125 approved 29 October 2024; effective 60 days later.",
+          "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/18.HTM",
+          "status": "Enacted",
+          "type": "AI-specific criminal provisions",
+          "reviewed": "2026-11-03",
+          "appliesTo": "People engaging in the conduct defined by each offense, including specified dissemination and possession involving artificially generated material.",
+          "obligations": [
+            "Section 3131(a)(2) prohibits disseminating a qualifying artificial sexual depiction with intent to harass, annoy or alarm another, subject to statutory defenses.",
+            "Section 6312 separately addresses knowing dissemination and intentional viewing/knowing possession of covered child sexual abuse material."
+          ],
+          "enforcement": "Criminal penalties depend on the offense and circumstances. 42 Pa.C.S. §8316.1 separately provides a civil cause of action for unlawful dissemination of intimate images.",
+          "limits": "Do not assume every synthetic image falls within these offenses, or that the adult offense’s intent test governs the separate child-material offenses.",
+          "codeSections": [
+            {
+              "section": "18 Pa.C.S. §3131",
+              "detail": "Artificial sexual depictions and offense elements",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/18.HTM"
+            },
+            {
+              "section": "18 Pa.C.S. §§6312, 6321",
+              "detail": "Distinct child-protection provisions",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/18.HTM"
+            },
+            {
+              "section": "42 Pa.C.S. §8316.1",
+              "detail": "Civil remedy",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.083..HTM"
+            }
+          ],
+          "practicalSteps": [
+            "Review image-generation and sharing features for these distinct prohibited categories.",
+            "Build a reporting and escalation process without retaining unlawful material unnecessarily."
+          ],
+          "sources": [
+            {
+              "label": "Current Crimes Code",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/18.HTM"
+            },
+            {
+              "label": "Act 125 amendments and effective date",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2024/0/0125..HTM"
+            },
+            {
+              "label": "Civil remedies code",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.083..HTM"
+            }
+          ]
+        },
+        {
+          "id": "law-PA-recording",
+          "title": "Recording and AI transcription of conversations",
+          "bill": "18 Pa.C.S. §§5702–5704, 5725",
+          "topic": "Recording & transcription",
+          "description": "AI meeting bots and call-transcription tools can implicate Pennsylvania interception law. The ordinary consent exception requires prior consent from all parties.",
+          "timing": "Existing statute; current chapter checked 3 November 2026.",
+          "url": "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Interception, use or disclosure of covered wire, electronic or oral communications. The definitions and the context of the communication matter.",
+          "obligations": [
+            "For reliance on §5704(4), obtain every party’s prior consent before interception.",
+            "Do not use or disclose intercepted contents in violation of §5703."
+          ],
+          "enforcement": "Section 5703 provides criminal liability; §5725 provides a civil remedy for qualifying unlawful interception, disclosure or use.",
+          "limits": "Specific statutory exceptions exist. Interstate calls can involve other jurisdictions; a bot invitation or platform icon should not automatically be treated as sufficient consent.",
+          "codeSections": [
+            {
+              "section": "§5702",
+              "detail": "Communication and interception definitions",
+              "url": "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM"
+            },
+            {
+              "section": "§5704(4)",
+              "detail": "All-party prior-consent exception",
+              "url": "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM"
+            },
+            {
+              "section": "§5725",
+              "detail": "Civil remedy",
+              "url": "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM"
+            }
+          ],
+          "practicalSteps": [
+            "Use a clear pre-recording consent process and provide a non-recorded alternative.",
+            "Check where participants are located before activating transcription."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM"
+            }
+          ]
+        },
+        {
+          "id": "law-PA-breach",
+          "title": "Personal-information breach notification",
+          "bill": "Breach of Personal Information Notification Act §§2–5.4, 8; 73 P.S. §§2302–2305.4, 2308",
+          "topic": "Privacy & security",
+          "description": "An AI or vendor incident involving defined personal information can trigger notification and additional credit-monitoring duties.",
+          "timing": "Existing law; Act 33 changes took effect 26 September 2024.",
+          "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2005/0/0094..HTM",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered entities maintaining, storing or managing computerized personal information about Pennsylvania residents. Public agencies and contractors have additional deadlines.",
+          "obligations": [
+            "Notify residents without unreasonable delay after determining a qualifying breach, subject to statutory allowances.",
+            "Notify the AG concurrently when more than 500 Pennsylvania individuals require notice; insurance-specific exceptions apply.",
+            "Apply §5.4’s credit-report and 12-month monitoring requirements where its notification and compromised-data conditions are met."
+          ],
+          "enforcement": "The Attorney General enforces the act as an unfair or deceptive practice (§8).",
+          "limits": "The definition requires unauthorized access/acquisition and the stated loss-or-injury condition. The general private-entity rule is not a universal fixed-day deadline; agency rules differ.",
+          "codeSections": [
+            {
+              "section": "Act 94 §3 / 73 P.S. §2303",
+              "detail": "Breach notices and public-entity timing",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2005/0/0094..HTM"
+            },
+            {
+              "section": "Act 94 §§5, 5.4",
+              "detail": "Reporting agencies and credit monitoring",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2005/0/0094..HTM"
+            }
+          ],
+          "practicalSteps": [
+            "Include prompt logs, document uploads and AI-vendor storage in the incident inventory.",
+            "Determine whether exposed credentials or identifiers meet the statutory definition before setting notices."
+          ],
+          "sources": [
+            {
+              "label": "Current amended Act 94",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2005/0/0094..HTM"
+            },
+            {
+              "label": "Act 33 of 2024",
+              "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2024/0/0033..HTM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MD",
+      "summary": "Consumer privacy and algorithm assessments, interview facial-recognition consent, and security duties for AI systems and suppliers.",
+      "laws": [
+        {
+          "id": "law-MD-0",
+          "title": "Maryland Online Data Privacy Act",
+          "bill": "Md. Code, Commercial Law §§14-4701 et seq.",
+          "topic": "Privacy & profiling",
+          "description": "Covered AI uses must meet consumer-rights, minimization and risk-assessment duties. Sensitive-data processing follows a strict-necessity standard; consent alone is not the general test.",
+          "timing": "Effective 1 October 2025; current codification is Subtitle 47. The original act has a separate prospective-application provision dated 1 April 2026.",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4702",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Persons operating in or targeting Maryland that processed at least 35,000 consumers in the preceding year (excluding payment-only data), or at least 10,000 plus over 20% gross revenue from data sales. Entity/data exemptions and the individual/household consumer definition apply.",
+          "obligations": [
+            "Provide rights including an opt-out from profiling supporting solely automated decisions with significant effects (§14-4705).",
+            "Limit sensitive-data processing to what is strictly necessary for the requested service; do not sell sensitive data (§14-4707).",
+            "Document regular assessments for heightened-risk processing, including each algorithm used (§14-4710); required processor contracts are addressed in §14-4708."
+          ],
+          "enforcement": "Consumer Protection Division enforcement; §14-4713 excludes the Consumer Protection Act’s private-action provision for a violation of this subtitle while preserving other remedies.",
+          "limits": "This is not a blanket right to opt out of all AI. Do not mistake original 2024 section numbers beginning 14-46 for the current 14-47 codification.",
+          "codeSections": [
+            {
+              "section": "§14-4702",
+              "detail": "Coverage thresholds",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4702"
+            },
+            {
+              "section": "§14-4705(b)(7)",
+              "detail": "Consequential-profiling opt-out",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4705"
+            },
+            {
+              "section": "§14-4707",
+              "detail": "Sensitive-data and minimization duties",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4707"
+            },
+            {
+              "section": "§14-4710",
+              "detail": "Algorithm assessments",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4710"
+            }
+          ],
+          "practicalSteps": [
+            "Document why each sensitive input is strictly necessary for the requested product.",
+            "Assess the actual algorithms used, not only the vendor’s generic privacy policy."
+          ],
+          "sources": [
+            {
+              "label": "Coverage statute",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4702"
+            },
+            {
+              "label": "Consumer rights",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4705"
+            },
+            {
+              "label": "Controller duties — current enactments",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4707&enactments=true"
+            },
+            {
+              "label": "Assessment statute",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4710"
+            },
+            {
+              "label": "Enforcement",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4713"
+            },
+            {
+              "label": "Original act and timing",
+              "url": "https://mgaleg.maryland.gov/2024RS/chapters_noln/Ch_454_hb0567E.pdf"
+            }
+          ]
+        },
+        {
+          "id": "law-MD-facial-interviews",
+          "title": "Facial recognition in employment interviews",
+          "bill": "Md. Code, Labor and Employment §3-717",
+          "topic": "Employment",
+          "description": "Employers need a specified signed waiver before using a facial-recognition service to create a facial template during an applicant’s interview.",
+          "timing": "Effective 1 October 2020.",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gle&section=3-717",
+          "status": "Enacted",
+          "type": "Technology-specific state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Employers using technology that analyzes facial features for recognition or persistent tracking to create a machine-interpretable facial template during an employment interview.",
+          "obligations": [
+            "Obtain the applicant’s signed waiver before the covered use.",
+            "The plain-language waiver must give the applicant’s name, interview date, consent to facial recognition and whether the applicant read it."
+          ],
+          "enforcement": "Section 3-717 imposes the employer prohibition but does not state a separate penalty within that section.",
+          "limits": "This narrowly concerns facial-template creation during interviews. It is not a general authorization for video analytics, discrimination or unrelated biometric processing.",
+          "codeSections": [
+            {
+              "section": "§3-717(a)",
+              "detail": "Technology definitions",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gle&section=3-717"
+            },
+            {
+              "section": "§3-717(b)–(c)",
+              "detail": "Prohibition and required waiver contents",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gle&section=3-717"
+            }
+          ],
+          "practicalSteps": [
+            "Ask the interview-platform provider whether any facial template is created.",
+            "If it is, confirm consent before enabling the feature and preserve the signed waiver."
+          ],
+          "sources": [
+            {
+              "label": "Current facial-recognition statute",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gle&section=3-717"
+            },
+            {
+              "label": "Enactment and effective date",
+              "url": "https://www.mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1202?search=True&ys=2020RS"
+            }
+          ]
+        },
+        {
+          "id": "law-MD-security",
+          "title": "Personal-information security and vendor breaches",
+          "bill": "Md. Code, Commercial Law §§14-3503–14-3504",
+          "topic": "Privacy & security",
+          "description": "Existing security and incident rules apply to covered personal information handled by businesses and nonaffiliated service providers, including AI suppliers.",
+          "timing": "Existing statute; current provisions checked 3 November 2026.",
+          "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3503",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses owning, maintaining or licensing defined personal information of Maryland residents; obligations differ between data owners/licensees and custodians.",
+          "obligations": [
+            "Maintain reasonable security appropriate to the data and business; covered written service-provider contracts must require reasonable security.",
+            "Promptly investigate a breach and, unless misuse is reasonably unlikely, notify affected individuals as soon as practicable and within 45 days of discovery/notification, subject to statutory exceptions.",
+            "A custodian must notify the owner/licensee as soon as practicable and within 10 days. Notify the AG before required individual notices; retain a no-notice determination for three years."
+          ],
+          "enforcement": "These duties sit within Maryland’s Personal Information Protection Act; regulator-compliance provisions in §14-3507 may affect the analysis.",
+          "limits": "Definitions, regulatory safe harbors and law-enforcement delays matter. These requirements are separate from MODPA’s consumer-count thresholds.",
+          "codeSections": [
+            {
+              "section": "§14-3503",
+              "detail": "Reasonable security and supplier contracts",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3503"
+            },
+            {
+              "section": "§14-3504(b)–(d)",
+              "detail": "Investigation, timing and exceptions",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3504"
+            },
+            {
+              "section": "§14-3507",
+              "detail": "Specified regulatory compliance provisions",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3507"
+            }
+          ],
+          "practicalSteps": [
+            "Check AI supplier contracts for security and prompt incident cooperation.",
+            "Keep an incident log that distinguishes vendor discovery from owner notification."
+          ],
+          "sources": [
+            {
+              "label": "Security and contracts",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3503"
+            },
+            {
+              "label": "Breach investigation and notices",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3504"
+            },
+            {
+              "label": "Regulatory compliance provisions",
+              "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-3507"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "VA",
+      "summary": "Consumer profiling, recording and incident-notification laws relevant to AI; each has distinct coverage and exceptions.",
+      "laws": [
+        {
+          "id": "law-VA-0",
+          "title": "Consumer Data Protection Act and consequential profiling",
+          "bill": "Va. Code §§59.1-575–59.1-584",
+          "topic": "Privacy & profiling",
+          "description": "Covered consumers have rights over personal data and certain consequential profiling. AI deployment can also require sensitive-data consent, purpose limits and a documented assessment.",
+          "timing": "Core law effective 1 January 2023; current amended code checked 3 November 2026.",
+          "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-576/",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Persons doing business in or targeting Virginia that process at least 100,000 consumers annually, or 25,000 plus over 50% gross revenue from data sales. Exemptions include specified government, financial, HIPAA, nonprofit and higher-education entities; employment-context data is excluded.",
+          "obligations": [
+            "Provide access, correction, deletion, portability and qualifying profiling opt-outs; respond within 45 days, subject to one permitted extension (§577).",
+            "Minimize collection, obtain required sensitive-data consent, maintain security and provide privacy notices. Current §578 also prohibits selling or offering precise geolocation data.",
+            "Assess heightened-risk processing, including specified profiling; §580 also addresses services directed to known children."
+          ],
+          "enforcement": "AG has exclusive authority; statutory 30-day cure notice, then possible injunctions and penalties up to $7,500 per violation. No private action under this chapter (§584).",
+          "limits": "This consumer statute is not a general workplace AI law. Coverage exemptions and the definition of significant effects must be checked.",
+          "codeSections": [
+            {
+              "section": "§59.1-576",
+              "detail": "Coverage and exclusions",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-576/"
+            },
+            {
+              "section": "§59.1-577",
+              "detail": "Rights and deadlines",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-577/"
+            },
+            {
+              "section": "§§59.1-578, 59.1-580",
+              "detail": "Controller duties and assessments",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-580/"
+            }
+          ],
+          "practicalSteps": [
+            "Identify which profiles influence significant consumer decisions.",
+            "Make deletion and opt-out requests reach downstream AI processors."
+          ],
+          "sources": [
+            {
+              "label": "Coverage",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-576/"
+            },
+            {
+              "label": "Consumer rights",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-577/"
+            },
+            {
+              "label": "Current controller duties",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-578/"
+            },
+            {
+              "label": "Assessments",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-580/"
+            },
+            {
+              "label": "Enforcement",
+              "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-584/"
+            }
+          ]
+        },
+        {
+          "id": "law-VA-recording",
+          "title": "Conversation recording and AI note-taking",
+          "bill": "Va. Code §19.2-62",
+          "topic": "Recording & transcription",
+          "description": "Virginia’s interception law includes a party-or-prior-consent exception relevant to AI recording and transcription.",
+          "timing": "Existing statute; current code checked 3 November 2026.",
+          "url": "https://law.lis.virginia.gov/vacode/title19.2/chapter6/section19.2-62/",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "People intercepting, using or disclosing covered wire, electronic or oral communications; the communication definitions and circumstances matter.",
+          "obligations": [
+            "To rely on §19.2-62(B)(2), the recorder must be a party or have prior consent from one party.",
+            "Do not unlawfully use or disclose intercepted communications."
+          ],
+          "enforcement": "Section 19.2-62(A) makes the specified unlawful interception, disclosure or use a Class 6 felony; other subsections address service-provider disclosure.",
+          "limits": "This exception does not settle another state’s law on an interstate call, confidentiality, privilege, employment policy or permission to upload content to an AI vendor.",
+          "codeSections": [
+            {
+              "section": "§19.2-62(A)",
+              "detail": "General interception/use/disclosure prohibitions",
+              "url": "https://law.lis.virginia.gov/vacode/title19.2/chapter6/section19.2-62/"
+            },
+            {
+              "section": "§19.2-62(B)(2)",
+              "detail": "Party or prior-consent exception",
+              "url": "https://law.lis.virginia.gov/vacode/title19.2/chapter6/section19.2-62/"
+            }
+          ],
+          "practicalSteps": [
+            "Tell participants when transcription is being used and check other jurisdictions.",
+            "Review the vendor’s retention and training settings before recording sensitive discussions."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://law.lis.virginia.gov/vacode/title19.2/chapter6/section19.2-62/"
+            }
+          ]
+        },
+        {
+          "id": "law-VA-breach",
+          "title": "Breach notification for covered personal information",
+          "bill": "Va. Code §18.2-186.6",
+          "topic": "Privacy & security",
+          "description": "An AI-system or supplier incident can trigger separate notification duties when it exposes the personal information and fraud risk defined in this statute.",
+          "timing": "Existing statute; current text checked 3 November 2026.",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter6/section18.2-186.6/",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Owners/licensees of computerized covered personal information of Virginia residents; custodians have separate owner-notification duties. Sector exclusions and special payroll rules apply.",
+          "obligations": [
+            "When the statutory unauthorized-access/acquisition and identity-theft-or-fraud conditions are met, notify affected residents and the AG without unreasonable delay.",
+            "Provide the required incident description, affected data types, protective measures and assistance information."
+          ],
+          "enforcement": "The AG enforces the statute; specified financial institutions are overseen by their primary state regulator. Insurance-regulated entities have an exclusion.",
+          "limits": "There is no universal fixed-day limit in this section. Defined data combinations, encryption/redaction, fraud risk and authorized investigation delay control.",
+          "codeSections": [
+            {
+              "section": "§18.2-186.6(A)–(B)",
+              "detail": "Definitions and notification trigger",
+              "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter6/section18.2-186.6/"
+            },
+            {
+              "section": "§18.2-186.6(J)–(M)",
+              "detail": "Sector and payroll provisions",
+              "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter6/section18.2-186.6/"
+            }
+          ],
+          "practicalSteps": [
+            "Check whether prompts or uploaded files contain the listed identifier combinations.",
+            "Require the supplier to give facts needed for a timely fraud-risk and notice assessment."
+          ],
+          "sources": [
+            {
+              "label": "Official statutory text",
+              "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter6/section18.2-186.6/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "state": "NJ",
+      "finding": "The 25,000-consumer privacy threshold requires revenue or a discount from data sales, not a 20%/50% revenue test. Chapter25 of2026 is enacted, approved June30; only registry subsection2(b) delayed270days.",
+      "sources": [
+        "https://pub.njleg.gov/Bills/2022/PL23/266_.HTM",
+        "https://pub.njleg.state.nj.us/Bills/2026/PL26/25_.HTM"
+      ],
+      "refs": [
+        "turn114view5",
+        "turn91view1",
+        "turn114view4"
+      ]
+    },
+    {
+      "state": "NJ",
+      "finding": "LAD entry is binding existing legislation explained by the official DCR guidance; direct statutory PDF endpoints were blocked/404. Source label explicitly says nonbinding guidance. If direct primary statutory text is mandatory for every entry, omit law-NJ-algorithmic-discrimination for now.",
+      "sources": [
+        "https://www.nj.gov/oag/newsreleases25/2025-0108_DCR-Guidance-on-Algorithmic-Discrimination.pdf"
+      ],
+      "refs": [
+        "turn87search4",
+        "turn122search8"
+      ]
+    },
+    {
+      "state": "DE",
+      "finding": "Official code displays both current and Jan1,2027 versions. Current main thresholds35000/10000+20%, assessment100000;2027 main10000/5000+20%, assessment50000 plus profilingimpactassessment. Future entry distinct.",
+      "sources": [
+        "https://www.delcode.delaware.gov/title6/c012d/index.html"
+      ],
+      "refs": [
+        "turn122view3",
+        "turn122view4",
+        "turn133view0"
+      ]
+    },
+    {
+      "state": "DE",
+      "finding": "Breach source is current and reflects chapter464 changes in definition; no total-effectivity inference for unselected amendments. Duties selected directly supported.",
+      "sources": [
+        "https://delcode.delaware.gov/title6/c012b/",
+        "https://delcode.delaware.gov/title19/c007/sc001/index.html"
+      ],
+      "refs": [
+        "turn128view1",
+        "turn87search1"
+      ]
+    },
+    {
+      "state": "PA",
+      "finding": "Existing Act125 deepfake scope verified against currentTitle18. HB2252 search results show proposed amendments; not treated as enacted. Current breachAct94 source incorporatesAct33.",
+      "sources": [
+        "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/18.HTM",
+        "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2024/0/0125..HTM",
+        "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2005/0/0094..HTM",
+        "https://www.palegis.us/statutes/consolidated/view-statute?chpt=57&div=0&iFrame=true&ttl=18&txtType=HTM"
+      ],
+      "refs": [
+        "turn122search1",
+        "turn122search3",
+        "turn114view7",
+        "turn114view8"
+      ]
+    },
+    {
+      "state": "MD",
+      "finding": "Current privacy codification is14-47xx;14-4602 is now unrelated kit law. Strictnecessity forsensitive data is not generalconsent. Assessment for eachalgorithm in14-4710. Original2024 enacted PDF is linked only fortiming; current duties linkcurrentcode.",
+      "sources": [
+        "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4702",
+        "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4707&enactments=true",
+        "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-4710"
+      ],
+      "refs": [
+        "turn97search0",
+        "turn114view0",
+        "turn114view2",
+        "turn102search1"
+      ]
+    },
+    {
+      "state": "VA",
+      "finding": "Current59.1-578 includes precisegeolocation sale ban. Do not conflate consumerprivacy with employment law;576 excludesemploymentdata. Recording section is19.2-62, not18.2-62.",
+      "sources": [
+        "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-576/",
+        "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-578/",
+        "https://law.lis.virginia.gov/vacode/title19.2/chapter6/section19.2-62/"
+      ],
+      "refs": [
+        "turn95view3",
+        "turn97view1",
+        "turn102view0"
+      ]
+    },
+    {
+      "methodology": "This is selected coverage, not an exhaustiveinventory. PracticalSteps are editorialimplementation suggestions, not separate legal requirements. Only listed entries were source-reviewed on2026-11-03; do not globally refreshstate dates."
+    }
+  ]
+}

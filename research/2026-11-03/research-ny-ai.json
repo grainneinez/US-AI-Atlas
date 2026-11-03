@@ -1,0 +1,662 @@
+{
+  "states": [
+    {
+      "code": "NY",
+      "laws": [
+        {
+          "title": "RAISE Act — amended frontier-model framework",
+          "bill": "General Business Law Article 44-B · §§1420–1429 · RAISE Act",
+          "topic": "Frontier models",
+          "description": "The amended law creates tiered transparency and safety duties for frontier developers, with additional obligations for large developers. The March 2026 amendment replaced the original framework.",
+          "timing": "Adopted framework; substantive duties take effect 1 January 2027, as stated in the codified sections.",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1420",
+          "sources": [
+            {
+              "label": "Definitions · §1420",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1420"
+            },
+            {
+              "label": "Transparency duties · §1421",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1421"
+            },
+            {
+              "label": "Reporting · §1422",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1422"
+            },
+            {
+              "label": "Scope · §1425",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1425"
+            },
+            {
+              "label": "Exceptions · §1426",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1426"
+            },
+            {
+              "label": "Penalties · §1427",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1427"
+            },
+            {
+              "label": "DFS disclosure · §1428",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1428"
+            }
+          ],
+          "status": "Upcoming",
+          "type": "State statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Frontier developers training covered foundation models above 10^26 operations, counting specified later modifications. The model must be developed, deployed or operating wholly or partly in New York. Additional large-developer duties use combined prior-year revenue above $500 million, including affiliates.",
+          "obligations": [
+            "Publish a transparency report before or at deployment of a new or substantially modified frontier model. Covered reports identify the release, uses, supported outputs and contact mechanism; large developers add risk-assessment information.",
+            "Large developers must publish and follow a frontier AI framework, review it at least annually, and publish material framework changes with reasons within 30 days.",
+            "Report a critical safety incident within 72 hours of the statutory knowledge trigger; disclose imminent death or serious-injury risks to an appropriate authority within 24 hours.",
+            "Large developers also submit internal-use risk summaries and maintain the required DFS disclosure statement and assessments."
+          ],
+          "enforcement": "The attorney general can seek up to $1 million for a first covered large-developer violation and $3 million for subsequent violations. The act creates no private right of action.",
+          "limits": "Academic research by accredited New York colleges/universities and specified Empire AI bodies are excluded. API use alone does not establish frontier-developer status. Catastrophic-risk and incident definitions are narrower than ordinary errors; evaluate modifications and the New York nexus separately.",
+          "id": "law-NY-0",
+          "codeSections": [
+            {
+              "section": "GBL §1420(8)–(10)",
+              "detail": "Developer, compute and large-developer definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1420"
+            },
+            {
+              "section": "GBL §1421(1)–(4)",
+              "detail": "Safety frameworks, public reports and misleading statements.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1421"
+            },
+            {
+              "section": "GBL §1422(2)–(3)",
+              "detail": "Internal-use summaries and 72-/24-hour incident reporting.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1422"
+            },
+            {
+              "section": "GBL §§1425–1426",
+              "detail": "New York nexus and research exclusions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1425"
+            },
+            {
+              "section": "GBL §1428",
+              "detail": "Large-developer disclosure filings and DFS assessments.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1428"
+            }
+          ],
+          "practicalSteps": [
+            "Record training compute, affiliate revenue and where the model is developed or offered before classifying coverage.",
+            "Assign owners for model releases, public disclosures and urgent incident escalation before the operative date."
+          ]
+        },
+        {
+          "title": "AI companion safeguards & identity notices",
+          "bill": "General Business Law §§1700–1704",
+          "topic": "Chatbots",
+          "description": "Covered AI companions must have self-harm response protocols and tell users they are not talking to a human.",
+          "timing": "In effect since 5 November 2025. These Article 47 duties are separate from the later Article 48 restrictions for minors.",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1700",
+          "sources": [
+            {
+              "label": "Definitions · §1700",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1700"
+            },
+            {
+              "label": "Safety protocol · §1701",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1701"
+            },
+            {
+              "label": "Identity notices · §1702",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1702"
+            },
+            {
+              "label": "Enforcement · §1703",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1703"
+            },
+            {
+              "label": "Governor: operative date and implementation",
+              "url": "https://www.governor.ny.gov/news/governor-hochul-pens-letter-ai-companion-companies-notifying-them-safeguard-requirements-are"
+            }
+          ],
+          "status": "Enacted",
+          "type": "State statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Operators providing an AI companion for personal use within New York. Section 1700(4) describes systems designed for sustained relationships through retained interaction history, unsolicited emotional questions and ongoing personal dialogue.",
+          "obligations": [
+            "Include a protocol making reasonable efforts to detect and address expressions of suicidal ideation or self-harm, including referral to appropriate crisis services.",
+            "Give a conspicuous non-human identity notice at the beginning of interaction (not required more than once daily) and at least every three hours of continued interaction."
+          ],
+          "enforcement": "The attorney general may seek injunctions and civil penalties of up to $15,000 per day for violations.",
+          "limits": "Article 47 excludes specified customer-service-only, research/technical-assistance, efficiency and internal-productivity systems. Its definition is not interchangeable with the broader covered-system definition in the newly enacted Article 48.",
+          "id": "law-NY-1",
+          "codeSections": [
+            {
+              "section": "GBL §1700(4), (5), (8)",
+              "detail": "Companion, operator and New York personal-use definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1700"
+            },
+            {
+              "section": "GBL §1701",
+              "detail": "Self-harm detection and response protocol.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1701"
+            },
+            {
+              "section": "GBL §1702",
+              "detail": "Initial and recurring non-human notices.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1702"
+            },
+            {
+              "section": "GBL §1703",
+              "detail": "Attorney general injunctions and daily penalties.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1703"
+            }
+          ],
+          "practicalSteps": [
+            "Test long sessions and returning users to check notice timing and crisis-response routing.",
+            "Document the actual product behavior supporting any claimed exclusion; separately assess the minors law."
+          ]
+        },
+        {
+          "title": "Synthetic performers in advertising",
+          "bill": "General Business Law §396-b(1), (3)–(8) · Chapter 617 of 2025",
+          "topic": "Advertising",
+          "description": "Commercial advertisers with actual knowledge of a synthetic performer in their advertisement must conspicuously disclose its use.",
+          "timing": "Signed 11 December 2025; operative 180 days after enactment. In force by this review.",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B",
+          "sources": [
+            {
+              "label": "Current advertisement statute",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+            },
+            {
+              "label": "Enactment & timing",
+              "url": "https://www.nysenate.gov/legislation/bills/2025/S8420/amendment/A"
+            }
+          ],
+          "status": "Enacted",
+          "type": "State statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Businesses producing or creating commercial advertisements for property or services. A synthetic performer is a human-like digital asset not recognizable as an identifiable natural performer.",
+          "obligations": [
+            "Include a conspicuous disclosure in the covered advertisement when the advertiser actually knows it uses a synthetic performer."
+          ],
+          "enforcement": "The statute specifies $1,000 for a first violation and $5,000 for subsequent violations.",
+          "limits": "Exclusions cover audio ads, AI used solely for language translation, qualifying promotion of expressive works, and advertising media that merely publish or distribute the ad.",
+          "id": "law-NY-7",
+          "codeSections": [
+            {
+              "section": "GBL §396-b(1)(c)",
+              "detail": "Synthetic performer means a human-like digital asset not recognizable as an identifiable natural performer.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+            },
+            {
+              "section": "GBL §396-b(3)",
+              "detail": "Actual-knowledge disclosure duty and specified civil penalties.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+            },
+            {
+              "section": "GBL §396-b(4), (7)–(8)",
+              "detail": "Expressive-work promotion, audio, translation and publishing-media exclusions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/396-B"
+            }
+          ],
+          "practicalSteps": [
+            "Ask advertising suppliers whether performers are synthetic and preserve the response with the approved creative.",
+            "For a real person’s likeness or voice, separately review consent and digital-replica rights; an AI label does not replace them."
+          ]
+        },
+        {
+          "title": "Fashion Workers Act — digital replica consent",
+          "bill": "Labor Law Article 36 · §§1031, 1034(11), 1035(10), 1037(7), 1038",
+          "topic": "Digital replicas",
+          "description": "Model management businesses and clients have specific consent duties before creating or using models’ digital replicas.",
+          "timing": "Core duties began 19 June 2025. Registration requirements began 21 December 2025.",
+          "url": "https://dol.ny.gov/fashion",
+          "sources": [
+            {
+              "label": "Management duties · §1034",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1034"
+            },
+            {
+              "label": "Management prohibitions · §1035",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1035"
+            },
+            {
+              "label": "Client duties · §1037",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1037"
+            },
+            {
+              "label": "Enforcement · §1038",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1038"
+            },
+            {
+              "label": "Department of Labor: scope and effective dates",
+              "url": "https://dol.ny.gov/fashion"
+            }
+          ],
+          "status": "Enacted",
+          "type": "State statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Covered model management companies, model management groups, and clients working with models in New York.",
+          "obligations": [
+            "A model management company must obtain separate written consent for creation or use of the model’s digital replica, specifying purpose, scope, pay and duration.",
+            "Management companies may not create, alter or manipulate an AI digital replica without the model’s clear, conspicuous and separate written consent.",
+            "Clients must obtain clear, conspicuous prior written consent covering the replica’s scope, purpose, pay and duration."
+          ],
+          "enforcement": "Department of Labor complaints and enforcement under §1038; the provision authorizes $3,000 for an initial violation and $5,000 for a subsequent violation. Other statutory remedies and procedures also apply.",
+          "limits": "Replica consent is only part of the Fashion Workers Act. Model management registration, compensation and workplace duties remain relevant; a general services or representation agreement is not automatically adequate replica permission.",
+          "id": "law-NY-8",
+          "codeSections": [
+            {
+              "section": "Labor Law §1034(11)",
+              "detail": "Separate management-company consent and required details.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1034"
+            },
+            {
+              "section": "Labor Law §1035(10)",
+              "detail": "Restriction on AI creation, alteration or manipulation without consent.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1035"
+            },
+            {
+              "section": "Labor Law §1037(7)",
+              "detail": "Client’s prior written-consent duty.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1037"
+            },
+            {
+              "section": "Labor Law §1038",
+              "detail": "Complaints, penalties and procedures.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/1038"
+            }
+          ],
+          "practicalSteps": [
+            "Keep replica permissions separate from general representation terms, and compare each proposed reuse with the approved purpose and duration.",
+            "Identify whether the purchaser, agency and other intermediaries each have duties; do not assume one party’s release resolves all requirements."
+          ]
+        },
+        {
+          "title": "New York Child Data Protection Act",
+          "bill": "GBL Article 39-FF · §§899-ee–899-mm",
+          "topic": "Children & teens",
+          "status": "Enacted",
+          "type": "State statute",
+          "description": "Restricts processing and sale of covered minors’ personal data, with age-specific consent and necessary-processing rules.",
+          "timing": "Effective 20 June 2025. This law is already operative; it is separate from the upcoming SAFE for Kids Act.",
+          "appliesTo": "Operators controlling processing of covered users’ personal data from online services, apps or connected devices, and their processors. A covered user is in New York and actually known to be under 18, or uses a service primarily directed to minors; the definition is broader than identified account holders.",
+          "obligations": [
+            "For users 12 or younger, processing must meet the statutory COPPA standard. For ages 13–17, processing must be strictly necessary for a listed purpose or supported by the required informed consent.",
+            "Separate optional consent from other transactions, make refusal prominent and withdrawal easy, and observe restrictions on repeated requests. Do not purchase or sell covered data, subject to the statutory third-party protections.",
+            "Within 30 days of learning the user is covered, delete impermissibly processed data and direct processors to do so; notify relevant third-party operators.",
+            "Use binding processor terms addressing instructions, deletion/return, assistance, compliance assessments and onward processors."
+          ],
+          "limits": "Necessary internal operations expressly exclude marketing, advertising and research/development. A general acceptance of terms is not the required optional consent. Do not assume minors’ prompts may be reused to train a model just because the service needs to process them to answer.",
+          "sources": [
+            {
+              "label": "Definitions · §899-ee",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-EE"
+            },
+            {
+              "label": "Processing rules · §899-ff",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+            },
+            {
+              "label": "Processor terms · §899-gg",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-GG"
+            },
+            {
+              "label": "Remedies · §899-mm",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-MM"
+            },
+            {
+              "label": "Attorney general implementation guidance",
+              "url": "https://ag.ny.gov/child-data-protection-act-guidance"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF",
+          "id": "law-NY-19",
+          "enforcement": "The attorney general may seek injunctions, restitution, disgorgement including destruction of unlawfully obtained data, damages and penalties up to $5,000 per violation under §899-mm.",
+          "codeSections": [
+            {
+              "section": "GBL §899-ee",
+              "detail": "Covered users, personal data, operator and processor definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-EE"
+            },
+            {
+              "section": "GBL §899-ff(1)–(3)",
+              "detail": "Permissible processing and consent requirements.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+            },
+            {
+              "section": "GBL §899-ff(5)–(7)",
+              "detail": "Sale/purchase restriction, deletion and downstream notices.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-FF"
+            },
+            {
+              "section": "GBL §899-gg",
+              "detail": "Binding processor contracts and deletion evidence.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-GG"
+            },
+            {
+              "section": "GBL §899-mm",
+              "detail": "Attorney general remedies.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-MM"
+            }
+          ],
+          "practicalSteps": [
+            "Map separately the use of prompts to deliver a response, retention of chat history and reuse for model improvement.",
+            "Check vendor contracts and deletion workflows against the covered-minor data actually shared."
+          ]
+        },
+        {
+          "title": "Safe by Design Act — platform safeguards for minors",
+          "bill": "GBL Article 45-B · §§1539–1547",
+          "topic": "Children & teens",
+          "status": "Upcoming",
+          "type": "State statute",
+          "description": "Adds age assurance, protective defaults, and parental controls for covered platforms, including integrated AI companions.",
+          "timing": "Effective 1 January 2027.",
+          "appliesTo": "Platforms used by covered New York minors with public/semi-public profiles, private messaging, and specified social-media or gaming/transaction features; see the full definition.",
+          "obligations": [
+            "Conduct required age assurance before making the specified interaction features or an integrated AI companion available. The statutory fallback does not permit self-declared age alone.",
+            "Apply privacy defaults restricting specified access and interactions by unconnected adults, and the restrictions on recommending minors’ profiles.",
+            "Disable integrated AI companions by default for covered minors. A parent’s override must be separate from other settings and follow the prescribed notice process.",
+            "Assess the separate parental-connection and spending-control requirements for covered games and younger users."
+          ],
+          "enforcement": "Attorney general enforcement under §1547 includes injunctions, restitution, disgorgement, damages and civil penalties up to $5,000 per violation after the effective date.",
+          "limits": "The platform definition combines several features; it does not capture every website or standalone chatbot. Fiction-only game characters have a defined exclusion. Article 45-B parental permission does not displace separate restrictions in the new Article 48 minors law.",
+          "sources": [
+            {
+              "label": "Platform and companion definitions · §1539",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1539"
+            },
+            {
+              "label": "Age assurance and safeguards · §1540",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1540"
+            },
+            {
+              "label": "Enforcement · §1547",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1547"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1539",
+          "id": "law-NY-20",
+          "codeSections": [
+            {
+              "section": "GBL §1539(10)–(12)",
+              "detail": "AI companion, integration and covered-platform tests.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1539"
+            },
+            {
+              "section": "GBL §1540(1)–(5)",
+              "detail": "Age assurance, privacy defaults and parental settings.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1540"
+            },
+            {
+              "section": "GBL §1540(7)",
+              "detail": "Age assurance and default disabling of integrated companions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1540"
+            },
+            {
+              "section": "GBL §1547",
+              "detail": "Remedies and public complaint mechanism.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1547"
+            }
+          ],
+          "practicalSteps": [
+            "Inventory public profiles, messaging, feed/game features and companion integration against the platform definition.",
+            "Design separate parental controls and review companion access against all overlapping statutes before launch."
+          ]
+        },
+        {
+          "title": "SAFE for Kids Act — feeds & overnight notifications",
+          "bill": "General Business Law §§1500–1508 · 13 NYCRR §§700.1–700.11",
+          "topic": "Children & teens",
+          "status": "Upcoming",
+          "type": "State statute & implementing rules",
+          "description": "Restricts covered addictive social feeds and overnight feed notifications for minors without the required parental consent.",
+          "timing": "Effective 25 January 2027; final implementing rules are published at 13 NYCRR Part 700.",
+          "appliesTo": "Covered operators of addictive social media platforms serving covered users in New York. The law and rules define the feed, platform, and age-assurance tests.",
+          "obligations": [
+            "Before providing a covered addictive feed, establish adult status through a permitted age-assurance method or obtain the required parental consent for a covered minor.",
+            "Do not send covered addictive-feed notifications between midnight and 6 a.m. Eastern without the required consent. Feed and nighttime-notification consents must be separately controllable.",
+            "Meet the final rules’ age-assurance, appeals and data-use protections; the age-status appeal process requires a response or information request within 10 business days.",
+            "Do not degrade ordinary access or raise prices because a user lacks permission for an addictive feed, except as necessary for compliance."
+          ],
+          "limits": "Not every recommendation engine or platform is covered. Check statutory feed exclusions, the final rules’ platform tests and exemptions, and the distinction between this feed law, child-data restrictions and companion laws.",
+          "sources": [
+            {
+              "label": "Definitions · §1500",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1500"
+            },
+            {
+              "label": "Feeds · §1501",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1501"
+            },
+            {
+              "label": "Notifications · §1502",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1502"
+            },
+            {
+              "label": "Nondiscrimination · §1504",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1504"
+            },
+            {
+              "label": "Remedies · §1508",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1508"
+            },
+            {
+              "label": "Final 13 NYCRR Part 700",
+              "url": "https://ag.ny.gov/safe-for-kids-act-final-rule"
+            },
+            {
+              "label": "Attorney general: final rules and commencement",
+              "url": "https://ag.ny.gov/resources/individuals/consumer-issues/technology/protecting-children-online"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/1500",
+          "id": "law-NY-21",
+          "enforcement": "Section 1508 authorizes attorney general remedies, including penalties up to $5,000 per violation, subject to its separate 180-day enforcement timing. Adoption, operative duties and the enforcement timetable should not be conflated.",
+          "codeSections": [
+            {
+              "section": "GBL §§1500–1502",
+              "detail": "Covered feeds/users and feed/notification restrictions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1500"
+            },
+            {
+              "section": "GBL §1504",
+              "detail": "No discriminatory reduction in ordinary access for lack of feed permission.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1504"
+            },
+            {
+              "section": "13 NYCRR §§700.2–700.7",
+              "detail": "Final implementation rules: consent, age methods, appeals and data safeguards.",
+              "url": "https://ag.ny.gov/safe-for-kids-act-final-rule"
+            },
+            {
+              "section": "GBL §1508",
+              "detail": "Attorney general remedies and separate enforcement timing.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/1508"
+            }
+          ],
+          "practicalSteps": [
+            "Separate feed selection from general content access, and design independent consent switches for feeds and nighttime alerts.",
+            "Retain evidence of age-method testing and route age-status appeals to an accountable reviewer."
+          ]
+        },
+        {
+          "id": "law-NY-minor-companion-features",
+          "title": "Unsafe AI companion features for minors",
+          "bill": "Chapter 368 of 2026 · S9051B · new GBL Article 48, §§1800–1805",
+          "topic": "Children & teens",
+          "status": "Upcoming",
+          "type": "Enacted state statute; commencement requires confirmation",
+          "reviewed": "2026-11-03",
+          "description": "Restricts unsafe AI companion features for minors and requires age checks before offering those features.",
+          "timing": "Signed 28 October 2026; not yet operative. Commencement is not reconciled: the final bill text says 1 January 2027, while the sponsor’s signing update reports a chaptered change to 1 June 2027.",
+          "appliesTo": "Operators offering covered conversational generative AI to users in New York; coverage is broader than relationship-focused companions.",
+          "obligations": [
+            "Restrict listed unsafe features unless permitted adult status is established.",
+            "Follow age-assurance alternatives and data-use limits."
+          ],
+          "enforcement": "Final B text provides attorney general penalties up to $25,000 per violation, without the earlier draft’s express private action.",
+          "limits": "Customer-service and research-assistance exceptions require responses confined to that purpose; internal-business uses are separately addressed. Confirm commencement against the chapter amendment.",
+          "codeSections": [
+            {
+              "section": "New GBL §1800",
+              "detail": "Coverage and unsafe-feature definitions.",
+              "url": "https://www.nysenate.gov/legislation/bills/2025/S9051/amendment/B"
+            },
+            {
+              "section": "New GBL §§1801–1805",
+              "detail": "Restrictions, exceptions, remedies and age assurance.",
+              "url": "https://www.nysenate.gov/legislation/bills/2025/S9051/amendment/B"
+            }
+          ],
+          "practicalSteps": [
+            "Check actual product behavior and age controls against the final commencement documents."
+          ],
+          "sources": [
+            {
+              "label": "Senate action history and final S9051B text",
+              "url": "https://www.nysenate.gov/legislation/bills/2025/S9051/amendment/B"
+            },
+            {
+              "label": "Sponsor’s signing update: reported June commencement",
+              "url": "https://www.nysenate.gov/newsroom/press-releases/2026/kristen-gonzalez/senator-kristen-gonzalez-bans-unsafe-chatbot-feature"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/bills/2025/S9051/amendment/B"
+        },
+        {
+          "id": "law-NY-digital-replica-contracts",
+          "title": "Digital-replica clauses in services contracts",
+          "bill": "General Obligations Law §5-302 · Chapter 581 of 2024",
+          "topic": "Digital replicas",
+          "status": "Enacted",
+          "type": "State statute",
+          "reviewed": "2026-11-03",
+          "description": "Certain contract clauses substituting a digital replica for a person’s work are unenforceable when the statute’s combined conditions are met.",
+          "timing": "Applies to contracts entered into or modified on or after 1 January 2025.",
+          "appliesTo": "Personal or professional services agreements authorizing a digital simulation of an individual’s voice or likeness in place of work they otherwise would perform.",
+          "obligations": [
+            "Assess the specificity of the intended use and the counsel or labor-organization protections in §5-302(1)(c) before relying on a replica clause."
+          ],
+          "enforcement": "The qualifying provision is void and unenforceable as to a new digitally replicated performance.",
+          "limits": "All statutory conditions matter, including the exception for uses consistent with the contract and the fundamental character of the recorded work. Other contract provisions remain unaffected; this is not a blanket ban on digital replicas.",
+          "codeSections": [
+            {
+              "section": "GOL §5-302(1)",
+              "detail": "Combined conditions making a replica provision unenforceable.",
+              "url": "https://www.nysenate.gov/legislation/laws/GOB/5-302"
+            },
+            {
+              "section": "GOL §5-302(2)–(3)",
+              "detail": "Remaining contract provisions and the replica definition.",
+              "url": "https://www.nysenate.gov/legislation/laws/GOB/5-302"
+            }
+          ],
+          "practicalSteps": [
+            "Have the person and their representative review the specific replica use before signature; retain the separately signed terms where applicable."
+          ],
+          "sources": [
+            {
+              "label": "Current contract statute · §5-302",
+              "url": "https://www.nysenate.gov/legislation/laws/GOB/5-302"
+            },
+            {
+              "label": "Enacted S7676B: contract-date application",
+              "url": "https://www.nysenate.gov/legislation/bills/2023/S7676"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/GOB/5-302"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "RAISE",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GBS/1420",
+        "https://www.nysenate.gov/legislation/laws/GBS/1421",
+        "https://www.nysenate.gov/legislation/laws/GBS/1422",
+        "https://www.nysenate.gov/legislation/laws/GBS/1425",
+        "https://www.nysenate.gov/legislation/laws/GBS/1426",
+        "https://www.nysenate.gov/legislation/laws/GBS/1427",
+        "https://www.nysenate.gov/legislation/laws/GBS/1428"
+      ],
+      "finding": "Codified sections state effective Jan 1 2027. Exact NY nexus §1425. General frontier duties differ from large-developer framework, disclosure and penalties. Read primary statutory text for all new details."
+    },
+    {
+      "topic": "Companion Article 47",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GBS/1700",
+        "https://www.nysenate.gov/legislation/laws/GBS/1701",
+        "https://www.nysenate.gov/legislation/laws/GBS/1702",
+        "https://www.nysenate.gov/legislation/laws/GBS/1703"
+      ],
+      "finding": "Definition includes three relationship behaviors; §1700(4)(c) specific exclusions. Governor implementation announcement confirms Nov5 2025 effective date. Keep separate from new Article48."
+    },
+    {
+      "topic": "Advertising",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GBS/396-B",
+        "https://www.nysenate.gov/legislation/bills/2025/S8420/amendment/A"
+      ],
+      "finding": "Signed Dec11 2025, chapter617. §396-b(3) actual-knowledge standard; (4),(7),(8) exclusions."
+    },
+    {
+      "topic": "Fashion",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/LAB/1034",
+        "https://www.nysenate.gov/legislation/laws/LAB/1035",
+        "https://www.nysenate.gov/legislation/laws/LAB/1037",
+        "https://www.nysenate.gov/legislation/laws/LAB/1038"
+      ],
+      "finding": "Exact consent subsections 1034(11),1035(10),1037(7), distinct management/client roles; not 1035/1036 guessed numbers. §1038 penalties and complaint procedure. DOL dates verified."
+    },
+    {
+      "topic": "Child data",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GBS/899-EE",
+        "https://www.nysenate.gov/legislation/laws/GBS/899-FF",
+        "https://www.nysenate.gov/legislation/laws/GBS/899-GG",
+        "https://www.nysenate.gov/legislation/laws/GBS/899-MM"
+      ],
+      "finding": "§899-ff prohibits purchase as well as sale, has 30day existingdata cleanup trigger and explicit R&D exclusion from necessaryinternaloperations. §899-gg requires writtenprocessoragreement and deletionevidence."
+    },
+    {
+      "topic": "Safe by Design",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GBS/1539",
+        "https://www.nysenate.gov/legislation/laws/GBS/1540",
+        "https://www.nysenate.gov/legislation/laws/GBS/1547"
+      ],
+      "finding": "Jan1 2027 effective statutorynote; exact integratedcompanion requirement §1540(7). Parentpermission underthislaw does notoverride newArticle48 restrictions."
+    },
+    {
+      "topic": "SAFE for Kids",
+      "sources": [
+        "https://ag.ny.gov/safe-for-kids-act-final-rule",
+        "https://www.nysenate.gov/legislation/laws/GBS/1504",
+        "https://www.nysenate.gov/legislation/laws/GBS/1508",
+        "https://ag.ny.gov/resources/individuals/consumer-issues/technology/protecting-children-online"
+      ],
+      "finding": "Final Part700 and AG official page verify Jan25 2027 operative date. §1508 says no earlier than180days aftereffective date forAGaction; retained as separate enforcementtiming without claiming presentlyenforceable. Rules include10businessday appeal response."
+    },
+    {
+      "topic": "New Article48 — unresolved commencement",
+      "sources": [
+        "https://www.nysenate.gov/legislation/bills/2025/S9051/amendment/B",
+        "https://www.nysenate.gov/newsroom/press-releases/2026/kristen-gonzalez/senator-kristen-gonzalez-bans-unsafe-chatbot-feature"
+      ],
+      "finding": "Chapter368 enactment confirmed. Senate final B text and official sponsor announcement disagree on commencement (Jan1 versusJune1 2027). Codified sections and approvalmemo/chapteramend text unavailable. Record deliberately flags uncertainty. Use finalB text, not original/A."
+    },
+    {
+      "topic": "Digital-replica contracts",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/GOB/5-302",
+        "https://www.nysenate.gov/legislation/bills/2023/S7676"
+      ],
+      "finding": "Currentcodifiedtext andsignedchapter581verify combinedconditions and applicability tocontractsenteredormodifiedon/afterJan1 2025. Notblanketneedlawyerforeveryreplica."
+    }
+  ]
+}

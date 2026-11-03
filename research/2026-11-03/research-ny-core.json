@@ -1,0 +1,622 @@
+{
+  "states": [
+    {
+      "code": "NY",
+      "laws": [
+        {
+          "title": "Automated hiring tools in New York City",
+          "bill": "NYC Administrative Code §§20-870–20-874 · 6 RCNY §§5-300–5-304",
+          "topic": "Employment",
+          "description": "Covered hiring and promotion tools require an independent bias audit, published results, and advance notices. The law is specific to New York City.",
+          "timing": "DCWP enforcement began 5 July 2023; notices are due 10 business days before use.",
+          "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+          "sources": [
+            {
+              "label": "DCWP law, complaint route & official links",
+              "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+            },
+            {
+              "label": "Adopted implementing rules · full text",
+              "url": "https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf"
+            },
+            {
+              "label": "DCWP interpretation and scope FAQ",
+              "url": "https://www.nyc.gov/site/dca/businesses/faq-automated-employment-decision-tools.page"
+            }
+          ],
+          "status": "Enacted",
+          "type": "Local law & rules",
+          "reviewed": "2026-11-03",
+          "local": true,
+          "appliesTo": "Employers and employment agencies using a covered automated employment decision tool for hiring or promotion in NYC. DCWP includes roles located in NYC at least part-time, remote roles associated with an NYC office, and NYC employment agencies. The tool must substantially assist or replace discretionary decisions under the statutory and rule definitions.",
+          "obligations": [
+            "Before use, ensure an independent bias audit was conducted within the preceding year; follow the required selection/scoring and impact-ratio calculations.",
+            "Publish the audit summary and distribution date before use. Keep the required information published for at least six months after the tool’s latest use.",
+            "Give NYC-resident candidates and employees the required notice at least 10 business days before use, including assessed qualifications and instructions for requesting an alternative process or reasonable accommodation where available."
+          ],
+          "enforcement": "NYC Department of Consumer and Worker Protection (DCWP) receives complaints and enforces the law.",
+          "limits": "Not every hiring tool is an AEDT. The rule covers sole reliance on an output, weighting it above every other criterion, or using it to overrule other conclusions. Outreach to people who have not applied for a specific role is distinct. This rule does not itself require an alternative selection process; other accommodation and discrimination duties still apply.",
+          "id": "law-NY-2",
+          "codeSections": [
+            {
+              "section": "§20-871",
+              "detail": "Audit, publication and notice requirements.",
+              "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page"
+            },
+            {
+              "section": "6 RCNY §5-300",
+              "detail": "Technical scope, substantial assistance and independent-auditor definitions.",
+              "url": "https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf"
+            },
+            {
+              "section": "6 RCNY §§5-301–5-303",
+              "detail": "Audit calculations, use of historical/test data and public results.",
+              "url": "https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf"
+            },
+            {
+              "section": "6 RCNY §5-304",
+              "detail": "Notice methods, timing and alternative-process/accommodation instructions.",
+              "url": "https://rules.cityofnewyork.us/wp-content/uploads/2023/04/DCWP-NOA-for-Use-of-Automated-Employment-Decisionmaking-Tools-2.pdf"
+            }
+          ],
+          "practicalSteps": [
+            "Map how each score or ranking affects a hiring decision before deciding whether the rule applies.",
+            "Ask the vendor for the exact audited version, audit date, data basis and public summary; set a renewal reminder.",
+            "If applying for a job, save the notice and published audit and use the employer’s stated accommodation route. Missing audit or notice requirements can be reported to DCWP."
+          ]
+        },
+        {
+          "title": "SHIELD Act — security of private information",
+          "bill": "General Business Law §899-bb",
+          "topic": "Privacy & security",
+          "description": "The SHIELD Act requires reasonable security for covered private information about New York residents, including information used in AI prompts, storage or retrieval systems.",
+          "timing": "Security requirements are in force. Breach-notification duties are separately listed under GBL §899-aa.",
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB",
+          "sources": [
+            {
+              "label": "Data security protections · §899-bb",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB"
+            },
+            {
+              "label": "Definitions & breach notification · §899-aa",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            }
+          ],
+          "status": "Enacted",
+          "type": "Related statute",
+          "reviewed": "2026-11-03",
+          "appliesTo": "Any person or business owning or licensing computerized data containing a New York resident’s statutory private information. Coverage is not limited to businesses physically located in New York.",
+          "obligations": [
+            "Maintain reasonable administrative, technical and physical safeguards, including secure disposal.",
+            "Use the statutory security-program route or qualify as a compliant regulated entity; the program route includes staff coordination and training, risk assessment, vendor safeguards by contract, testing and appropriate disposal."
+          ],
+          "enforcement": "Attorney general enforcement under §899-bb(2)(d). This section does not create its own private right of action.",
+          "limits": "Small businesses receive a proportionate safeguards standard, not a blanket exemption. The definition uses fewer than 50 employees OR under $3 million annual gross revenue in each of the last three fiscal years OR under $5 million year-end assets. Private information is defined by §899-aa.",
+          "id": "law-NY-16",
+          "codeSections": [
+            {
+              "section": "GBL §899-bb(1)",
+              "detail": "Regulated-entity, private-information and small-business definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB"
+            },
+            {
+              "section": "GBL §899-bb(2)",
+              "detail": "Security-program routes, proportionality and enforcement.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-BB"
+            },
+            {
+              "section": "GBL §899-aa(1)",
+              "detail": "Covered data, including qualifying biometrics and medical/insurance information.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            }
+          ],
+          "practicalSteps": [
+            "Inventory the private information that enters prompts, embeddings, logs and uploaded files.",
+            "Review vendor retention, training use, access controls and deletion terms; document your security assessment."
+          ]
+        },
+        {
+          "id": "law-NY-breach-notification",
+          "title": "Data breaches involving AI tools or vendors",
+          "bill": "General Business Law §899-aa",
+          "topic": "Privacy & security",
+          "description": "Unauthorized access to covered private information can trigger notice duties even without proof that data was downloaded.",
+          "timing": "In force; current codified text includes the 30-day notice limit and expanded private-information definition.",
+          "appliesTo": "Owners or licensees of computerized private information about New York residents; data holders acting for others have separate notice duties.",
+          "obligations": [
+            "Notify affected residents as quickly as possible without unreasonable delay, within 30 days after discovery, subject to the law-enforcement delay rule.",
+            "Data holders must notify the owner/licensee immediately and within 30 days. Required resident notices also trigger notices to the AG, Department of State, State Police and DFS.",
+            "Follow the statutory content and delivery rules; document any applicable inadvertent-disclosure/no-harm determination."
+          ],
+          "enforcement": "The attorney general can seek statutory remedies and penalties under §899-aa(6).",
+          "limits": "Not every mistaken AI output is a data breach. The defined data and unauthorized-access/acquisition tests matter. The narrow no-harm exception requires written records; other sector notice obligations may also apply.",
+          "codeSections": [
+            {
+              "section": "§899-aa(1)",
+              "detail": "Data and breach definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            },
+            {
+              "section": "§899-aa(2)–(4)",
+              "detail": "Resident/owner notices, 30-day limits and law-enforcement delay.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            },
+            {
+              "section": "§899-aa(5), (7)–(8)",
+              "detail": "Delivery, notice content and agency notifications.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            }
+          ],
+          "practicalSteps": [
+            "Create a vendor incident contact and escalation process before uploading personal records.",
+            "If an incident occurs, preserve discovery dates and access logs and assess whose information was exposed; do not wait for certainty of misuse."
+          ],
+          "sources": [
+            {
+              "label": "GBL §899-aa · current text",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/899-AA",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03"
+        },
+        {
+          "id": "law-NY-electronic-monitoring",
+          "title": "Employee electronic-monitoring notices",
+          "bill": "Civil Rights Law §52-c (electronic monitoring; Senate lists §52-c*2)",
+          "topic": "Employment",
+          "description": "AI tools monitoring employee email, calls or internet use can fall within New York’s existing electronic-monitoring notice law.",
+          "timing": "In force; covered employees must receive prior written notice upon hiring and an accessible workplace notice.",
+          "appliesTo": "Private employers with a New York place of business that monitor the specified employee communications or internet use. State and political-subdivision employers are excluded.",
+          "obligations": [
+            "Give covered new hires written or electronic notice and obtain written or electronic acknowledgment.",
+            "Post the electronic-monitoring notice conspicuously where affected employees can view it."
+          ],
+          "enforcement": "Attorney general enforcement; maximum civil penalties of $500 for a first offense, $1,000 for a second and $3,000 for later offenses.",
+          "limits": "The narrow maintenance/protection exception requires non-individualized monitoring solely for system maintenance or protection. Notice is not permission to ignore other privacy or discrimination laws. New York has two sections numbered 52-c; this entry links the monitoring provision.",
+          "codeSections": [
+            {
+              "section": "Civil Rights Law §52-c*2(1)–(2)",
+              "detail": "Employer coverage and individual/posting notices.",
+              "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C*2"
+            },
+            {
+              "section": "Civil Rights Law §52-c*2(3)–(4)",
+              "detail": "Penalties and maintenance exception.",
+              "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C*2"
+            }
+          ],
+          "practicalSteps": [
+            "Check whether an AI productivity or security tool captures communications or individual internet activity.",
+            "Add the required notice and acknowledgment to onboarding, and retain evidence of the workplace posting."
+          ],
+          "sources": [
+            {
+              "label": "Electronic-monitoring provision · §52-c*2",
+              "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C*2"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/CVR/52-C*2",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03"
+        },
+        {
+          "id": "law-NY-employee-identifiers",
+          "title": "Employee identifiers and public AI outputs",
+          "bill": "Labor Law §203-d",
+          "topic": "Employment",
+          "description": "Existing restrictions on exposing employee identifiers are relevant when HR material is placed in public AI outputs or unrestricted files.",
+          "timing": "Existing law; current text checked 3 November 2026.",
+          "appliesTo": "Employers handling the employee information specified in §203-d.",
+          "obligations": [
+            "Do not publicly disclose employee Social Security numbers, display them on identification/time cards or put them in unrestricted files unless otherwise required by law.",
+            "Do not communicate covered employee identifiers to the general public; listed items include home contacts, personal email, login/password information and driver’s-license numbers."
+          ],
+          "enforcement": "The labor commissioner may impose up to $500 for a knowing violation; missing safeguard policies can be presumptive evidence of knowledge.",
+          "limits": "This is a public-disclosure and identifier rule, not a categorical ban on every vendor transfer. SHIELD, monitoring, confidentiality and contract duties need separate review.",
+          "codeSections": [
+            {
+              "section": "Labor Law §203-d(1)",
+              "detail": "Restricted disclosures and listed identifiers.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/203-D"
+            },
+            {
+              "section": "Labor Law §203-d(3)",
+              "detail": "Knowing violations and safeguard procedures.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/203-D"
+            }
+          ],
+          "practicalSteps": [
+            "Remove identifiers before publishing AI-generated HR examples or sharing a public chat link.",
+            "Limit access to HR source files and check outputs for personal identifiers."
+          ],
+          "sources": [
+            {
+              "label": "Labor Law §203-d",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/203-D"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/LAB/203-D",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03"
+        },
+        {
+          "id": "law-NY-personal-account-access",
+          "title": "Hiring and employees’ personal accounts",
+          "bill": "Labor Law §201-i",
+          "topic": "Employment",
+          "description": "Employers cannot evade personal-account access protections by using an AI screening service to request the same credentials or private content.",
+          "timing": "In force since March 2024.",
+          "appliesTo": "Covered public and private employers and their agents, employees and applicants; specified law-enforcement, fire and corrections agencies are excluded.",
+          "obligations": [
+            "Do not request, require or coerce personal-account credentials, access in the employer’s presence, or reproduction of content obtained by those prohibited means.",
+            "Do not penalize an employee or refuse to hire an applicant for refusing the prohibited disclosure."
+          ],
+          "enforcement": "The statute prohibits the access demands and related retaliation; §201-i(4) supplies a defense for action taken to comply with legal requirements.",
+          "limits": "Business accounts, employer systems, certain device access and legally required screening have qualified exceptions. Publicly available information is treated differently. An employer-paid device does not automatically authorize access to personal accounts.",
+          "codeSections": [
+            {
+              "section": "Labor Law §201-i(1)–(3)",
+              "detail": "Definitions, prohibited requests and retaliation.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/201-I"
+            },
+            {
+              "section": "Labor Law §201-i(4)–(6)",
+              "detail": "Legal-compliance defense, exceptions and excluded agencies.",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/201-I"
+            }
+          ],
+          "practicalSteps": [
+            "Review the data sources and permissions requested by any social-media screening vendor.",
+            "Keep private-account credentials and forced logins out of the recruiting workflow."
+          ],
+          "sources": [
+            {
+              "label": "Labor Law §201-i",
+              "url": "https://www.nysenate.gov/legislation/laws/LAB/201-I"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/LAB/201-I",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03"
+        },
+        {
+          "id": "law-NY-consumer-reports",
+          "title": "AI screening, consumer reports and adverse decisions",
+          "bill": "GBL Article 25 · §§380-a, 380-b, 380-f, 380-i",
+          "topic": "Consumer reporting",
+          "description": "AI-generated background or eligibility reports may fall within New York’s Fair Credit Reporting Act when the statutory reporting-agency and report definitions are met.",
+          "timing": "In force; current §§380-a and 380-b include the April 2026 credit-history amendments.",
+          "appliesTo": "Consumer reporting agencies and report users in covered credit, insurance, employment, housing and other transactions. A report can concern character or personal characteristics, not only a credit score.",
+          "obligations": [
+            "Obtain reports only for permitted purposes and give the application-stage notice required by §380-b.",
+            "Apply §380-b(d)’s restriction on employment use of consumer credit history and its specific exceptions.",
+            "For the credit, insurance and housing adverse actions described in §380-i, notify the consumer, identify the agency and explain the right to obtain the report. Reporting agencies must reinvestigate qualifying disputes under §380-f."
+          ],
+          "enforcement": "Sections 380-l and 380-m provide civil liability for willful and negligent noncompliance, subject to the applicable requirements.",
+          "limits": "Not every internal AI ranking is a consumer report. Federal FCRA obligations, including employment procedures, require separate analysis; the listed §380-i adverse-action categories do not themselves describe the full federal employment process.",
+          "codeSections": [
+            {
+              "section": "§380-a(c), (e), (g)",
+              "detail": "Report, reporting-agency and employment definitions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-A"
+            },
+            {
+              "section": "§380-b",
+              "detail": "Permitted purposes, notice and employment credit-history restrictions.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-B"
+            },
+            {
+              "section": "§380-f",
+              "detail": "Disputes and correction of unverified or incorrect information.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-F"
+            },
+            {
+              "section": "§380-i",
+              "detail": "Specified adverse-action notices and report-sharing limits.",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-I"
+            }
+          ],
+          "practicalSteps": [
+            "Ask a screening vendor whether it supplies consumer reports and document the intended permissible purpose.",
+            "Provide a way to identify the report behind a decision and direct people to the reporting agency’s dispute process."
+          ],
+          "sources": [
+            {
+              "label": "Definitions · §380-a",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-A"
+            },
+            {
+              "label": "Permitted purposes · §380-b",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-B"
+            },
+            {
+              "label": "Disputes · §380-f",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-F"
+            },
+            {
+              "label": "Report users · §380-i",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-I"
+            },
+            {
+              "label": "Willful noncompliance · §380-l",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-L"
+            },
+            {
+              "label": "Negligent noncompliance · §380-m",
+              "url": "https://www.nysenate.gov/legislation/laws/GBS/380-M"
+            }
+          ],
+          "url": "https://www.nysenate.gov/legislation/laws/GBS/380-A",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-03"
+        },
+        {
+          "title": "Lawyers: professional duties when using AI",
+          "bill": "22 NYCRR Part 1200 · Rules 1.1, 1.3–1.6, 3.3, 5.1 & 5.3",
+          "topic": "Professional services",
+          "status": "Enacted",
+          "type": "Binding professional rules",
+          "description": "Lawyers remain responsible for the quality, confidentiality and accuracy of AI-assisted work. These professional rules govern the lawyer’s conduct.",
+          "timing": "Existing professional rules. Court-hosted compilation amended through 1 July 2026 checked for this entry.",
+          "appliesTo": "Lawyers and law firms subject to the New York Rules of Professional Conduct, including practice in NYC.",
+          "obligations": [
+            "Provide competent and diligent representation; meet client-communication and fee duties.",
+            "Protect confidential information and make reasonable efforts to prevent unauthorized access, disclosure or use.",
+            "Meet tribunal candor duties, including correction of knowingly false material statements; supervise lawyers and nonlawyer work as required."
+          ],
+          "enforcement": "Violations of the binding rules can lead to attorney discipline.",
+          "limits": "The Rules are binding; accompanying bar-association comments are explanatory, not separately enacted rules. Court-specific filing requirements and client terms require separate checks. These rules do not create a universal requirement to disclose every use of AI.",
+          "sources": [
+            {
+              "label": "Court-hosted July 2026 Rules compilation · comments distinguished",
+              "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf"
+            },
+            {
+              "label": "New York courts · amendments register",
+              "url": "https://www.nycourts.gov/rules/amendments-joint-rules-departments-appellate-division"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf",
+          "id": "law-NY-23",
+          "codeSections": [
+            {
+              "section": "Rules 1.1 & 1.3",
+              "detail": "Competence and diligence.",
+              "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf"
+            },
+            {
+              "section": "Rules 1.4 & 1.5",
+              "detail": "Client communication and fees.",
+              "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf"
+            },
+            {
+              "section": "Rule 1.6(a), (c)",
+              "detail": "Confidentiality and reasonable protective measures.",
+              "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf"
+            },
+            {
+              "section": "Rule 3.3; Rules 5.1 & 5.3",
+              "detail": "Tribunal candor and supervision.",
+              "url": "https://www.nycourts.gov/ad3/agc/rules/07-01-2026-NYCRR-Part-1200.pdf"
+            }
+          ],
+          "practicalSteps": [
+            "Open and verify every cited authority and material factual statement before relying on an AI draft.",
+            "Check a tool’s retention and training settings before entering client material; record authorization and safeguards.",
+            "Set review responsibility and billing rules for AI-assisted work."
+          ]
+        },
+        {
+          "title": "Licensed professionals: confidentiality and scope of practice",
+          "bill": "8 NYCRR §29.1(b)(8)–(10)",
+          "topic": "Professional services",
+          "status": "Enacted",
+          "type": "Related professional regulation",
+          "description": "Covered licensed professionals must protect client information and stay within their authorized and competent practice. These existing rules matter when AI is used for professional work.",
+          "timing": "Existing regulation; official indexed text checked 3 November 2026.",
+          "appliesTo": "Covered Title VIII professions, including accountancy, engineering, architecture, psychology, and social work; profession-specific exceptions and additional rules apply.",
+          "obligations": [
+            "Do not disclose personally identifiable information obtained professionally without prior client or patient consent, unless authorized or required by law.",
+            "Observe limits on competence, authorized practice, and delegation."
+          ],
+          "enforcement": "The regulation defines conduct that can support professional disciplinary proceedings.",
+          "limits": "This is not an AI-specific rule or a rule for every consultant. Lawyers have separate court rules; medicine has a separate disciplinary framework. Review the provisions for the actual license.",
+          "sources": [
+            {
+              "label": "NYSED · general professional-conduct provisions",
+              "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29/1"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29/1",
+          "id": "law-NY-24",
+          "codeSections": [
+            {
+              "section": "8 NYCRR §29.1(b)(8)",
+              "detail": "Confidentiality of personally identifiable professional information.",
+              "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29/1"
+            },
+            {
+              "section": "8 NYCRR §29.1(b)(9)–(10)",
+              "detail": "Competence, scope and delegation limits.",
+              "url": "https://www.op.nysed.gov/title8/rules-board-regents/part-29/1"
+            }
+          ],
+          "practicalSteps": [
+            "Check the rules for your particular license before sending client or patient information to an AI service.",
+            "Use an appropriately qualified reviewer for professional conclusions; a tool’s output does not extend your licensed scope."
+          ]
+        },
+        {
+          "title": "Recording conversations and AI meeting notes",
+          "bill": "Penal Law §§250.00–250.05 · eavesdropping",
+          "topic": "Recording & transcription",
+          "status": "Enacted",
+          "type": "Related statute",
+          "description": "AI recording tools operate within existing eavesdropping law. New York generally permits a participant to record their own conversation, but this does not resolve other states’ laws or professional confidentiality duties.",
+          "timing": "Existing statute; definitions and offense checked 3 November 2026.",
+          "appliesTo": "People using tools to record or intercept covered communications; the participants’ locations and method of recording matter.",
+          "obligations": [
+            "Avoid unlawful wiretapping, mechanical overhearing and interception/access to electronic communications under the statutory definitions."
+          ],
+          "enforcement": "Unlawful eavesdropping under §250.05 is a class E felony.",
+          "limits": "This is not blanket permission to deploy a meeting bot. Other participants’ jurisdictions, confidentiality duties, court rules and contract terms can add restrictions. The consent tests vary with the type of communication.",
+          "sources": [
+            {
+              "label": "Eavesdropping definitions · §250.00",
+              "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
+            },
+            {
+              "label": "Offense · §250.05",
+              "url": "https://www.nysenate.gov/legislation/laws/PEN/250.05"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00",
+          "id": "law-NY-25",
+          "codeSections": [
+            {
+              "section": "Penal Law §250.00(1), (2), (6)",
+              "detail": "Definitions and the relevant sender/receiver or party consent tests.",
+              "url": "https://www.nysenate.gov/legislation/laws/PEN/250.00"
+            },
+            {
+              "section": "Penal Law §250.05",
+              "detail": "Unlawful eavesdropping is a class E felony.",
+              "url": "https://www.nysenate.gov/legislation/laws/PEN/250.05"
+            }
+          ],
+          "practicalSteps": [
+            "Identify participants’ locations and obtain clear agreement before enabling recording or transcription.",
+            "Set who can access the transcript, where it is stored and when it is deleted."
+          ]
+        },
+        {
+          "title": "School records: student data privacy",
+          "bill": "Education Law §2-d · 8 NYCRR Part 121",
+          "topic": "Education",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "description": "School use of AI must fit existing protections for covered student and staff records. Tool approval and permitted data use are separate questions.",
+          "timing": "Existing requirements. Statutory contractor duties and NYSED implementation materials checked 3 November 2026.",
+          "appliesTo": "Covered educational agencies and contractors receiving student records or specified teacher/principal evaluation data.",
+          "obligations": [
+            "Include the parents’ bill of rights and required contract-specific information when a contractor receives covered data.",
+            "Contractors must limit access and use to authorized services, provide safeguards and encryption, and comply with disclosure and breach-reporting requirements.",
+            "Apply the relevant Part 121 data-security plan and contractor rules alongside the statute."
+          ],
+          "enforcement": "NYSED’s chief privacy officer oversees the statutory process; sanctions and remedies depend on the violation.",
+          "limits": "Coverage follows the statutory schools, data and contractor definitions. NYSED does not certify a list of compliant products. A general product-training purpose should not be assumed to be an authorized school service.",
+          "sources": [
+            {
+              "label": "Education Law §2-d · current statute",
+              "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+            },
+            {
+              "label": "NYSED · contractor contracts and scope FAQ",
+              "url": "https://www.nysed.gov/data-privacy-security/frequently-asked-questions-dpos"
+            },
+            {
+              "label": "NYSED · incident reporting",
+              "url": "https://www.nysed.gov/data-privacy-security/educational-agencies-report-data-incident"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D",
+          "id": "law-NY-26",
+          "codeSections": [
+            {
+              "section": "Education Law §2-d(1), (3)",
+              "detail": "Covered schools/data, parents’ rights and contract disclosures.",
+              "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+            },
+            {
+              "section": "Education Law §2-d(5)–(6)",
+              "detail": "Contractor safeguards and breach/unauthorized-release duties.",
+              "url": "https://www.nysenate.gov/legislation/laws/EDN/2-D"
+            },
+            {
+              "section": "8 NYCRR §§121.6 & 121.9",
+              "detail": "Contract data-security plans and contractor controls; NYSED explains the framework.",
+              "url": "https://www.nysed.gov/data-privacy-security/frequently-asked-questions-dpos"
+            }
+          ],
+          "practicalSteps": [
+            "Check whether student work, names, assessments or teacher/principal records will reach the AI vendor.",
+            "Agree the permitted use, subcontractors, security and exit/deletion arrangements before deployment; do not assume a free tool is outside the rules."
+          ]
+        },
+        {
+          "title": "Financial services: cybersecurity and AI risks",
+          "bill": "23 NYCRR §§500.1, 500.9, 500.11–500.13, 500.17 & 500.19",
+          "topic": "Cybersecurity",
+          "status": "Enacted",
+          "type": "Binding state regulation",
+          "description": "Covered financial-services entities must operate risk-based cybersecurity programs. DFS explains how existing requirements address AI use and AI-enabled threats.",
+          "timing": "Part 500 remains in force. The final two-year transition for the 2023 amendments ended 1 November 2025.",
+          "appliesTo": "Persons operating, or required to operate, under covered New York Banking, Insurance or Financial Services Law authorizations; §500.19 sets full and limited exemptions.",
+          "obligations": [
+            "Document risk assessments and update them at least annually and when business/technology changes materially alter cyber risk.",
+            "Apply third-party security policies, access protections and other required controls, subject to the actual exemption.",
+            "Report defined cybersecurity incidents to DFS promptly and within 72 hours of determination; submit the annual compliance certification or acknowledgment by April 15."
+          ],
+          "enforcement": "DFS examination and enforcement under applicable law.",
+          "limits": "Not every AI vendor is itself DFS-regulated, and not every cyber event meets the incident definition. Limited exemptions retain duties. Guidance explaining AI risks is distinct from the binding regulation.",
+          "sources": [
+            {
+              "label": "DFS · binding Part 500 regulation",
+              "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+            },
+            {
+              "label": "DFS · coverage and implementation resources",
+              "url": "https://www.dfs.ny.gov/cybersecurity"
+            }
+          ],
+          "reviewed": "2026-11-03",
+          "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500",
+          "id": "law-NY-28",
+          "codeSections": [
+            {
+              "section": "§§500.1 & 500.19",
+              "detail": "Covered entities, cybersecurity incidents and exemptions.",
+              "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+            },
+            {
+              "section": "§§500.9 & 500.11",
+              "detail": "Risk assessments and third-party service-provider security.",
+              "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+            },
+            {
+              "section": "§§500.12–500.13",
+              "detail": "Authentication, asset management and retention.",
+              "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+            },
+            {
+              "section": "§500.17",
+              "detail": "Incident, annual-compliance and extortion-payment notices.",
+              "url": "https://www.dfs.ny.gov/cybersecurity/23-NYCRR-Part-500"
+            }
+          ],
+          "practicalSteps": [
+            "Include AI vendors and access to nonpublic information in the third-party risk review.",
+            "Check the actual exemption before selecting controls and record who handles the DFS incident deadline."
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Targeted verification on 2026-11-03. Existing unmodified entries keep prior dates. Primary current statutes support new monitoring, employee information, personal accounts, breach and consumer-reporting records.",
+    "The lawyer source was upgraded from a January 2017 compilation to the court-hosted July 2026 compilation. Only binding rules are treated as law; commentary is distinguished.",
+    "NYSED direct pages intermittently returned 502. Current official indexed professional-rule text and NYSED FAQs were available; no unsupported 2026 Part 121 amendment claim was added.",
+    "Practical steps are editorial application suggestions, not verbatim requirements or a compliance certification."
+  ]
+}
