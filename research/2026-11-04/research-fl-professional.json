@@ -1,0 +1,221 @@
+{
+  "states": [
+    {
+      "code": "FL",
+      "laws": [
+        {
+          "id": "law-FL-lawyer-duties",
+          "title": "Lawyers: competence, confidentiality and AI-assisted work",
+          "bill": "Rules Regulating The Florida Bar 4-1.1, 4-1.5, 4-1.6, 4-3.3 & 4-5.3",
+          "topic": "Professional services",
+          "description": "Professional duties continue when lawyers use AI. Rule comments expressly discuss generative AI, while the rule text supplies the binding obligations.",
+          "timing": "Existing rules; official Chapter 4 compilation dated 22 October 2026 checked.",
+          "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf",
+          "status": "Enacted",
+          "type": "Binding professional rules",
+          "reviewed": "2026-11-04",
+          "appliesTo": "Florida Bar members and other lawyers authorized to practice in Florida.",
+          "obligations": [
+            "Provide competent representation and comply with candor duties to tribunals.",
+            "Protect representation information, obtain required informed consent for disclosure, and take reasonable steps against unauthorized access.",
+            "Avoid illegal, prohibited or clearly excessive fees; exercise applicable supervision over nonlawyer assistance."
+          ],
+          "enforcement": "Violations can lead to professional discipline; a rule violation does not itself create a civil cause of action.",
+          "limits": "Comments guide interpretation and do not add duties. Ethics Opinion 24-1 is advisory, not binding, and is included only as supporting AI-specific guidance.",
+          "sources": [
+            {
+              "label": "Binding rules · October 2026 Chapter 4 compilation",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf"
+            },
+            {
+              "label": "Florida Bar · official rules register",
+              "url": "https://www.floridabar.org/rules/rrtfb/"
+            },
+            {
+              "label": "Ethics Opinion 24-1 · nonbinding AI guidance",
+              "url": "https://www.floridabar.org/etopinions/opinion-24-1/"
+            }
+          ],
+          "codeSections": [
+            {
+              "section": "Rule 4-1.1",
+              "detail": "Competence; AI discussed in the comment.",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=11"
+            },
+            {
+              "section": "Rule 4-1.5(a)",
+              "detail": "Fees and costs.",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=23"
+            },
+            {
+              "section": "Rule 4-1.6(a), (e)",
+              "detail": "Confidentiality and safeguards.",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=48"
+            },
+            {
+              "section": "Rule 4-3.3",
+              "detail": "Candor to tribunals.",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=128"
+            },
+            {
+              "section": "Rule 4-5.3(b)",
+              "detail": "Nonlawyer supervision.",
+              "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=156"
+            }
+          ],
+          "practicalSteps": [
+            "Verify AI-generated authorities and analysis before relying on them.",
+            "Review vendor retention, training and access terms before uploading client material; record the billing basis."
+          ]
+        },
+        {
+          "id": "law-FL-court-filings",
+          "title": "Court filings: verify cited authorities, including AI output",
+          "bill": "Fla. R. Gen. Prac. & Jud. Admin. 2.515(d)(2) · AOSC26-12",
+          "topic": "Court procedure",
+          "description": "Signing a Florida state-court filing represents that its cited legal authorities exist and are accurately cited. This applies to lawyers and people representing themselves.",
+          "timing": "Amended rule and accompanying statewide order effective 15 June 2026.",
+          "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf",
+          "status": "Enacted",
+          "type": "Binding court rule",
+          "reviewed": "2026-11-04",
+          "appliesTo": "Signers of documents filed in Florida state courts, whether or not AI helped prepare them.",
+          "obligations": [
+            "Read the filing and make the representations required by Rule 2.515(d)(2), including that cited authorities exist and are accurately cited."
+          ],
+          "enforcement": "After notice and an opportunity to be heard, a court may impose sanctions including reprimand, striking the document, dismissal, costs or attorneys’ fees.",
+          "limits": "This is a filing representation, not a general ban on AI or a separate AI-disclosure certificate. AOSC26-12 bars additional circuit-level AI disclosure/certification requirements for filings. Federal courts have their own rules.",
+          "sources": [
+            {
+              "label": "Adopted Rule 2.515 · appendix and effective date",
+              "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf"
+            },
+            {
+              "label": "Statewide order · local certification requirements",
+              "url": "https://flcourts-media.flcourts.gov/content/download/2489379/29182858"
+            }
+          ],
+          "codeSections": [
+            {
+              "section": "Rule 2.515(d)(2)(A)–(D)",
+              "detail": "Representations made on filing; authority verification.",
+              "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf#page=5"
+            },
+            {
+              "section": "Rule 2.515(d)(2), concluding paragraph",
+              "detail": "Notice, hearing and sanctions.",
+              "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf#page=5"
+            },
+            {
+              "section": "AOSC26-12",
+              "detail": "Uniform statewide approach to AI filing certifications.",
+              "url": "https://flcourts-media.flcourts.gov/content/download/2489379/29182858"
+            }
+          ],
+          "practicalSteps": [
+            "Open each cited authority in a reliable source; check quotations, citations and what the authority actually supports.",
+            "Give self-represented users of drafting tools a verification step before filing."
+          ]
+        },
+        {
+          "id": "law-FL-patient-records",
+          "title": "Patient records and AI scribes or document tools",
+          "bill": "Fla. Stat. §456.057(1)–(7), (10)–(11), (15)–(16)",
+          "topic": "Health & privacy",
+          "description": "Existing medical-record duties matter when AI tools receive, summarize or store patient information.",
+          "timing": "Existing statute; 2026 codified text checked.",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057",
+          "status": "Enacted",
+          "type": "Related state statute",
+          "reviewed": "2026-11-04",
+          "appliesTo": "Defined health-care records owners and custodians. Chapter 395 licensed facilities are excluded from this section.",
+          "obligations": [
+            "Use written patient authorization for disclosure unless a statutory exception applies.",
+            "Maintain confidentiality/security policies and train employees.",
+            "Record third-party disclosures and their purpose; subsection (11) restricts onward disclosure."
+          ],
+          "enforcement": "Licensing authorities discipline licensees. The Attorney General may seek injunctions and fines up to $5,000 per violation against otherwise unlicensed records owners.",
+          "limits": "Definitions and disclosure exceptions control. This is not an AI-specific prohibition; HIPAA and other applicable law require separate analysis.",
+          "sources": [
+            {
+              "label": "Patient-record statute · 2026 text",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+            }
+          ],
+          "codeSections": [
+            {
+              "section": "§456.057(1)–(5)",
+              "detail": "Coverage and exclusions.",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+            },
+            {
+              "section": "§456.057(7), (10)–(11)",
+              "detail": "Authorization, security and disclosure records.",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+            },
+            {
+              "section": "§456.057(15)–(16)",
+              "detail": "Enforcement.",
+              "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+            }
+          ],
+          "practicalSteps": [
+            "Map what an AI scribe sends to the vendor, where it is retained and whether it is reused for training.",
+            "Check the applicable disclosure authority before enabling the tool."
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "topic": "Lawyer duties",
+      "finding": "Current official Bar rules landing page links a PDF whose filename starts 2027_04 but whose header says RRTFB October 22, 2026. Used linked current compilation, not inferred filename date. Rule text and comments distinguished (preamble pp4–5). Rules4-1.1,4-1.5(a),4-1.6(a)/(e),4-3.3 and4-5.3(b) checked. AI explicit references are in comments, not a standalone binding AI code. Opinion24-1 expressly says advisory/nonbinding.",
+      "urls": [
+        "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf",
+        "https://www.floridabar.org/rules/rrtfb/",
+        "https://www.floridabar.org/etopinions/opinion-24-1/"
+      ],
+      "refs": [
+        "turn159view2",
+        "turn163view2",
+        "turn166view0",
+        "turn163view4",
+        "turn166view1",
+        "turn163view6",
+        "turn166view2",
+        "turn155search0"
+      ]
+    },
+    {
+      "topic": "Court filings",
+      "finding": "Primary adopted appendix establishes Rule2.515(d)(2)(D), scope lawyers/unrepresented, effective June15,2026, sanctions after notice/opportunity. AOSC26-12 preempts circuit-level AI disclosure/certification demands; not federal courts. Entry is a binding procedural rule, not a court-case feed. November2026 Bar Journal also reflects rule still current; legal claims taken from Supreme Court texts.",
+      "urls": [
+        "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf",
+        "https://flcourts-media.flcourts.gov/content/download/2489379/29182858"
+      ],
+      "refs": [
+        "turn159view0",
+        "turn159view1",
+        "turn161search5"
+      ]
+    },
+    {
+      "topic": "Patient records",
+      "finding": "Current456.057 definitions1–5 excludeChapter395facilities;7authorizationandexceptions;10security/training;11disclosureaccountingandredisclosure;15–16enforcement. AI examples are editorial applications, not statutory AI-specific words. Telehealth456.47 was reviewed but not made a separate entry in this bounded patch.",
+      "urls": [
+        "https://www.flsenate.gov/Laws/Statutes/2026/456.057",
+        "https://www.flsenate.gov/Laws/Statutes/2026/456.47"
+      ],
+      "refs": [
+        "turn157view2",
+        "turn171view1",
+        "turn171view2",
+        "turn171view0"
+      ]
+    },
+    {
+      "methodology": "Selected binding requirements reviewed on2026-11-04. No new court-case feed, proposals or standalone ethics-guidance cards. PracticalSteps are editorial suggestions. Other Florida entries and dates are untouched."
+    }
+  ]
+}

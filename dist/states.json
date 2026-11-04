@@ -2350,55 +2350,73 @@
         "title": "Digital Bill of Rights: profiling, sensitive data and consumer requests",
         "bill": "Fla. Stat. §§501.701–501.722",
         "topic": "Privacy & automated decisions",
-        "description": "The main privacy framework is narrowly scoped, but includes profiling opt-outs relevant to AI. A separate sensitive-data-sale rule has broader business coverage.",
+        "description": "Covered consumers can access, correct or delete data and opt out of significant-decision profiling. Covered businesses also have vendor-contract and risk-assessment duties. A separate sensitive-data sale rule has broader coverage.",
         "timing": "Core framework effective 1 July 2024.",
         "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.702",
         "status": "Enacted",
         "type": "Related state statute",
-        "reviewed": "2026-11-03",
+        "reviewed": "2026-11-04",
         "appliesTo": "Main controllers generally need more than $1 billion in global annual gross revenue plus a qualifying online-advertising, smart-speaker/virtual-assistant or large app-store business model; controlled/controlling entities also matter. Section 501.715 separately reaches qualifying for-profit Florida businesses collecting consumer data without the billion-dollar threshold.",
         "obligations": [
-          "Covered controllers must honor statutory access, correction, deletion, portability and opt-out rights, including significant-decision profiling.",
-          "Provide accessible request channels under §501.709.",
-          "Check §501.715 before selling sensitive data: prior consent and a prescribed website notice may be required even outside the main controller threshold."
+          "Honor authenticated access, correction, deletion and portability requests, plus opt-outs for sale, targeted advertising, consequential profiling, sensitive data and voice/facial-recognition data (§501.705).",
+          "Respond without undue delay and within 45 days; a justified extension adds at most 15 days with timely notice. Explain refusals and provide an appeal process; appeal decisions are due within 60 days (§§501.706–501.707).",
+          "Use processor contracts covering instructions, purpose, data types, duration, confidentiality, deletion/return, assessments and subcontractors. Processors must support requests, security and assessments (§501.712).",
+          "Document assessments for targeted advertising, data sales, sensitive data and specified risky profiling or other heightened-risk processing. Weigh benefits against risks and safeguards; §501.713 applies to activities generated on or after 1 July 2023.",
+          "Check §501.715 separately: qualifying businesses selling sensitive data need prior consent or the specified child authorization and must display the statutory sale notice, even outside the main controller threshold."
         ],
         "enforcement": "Department of Legal Affairs enforcement; up to $50,000 per violation, with specified enhancements. The law creates no private action.",
-        "limits": "Consumers exclude employment and commercial contexts. Section 501.703 contains significant entity/data exemptions. Small size alone does not resolve §501.715.",
+        "limits": "The main consumer framework excludes employment/commercial contexts and has significant entity/data exemptions (§§501.703–501.704). It is not a right to reject every AI tool or a guarantee of human review. The assessment activity date is separate from the framework’s July 2024 commencement; small size alone does not resolve §501.715.",
         "codeSections": [
           {
             "section": "§501.702(8)–(9)",
-            "detail": "Consumer and controller definitions",
+            "detail": "Consumer definition and narrow main-controller threshold.",
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.702"
           },
           {
-            "section": "§501.703",
-            "detail": "Applicability and exclusions",
+            "section": "§§501.703–501.704",
+            "detail": "Applicability and exemptions; check before relying on a right or duty.",
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.703"
           },
           {
-            "section": "§501.705",
-            "detail": "Consumer rights and profiling opt-out",
+            "section": "§501.705(2)–(3)",
+            "detail": "Privacy rights, profiling opt-out and limits on inactive-device surveillance.",
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.705"
           },
           {
-            "section": "§501.709",
-            "detail": "Consumer request methods",
-            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.709"
+            "section": "§501.706(2)–(3)",
+            "detail": "45-day response and permitted 15-day extension.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.706"
+          },
+          {
+            "section": "§501.707",
+            "detail": "Appeal process and 60-day response.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.707"
+          },
+          {
+            "section": "§501.712",
+            "detail": "Processor assistance and required contract terms.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.712"
+          },
+          {
+            "section": "§501.713",
+            "detail": "Which activities need documented assessments.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.713"
           },
           {
             "section": "§501.715",
-            "detail": "Broader sensitive-data-sale restrictions",
+            "detail": "Broader sensitive-data sale rule.",
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.715"
           },
           {
             "section": "§501.72",
-            "detail": "Enforcement and no private action",
+            "detail": "Public enforcement; no private action under this part.",
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.72"
           }
         ],
         "practicalSteps": [
-          "Document the threshold and exemption analysis before assuming the law does not apply.",
-          "Trace profiling, biometric and sensitive-data uses separately."
+          "For a consumer request, identify the right you are exercising, keep the submission date and use the appeal route if refused.",
+          "For an AI deployment, document the coverage analysis, actual data uses and vendor roles before choosing safeguards.",
+          "Make a deletion or opt-out request reach relevant AI processors; do not assume a general vendor privacy policy supplies the required contract."
         ],
         "sources": [
           {
@@ -2424,6 +2442,22 @@
           {
             "label": "SB 262 · enactment record",
             "url": "https://www.flsenate.gov/Session/Bill/2023/262"
+          },
+          {
+            "label": "Request response deadlines · §501.706",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.706"
+          },
+          {
+            "label": "Appeals · §501.707",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.707"
+          },
+          {
+            "label": "Processor contracts · §501.712",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.712"
+          },
+          {
+            "label": "Data protection assessments · §501.713",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.713"
           }
         ]
       },
@@ -2518,9 +2552,533 @@
             "url": "https://www.flsenate.gov/Laws/Statutes/2026/934.02"
           }
         ]
+      },
+      {
+        "id": "law-FL-altered-sexual-depictions",
+        "title": "Sexual deepfakes: prohibited conduct and removal requests",
+        "bill": "Fla. Stat. §836.13",
+        "topic": "Synthetic media",
+        "description": "Florida prohibits specified nonconsensual altered sexual depictions and requires covered platforms to provide a removal process. The rules address creation as well as distribution.",
+        "timing": "In force. Covered platforms had to establish their notice-and-removal process by 31 December 2025; the current code includes 2026 amendments.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13",
+        "status": "Enacted",
+        "type": "Synthetic-media state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "People engaging in the defined conduct involving realistic altered sexual images of an identifiable person, and websites/apps meeting the covered-platform definition. Florida jurisdiction includes an offense element or resulting harm occurring in the state.",
+        "obligations": [
+          "Do not willfully generate a qualifying nonconsensual depiction. Solicitation and malicious promotion/possession have their own knowledge and intent elements (§836.13(2)–(4)).",
+          "Covered platforms must publish a clear, accessible process for signed removal requests identifying the content, nonconsent and contact details (§836.13(8)(a)–(c)).",
+          "After a valid request, remove the depiction as soon as possible and within 48 hours; make reasonable efforts to remove known identical copies (§836.13(8)(d))."
+        ],
+        "enforcement": "Specified conduct is a third-degree felony. A person harmed by conduct under subsection (2) or (4) may seek an injunction, the greater of $10,000 or actual damages, and fees/costs. Failure reasonably to comply with platform-removal duties invokes consumer-protection remedies.",
+        "limits": "Not every synthetic image is covered. The statute distinguishes conduct and platform duties and includes intermediary, reporting, law-enforcement and legal-proceeding exceptions. An AI disclaimer is not a criminal defense. Subsection (8) has its own platform exclusions; check both (8) and (9).",
+        "codeSections": [
+          {
+            "section": "§836.13(1)–(4)",
+            "detail": "Definitions and separate creation, solicitation and promotion offenses.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13"
+          },
+          {
+            "section": "§836.13(6)–(7)",
+            "detail": "Disclaimer rule and civil remedies.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13"
+          },
+          {
+            "section": "§836.13(8)",
+            "detail": "Request contents, platform process and 48-hour removal deadline.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13"
+          },
+          {
+            "section": "§836.13(9)–(10)",
+            "detail": "Exceptions and Florida connection.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13"
+          }
+        ],
+        "practicalSteps": [
+          "If seeking removal, preserve the URL and evidence and submit a signed request through the platform’s stated process; keep a timestamp and acknowledgment.",
+          "If operating a covered service, assign someone to receive requests and handle the 48-hour deadline and duplicate-content search."
+        ],
+        "sources": [
+          {
+            "label": "Current statute · prohibited conduct and platform obligations",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/836.13"
+          }
+        ]
+      },
+      {
+        "id": "law-FL-commercial-likeness",
+        "title": "AI advertising and a person’s name or likeness",
+        "bill": "Fla. Stat. §540.08",
+        "topic": "Advertising & likeness",
+        "description": "Existing Florida consent requirements can matter when AI-generated advertising uses an identifiable real person’s name, portrait, photograph or likeness. The statute is broader than AI use.",
+        "timing": "Existing law; current 2026 statutory text checked. This entry does not treat proposed AI-specific amendments as enacted.",
+        "url": "https://leg.state.fl.us/statutes/index.cfm/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0540%2FSections%2F0540.08.html",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Public use of a natural person’s name or likeness for trade, commercial or advertising purposes, subject to the statutory exceptions. The text also addresses minors and deceased people.",
+        "obligations": [
+          "Obtain the required express written or oral consent from the person or the authorized rights holder before a covered commercial use (§540.08(1)).",
+          "For a minor, consent must come from a parent or guardian; for a deceased person, check who can authorize the use under the statute (§540.08(1)(c), (6))."
+        ],
+        "enforcement": "A qualifying claimant may seek an injunction and damages, including a reasonable royalty and punitive/exemplary damages. Unauthorized use of a covered armed-forces member’s likeness can also attract a civil penalty of up to $1,000 per violation.",
+        "limits": "Bona fide non-advertising news, certain authorized resales and incidental unnamed crowd photographs have exceptions. The statutory post-death limit is 40 years. It does not expressly create a general AI-labeling rule or settle every voice-cloning question; applying it to a particular AI depiction requires analysis.",
+        "codeSections": [
+          {
+            "section": "§540.08(1), (6)",
+            "detail": "Consent and authority to give it.",
+            "url": "https://leg.state.fl.us/statutes/index.cfm/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0540%2FSections%2F0540.08.html"
+          },
+          {
+            "section": "§540.08(2)–(3)",
+            "detail": "Civil remedies and armed-forces provision.",
+            "url": "https://leg.state.fl.us/statutes/index.cfm/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0540%2FSections%2F0540.08.html"
+          },
+          {
+            "section": "§540.08(4)–(5)",
+            "detail": "Exceptions and post-death limit.",
+            "url": "https://leg.state.fl.us/statutes/index.cfm/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0540%2FSections%2F0540.08.html"
+          }
+        ],
+        "practicalSteps": [
+          "Keep a record of permission covering the specific campaign and proposed synthetic alteration; written permission helps document an otherwise oral authorization.",
+          "If challenging an unauthorized advertisement, preserve the advert, where it appeared and the claimed endorsement."
+        ],
+        "sources": [
+          {
+            "label": "Florida Legislature · current §540.08",
+            "url": "https://leg.state.fl.us/statutes/index.cfm/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0540%2FSections%2F0540.08.html"
+          }
+        ]
+      },
+      {
+        "id": "law-FL-lawyer-duties",
+        "title": "Lawyers: competence, confidentiality and AI-assisted work",
+        "bill": "Rules Regulating The Florida Bar 4-1.1, 4-1.5, 4-1.6, 4-3.3 & 4-5.3",
+        "topic": "Professional services",
+        "description": "Professional duties continue when lawyers use AI. Rule comments expressly discuss generative AI, while the rule text supplies the binding obligations.",
+        "timing": "Existing rules; official Chapter 4 compilation dated 22 October 2026 checked.",
+        "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf",
+        "status": "Enacted",
+        "type": "Binding professional rules",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Florida Bar members and other lawyers authorized to practice in Florida.",
+        "obligations": [
+          "Provide competent representation and comply with candor duties to tribunals.",
+          "Protect representation information, obtain required informed consent for disclosure, and take reasonable steps against unauthorized access.",
+          "Avoid illegal, prohibited or clearly excessive fees; exercise applicable supervision over nonlawyer assistance."
+        ],
+        "enforcement": "Violations can lead to professional discipline; a rule violation does not itself create a civil cause of action.",
+        "limits": "Comments guide interpretation and do not add duties. Ethics Opinion 24-1 is advisory, not binding, and is included only as supporting AI-specific guidance.",
+        "sources": [
+          {
+            "label": "Binding rules · October 2026 Chapter 4 compilation",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf"
+          },
+          {
+            "label": "Florida Bar · official rules register",
+            "url": "https://www.floridabar.org/rules/rrtfb/"
+          },
+          {
+            "label": "Ethics Opinion 24-1 · nonbinding AI guidance",
+            "url": "https://www.floridabar.org/etopinions/opinion-24-1/"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "Rule 4-1.1",
+            "detail": "Competence; AI discussed in the comment.",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=11"
+          },
+          {
+            "section": "Rule 4-1.5(a)",
+            "detail": "Fees and costs.",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=23"
+          },
+          {
+            "section": "Rule 4-1.6(a), (e)",
+            "detail": "Confidentiality and safeguards.",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=48"
+          },
+          {
+            "section": "Rule 4-3.3",
+            "detail": "Candor to tribunals.",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=128"
+          },
+          {
+            "section": "Rule 4-5.3(b)",
+            "detail": "Nonlawyer supervision.",
+            "url": "https://www-media.floridabar.org/uploads/2026/10/2027_04-OCT-Chapter-4-RRTFB-1.pdf#page=156"
+          }
+        ],
+        "practicalSteps": [
+          "Verify AI-generated authorities and analysis before relying on them.",
+          "Review vendor retention, training and access terms before uploading client material; record the billing basis."
+        ]
+      },
+      {
+        "id": "law-FL-court-filings",
+        "title": "Court filings: verify cited authorities, including AI output",
+        "bill": "Fla. R. Gen. Prac. & Jud. Admin. 2.515(d)(2) · AOSC26-12",
+        "topic": "Court procedure",
+        "description": "Signing a Florida state-court filing represents that its cited legal authorities exist and are accurately cited. This applies to lawyers and people representing themselves.",
+        "timing": "Amended rule and accompanying statewide order effective 15 June 2026.",
+        "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf",
+        "status": "Enacted",
+        "type": "Binding court rule",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Signers of documents filed in Florida state courts, whether or not AI helped prepare them.",
+        "obligations": [
+          "Read the filing and make the representations required by Rule 2.515(d)(2), including that cited authorities exist and are accurately cited."
+        ],
+        "enforcement": "After notice and an opportunity to be heard, a court may impose sanctions including reprimand, striking the document, dismissal, costs or attorneys’ fees.",
+        "limits": "This is a filing representation, not a general ban on AI or a separate AI-disclosure certificate. AOSC26-12 bars additional circuit-level AI disclosure/certification requirements for filings. Federal courts have their own rules.",
+        "sources": [
+          {
+            "label": "Adopted Rule 2.515 · appendix and effective date",
+            "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf"
+          },
+          {
+            "label": "Statewide order · local certification requirements",
+            "url": "https://flcourts-media.flcourts.gov/content/download/2489379/29182858"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "Rule 2.515(d)(2)(A)–(D)",
+            "detail": "Representations made on filing; authority verification.",
+            "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf#page=5"
+          },
+          {
+            "section": "Rule 2.515(d)(2), concluding paragraph",
+            "detail": "Notice, hearing and sanctions.",
+            "url": "https://flcourts-media.flcourts.gov/content/download/2489374/opinion/Opinion_SC2026-0673.pdf#page=5"
+          },
+          {
+            "section": "AOSC26-12",
+            "detail": "Uniform statewide approach to AI filing certifications.",
+            "url": "https://flcourts-media.flcourts.gov/content/download/2489379/29182858"
+          }
+        ],
+        "practicalSteps": [
+          "Open each cited authority in a reliable source; check quotations, citations and what the authority actually supports.",
+          "Give self-represented users of drafting tools a verification step before filing."
+        ]
+      },
+      {
+        "id": "law-FL-patient-records",
+        "title": "Patient records and AI scribes or document tools",
+        "bill": "Fla. Stat. §456.057(1)–(7), (10)–(11), (15)–(16)",
+        "topic": "Health & privacy",
+        "description": "Existing medical-record duties matter when AI tools receive, summarize or store patient information.",
+        "timing": "Existing statute; 2026 codified text checked.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Defined health-care records owners and custodians. Chapter 395 licensed facilities are excluded from this section.",
+        "obligations": [
+          "Use written patient authorization for disclosure unless a statutory exception applies.",
+          "Maintain confidentiality/security policies and train employees.",
+          "Record third-party disclosures and their purpose; subsection (11) restricts onward disclosure."
+        ],
+        "enforcement": "Licensing authorities discipline licensees. The Attorney General may seek injunctions and fines up to $5,000 per violation against otherwise unlicensed records owners.",
+        "limits": "Definitions and disclosure exceptions control. This is not an AI-specific prohibition; HIPAA and other applicable law require separate analysis.",
+        "sources": [
+          {
+            "label": "Patient-record statute · 2026 text",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "§456.057(1)–(5)",
+            "detail": "Coverage and exclusions.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+          },
+          {
+            "section": "§456.057(7), (10)–(11)",
+            "detail": "Authorization, security and disclosure records.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+          },
+          {
+            "section": "§456.057(15)–(16)",
+            "detail": "Enforcement.",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/456.057"
+          }
+        ],
+        "practicalSteps": [
+          "Map what an AI scribe sends to the vendor, where it is retained and whether it is reused for training.",
+          "Check the applicable disclosure authority before enabling the tool."
+        ]
+      },
+      {
+        "id": "law-FL-consumer-protection",
+        "title": "AI product claims and deceptive business practices",
+        "bill": "Fla. Stat. §§501.203–501.204, 501.207, 501.211–501.212",
+        "topic": "Consumer protection",
+        "description": "Florida’s general unfair-and-deceptive-practices law can apply to marketing or selling AI products and services. Claims about accuracy, capabilities or safeguards need to be assessed under this existing standard.",
+        "timing": "Existing law; selected provisions checked against the 2026 statutes.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.204",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Trade or commerce broadly includes advertising, offering and providing goods or services, including nonprofit activity. Section 501.212 excludes specified regulated persons or activities and other listed matters; this law does not use the Digital Bill of Rights’ billion-dollar threshold.",
+        "obligations": [
+          "Do not engage in unfair, deceptive or unconscionable commercial practices or unfair methods of competition (§501.204)."
+        ],
+        "enforcement": "State attorneys and the Department of Legal Affairs have enforcement powers, including injunctions and consumer-damages actions. Section 501.211 permits qualifying private declaratory/injunctive relief and actual-damages claims, with statutory conditions for fees and costs.",
+        "limits": "These sections do not create a universal AI-labeling or audit requirement. An incorrect AI output alone does not prove liability. Insurance, banking and other exclusions in §501.212 require checking; personal-injury claims are outside this part.",
+        "sources": [
+          {
+            "label": "Prohibited practices",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.204"
+          },
+          {
+            "label": "Definitions and enforcing authority",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.203"
+          },
+          {
+            "label": "Public enforcement",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.207"
+          },
+          {
+            "label": "Private remedies",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.211"
+          },
+          {
+            "label": "Scope and exclusions",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.212"
+          },
+          {
+            "label": "Attorney General consumer complaint form",
+            "url": "https://www.myfloridalegal.com/sites/default/files/consumercomplaint.pdf"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "§501.203(2), (7)–(9)",
+            "detail": "Enforcement, consumers and commercial scope",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.203"
+          },
+          {
+            "section": "§501.204(1)",
+            "detail": "General unfair/deceptive-practice prohibition",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.204"
+          },
+          {
+            "section": "§501.211",
+            "detail": "Private relief and loss-based damages",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.211"
+          },
+          {
+            "section": "§501.212",
+            "detail": "Excluded acts, claims and regulated activities",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/501.212"
+          }
+        ],
+        "practicalSteps": [
+          "Keep evidence supporting advertised AI capabilities, and review generated sales copy before publishing.",
+          "If challenging a service, preserve the advertisement, terms, receipts and relevant outputs; identify the misleading promise and resulting loss."
+        ]
+      },
+      {
+        "id": "law-FL-employment-discrimination",
+        "title": "AI-assisted hiring and employment discrimination",
+        "bill": "Fla. Stat. §§760.02(7)–(8), 760.10(1)–(7), (9)–(11), 760.11",
+        "topic": "Employment",
+        "description": "Existing civil-rights protections matter when AI screens applicants, ranks workers or supports employment decisions. The statute governs prohibited discrimination, rather than prescribing a particular AI system.",
+        "timing": "Existing law; selected provisions checked against the 2026 statutes.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.10",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "The statutory employer definition generally requires 15 or more employees for each working day in at least 20 calendar weeks in the current or preceding year, and includes agents. Employment agencies, labor organizations and specified other actors have separately defined duties.",
+        "obligations": [
+          "Do not unlawfully discriminate in hiring, discharge, compensation, employment terms or classifications because of a protected characteristic.",
+          "Employment advertisements must not express prohibited preferences; retaliation for opposing or participating in a proceeding concerning unlawful practices is prohibited."
+        ],
+        "enforcement": "A complaint to the Florida Commission on Human Relations generally must be filed within 365 days of the alleged violation. Administrative relief or civil litigation is subject to §760.11’s procedural requirements, with remedies depending on the route and findings.",
+        "limits": "Protected grounds include race, color, religion, sex, pregnancy, national origin, age, disability (the statute uses “handicap”) and marital status. Statutory qualifications, religious-organization exceptions and other coverage conditions matter. This entry does not establish a universal bias-audit duty or summarize subsection (8)’s separate workplace-training provisions.",
+        "sources": [
+          {
+            "label": "Unlawful employment practices",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.10"
+          },
+          {
+            "label": "Employer and agency definitions",
+            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0760%2FSections%2F0760.02.html"
+          },
+          {
+            "label": "Complaint procedure and remedies",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.11"
+          },
+          {
+            "label": "FCHR employment complaint route",
+            "url": "https://fchr.myflorida.com/employment-complaint-form"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "§760.02(7)–(8)",
+            "detail": "Employer threshold and employment-agency definition",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.02"
+          },
+          {
+            "section": "§760.10(1)–(7)",
+            "detail": "Decisions, referrals, advertising and retaliation",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.10"
+          },
+          {
+            "section": "§760.10(9)–(11)",
+            "detail": "Qualifications, exceptions and required workplace notice",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.10"
+          },
+          {
+            "section": "§760.11",
+            "detail": "Filing deadline, process and remedies",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.11"
+          }
+        ],
+        "practicalSteps": [
+          "Review the criteria and outputs used by a screening vendor against lawful job requirements; keep a route for identifying and correcting discriminatory decisions.",
+          "Applicants can preserve the job advert, application, assessment instructions and decision correspondence. Check filing deadlines promptly; other laws can use different deadlines."
+        ]
+      },
+      {
+        "id": "law-FL-fair-housing",
+        "title": "Tenant screening, housing advertisements and AI",
+        "bill": "Fla. Stat. §§760.23, 760.29, 760.34–760.35",
+        "topic": "Housing & civil rights",
+        "description": "AI-assisted tenant selection and housing advertisements remain subject to Florida’s Fair Housing Act where its coverage and conditions are met.",
+        "timing": "Existing law; selected provisions checked against the 2026 statutes.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.23",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "Covered dwelling sales, rentals, related services and advertising. Section 760.29 contains conditional exemptions, including specified private-owner, owner-occupied and other arrangements; exemption analysis differs by provision.",
+        "obligations": [
+          "Do not deny housing or discriminate in covered terms or services because of race, color, national origin, sex, disability, familial status or religion.",
+          "Do not publish housing advertising expressing prohibited preferences or limitations (§760.23(3)).",
+          "Make reasonable accommodations in rules, policies, practices or services where necessary to afford a person with a disability an equal opportunity to use and enjoy a dwelling (§760.23(9)(b))."
+        ],
+        "enforcement": "The Florida Commission on Human Relations accepts housing complaints, generally within one year. Section 760.35 provides a separate civil-action route with a two-year filing limit, procedural restrictions, and potential equitable relief, damages and fees.",
+        "limits": "This is not a blanket ban on automated screening or a statutory right to inspect every model. Ownership exemptions have conditions; do not assume a small landlord is exempt from every advertising rule. This entry covers housing, not all real-estate lending requirements.",
+        "sources": [
+          {
+            "label": "Housing protections",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.23"
+          },
+          {
+            "label": "Conditional exemptions",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.29"
+          },
+          {
+            "label": "Civil actions and remedies",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/0760.35"
+          },
+          {
+            "label": "FCHR housing complaint route and timing",
+            "url": "https://fchr.myflorida.com/housing-complaint"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "§760.23(1)–(3)",
+            "detail": "Access, terms and housing advertisements",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.23"
+          },
+          {
+            "section": "§760.23(7)–(9)",
+            "detail": "Disability protections and reasonable accommodations",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.23"
+          },
+          {
+            "section": "§760.29",
+            "detail": "Conditional coverage exemptions",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/760.29"
+          },
+          {
+            "section": "§760.35(1)–(4)",
+            "detail": "Civil action, timing and relief",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/0760.35"
+          }
+        ],
+        "practicalSteps": [
+          "Check tenant-screening criteria and AI-written advertisements for prohibited preferences; build a way to consider accommodation requests.",
+          "If affected, save the listing, screening communications, denial and accommodation correspondence, and check the relevant complaint route."
+        ]
+      },
+      {
+        "id": "law-FL-public-records",
+        "title": "Government AI work and public-records duties",
+        "bill": "Fla. Stat. §§119.011, 119.021, 119.07, 119.0701",
+        "topic": "Government",
+        "description": "Records made or received in official business can fall within Florida’s public-records law regardless of their format. Applying that definition to prompts, outputs and vendor-held files requires examining their function and content.",
+        "timing": "Existing law; selected provisions checked against the 2026 statutes.",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.011",
+        "status": "Enacted",
+        "type": "Related state statute",
+        "reviewed": "2026-11-04",
+        "appliesTo": "State and local agencies, and entities acting on their behalf, within §119.011(2). Contractor duties in §119.0701 apply to a services contractor acting on behalf of the public agency; merely selling software does not automatically establish that status.",
+        "obligations": [
+          "Preserve covered records and follow applicable retention and disposal schedules (§119.021).",
+          "Allow access to nonexempt public records; respond promptly and in good faith, redact validly exempt portions and identify the legal basis for withholding (§119.07).",
+          "Covered services contracts must address record maintenance, access, protected information and completion/transfer arrangements; electronic records must be supplied in a compatible format when the agency requests them (§119.0701)."
+        ],
+        "enforcement": "Chapter 119 allows enforcement proceedings and includes penalties for violations. Covered contractors can face contractual enforcement and, where statutory conditions are met, production proceedings and enforcement costs under §119.0701.",
+        "limits": "Not every AI interaction is automatically a public record, and not every public record is publicly disclosable. Confidentiality, trade-secret and security exemptions need separate review. Retention periods depend on the applicable record series; this entry does not impose one universal period for AI chats.",
+        "sources": [
+          {
+            "label": "Agency and public-record definitions",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.011"
+          },
+          {
+            "label": "Retention and preservation",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.021"
+          },
+          {
+            "label": "Access, redaction and exemptions",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.07"
+          },
+          {
+            "label": "Contractor and vendor-held records",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.0701"
+          },
+          {
+            "label": "Penalties",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.10"
+          }
+        ],
+        "codeSections": [
+          {
+            "section": "§119.011(2), (12)",
+            "detail": "Agency coverage and format-neutral public-record definition",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.011"
+          },
+          {
+            "section": "§119.021(2)",
+            "detail": "Retention schedules and disposal requirements",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.021"
+          },
+          {
+            "section": "§119.07(1)(a)–(f)",
+            "detail": "Access, prompt response and withholding explanations",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.07"
+          },
+          {
+            "section": "§119.0701(1)–(4)",
+            "detail": "Contract scope, records clauses and enforcement",
+            "url": "https://www.flsenate.gov/Laws/Statutes/2026/119.0701"
+          }
+        ],
+        "practicalSteps": [
+          "Decide which AI work products document official business, and configure retention/export with the agency’s records custodian before enabling auto-deletion.",
+          "People researching government AI can request existing procurement contracts, policies or decision records from the agency; exemptions may require redaction."
+        ]
       }
     ],
-    "summary": "Political AI disclosures, consumer profiling rights, sensitive-data sales, data security and recording consent. Scope differs sharply across these statutes; the main privacy-law revenue threshold is not a general exemption from Florida law.",
+    "summary": "Florida rules relevant to everyday and professional AI use: privacy requests, recording, lawyer and court-filing duties, patient records, hiring, housing, advertising, deepfakes and government records. Open each entry for its scope, code sections and practical steps.",
     "reviewed": "2026-09-18"
   },
   {

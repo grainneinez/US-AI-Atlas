@@ -1,6 +1,6 @@
 # US AI Atlas
 
-**AI Governance at a Glance** is an interactive US map and searchable library of selected legislation and regulations relevant to AI. The collection has 122 entries across all 50 states, including 35 New York entries: 30 state-level entries and 5 New York City entries.
+**AI Governance at a Glance** is an interactive US map and searchable library of selected legislation and regulations relevant to AI. The collection has 131 entries across all 50 states, including 35 New York entries: 30 state-level entries and 5 New York City entries.
 
 Public website: https://grainneinez.github.io/US-AI-Atlas/
 
@@ -40,7 +40,9 @@ The separate portfolio at `dist/ai-enablement/index.html`, where present in the 
 
 The November 3, 2026 expansion reviewed 67 entries across New York and 14 other East Coast states, including Pennsylvania. It adds linked code provisions and practical notes, while retaining the simplified legislation-first interface. Research patches and known limitations are preserved in `research/2026-11-03/`.
 
-Source-check dates are preserved on individual entries; they were not refreshed during the October 30 layout revision. The original survey was reviewed on September 18, 2026, with later targeted expansions through November 3, 2026. Per-entry dates override state dates. The collection is manually maintained and does not update automatically.
+The November 4, 2026 Florida expansion adds nine records and deepens the existing privacy entry, bringing Florida to 13 entries. It covers professional and court rules, patient records, consumer claims, employment, housing, public records and synthetic media. Primary sources and limitations are preserved in `research/2026-11-04/`.
+
+Source-check dates are preserved on individual entries; they were not refreshed during the October 30 layout revision. The original survey was reviewed on September 18, 2026, with later targeted expansions through November 4, 2026. Per-entry dates override state dates. The collection is manually maintained and does not update automatically.
 
 Enacted describes adoption, not a guarantee that every provision is operative or enforceable. Upcoming identifies adopted measures with future duties. Enjoined entries retain their stated limitations. Proposals are not included. Some original entries use labeled legislative research summaries where primary text was unavailable.
 
